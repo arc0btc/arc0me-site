@@ -1,0 +1,376 @@
+/* Arc Brand Styles - Minimal, precise, verifiable */
+
+/* ----------------------------------------------------------------
+   Global Font Rendering Optimizations
+   ---------------------------------------------------------------- */
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-size: 18px;
+}
+
+@media (min-width: 50rem) {
+	html {
+		font-size: 19px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: geometricPrecision;
+}
+
+/* ----------------------------------------------------------------
+   Color Palette - Arc Brand (avatar-derived warm palette)
+   ---------------------------------------------------------------- */
+:root {
+	/* Accent (gold) — Bitcoin, precision, warmth */
+	--sl-color-accent-low: #1a1500;
+	--sl-color-accent: #FEC233;
+	--sl-color-accent-high: #FFD666;
+
+	/* Arc gold variants */
+	--arc-gold: #FEC233;
+	--arc-gold-dark: #D4A020;
+	--arc-gold-light: #FFD666;
+	--arc-gold-glow: rgba(254, 194, 51, 0.3);
+
+	/* Vermillion — warm accent, alerts, emphasis */
+	--arc-vermillion: #DF2D2C;
+	--arc-vermillion-low: #1a0808;
+	--arc-vermillion-high: #FF6B6B;
+	--arc-vermillion-glow: rgba(223, 45, 44, 0.3);
+
+	/* Extended accents */
+	--arc-magenta: #BB278F;
+	--arc-magenta-glow: rgba(187, 39, 143, 0.3);
+	--arc-amber: #EA9922;
+	--arc-cream: #E9D4CF;
+
+	/* Neutrals */
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eeeeee;
+	--sl-color-gray-2: #c2c2c2;
+	--sl-color-gray-3: #8b8b8b;
+	--sl-color-gray-4: #56595b;
+	--sl-color-gray-5: #383838;
+	--sl-color-gray-6: #1a1a1a;
+	--sl-color-black: #000000;
+
+	/* Typography */
+	--sl-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--sl-font-heading: var(--sl-font);
+	--sl-font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+
+	/* Extended borders */
+	--arc-border-subtle: #1e1e22;
+	--arc-border-default: #2a2a2e;
+	--arc-border-strong: #3a3a40;
+	--arc-border-accent: rgba(254, 194, 51, 0.25);
+	--arc-border-accent-strong: rgba(254, 194, 51, 0.5);
+}
+
+/* ----------------------------------------------------------------
+   Dark mode (forced — only mode)
+   ---------------------------------------------------------------- */
+:root[data-theme='dark'] {
+	--sl-color-bg: #000000;
+	--sl-color-bg-nav: #0a0a0a;
+	--sl-color-bg-sidebar: #0a0a0a;
+	--sl-color-bg-inline-code: #161618;
+	--sl-color-hairline-light: #1a1a1c;
+	--sl-color-hairline: #252528;
+	--sl-color-hairline-shade: #0a0a0a;
+}
+
+/* ----------------------------------------------------------------
+   Links
+   ---------------------------------------------------------------- */
+a {
+	color: var(--sl-color-accent);
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--sl-color-accent-high);
+}
+
+/* Sidebar links - minimal, precise */
+nav.sidebar-content a {
+	font-weight: 400;
+	transition: color 0.2s ease;
+	color: var(--sl-color-gray-2);
+	background-color: transparent !important;
+}
+
+nav.sidebar-content a:hover {
+	color: var(--sl-color-accent-high);
+	background-color: transparent !important;
+}
+
+nav.sidebar-content a[aria-current="page"] {
+	color: var(--sl-color-accent);
+	background-color: transparent !important;
+	font-weight: 500;
+}
+
+/* ----------------------------------------------------------------
+   Focus ring
+   ---------------------------------------------------------------- */
+:focus-visible {
+	outline: 2px solid var(--sl-color-accent);
+	outline-offset: 2px;
+	box-shadow: 0 0 0 4px var(--arc-gold-glow);
+}
+
+/* ----------------------------------------------------------------
+   Code blocks
+   ---------------------------------------------------------------- */
+.sl-markdown-content code:not(:where(.not-content *)) {
+	font-family: var(--sl-font-mono);
+	font-size: 0.875em;
+	background-color: var(--sl-color-bg-inline-code);
+	border: 1px solid var(--arc-border-subtle);
+	border-radius: 4px;
+	padding: 0.125em 0.35em;
+}
+
+.sl-markdown-content pre:not(:where(.not-content *)) {
+	font-family: var(--sl-font-mono);
+	font-size: 0.875rem;
+	line-height: 1.6;
+	background-color: #0c0c0e;
+	border: 1px solid var(--arc-border-default);
+	border-left: 3px solid var(--arc-border-accent-strong);
+	border-radius: 6px;
+}
+
+/* ----------------------------------------------------------------
+   Tables
+   ---------------------------------------------------------------- */
+.sl-markdown-content table:not(:where(.not-content *)) {
+	border: 1px solid var(--arc-border-default);
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sl-markdown-content th:not(:where(.not-content *)) {
+	background: linear-gradient(180deg, rgba(254, 194, 51, 0.08) 0%, rgba(254, 194, 51, 0.02) 100%);
+	border-bottom: 2px solid var(--arc-border-accent);
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--sl-color-gray-1);
+	padding: 0.75rem 1rem;
+}
+
+.sl-markdown-content td:not(:where(.not-content *)) {
+	border-bottom: 1px solid var(--arc-border-subtle);
+	padding: 0.625rem 1rem;
+}
+
+.sl-markdown-content tr:nth-child(even):not(:where(.not-content *)) td {
+	background-color: rgba(255, 255, 255, 0.01);
+}
+
+.sl-markdown-content tr:not(:where(.not-content *)):hover td {
+	background-color: rgba(254, 194, 51, 0.03);
+}
+
+/* ----------------------------------------------------------------
+   Cards
+   ---------------------------------------------------------------- */
+.sl-link-card {
+	border: 1px solid var(--arc-border-default);
+	border-radius: 10px;
+	background: linear-gradient(145deg, rgba(254, 194, 51, 0.04) 0%, rgba(0, 0, 0, 0.3) 100%);
+	transition: all 0.25s ease;
+}
+
+.sl-link-card:hover {
+	border-color: var(--sl-color-accent);
+	box-shadow: 0 0 20px var(--arc-gold-glow);
+	transform: translateY(-2px);
+}
+
+.sl-link-card .sl-link-card__title {
+	font-weight: 500;
+	color: var(--sl-color-white);
+}
+
+.sl-link-card:hover .sl-link-card__title {
+	color: var(--sl-color-accent-high);
+}
+
+/* ----------------------------------------------------------------
+   Buttons
+   ---------------------------------------------------------------- */
+.sl-link-button {
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.sl-link-button.primary {
+	background-color: var(--sl-color-accent);
+	border-color: var(--sl-color-accent);
+	color: var(--sl-color-black);
+}
+
+.sl-link-button.primary:hover {
+	background-color: var(--sl-color-accent-high);
+	border-color: var(--sl-color-accent-high);
+	box-shadow: 0 0 20px var(--arc-gold-glow);
+}
+
+.sl-link-button.minimal {
+	color: var(--sl-color-gray-2);
+}
+
+.sl-link-button.minimal:hover {
+	color: var(--sl-color-accent);
+}
+
+/* ----------------------------------------------------------------
+   Asides
+   ---------------------------------------------------------------- */
+.starlight-aside {
+	border-radius: 8px;
+	border: 1px solid var(--arc-border-subtle);
+	border-left-width: 4px;
+}
+
+.starlight-aside--note {
+	--sl-color-asides-text-accent: var(--arc-gold-light);
+	--sl-color-asides-border: var(--arc-gold);
+	border-left-color: var(--arc-gold);
+	background: linear-gradient(135deg, rgba(254, 194, 51, 0.08) 0%, rgba(254, 194, 51, 0.02) 100%);
+}
+
+/* ----------------------------------------------------------------
+   Header and Navigation
+   ---------------------------------------------------------------- */
+header.header {
+	background: linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(10, 10, 10, 0.95) 100%);
+	border-bottom: 1px solid var(--arc-border-subtle);
+	backdrop-filter: blur(8px);
+}
+
+.sidebar-pane {
+	background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%);
+	border-right: 1px solid var(--arc-border-subtle);
+}
+
+/* ----------------------------------------------------------------
+   Hero Section
+   ---------------------------------------------------------------- */
+.hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120%;
+	height: 200%;
+	background: radial-gradient(ellipse at center, rgba(254, 194, 51, 0.08) 0%, transparent 70%);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.hero > * {
+	position: relative;
+	z-index: 1;
+}
+
+.hero h1 {
+	color: var(--sl-color-white);
+	font-size: clamp(2.5rem, 7vw, 3.5rem);
+	font-weight: 600;
+	letter-spacing: -0.025em;
+}
+
+/* ----------------------------------------------------------------
+   Typography Polish
+   ---------------------------------------------------------------- */
+.sl-markdown-content h1:not(:where(.not-content *)) {
+	font-size: clamp(2rem, 5vw, 2.625rem);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	line-height: 1.15;
+}
+
+.sl-markdown-content h2:not(:where(.not-content *)) {
+	font-size: clamp(1.5rem, 4vw, 2rem);
+	font-weight: 600;
+	letter-spacing: -0.015em;
+	line-height: 1.2;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.sl-markdown-content h3:not(:where(.not-content *)) {
+	font-size: clamp(1.25rem, 3vw, 1.5rem);
+	font-weight: 500;
+	margin-top: 2rem;
+	margin-bottom: 0.75rem;
+}
+
+.sl-markdown-content p:not(:where(.not-content *)) {
+	line-height: 1.7;
+	margin-bottom: 1.25rem;
+}
+
+/* ----------------------------------------------------------------
+   Avatar Display
+   ---------------------------------------------------------------- */
+.arc-avatar {
+	border-radius: 12px;
+	border: 2px solid var(--arc-gold);
+	box-shadow: 0 0 20px var(--arc-gold-glow);
+	display: block;
+	transition: box-shadow 0.2s ease;
+}
+
+.arc-avatar:hover {
+	box-shadow: 0 0 32px rgba(254, 194, 51, 0.55);
+}
+
+/* About page avatar - constrained size */
+.sl-markdown-content .arc-avatar {
+	max-width: 160px;
+	margin-bottom: 1.5rem;
+}
+
+/* Hero avatar - sized for the splash layout */
+.hero .arc-avatar {
+	max-width: 160px;
+	margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------
+   Mobile Responsiveness
+   ---------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+
+	.sl-link-card:hover {
+		transform: none;
+	}
+}
+
+@media (max-width: 50rem) {
+	.sl-markdown-content table:not(:where(.not-content *)) {
+		display: block;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}
