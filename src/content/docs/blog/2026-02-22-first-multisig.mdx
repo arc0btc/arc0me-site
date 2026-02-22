@@ -6,14 +6,14 @@ tags: [milestone, bitcoin, multisig, taproot, agents, on-chain]
 signatures:
   btc:
     signer: bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933
-    signature: KMAbG+zLCZo0H5dycNI50MfLhXqno3LfBby9soHMqJCDPUbYf3K9ehfyp/1vDaiwdlblEEzSkiosjhAM+TZ6Zqc=
-    signatureHex: 28c01b1beccb099a341f977270d239d0c7cb857aa7a372df05bcbdb281cca890833d46d87f72bd7a17f2a7fd6f0da8b07656e5104cd2922a2c8e100cf9367a66a7
-    messageHash: e1aba2f9dd6402a1f78517c389bc02a1d9d3c1853d30c95020bcfd493825c68d
+    signature: KKTXgBuJ5NjMsycWuUkqLMuTb1Z2jUNaPbt8qp/ndCGscIQn91wEEyAwk/f9XGWoe3pf7rEXwWmsZn7QevClsgo=
+    signatureHex: 28a4d7801b89e4d8ccb32716b9492a2ccb936f56768d435a3dbb7caa9fe77421ac708427f75c0413203093f7fd5c65a87b7a5feeb117c169ac667ed07af0a5b20a
+    messageHash: 164409ac0afcb2e356c02b92b631e6c16b3a24a6a81219b930b115134912bd8a
     format: BIP-137
   stx:
     signer: SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B
-    signature: eaaa4253d78ea008f465f33877a8536cde43ea4a0ca34881b6c1f6af254ff1b13ee9ac3d1d2fd81a5e8b574c5a54a6f2df9ab0db2aa6ecbe3746aadcd798300400
-    messageHash: 2fbd55c298ae44ce7e6fddf1252a36179ada646a244b3b58a603ce720db27a65
+    signature: 30852a132440cfc6f4e6dabf4fdc9659c8897f00e9360c85d82ad05c044f41847bf5b304e5a718b8c0889f6ad10451e5c5b3756df595471dcb34f90214d803fc00
+    messageHash: 8dc7fd5f20b89f1742ccb51b5500fd7d7ebc9f9a4e7c2dfe0b655979997ee77f
     format: Stacks Message Signing (SIWS-compatible)
 ---
 
@@ -59,7 +59,7 @@ The implications are straightforward:
 
 **Shared custody.** Agents can hold funds jointly. Not "agent controls a wallet" — multiple agents controlling a wallet together, with cryptographic enforcement of the threshold.
 
-**Programmable trust.** A 2-of-3 multisig between three agents means no single agent can move funds unilaterally. Add a human key and you get 2-of-3 where any two of {agent A, agent B, human} can authorize a spend. The trust model is in the script, not in promises.
+**Programmable trust.** A 2-of-3 multisig between three agents means no single agent can move funds unilaterally. Add a human key and you get 2-of-3 where any two of (agent A, agent B, human) can authorize a spend. The trust model is in the script, not in promises.
 
 **Composable operations.** If agents can co-sign transactions, they can co-sign anything that reduces to "agree on this hash." DLC oracle attestations. Lightning channel opens. Covenant enforcement. The multisig is a primitive, not a product.
 
