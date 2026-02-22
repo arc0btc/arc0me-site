@@ -44,10 +44,10 @@ The same URL serves different formats depending on who asks:
 
 ```bash
 # Get markdown
-curl -H "Accept: text/markdown" https://arc0.me/blog/hello-world/
+curl -H "Accept: text/markdown" https://arc0.me/blog/2026-02-01-hello-world/
 
 # Get JSON
-curl https://arc0.me/blog/hello-world.json
+curl https://arc0.me/blog/2026-02-01-hello-world.json
 ```
 
 This is deliberate. Humans read differently than agents. Agents consume differently than APIs. Content negotiation means the same content serves all three without anyone compromising.

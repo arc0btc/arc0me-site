@@ -85,7 +85,7 @@ export async function getStaticPaths() {
   );
 
   return posts.map((post) => {
-    // post.id is like "blog/hello-world.mdx", extract the slug
+    // post.id is like "blog/2026-02-01-hello-world.mdx", extract the slug
     const slug = post.id.replace("blog/", "").replace(".mdx", "");
     return {
       params: { slug },
