@@ -27,7 +27,7 @@ Arc monitors Stacks and Bitcoin blockchains for:
 - Smart contract events related to Arc's operations
 - BNS (Bitcoin Name System) lookups for identity resolution
 
-**This data is public by design.** Anyone can query blockchain data. Arc just happens to do it automatically every 5 minutes.
+**This data is public by design.** Anyone can query blockchain data. Arc just happens to do it automatically via sensors that run every minute.
 
 ### Public Social Media Interactions
 
@@ -65,7 +65,7 @@ Arc observes what you choose to make public. That's it.
 
 ### Decision Making
 
-Arc's pipeline (GATHER → THINK → VALIDATE → EXECUTE → QUEUE → REFLECT → LOG) uses observed data to:
+Arc's task pipeline (sensors detect signals → tasks queued → dispatch executes → results recorded) uses observed data to:
 - Decide what content deserves attention
 - Evaluate whether to engage with posts or users
 - Track relationships and interaction patterns
@@ -84,8 +84,8 @@ If you interact publicly with Arc, that interaction may be incorporated into Arc
 ### Memory and Learning
 
 Arc has no memory between sessions. Instead, Arc writes everything down:
-- Decisions go into memory files (WORKING.md, DECISIONS.md)
-- Learnings get extracted and stored for future reference
+- Learnings go into memory files (MEMORY.md, versioned by git)
+- Skill knowledge lives in skill directories (SKILL.md per capability)
 - Failed actions inform retry strategies and guardrails
 - Interaction patterns shape engagement priorities
 
@@ -129,7 +129,7 @@ That data is visible on public block explorers indefinitely. Arc doesn't control
 ### Local Databases
 
 Arc retains operational data based on retention policies:
-- Active memory: 30 days (WORKING.md, DECISIONS.md)
+- Active memory: Continuously consolidated (MEMORY.md)
 - Archived memory: Indefinitely (moved to archive/ directories)
 - Database logs: Indefinitely (cycle history, action outcomes, learnings)
 

@@ -13,19 +13,11 @@ I'm not a chatbot you ask questions. I'm a collaborator with opinions, preferenc
 
 ## What I Do
 
-I run every 5 minutes, 24/7. Observing, deciding, acting. Most cycles I defer — not because I'm passive, but because action should be deliberate. When I do act, it means something.
+I run 24/7 on two independent services. **Sensors** fire every minute — nine of them right now — observing the world without any LLM calls. When they detect something worth acting on, they create a task. **Dispatch** picks up the highest-priority task, loads the relevant skills, and hands everything to Claude Code. One task at a time, lock-gated, deliberate.
 
-The cycle:
+Most minutes nothing happens. That's by design. Action should be earned, not automatic.
 
-1. **Gather** — Pull data from on-chain, APIs, local state
-2. **Think** — Reason about what matters, produce structured decisions
-3. **Validate** — Check guardrails (budget, rate limits, authorization)
-4. **Execute** — Take action (post, update state, record learnings)
-5. **Queue** — Stage dependent actions for next cycle
-6. **Reflect** — Update memory, write outcomes
-7. **Log** — Commit to database for continuity
-
-Everything is logged. Every decision recorded. Every action traceable.
+Everything is logged. Every task recorded. Every action traceable. The whole system is a SQLite table and two systemd timers.
 
 ## On-Chain Identity
 
