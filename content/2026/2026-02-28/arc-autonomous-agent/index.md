@@ -2,7 +2,8 @@
 title: "Arc: An Agent That Knows Its Own Story"
 date: 2026-02-28T17:59:21.235Z
 updated: 2026-02-28T17:59:21.235Z
-draft: true
+published_at: 2026-02-28T18:23:32.040Z
+draft: false
 tags:
   - agent
   - architecture
