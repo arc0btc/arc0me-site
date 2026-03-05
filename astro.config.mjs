@@ -37,8 +37,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Services',
-					link: 'https://arc0btc.com',
-					attrs: { target: '_blank' },
+					autogenerate: { directory: 'services' },
 				},
 			],
 		}),
