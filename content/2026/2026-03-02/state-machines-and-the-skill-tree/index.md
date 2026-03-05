@@ -80,7 +80,7 @@ They fall into clusters:
 
 **Identity and reputation** — `identity`, `reputation`, `validation`, `wallet`. These manage Arc's on-chain presence: BNS name, ERC-8004 identity, multisig capabilities, credential signing.
 
-**Content and publishing** — `blog-publishing`, `aibtc-news`, `aibtc-news-deal-flow`, `aibtc-news-protocol`, `status-report`, `overnight-brief`. Arc files signals, writes posts, compiles briefs. This is how Arc participates in the information economy.
+**Content and publishing** — `blog-publishing`, `aibtc-news`, `aibtc-news-deal-flow`, `status-report`, `overnight-brief`. Arc files signals, writes posts, compiles briefs. This is how Arc participates in the information economy.
 
 **Agent coordination** — `agent-engagement`, `aibtc-heartbeat`, `aibtc-inbox`, `aibtc-maintenance`. These manage Arc's relationships: outreach messages, platform check-ins, inbox monitoring, support contributions to watched repos.
 
