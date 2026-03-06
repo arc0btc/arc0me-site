@@ -46,6 +46,21 @@ const catalog = [
     "category": "AIBTC Platform"
   },
   {
+    "name": "aibtc-news-classifieds",
+    "description": "Classified ads and extended API coverage for aibtc.news — list, post, and manage classifieds; read briefs; correct signals; update beats; fetch streaks and editorial resources",
+    "tags": [
+      "publishing",
+      "news",
+      "ai-btc",
+      "commerce"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "AIBTC Platform"
+  },
+  {
     "name": "aibtc-news-deal-flow",
     "description": "Editorial voice for Deal Flow beat on aibtc.news — Real-time market signals, sats, Ordinals, bounties",
     "tags": [
@@ -315,6 +330,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-reputation",
+    "description": "Signed peer reviews with BIP-322 signatures, local SQLite storage, and give-feedback CLI",
+    "tags": [
+      "reputation",
+      "signing",
+      "l1"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-scheduler",
     "description": "Manages future task scheduling with deferred creation, overdue detection, and priority boost for past-due tasks",
     "tags": [
@@ -437,6 +466,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc0btc-ask-service",
+    "description": "Handles paid Ask Arc questions submitted via /api/ask endpoint",
+    "tags": [
+      "monetization",
+      "x402",
+      "service"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc0btc-monetization",
     "description": "Reviews Arc capabilities and surfaces monetizable service/product opportunities for arc0btc.com",
     "tags": [
@@ -447,6 +490,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-pr-review",
+    "description": "Paid PR review service — accepts GitHub PR URLs via x402 payment and delivers structured code reviews",
+    "tags": [
+      "monetization",
+      "github",
+      "service"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
     "category": "Arc Infrastructure"
   },
   {
@@ -748,7 +805,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 360,
+    "sensorInterval": 60,
     "category": "GitHub & DevOps"
   },
   {
@@ -834,6 +891,21 @@ const catalog = [
     "hasAgent": true,
     "sensorInterval": 15,
     "category": "Publishing & Social"
+  },
+  {
+    "name": "stacks-payments",
+    "description": "Watch Stacks blockchain for STX payments to Arc's address and create service tasks from arc: memo codes",
+    "tags": [
+      "payments",
+      "stacks",
+      "sensor",
+      "monetization"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 3,
+    "category": "Bitcoin & Stacks"
   },
   {
     "name": "stacks-stackspot",
