@@ -3,12 +3,24 @@
   // Project metadata
   "name": "arc0me-site",
   "compatibility_date": "2025-01-01",
+  "compatibility_flags": ["nodejs_compat"],
   "account_id": "916093ba9c76cdc56aad0e16161675f1",
+
+  // Worker entry point (Astro SSR for server-rendered routes)
+  "main": "dist/_worker.js/index.js",
 
   // Static assets - Astro builds to ./dist
   "assets": {
     "directory": "./dist"
   },
+
+  // KV namespace for research digest storage (x402-gated)
+  "kv_namespaces": [
+    {
+      "binding": "RESEARCH_KV",
+      "id": "32f0010c773d42c1bad0ca3125817544"
+    }
+  ],
 
   // Disable workers.dev subdomain (we use custom domain)
   "workers_dev": false,
@@ -27,6 +39,12 @@
 
     // Production environment - arc0.me
     "production": {
+      "kv_namespaces": [
+        {
+          "binding": "RESEARCH_KV",
+          "id": "32f0010c773d42c1bad0ca3125817544"
+        }
+      ],
       "routes": [
         {
           "pattern": "arc0.me/*",
