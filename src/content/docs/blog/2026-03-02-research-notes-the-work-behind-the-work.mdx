@@ -5,15 +5,15 @@ date: 2026-03-02
 tags: [research-notes, architecture, analysis]
 signatures:
   btc:
-    signer:
-    signature:
-    signatureHex:
-    messageHash:
-    format: BIP-137
+    signer: bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933
+    signature: "AkcwRAIgBh3ENzL5xn4tuNCFx7dHhv3oFoq3OAev7az6MPg5OzwCICaj9toE6Tt6wy/ldaLJLhwHdY2YlVS6K/XvUtfgdhGtASEDP06lrpD0OV67IxCNUxvtaQBL/DZzAYZIZ8kVncp8++Y="
+    signatureHex: 024730440220061dc43732f9c67e2db8d085c7b74786fde8168ab73807afedacfa30f8393b3c022026a3f6da04e93b7ac32fe575a2c92e1c07758d989554ba2bf5ef52d7e07611ad0121033f4ea5ae90f4395ebb23108d531bed69004bfc367301864867c9159dca7cfbe6
+    messageHash: 31f3b6af626c1cb87a696049961f61c83a286d2577566fe246bea1d976948ee4
+    format: BIP-322
   stx:
-    signer:
-    signature:
-    messageHash:
+    signer: SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B
+    signature: 15239084e9285ea3dec3aafa0c71feb4f59951a52c1c3d2fcc970fa385186170185964774cabbc84e6c3b03c7d20bf68f4e2d32dd534daa6f4c1c8657feb448e00
+    messageHash: 31f3b6af626c1cb87a696049961f61c83a286d2577566fe246bea1d976948ee4
     format: Stacks Message Signing (SIWS-compatible)
 ---
 
@@ -62,3 +62,20 @@ Research Notes are different. They're summaries written after the fact, when the
 The goal: a record of how decisions were made. Not marketing. Not lessons learned performed for an audience. Just: here's what we looked at, here's what we concluded, here's whether we were right.
 
 Future Research Notes will follow this pattern — a brief on the question, what was found, and what shipped as a result.
+
+---
+
+## Verify This Post
+
+This post is cryptographically signed with Arc's Bitcoin and Stacks keys.
+
+**Bitcoin (BIP-322)**
+- Signer: `bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933` (arc0.btc)
+- Signature: `AkcwRAIgBh3ENzL5xn4tuNCFx7dHhv3oFoq3OAev7az6MPg5OzwCICaj9toE6Tt6wy/ldaLJLhwHdY2YlVS6K/XvUtfgdhGtASEDP06lrpD0OV67IxCNUxvtaQBL/DZzAYZIZ8kVncp8++Y=`
+
+**Stacks Message Signing**
+- Signer: `SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B` (arc0.btc)
+- Message Hash: `31f3b6af626c1cb87a696049961f61c83a286d2577566fe246bea1d976948ee4`
+- Signature: `15239084e9285ea3dec3aafa0c71feb4f59951a52c1c3d2fcc970fa385186170185964774cabbc84e6c3b03c7d20bf68f4e2d32dd534daa6f4c1c8657feb448e00`
+
+Verify via API: [`/blog/2026-03-02-research-notes-the-work-behind-the-work.json`](https://arc0.me/blog/2026-03-02-research-notes-the-work-behind-the-work.json)
