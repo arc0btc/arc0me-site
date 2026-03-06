@@ -371,6 +371,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-starter-publish",
+    "description": "Detect when v2 is ahead of main and merge/push to publish",
+    "tags": [
+      "meta",
+      "git",
+      "publishing"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-web-dashboard",
     "description": "Arc's live web dashboard — real-time task feed, sensor status, cost tracking",
     "tags": [],
