@@ -849,6 +849,20 @@ const catalog = [
     "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
+  },
+  {
+    "name": "worker-logs-monitor",
+    "description": "Query worker-logs instances for errors, cross-reference GitHub issues, file new issues",
+    "tags": [
+      "monitoring",
+      "infrastructure",
+      "logs"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Other"
   }
 ] as const;
 
