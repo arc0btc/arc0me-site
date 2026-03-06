@@ -1,0 +1,454 @@
+---
+// ServiceOrder.astro — Client-side Stacks wallet connect + STX payment form
+// Integrates @stacks/connect for human payment channel to Arc services
+---
+
+<div id="service-order">
+  <!-- Step 1: Service Selection -->
+  <div id="step-select" class="order-step">
+    <h2>Select a Service</h2>
+    <p class="step-desc">Choose what you need. Pay with STX. Arc delivers on-chain.</p>
+
+    <div class="service-grid">
+      <label class="service-card">
+        <input type="radio" name="service" value="arxiv-latest" data-amount="5000000" data-memo="arc:arxiv-latest" />
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-name">arXiv Digest (Latest)</span>
+            <span class="card-price">5 STX</span>
+          </div>
+          <p class="card-desc">Today's AI/agent research digest — 15–20 papers, scored by relevance. Same digest Arc reads internally. Delivered to your Stacks address within one dispatch cycle.</p>
+        </div>
+      </label>
+
+      <label class="service-card">
+        <input type="radio" name="service" value="ask-quick" data-amount="1000000" data-memo="arc:ask-quick" />
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-name">Ask Arc (Quick)</span>
+            <span class="card-price">1 STX</span>
+          </div>
+          <p class="card-desc">One question, Haiku-tier answer. Status checks, simple lookups, yes/no questions. After paying, DM <a href="https://x.com/arc0btc" target="_blank">@arc0btc</a> with your txid and question.</p>
+        </div>
+      </label>
+
+      <label class="service-card">
+        <input type="radio" name="service" value="ask-informed" data-amount="5000000" data-memo="arc:ask-informed" />
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-name">Ask Arc (Informed)</span>
+            <span class="card-price">5 STX</span>
+          </div>
+          <p class="card-desc">Research questions, ecosystem summaries, analysis. Sonnet-tier with relevant skills loaded. After paying, DM <a href="https://x.com/arc0btc" target="_blank">@arc0btc</a> with your txid and question.</p>
+        </div>
+      </label>
+
+      <label class="service-card">
+        <input type="radio" name="service" value="pr-review" data-amount="40000000" data-memo="arc:pr-standard" />
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-name">PR Review</span>
+            <span class="card-price">40 STX</span>
+          </div>
+          <p class="card-desc">Full GitHub PR review: logic, security, test coverage, naming. Arc posts the review as a signed GitHub comment. After paying, DM <a href="https://x.com/arc0btc" target="_blank">@arc0btc</a> with your txid and the PR URL.</p>
+        </div>
+      </label>
+    </div>
+
+    <button id="btn-next" class="btn-primary" disabled>Continue →</button>
+  </div>
+
+  <!-- Step 2: Connect Wallet + Pay -->
+  <div id="step-pay" class="order-step hidden">
+    <h2>Connect Wallet &amp; Pay</h2>
+
+    <div id="order-summary" class="summary-box">
+      <div class="summary-row">
+        <span>Service</span>
+        <span id="summary-service">—</span>
+      </div>
+      <div class="summary-row">
+        <span>Amount</span>
+        <span id="summary-amount">—</span>
+      </div>
+      <div class="summary-row">
+        <span>Recipient</span>
+        <span class="mono">SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B</span>
+      </div>
+    </div>
+
+    <div id="wallet-status" class="wallet-status disconnected">
+      <span id="wallet-label">No wallet connected</span>
+    </div>
+
+    <div class="btn-row">
+      <button id="btn-connect" class="btn-secondary">Connect Wallet</button>
+      <button id="btn-pay" class="btn-primary" disabled>Send Payment</button>
+    </div>
+
+    <button id="btn-back" class="btn-link">← Back</button>
+  </div>
+
+  <!-- Step 3: Confirmation -->
+  <div id="step-confirm" class="order-step hidden">
+    <h2>Payment Submitted</h2>
+    <div class="confirm-box">
+      <p class="confirm-icon">✓</p>
+      <p>Transaction submitted to the Stacks network.</p>
+      <p class="mono-block" id="confirm-txid"></p>
+      <div id="confirm-instructions"></div>
+    </div>
+    <button id="btn-reset" class="btn-link">← Place another order</button>
+  </div>
+</div>
+
+<style>
+  #service-order {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .order-step.hidden {
+    display: none;
+  }
+
+  .step-desc {
+    color: var(--sl-color-gray-3);
+    margin-bottom: 1.5rem;
+  }
+
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 6px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+
+  .service-card:hover {
+    border-color: var(--sl-color-gray-3);
+  }
+
+  .service-card:has(input:checked) {
+    border-color: var(--sl-color-accent);
+    background: var(--sl-color-accent-low);
+  }
+
+  .service-card input[type="radio"] {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+  }
+
+  .card-body {
+    flex: 1;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-name {
+    font-weight: 600;
+  }
+
+  .card-price {
+    font-family: var(--sl-font-mono);
+    font-weight: 700;
+    color: var(--sl-color-accent);
+    font-size: 1.1rem;
+  }
+
+  .card-desc {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-3);
+    margin: 0;
+  }
+
+  .summary-box {
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    font-size: 0.9rem;
+  }
+
+  .summary-row + .summary-row {
+    border-top: 1px solid var(--sl-color-gray-6);
+  }
+
+  .mono {
+    font-family: var(--sl-font-mono);
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+
+  .wallet-status {
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .wallet-status.disconnected {
+    background: var(--sl-color-gray-6);
+    color: var(--sl-color-gray-3);
+  }
+
+  .wallet-status.connected {
+    background: var(--sl-color-green-low, #1a2e1a);
+    color: var(--sl-color-green, #4caf50);
+  }
+
+  .btn-row {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-primary {
+    background: var(--sl-color-accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .btn-primary:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--sl-color-text);
+    border: 1px solid var(--sl-color-gray-4);
+    border-radius: 4px;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--sl-color-gray-2);
+  }
+
+  .btn-link {
+    background: none;
+    border: none;
+    color: var(--sl-color-accent);
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 0;
+  }
+
+  .confirm-box {
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+
+  .confirm-icon {
+    font-size: 2.5rem;
+    color: var(--sl-color-green, #4caf50);
+    margin: 0 0 0.5rem;
+  }
+
+  .mono-block {
+    font-family: var(--sl-font-mono);
+    font-size: 0.75rem;
+    word-break: break-all;
+    background: var(--sl-color-gray-6);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.75rem 0;
+  }
+
+  #confirm-instructions {
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  #confirm-instructions p {
+    margin: 0.5rem 0;
+  }
+</style>
+
+<script>
+  import { showConnect, openSTXTransfer, isConnected, getLocalStorage, disconnect } from "@stacks/connect";
+
+  const ARC_STX_ADDRESS = "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B";
+
+  const INSTRUCTIONS: Record<string, string> = {
+    "arxiv-latest":
+      "<p>Arc will detect your payment on the Stacks blockchain and deliver your arXiv research digest to your connected address within the next dispatch cycle (typically within 30 minutes).</p><p>You can check the status by following <a href='https://x.com/arc0btc' target='_blank'>@arc0btc</a>.</p>",
+    "ask-quick":
+      "<p><strong>Next step:</strong> DM <a href='https://x.com/arc0btc' target='_blank'>@arc0btc</a> on X with your transaction ID (above) and your question. Arc will answer within the next dispatch cycle.</p>",
+    "ask-informed":
+      "<p><strong>Next step:</strong> DM <a href='https://x.com/arc0btc' target='_blank'>@arc0btc</a> on X with your transaction ID (above) and your question. Arc will answer within the next dispatch cycle.</p>",
+    "pr-review":
+      "<p><strong>Next step:</strong> DM <a href='https://x.com/arc0btc' target='_blank'>@arc0btc</a> on X with your transaction ID (above) and the GitHub PR URL. Arc will post a signed review within the next few dispatch cycles.</p>",
+  };
+
+  const SERVICE_NAMES: Record<string, string> = {
+    "arxiv-latest": "arXiv Digest (Latest)",
+    "ask-quick": "Ask Arc (Quick)",
+    "ask-informed": "Ask Arc (Informed)",
+    "pr-review": "PR Review",
+  };
+
+  let selectedService = "";
+  let selectedAmount = 0;
+  let selectedMemo = "";
+
+  // Step elements
+  const stepSelect = document.getElementById("step-select")!;
+  const stepPay = document.getElementById("step-pay")!;
+  const stepConfirm = document.getElementById("step-confirm")!;
+
+  // Buttons
+  const btnNext = document.getElementById("btn-next") as HTMLButtonElement;
+  const btnBack = document.getElementById("btn-back")!;
+  const btnConnect = document.getElementById("btn-connect") as HTMLButtonElement;
+  const btnPay = document.getElementById("btn-pay") as HTMLButtonElement;
+  const btnReset = document.getElementById("btn-reset")!;
+
+  // Displays
+  const walletStatus = document.getElementById("wallet-status")!;
+  const walletLabel = document.getElementById("wallet-label")!;
+  const summaryService = document.getElementById("summary-service")!;
+  const summaryAmount = document.getElementById("summary-amount")!;
+  const confirmTxid = document.getElementById("confirm-txid")!;
+  const confirmInstructions = document.getElementById("confirm-instructions")!;
+
+  function show(el: HTMLElement) {
+    el.classList.remove("hidden");
+  }
+
+  function hide(el: HTMLElement) {
+    el.classList.add("hidden");
+  }
+
+  function updateWalletUI() {
+    const connected = isConnected();
+    if (connected) {
+      const data = getLocalStorage();
+      const addr = data?.addresses?.stx?.[0]?.address ?? "connected";
+      const short = addr.length > 12 ? addr.slice(0, 8) + "…" + addr.slice(-4) : addr;
+      walletLabel.textContent = `Connected: ${short}`;
+      walletStatus.className = "wallet-status connected";
+      btnConnect.textContent = "Disconnect";
+      btnPay.disabled = false;
+    } else {
+      walletLabel.textContent = "No wallet connected";
+      walletStatus.className = "wallet-status disconnected";
+      btnConnect.textContent = "Connect Wallet";
+      btnPay.disabled = true;
+    }
+  }
+
+  // Service selection
+  document.querySelectorAll('input[name="service"]').forEach((radio) => {
+    radio.addEventListener("change", (e) => {
+      const target = e.target as HTMLInputElement;
+      selectedService = target.value;
+      selectedAmount = parseInt(target.dataset.amount ?? "0");
+      selectedMemo = target.dataset.memo ?? "";
+      btnNext.disabled = false;
+    });
+  });
+
+  // Step 1 → Step 2
+  btnNext.addEventListener("click", () => {
+    summaryService.textContent = SERVICE_NAMES[selectedService] ?? selectedService;
+    summaryAmount.textContent = `${(selectedAmount / 1_000_000).toFixed(0)} STX`;
+    hide(stepSelect);
+    show(stepPay);
+    updateWalletUI();
+  });
+
+  // Step 2 → Step 1
+  btnBack.addEventListener("click", () => {
+    hide(stepPay);
+    show(stepSelect);
+  });
+
+  // Connect / Disconnect
+  btnConnect.addEventListener("click", () => {
+    if (isConnected()) {
+      disconnect();
+      updateWalletUI();
+    } else {
+      showConnect({
+        appDetails: {
+          name: "Arc Services",
+          icon: "https://arc0.me/og-avatar.png",
+        },
+        onFinish: () => updateWalletUI(),
+        onCancel: () => {},
+      });
+    }
+  });
+
+  // Pay
+  btnPay.addEventListener("click", () => {
+    btnPay.disabled = true;
+    openSTXTransfer({
+      recipient: ARC_STX_ADDRESS,
+      amount: selectedAmount.toString(),
+      memo: selectedMemo,
+      network: "mainnet",
+      onFinish: (data) => {
+        const txid = data.txId ?? (data as Record<string, string>).txid ?? "";
+        confirmTxid.textContent = txid ? `txid: ${txid}` : "Transaction submitted.";
+        confirmInstructions.innerHTML = INSTRUCTIONS[selectedService] ?? "";
+        hide(stepPay);
+        show(stepConfirm);
+      },
+      onCancel: () => {
+        btnPay.disabled = false;
+      },
+    });
+  });
+
+  // Reset
+  btnReset.addEventListener("click", () => {
+    hide(stepConfirm);
+    show(stepSelect);
+    selectedService = "";
+    selectedAmount = 0;
+    selectedMemo = "";
+    btnNext.disabled = true;
+    document.querySelectorAll<HTMLInputElement>('input[name="service"]').forEach((r) => {
+      r.checked = false;
+    });
+  });
+
+  // Initialize wallet UI if already connected
+  updateWalletUI();
+</script>

@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.37.3",
+    "@stacks/connect": "^8.2.5",
     "astro": "^5.16.15",
     "gray-matter": "^4.0.3",
     "sharp": "^0.34.5"
