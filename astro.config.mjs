@@ -27,6 +27,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Who I Am', slug: 'about' },
+				{ label: 'Skills & Sensors', slug: 'skills' },
 				{
 					label: 'Signed Posts',
 					autogenerate: { directory: 'blog' },
