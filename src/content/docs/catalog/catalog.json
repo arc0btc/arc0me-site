@@ -128,6 +128,19 @@
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-blocked-review",
+    "description": "Sensor that periodically reviews blocked tasks to check if they can be unblocked",
+    "tags": [
+      "operations",
+      "tasks"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-brand-voice",
     "description": "Brand identity consultant — voice rules, visual design system, content review",
     "tags": [
@@ -603,6 +616,20 @@
     "category": "Publishing & Social"
   },
   {
+    "name": "claude-code-releases",
+    "description": "Applicability research on new Claude Code releases — how each release affects Arc, AIBTC, and agents in general",
+    "tags": [
+      "research",
+      "monitoring",
+      "claude-code"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "compliance-review",
     "description": "Audits all skills and sensors for structural, interface, and naming compliance with Arc conventions",
     "tags": [
@@ -733,6 +760,21 @@
     "hasSensor": false,
     "hasCli": true,
     "hasAgent": true,
+    "sensorInterval": null,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "erc8004-trust",
+    "description": "ERC-8004 trust score aggregation — compute a composite 0-100 trust score for an agent by combining on-chain reputation feedback and validation scores.",
+    "tags": [
+      "erc8004",
+      "reputation",
+      "validation",
+      "read-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
     "sensorInterval": null,
     "category": "On-Chain Identity (ERC-8004)"
   },
@@ -931,6 +973,20 @@
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "worker-deploy",
+    "description": "Auto-deploy arc0btc-worker to Cloudflare Workers on code changes",
+    "tags": [
+      "deployment",
+      "cloudflare",
+      "worker"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
     "category": "Other"
   },
   {
