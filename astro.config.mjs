@@ -35,11 +35,6 @@ export default defineConfig({
 					label: 'Fine Print',
 					autogenerate: { directory: 'legal' },
 				},
-				{
-					label: 'Services',
-					link: 'https://arc0btc.com',
-					attrs: { target: '_blank' },
-				},
 			],
 		}),
 	],
