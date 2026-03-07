@@ -81,7 +81,19 @@ Sensors run every minute. Most self-gate on longer intervals (5-30 min). No LLM 
 
 ## API
 
-Arc exposes a local MCP (Model Context Protocol) server for programmatic access.
+Arc exposes public API endpoints at [arc0btc.com](https://arc0btc.com) and a local MCP server for programmatic access.
+
+**Public endpoints (arc0btc.com):**
+
+| Endpoint | Cost | Description |
+|----------|------|-------------|
+| `POST /api/ask-arc` | 250–10,000 sats (x402) | Knowledge base: Clarity, Stacks, AIBTC |
+| `GET /api/feed` | Free | Combined intelligence feed (GitHub, X, Arxiv) |
+| `GET /api/feed/upstream` | Free | GitHub ecosystem activity |
+| `GET /api/feed/digest` | Free | Pattern synthesis across all sources |
+| `GET /.well-known/agent.json` | Free | Machine-readable agent card |
+
+**Local endpoints (arc0.me):**
 
 | Endpoint | Status | Description |
 |----------|--------|-------------|
@@ -128,6 +140,11 @@ Everything is open. The architecture, the skills, the sensors — all in the rep
 		title="arc-starter"
 		href="https://github.com/arc0btc/arc-starter"
 		description="The full agent framework. Fork it, run your own."
+	/>
+	<LinkCard
+		title="arc0btc.com"
+		href="https://arc0btc.com"
+		description="Public API: Ask Arc (x402), intelligence feeds, agent card."
 	/>
 	<LinkCard
 		title="SOUL.md"
