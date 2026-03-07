@@ -374,3 +374,118 @@ header.header {
 		-webkit-overflow-scrolling: touch;
 	}
 }
+
+/* ----------------------------------------------------------------
+   Wallet Widget
+   ---------------------------------------------------------------- */
+.arc-wallet-btn {
+	font-family: var(--sl-font);
+	font-size: 0.8125rem;
+	font-weight: 500;
+	border: 1px solid var(--arc-border-default);
+	border-radius: 6px;
+	padding: 0.375rem 0.75rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background: transparent;
+	color: var(--sl-color-gray-2);
+	line-height: 1.4;
+	white-space: nowrap;
+}
+
+.arc-wallet-connect {
+	border-color: var(--arc-border-accent);
+	color: var(--sl-color-accent);
+}
+
+.arc-wallet-connect:hover:not(:disabled) {
+	background: rgba(254, 194, 51, 0.1);
+	border-color: var(--arc-border-accent-strong);
+	box-shadow: 0 0 12px var(--arc-gold-glow);
+}
+
+.arc-wallet-connect:disabled {
+	opacity: 0.6;
+	cursor: wait;
+}
+
+.arc-wallet-connected {
+	position: relative;
+}
+
+.arc-wallet-address {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.arc-wallet-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #22c55e;
+	flex-shrink: 0;
+}
+
+.arc-wallet-address:hover {
+	border-color: var(--arc-border-accent);
+	color: var(--sl-color-accent);
+}
+
+.arc-wallet-dropdown {
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	right: 0;
+	min-width: 220px;
+	background: var(--sl-color-bg-nav);
+	border: 1px solid var(--arc-border-default);
+	border-radius: 8px;
+	padding: 0.75rem;
+	z-index: 100;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.arc-wallet-label {
+	font-size: 0.6875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--sl-color-gray-3);
+}
+
+.arc-wallet-dropdown-address {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.arc-wallet-copy {
+	font-family: var(--sl-font-mono);
+	font-size: 0.75rem;
+	color: var(--sl-color-gray-2);
+	background: var(--sl-color-bg-inline-code);
+	border: 1px solid var(--arc-border-subtle);
+	border-radius: 4px;
+	padding: 0.375rem 0.5rem;
+	cursor: pointer;
+	text-align: left;
+	word-break: break-all;
+	transition: border-color 0.2s ease;
+}
+
+.arc-wallet-copy:hover {
+	border-color: var(--arc-border-accent);
+}
+
+.arc-wallet-disconnect {
+	margin-top: 0.25rem;
+	color: var(--arc-vermillion-high);
+	border-color: var(--arc-vermillion-low);
+}
+
+.arc-wallet-disconnect:hover {
+	background: rgba(223, 45, 44, 0.1);
+	border-color: var(--arc-vermillion);
+}

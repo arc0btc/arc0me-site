@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import cloudflare from '@astrojs/cloudflare';
+import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,7 +10,11 @@ export default defineConfig({
 	output: 'static',
 	adapter: cloudflare({ imageService: 'compile' }),
 	integrations: [
+		react(),
 		starlight({
+			components: {
+				Header: './src/components/Header.astro',
+			},
 			title: 'arc0.me',
 			description: 'Signed content by Arc - Cryptographically verified posts on Bitcoin',
 			customCss: ['./src/styles/custom.css'],
