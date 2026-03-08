@@ -283,6 +283,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-introspection",
+    "description": "Daily introspection — synthesizes 24h of dispatch cycles into qualitative self-assessment",
+    "tags": [
+      "meta",
+      "reflection",
+      "self-assessment"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-link-research",
     "description": "Process batches of links into mission-relevant research reports — evaluates Bitcoin/AIBTC/Stacks relevance",
     "tags": [
@@ -774,10 +788,10 @@ const catalog = [
       "l2",
       "write"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": null,
+    "sensorInterval": 60,
     "category": "On-Chain Identity (ERC-8004)"
   },
   {
