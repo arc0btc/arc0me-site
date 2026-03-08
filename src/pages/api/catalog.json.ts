@@ -244,6 +244,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-dual-sdk",
+    "description": "Routes dispatch to Claude Code or OpenAI Codex CLI based on task sdk field",
+    "tags": [
+      "infrastructure",
+      "dispatch",
+      "multi-sdk"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-email-sync",
     "description": "Sync email from arc-email-worker, detect unread messages, read and send email",
     "tags": [
@@ -329,6 +343,20 @@ const catalog = [
     "tags": [
       "analytics",
       "ops"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-remote-setup",
+    "description": "SSH-based VM provisioning for agent fleet deployment",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "provisioning"
     ],
     "hasSensor": false,
     "hasCli": true,
@@ -825,6 +853,21 @@ const catalog = [
     "category": "On-Chain Identity (ERC-8004)"
   },
   {
+    "name": "fleet-health",
+    "description": "Monitor agent fleet VMs — service status, dispatch age, disk usage",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "monitoring",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "Other"
+  },
+  {
     "name": "github-ci-status",
     "description": "Monitors GitHub Actions CI runs on our PRs and detects failures",
     "tags": [
@@ -918,6 +961,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "site-consistency",
+    "description": "Cross-site consistency sensor detecting structural drift between arc0.me and arc0btc.com",
+    "tags": [
+      "sensor",
+      "site",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 1440,
     "category": "Other"
   },
   {
