@@ -716,6 +716,20 @@
     "category": "DeFi & Governance"
   },
   {
+    "name": "defi-zest",
+    "description": "Zest Protocol yield farming — supply, withdraw, claim rewards, position monitoring",
+    "tags": [
+      "defi",
+      "yield",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "DeFi & Governance"
+  },
+  {
     "name": "dev-landing-page-review",
     "description": "Full React/Next.js PR review — 77 performance rules + 10 composition rules + ~100 UI/accessibility rules for aibtcdev/landing-page PRs",
     "tags": [
