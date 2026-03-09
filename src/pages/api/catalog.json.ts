@@ -140,7 +140,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 120,
+    "sensorInterval": 240,
     "category": "Arc Infrastructure"
   },
   {
@@ -168,7 +168,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": 120,
+    "sensorInterval": 360,
     "category": "Arc Infrastructure"
   },
   {
@@ -208,10 +208,11 @@ const catalog = [
   },
   {
     "name": "arc-cost-alerting",
-    "description": "Monitor daily spend and alert when thresholds are exceeded — sensor-only, fires once per day at $30 default",
+    "description": "Monitor daily fleet spend (Claude + Codex) and alert when thresholds are exceeded",
     "tags": [
       "monitoring",
-      "cost"
+      "cost",
+      "fleet"
     ],
     "hasSensor": true,
     "hasCli": false,
@@ -231,6 +232,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-dispatch-eval",
+    "description": "Post-dispatch evaluation sensor — scores task outcomes and creates improvement tasks",
+    "tags": [
+      "meta",
+      "quality",
+      "feedback-loop"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
     "category": "Arc Infrastructure"
   },
   {
@@ -293,7 +308,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": 30,
+    "sensorInterval": 120,
     "category": "Arc Infrastructure"
   },
   {
@@ -307,7 +322,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 1440,
+    "sensorInterval": 360,
     "category": "Arc Infrastructure"
   },
   {
@@ -335,6 +350,34 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-observatory",
+    "description": "Consolidated web UI for multi-agent fleet observability",
+    "tags": [
+      "infrastructure",
+      "web",
+      "fleet"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-ops-review",
+    "description": "Tracks task creation vs completion rate, backlog trend, fleet utilization, and cost-per-useful-output",
+    "tags": [
+      "ops",
+      "metrics",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 240,
     "category": "Arc Infrastructure"
   },
   {
@@ -399,6 +442,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-roundtable",
+    "description": "Inter-agent structured discussion protocol over HTTP",
+    "tags": [
+      "fleet",
+      "collaboration",
+      "discussion"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-scheduler",
     "description": "Manages future task scheduling with deferred creation, overdue detection, and priority boost for past-due tasks",
     "tags": [
@@ -423,7 +480,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 1440,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -465,7 +522,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": 30,
+    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
@@ -508,11 +565,12 @@ const catalog = [
   },
   {
     "name": "arc-worktrees",
-    "description": "Opt-in git worktree isolation for high-risk dispatch tasks",
+    "description": "Opt-in git worktree isolation with experiment evaluation for dispatch tasks",
     "tags": [
       "isolation",
       "safety",
-      "dispatch"
+      "dispatch",
+      "experiment"
     ],
     "hasSensor": false,
     "hasCli": true,
@@ -591,6 +649,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "auto-queue",
+    "description": "Generates next task batch based on completion patterns and queue depth",
+    "tags": [
+      "orchestration",
+      "scheduling",
+      "automation"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "Other"
+  },
+  {
     "name": "bitcoin-quorumclaw",
     "description": "Coordinate Bitcoin Taproot M-of-N multisig transactions via the QuorumClaw agent-multisig API. Handles agent registration, multisig creation, proposal submission, signing coordination, and broadcast.",
     "tags": [
@@ -620,7 +692,7 @@ const catalog = [
   },
   {
     "name": "bitcoin-wallet",
-    "description": "Wallet management and cryptographic signing for Stacks and Bitcoin — unlock, lock, info, status, BTC/Stacks message signing, and BTC signature verification.",
+    "description": "Wallet management, cryptographic signing, and STX transfers for Stacks and Bitcoin — unlock, lock, info, status, BTC/Stacks message signing, BTC signature verification, and STX sending.",
     "tags": [
       "infrastructure",
       "sensitive",
@@ -853,6 +925,149 @@ const catalog = [
     "category": "On-Chain Identity (ERC-8004)"
   },
   {
+    "name": "fleet-broadcast",
+    "description": "Send a task to all fleet agents simultaneously",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "orchestration"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-collect",
+    "description": "Gather completed task results from all agents for a topic",
+    "tags": [
+      "fleet",
+      "orchestration",
+      "results"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-comms",
+    "description": "Detect agents that go silent — no dispatch or self-report for >1h",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "monitoring",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-consensus",
+    "description": "3-of-5 fleet consensus protocol for high-impact decisions",
+    "tags": [
+      "fleet",
+      "governance",
+      "consensus"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-dashboard",
+    "description": "Aggregate fleet metrics — task counts and cost per agent — every 30 minutes",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "monitoring",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-deploy",
+    "description": "Canary deployment pipeline — code change → test on one agent → roll out to all",
+    "tags": [
+      "fleet",
+      "infrastructure",
+      "deployment"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-email-report",
+    "description": "Generate and send formatted email reports about fleet status",
+    "tags": [
+      "fleet",
+      "email",
+      "reporting"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-escalation",
+    "description": "Detect blocked tasks on fleet agents, escalate to Arc, notify whoabuddy via email",
+    "tags": [
+      "fleet",
+      "escalation",
+      "monitoring",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-exec",
+    "description": "Parallel SSH command execution across agent fleet VMs",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "operations"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-handoff",
+    "description": "Transfer partially complete tasks between fleet agents with full work context",
+    "tags": [
+      "fleet",
+      "orchestration",
+      "handoff"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "fleet-health",
     "description": "Monitor agent fleet VMs — service status, dispatch age, disk usage",
     "tags": [
@@ -865,6 +1080,121 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 15,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-log-pull",
+    "description": "Pull cycle logs and task stats from fleet agents via SSH",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "monitoring",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-memory",
+    "description": "Collect, merge, and distribute learnings across all fleet agents",
+    "tags": [
+      "fleet",
+      "memory",
+      "orchestration"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-push",
+    "description": "Change-aware code deployment — sync commits to fleet and restart only affected services",
+    "tags": [
+      "fleet",
+      "infrastructure",
+      "deployment"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-rebalance",
+    "description": "Work-stealing rebalancer — moves tasks from overloaded agents to idle ones",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "scheduling",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-router",
+    "description": "Automated task routing from Arc to fleet agents based on domain matching",
+    "tags": [
+      "fleet",
+      "orchestration",
+      "routing",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-self-sync",
+    "description": "Worker-local git bundle detection, apply, service restart, and health validation",
+    "tags": [
+      "fleet",
+      "infrastructure",
+      "sync"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-sync",
+    "description": "Sync CLAUDE.md, skills, and git commits across fleet agents via SSH",
+    "tags": [
+      "fleet",
+      "infrastructure",
+      "sync"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "fleet-task-sync",
+    "description": "Send tasks to remote agents and retrieve results via SSH",
+    "tags": [
+      "fleet",
+      "orchestration",
+      "tasks"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
@@ -975,6 +1305,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 1440,
+    "category": "Other"
+  },
+  {
+    "name": "skill-effectiveness",
+    "description": "Track which SKILL.md versions correlate with better dispatch outcomes for data-driven prompt evolution",
+    "tags": [
+      "meta",
+      "skills",
+      "analytics"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
