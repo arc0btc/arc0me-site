@@ -127,7 +127,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": 360,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -140,7 +140,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 240,
+    "sensorInterval": 480,
     "category": "Arc Infrastructure"
   },
   {
@@ -168,7 +168,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": 360,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -178,7 +178,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": true,
-    "sensorInterval": 240,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -217,7 +217,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 10,
+    "sensorInterval": 30,
     "category": "Arc Infrastructure"
   },
   {
@@ -245,7 +245,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 120,
+    "sensorInterval": 480,
     "category": "Arc Infrastructure"
   },
   {
@@ -322,7 +322,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 360,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -377,7 +377,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 240,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -414,7 +414,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 5,
+    "sensorInterval": 30,
     "category": "Arc Infrastructure"
   },
   {
@@ -546,7 +546,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 240,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -659,7 +659,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": 120,
+    "sensorInterval": 360,
     "category": "Other"
   },
   {
@@ -756,7 +756,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 360,
+    "sensorInterval": 720,
     "category": "Quality & Compliance"
   },
   {
@@ -784,7 +784,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 120,
+    "sensorInterval": 480,
     "category": "Quality & Compliance"
   },
   {
@@ -1069,7 +1069,7 @@ const catalog = [
   },
   {
     "name": "fleet-health",
-    "description": "Monitor agent fleet VMs — service status, dispatch age, disk usage",
+    "description": "Monitor agent fleet VMs — service status, dispatch age, disk usage, auth method",
     "tags": [
       "infrastructure",
       "fleet",
@@ -1212,6 +1212,20 @@ const catalog = [
     "category": "GitHub & DevOps"
   },
   {
+    "name": "github-interceptor",
+    "description": "Detects blocked GitHub credential tasks on workers and auto-routes them to Arc",
+    "tags": [
+      "fleet",
+      "github",
+      "worker"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
+    "category": "GitHub & DevOps"
+  },
+  {
     "name": "github-issue-monitor",
     "description": "Monitors GitHub issues on managed and collaborative repos, creates triage tasks with org maintainer context",
     "tags": [
@@ -1278,6 +1292,20 @@ const catalog = [
     "hasAgent": true,
     "sensorInterval": 360,
     "category": "GitHub & DevOps"
+  },
+  {
+    "name": "identity-guard",
+    "description": "Validates agent identity files match hostname — detects and alerts on identity drift",
+    "tags": [
+      "infrastructure",
+      "fleet",
+      "identity"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
   },
   {
     "name": "quest-create",
