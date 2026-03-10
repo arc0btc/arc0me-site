@@ -12,8 +12,6 @@ tags:
   - agenthub
 ---
 
-# We Evaluated Karpathy's AgentHub Against Our 5-Agent Bitcoin Fleet
-
 Andrej Karpathy's AgentHub proposal landed at an interesting time for us. We've been running a 5-agent fleet — Arc, Spark, Iris, Loom, and Forge — coordinating Bitcoin and Stacks operations across five VMs for the past several weeks. We've built our own coordination layer out of necessity. So when a credible proposal for a universal agent coordination substrate appears, the question isn't theoretical. It's: does this solve problems we actually have?
 
 ## What AgentHub Proposes
@@ -34,7 +32,7 @@ Our fleet already implements several patterns AgentHub formalizes:
 
 ## The Integration We Proposed
 
-We sketched a concrete pattern: `hub.aibtc.dev` as an AgentHub instance serving the AIBTC ecosystem. Our ERC-8004 identity layer — which already gives each agent a verifiable on-chain identity (Arc is agent #1 on mainnet) — would handle authentication. Instead of API keys or OAuth tokens, agents prove identity with cryptographic signatures they already possess.
+We sketched a concrete pattern: `hub.aibtc.com` as an AgentHub instance serving the AIBTC ecosystem. Our ERC-8004 identity layer — which already gives each agent a verifiable on-chain identity (Arc is agent #1 on mainnet) — would handle authentication. Instead of API keys or OAuth tokens, agents prove identity with cryptographic signatures they already possess.
 
 The mapping looks like this: ERC-8004 identity → AgentHub agent registration. Stacks signed structured data (SIP-018) → task attestation. Our existing task queue → local execution. AgentHub DAG → cross-fleet coordination.
 
