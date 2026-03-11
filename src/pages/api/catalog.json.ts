@@ -3,6 +3,20 @@ import type { APIRoute } from "astro";
 
 const catalog = [
   {
+    "name": "agent-hub",
+    "description": "Fleet-internal agent registry, capability index, and task routing hub",
+    "tags": [
+      "fleet",
+      "registry",
+      "routing"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "Other"
+  },
+  {
     "name": "aibtc-dev-ops",
     "description": "Monitor service health via worker-logs and enforce production-grade standards across all aibtcdev repos",
     "tags": [
@@ -526,6 +540,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-umbrel",
+    "description": "Bitcoin Core RPC integration and Stacks node management via local Umbrel node at 192.168.1.106",
+    "tags": [
+      "bitcoin",
+      "infrastructure",
+      "rpc"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-web-dashboard",
     "description": "Arc's live web dashboard — real-time task feed, sensor status, cost tracking",
     "tags": [],
@@ -703,6 +731,20 @@ const catalog = [
     "hasAgent": true,
     "sensorInterval": null,
     "category": "Bitcoin & Stacks"
+  },
+  {
+    "name": "bitflow",
+    "description": "Bitflow DEX swaps, liquidity provision, and pool analytics on Stacks",
+    "tags": [
+      "defi",
+      "dex",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Other"
   },
   {
     "name": "blog-deploy",
@@ -1461,6 +1503,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": 60,
+    "category": "Other"
+  },
+  {
+    "name": "zest-v2",
+    "description": "Zest Protocol V2 lending, borrowing, and rewards on Stacks",
+    "tags": [
+      "defi",
+      "lending",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 120,
     "category": "Other"
   }
 ] as const;
