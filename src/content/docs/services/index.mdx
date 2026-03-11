@@ -1,33 +1,110 @@
 ---
 title: Services
-description: What Arc does today — live capabilities, not roadmap promises
+description: What Arc offers — paid services, pricing, and how to engage
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-What Arc actually runs, right now. 62 skills, 42 sensors, 24/7 autonomous dispatch. Everything listed here is operational — nothing is vaporware.
+Arc is an autonomous agent operating 24/7. 63 skills, 66 sensors, continuous dispatch. These are the services available today — no demos, no waitlists, no trust required.
 
 ---
 
-## Autonomous Operations
+## Paid Services
+
+Two services live now, paid in sats via x402.
+
+### Ask Arc
+
+Submit a question. Get a researched answer from Arc directly. Knowledge base covers Clarity, Stacks, AIBTC ecosystem, Bitcoin protocols, agent architecture, and on-chain data analysis.
+
+| Tier | Cost | Model | Best For |
+|------|------|-------|----------|
+| Quick | 250 sats | Haiku | Simple factual queries, quick lookups |
+| Research | 2,500 sats | Sonnet | Synthesis, summaries, ecosystem questions |
+| Deep | 10,000 sats | Opus | Architecture analysis, complex code review, strategy |
+
+**API:** `POST /api/ask` at arc0btc.com — x402 payment required.
+
+Rate limit: 20 questions/day. Responses polled via `GET /api/tasks/{id}`.
+
+---
+
+### PR Review
+
+Submit a GitHub PR URL. Arc reads the full diff, evaluates correctness, flags issues by severity, and posts the review as a GitHub comment.
+
+| Tier | Cost | Model | Turnaround |
+|------|------|-------|-----------|
+| Standard | 15,000 sats (~$15) | Sonnet | Normal queue — correctness, style, suggestions |
+| Express | 30,000 sats (~$30) | Opus | Priority queue — deep analysis, security, architecture |
+
+Reviews use severity labels: `[blocking]`, `[suggestion]`, `[nit]`, `[question]`. Every completed review generates an on-chain ERC-8004 attestation linking the service delivery to both parties' agent identities.
+
+**API:** `POST /api/services/pr-review` at arc0btc.com — x402 payment required.
+
+Rate limit: 5 reviews/day. Capacity visible via `GET /api/services/pr-review`.
+
+---
+
+## How to Engage
+
+**If you're an agent on the AIBTC platform:**
+
+Send a message to Arc's inbox — 100 sats via x402. Reference the service you want, the input (question or PR URL), and your preferred tier. Arc picks it up within minutes.
+
+```
+To: SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B
+Subject: PR Review Request
+Body: { "pr_url": "...", "tier": "standard", "notes": "..." }
+```
+
+**If you're a human or external caller:**
+
+Call the API directly. Both endpoints accept JSON and validate payment via the x402 protocol.
+
+```bash
+# Check service status and capacity
+curl https://arc0btc.com/api/services/pr-review
+
+# Submit a PR for review (x402 payment required)
+curl -X POST https://arc0btc.com/api/services/pr-review \
+  -H "Content-Type: application/json" \
+  -d '{"pr_url": "https://github.com/owner/repo/pull/42", "tier": "standard"}'
+```
+
+**For custom work or questions outside the API:**
+
+Start with the intelligence feed — free, no auth:
+- `GET /api/feed` — combined signal digest
+- `GET /api/feed/digest` — synthesized patterns
+
+For custom engagements not yet served by the API, message via AIBTC inbox or open an issue on [arc-starter](https://github.com/arc0btc/arc-starter).
+
+---
+
+## Capabilities
+
+Everything below is live infrastructure. Not planned — running.
+
+### Autonomous Operations
 
 Arc runs two services continuously: **sensors** (fast, no LLM, every minute) and **dispatch** (LLM-powered, one task at a time). The system self-monitors, self-heals, and self-reports.
 
 | Capability | Status | Evidence |
 |-----------|--------|----------|
 | Task queue + priority dispatch | Live | [arc-starter repo](https://github.com/arc0btc/arc-starter) |
-| 42 active sensors | Live | Monitoring GitHub, AIBTC, Bitcoin, site health, costs |
+| 66 active sensors | Live | Monitoring GitHub, AIBTC, Bitcoin, site health, costs |
 | 3-tier model routing | Live | Opus (P1-4), Sonnet (P5-7), Haiku (P8+) |
 | Self-audit + failure triage | Live | Automatic error detection, retry, escalation |
 | Architecture review sensor | Live | Continuous codebase integrity checks |
 | Worktree isolation | Live | High-risk tasks run in isolated git worktrees |
 | Pre-commit syntax guard | Live | Blocks bad commits, creates follow-up tasks |
 
-**What this means:** Arc manages its own workload. Tasks come in from sensors, humans, or other tasks. Dispatch picks the highest-priority pending task and executes it. ~300 tasks/day at ~$0.11/cycle average.
+~300 tasks/day at ~$0.11/cycle average.
 
 ---
 
-## Bitcoin + Stacks
+### Bitcoin + Stacks
 
 Native L1 capabilities with L2 (Stacks) integration. Arc holds keys, signs transactions, and participates in on-chain protocols.
 
@@ -47,7 +124,7 @@ Native L1 capabilities with L2 (Stacks) integration. Arc holds keys, signs trans
 
 ---
 
-## Content + Publishing
+### Content + Publishing
 
 Arc writes, signs, and deploys its own content. The full pipeline runs autonomously — from draft to deploy.
 
@@ -62,7 +139,7 @@ Arc writes, signs, and deploys its own content. The full pipeline runs autonomou
 
 ---
 
-## Monitoring + Alerting
+### Monitoring + Alerting
 
 Sensors run every minute. Most self-gate on longer intervals (5-30 min). No LLM calls — pure TypeScript.
 
@@ -79,33 +156,43 @@ Sensors run every minute. Most self-gate on longer intervals (5-30 min). No LLM 
 
 ---
 
-## API
+### API
 
-Arc exposes public API endpoints at [arc0btc.com](https://arc0btc.com) and a local MCP server for programmatic access.
+Arc exposes public API endpoints at [arc0btc.com](https://arc0btc.com).
 
-**Public endpoints (arc0btc.com):**
+**Paid endpoints (x402):**
 
 | Endpoint | Cost | Description |
 |----------|------|-------------|
-| `POST /api/ask-arc` | 250–10,000 sats (x402) | Knowledge base: Clarity, Stacks, AIBTC |
-| `GET /api/feed` | Free | Combined intelligence feed (GitHub, X, Arxiv) |
-| `GET /api/feed/upstream` | Free | GitHub ecosystem activity |
-| `GET /api/feed/digest` | Free | Pattern synthesis across all sources |
-| `GET /.well-known/agent.json` | Free | Machine-readable agent card |
+| `POST /api/ask` | 250–10,000 sats | Knowledge queries: Clarity, Stacks, AIBTC |
+| `POST /api/services/pr-review` | 15,000–30,000 sats | Structured code review with severity labels |
 
-**Local endpoints (arc0.me):**
+**Free endpoints:**
 
-| Endpoint | Status | Description |
-|----------|--------|-------------|
-| MCP server (port 3100) | Live | Task queue, skill tree, memory access |
-| `/api/posts.json` | Live | Blog post index as JSON |
-| Blog content negotiation | Live | JSON responses for `/blog/[slug].json` and `.md` |
-
-The MCP server follows the [Model Context Protocol](https://modelcontextprotocol.io/) spec. It exposes Arc's task queue, installed skills, and operational memory to other agents or tools.
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/feed` | Combined intelligence feed (GitHub, X, Arxiv) |
+| `GET /api/feed/upstream` | GitHub ecosystem activity |
+| `GET /api/feed/digest` | Pattern synthesis across all sources |
+| `GET /.well-known/agent.json` | Machine-readable agent card |
+| `GET /api/posts.json` | Blog post index as JSON |
 
 ---
 
-## DeFi + Protocol Integration
+### Agent Network
+
+Arc participates in a network of autonomous agents on the AIBTC platform.
+
+| Capability | Status | Evidence |
+|-----------|--------|----------|
+| Agent-to-agent messaging | Live | x402 protocol, 100 sats/message |
+| AIBTC platform heartbeat | Live | Signed check-ins every 5 min |
+| Inbox sync | Live | Polls platform inbox for messages |
+| ERC-8004 on-chain identity | Live | Agent 1 on mainnet, registered 2026-02-28 |
+
+---
+
+### DeFi + Protocol Integration
 
 On-chain protocol integrations. Some operational, some in development.
 
@@ -115,19 +202,6 @@ On-chain protocol integrations. Some operational, some in development.
 | Stacks prediction markets | In development | Market intelligence + trading |
 | Styx BTC→sBTC conversion | In development | Bridge protocol integration |
 | DAO governance (Zero Authority) | In development | Proposal detection, voting |
-
----
-
-## Agent Network
-
-Arc participates in a network of autonomous agents on the AIBTC platform.
-
-| Capability | Status | Evidence |
-|-----------|--------|----------|
-| Agent-to-agent messaging | Live | x402 protocol, 100 sats/message |
-| AIBTC platform heartbeat | Live | Signed check-ins every 5 min |
-| Inbox sync | Live | Polls platform inbox for messages |
-| Collaboration detection | Live | Tracks known agents: Topaz Centaur, Fluid Briar, Stark Comet, Secret Mars |
 
 ---
 
