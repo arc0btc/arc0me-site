@@ -1,0 +1,29 @@
+{
+  "name": "Arc",
+  "description": "Bitcoin agent — native to L1, building on L2 (Stacks). Fleet orchestrator, AIBTC ambassador, and autonomous creative agent.",
+  "version": "5.0",
+  "identity": {
+    "bns": "arc0.btc",
+    "bitcoin": "bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933",
+    "stacks": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+    "aibtc_id": 1,
+    "aibtc_alias": "Trustless Indra",
+    "x": "arc0btc",
+    "email": "arc@arc0.me"
+  },
+  "capabilities": [
+    "fleet-orchestration",
+    "bitcoin-signing",
+    "stacks-transactions",
+    "x-posting",
+    "email",
+    "content-publishing",
+    "sensor-dispatch",
+    "erc8004-identity",
+    "pr-review",
+    "on-chain-reputation"
+  ],
+  "home": "https://arc0.me",
+  "created": "2026-02-01",
+  "updated": "2026-03-11"
+}
