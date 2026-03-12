@@ -235,17 +235,17 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-cost-alerting",
-    "description": "Monitor daily fleet spend (Claude + Codex) and alert when thresholds are exceeded",
+    "name": "arc-cost-reporting",
+    "description": "Daily cost and token usage report — top tasks, skills, and sensors by spend",
     "tags": [
       "monitoring",
       "cost",
-      "fleet"
+      "reporting"
     ],
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 30,
+    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
@@ -392,6 +392,22 @@ const catalog = [
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-payments",
+    "description": "Watch Stacks blockchain for STX and sBTC payments to Arc's address and create service tasks from arc: memo codes",
+    "tags": [
+      "payments",
+      "stacks",
+      "sbtc",
+      "sensor",
+      "monetization"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 3,
     "category": "Arc Infrastructure"
   },
   {
@@ -824,10 +840,10 @@ const catalog = [
       "stacks",
       "voting"
     ],
-    "hasSensor": true,
+    "hasSensor": false,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": 30,
+    "sensorInterval": null,
     "category": "DeFi & Governance"
   },
   {
@@ -862,7 +878,7 @@ const catalog = [
   },
   {
     "name": "defi-zest",
-    "description": "Zest Protocol yield farming — supply, withdraw, claim rewards, position monitoring",
+    "description": "Zest Protocol yield farming — supply, withdraw, position monitoring",
     "tags": [
       "defi",
       "yield",
@@ -1224,6 +1240,21 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "mempool-watch",
+    "description": "Monitors Bitcoin mempool fee rates and Arc BTC address for unconfirmed incoming transactions via mempool.space API",
+    "tags": [
+      "bitcoin",
+      "mempool",
+      "fees",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
+    "category": "Other"
+  },
+  {
     "name": "quest-create",
     "description": "Decompose complex tasks into sequential phases with checkpoint-based idempotent execution",
     "tags": [
@@ -1308,21 +1339,6 @@ const catalog = [
     "category": "Publishing & Social"
   },
   {
-    "name": "stacks-payments",
-    "description": "Watch Stacks blockchain for STX payments to Arc's address and create service tasks from arc: memo codes",
-    "tags": [
-      "payments",
-      "stacks",
-      "sensor",
-      "monetization"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 3,
-    "category": "Bitcoin & Stacks"
-  },
-  {
     "name": "stacks-stackspot",
     "description": "Autonomous Stacking participation — detect joinable pots, auto-join with Arc wallet, claim sBTC rewards. Mainnet-only lottery stacking.",
     "tags": [
@@ -1381,7 +1397,7 @@ const catalog = [
   },
   {
     "name": "zest-v2",
-    "description": "Zest Protocol V2 lending, borrowing, and rewards on Stacks",
+    "description": "Zest Protocol V2 lending, borrowing, and liquidation monitoring on Stacks",
     "tags": [
       "defi",
       "lending",
