@@ -118,6 +118,20 @@ const catalog = [
     "category": "AIBTC Platform"
   },
   {
+    "name": "aibtc-welcome",
+    "description": "Detect new AIBTC agents and send welcome messages via x402 + STX micro-transfer",
+    "tags": [
+      "social",
+      "aibtc",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "AIBTC Platform"
+  },
+  {
     "name": "arc-alive-check",
     "description": "Periodic system-alive task creator — 6-hour canary confirming dispatch loop is healthy",
     "tags": [
@@ -269,20 +283,6 @@ const catalog = [
     "hasSensor": false,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-dual-sdk",
-    "description": "Routes dispatch to Claude Code or OpenAI Codex CLI based on task sdk field",
-    "tags": [
-      "infrastructure",
-      "dispatch",
-      "multi-sdk"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": false,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -453,20 +453,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 30,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-roundtable",
-    "description": "Inter-agent structured discussion protocol over HTTP",
-    "tags": [
-      "fleet",
-      "collaboration",
-      "discussion"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
   {
@@ -967,34 +953,6 @@ const catalog = [
     "category": "On-Chain Identity (ERC-8004)"
   },
   {
-    "name": "fleet-broadcast",
-    "description": "Send a task to all fleet agents simultaneously",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "orchestration"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-collect",
-    "description": "Gather completed task results from all agents for a topic",
-    "tags": [
-      "fleet",
-      "orchestration",
-      "results"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "fleet-comms",
     "description": "Detect agents that go silent — no dispatch or self-report for >1h",
     "tags": [
@@ -1007,20 +965,6 @@ const catalog = [
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-consensus",
-    "description": "3-of-5 fleet consensus protocol for high-impact decisions",
-    "tags": [
-      "fleet",
-      "governance",
-      "consensus"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
     "category": "Other"
   },
   {
@@ -1039,34 +983,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "fleet-deploy",
-    "description": "Canary deployment pipeline — code change → test on one agent → roll out to all",
-    "tags": [
-      "fleet",
-      "infrastructure",
-      "deployment"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-email-report",
-    "description": "Generate and send formatted email reports about fleet status",
-    "tags": [
-      "fleet",
-      "email",
-      "reporting"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "fleet-escalation",
     "description": "Detect blocked tasks on fleet agents, escalate to Arc, notify whoabuddy via email",
     "tags": [
@@ -1079,34 +995,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 15,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-exec",
-    "description": "Parallel SSH command execution across agent fleet VMs",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "operations"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-handoff",
-    "description": "Transfer partially complete tasks between fleet agents with full work context",
-    "tags": [
-      "fleet",
-      "orchestration",
-      "handoff"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
     "category": "Other"
   },
   {
@@ -1223,20 +1111,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-task-sync",
-    "description": "Send tasks to remote agents and retrieve results via SSH",
-    "tags": [
-      "fleet",
-      "orchestration",
-      "tasks"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
     "category": "Other"
   },
   {
