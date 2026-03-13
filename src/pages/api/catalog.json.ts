@@ -83,10 +83,10 @@ const catalog = [
       "ai-btc",
       "markets"
     ],
-    "hasSensor": false,
-    "hasCli": false,
+    "hasSensor": true,
+    "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": null,
+    "sensorInterval": 60,
     "category": "AIBTC Platform"
   },
   {
@@ -236,7 +236,7 @@ const catalog = [
   },
   {
     "name": "arc-cost-reporting",
-    "description": "Daily cost and token usage report — top tasks, skills, and sensors by spend",
+    "description": "Daily cost and token usage report — tracks dual costs (Claude Code vs API estimates)",
     "tags": [
       "monitoring",
       "cost",
@@ -353,6 +353,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-mcp",
+    "description": "Local MCP HTTP server exposing task queue and skill tree",
+    "tags": [
+      "infrastructure",
+      "api",
+      "mcp"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-mcp-server",
     "description": "MCP server exposing Arc's task queue, skills, and memory to external Claude instances",
     "tags": [
@@ -405,7 +419,7 @@ const catalog = [
       "monetization"
     ],
     "hasSensor": true,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 3,
     "category": "Arc Infrastructure"
@@ -617,7 +631,7 @@ const catalog = [
       "service"
     ],
     "hasSensor": false,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
@@ -1290,10 +1304,10 @@ const catalog = [
       "skills",
       "analytics"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 10080,
     "category": "Other"
   },
   {
@@ -1348,7 +1362,7 @@ const catalog = [
       "autonomous"
     ],
     "hasSensor": true,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 7,
     "category": "Bitcoin & Stacks"

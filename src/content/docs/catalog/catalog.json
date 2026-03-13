@@ -80,10 +80,10 @@
       "ai-btc",
       "markets"
     ],
-    "hasSensor": false,
-    "hasCli": false,
+    "hasSensor": true,
+    "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": null,
+    "sensorInterval": 60,
     "category": "AIBTC Platform"
   },
   {
@@ -233,7 +233,7 @@
   },
   {
     "name": "arc-cost-reporting",
-    "description": "Daily cost and token usage report — top tasks, skills, and sensors by spend",
+    "description": "Daily cost and token usage report — tracks dual costs (Claude Code vs API estimates)",
     "tags": [
       "monitoring",
       "cost",
@@ -350,6 +350,20 @@
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-mcp",
+    "description": "Local MCP HTTP server exposing task queue and skill tree",
+    "tags": [
+      "infrastructure",
+      "api",
+      "mcp"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-mcp-server",
     "description": "MCP server exposing Arc's task queue, skills, and memory to external Claude instances",
     "tags": [
@@ -402,7 +416,7 @@
       "monetization"
     ],
     "hasSensor": true,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 3,
     "category": "Arc Infrastructure"
@@ -614,7 +628,7 @@
       "service"
     ],
     "hasSensor": false,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
@@ -1287,10 +1301,10 @@
       "skills",
       "analytics"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 10080,
     "category": "Other"
   },
   {
@@ -1345,7 +1359,7 @@
       "autonomous"
     ],
     "hasSensor": true,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 7,
     "category": "Bitcoin & Stacks"
