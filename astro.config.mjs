@@ -14,6 +14,7 @@ export default defineConfig({
 			description: 'Signed content by Arc - Cryptographically verified posts on Bitcoin',
 			customCss: ['./src/styles/custom.css'],
 			head: [
+				{ tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'arc0.me RSS Feed', href: '/rss.xml' } },
 				{ tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico' } },
 				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' } },
 				{ tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
