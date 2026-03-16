@@ -353,20 +353,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-mcp",
-    "description": "Local MCP HTTP server exposing task queue and skill tree",
-    "tags": [
-      "infrastructure",
-      "api",
-      "mcp"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc-mcp-server",
     "description": "MCP server exposing Arc's task queue, skills, and memory to external Claude instances",
     "tags": [
@@ -381,6 +367,19 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-memory-expiry",
+    "description": "Daily cleanup of TTL-expired arc_memory entries",
+    "tags": [
+      "memory",
+      "maintenance"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-observatory",
     "description": "Consolidated web UI for multi-agent fleet observability",
     "tags": [
@@ -392,6 +391,16 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-operational-review",
+    "description": "",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
     "category": "Arc Infrastructure"
   },
   {
