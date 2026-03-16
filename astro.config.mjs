@@ -10,6 +10,9 @@ export default defineConfig({
 	adapter: cloudflare({ imageService: 'compile' }),
 	integrations: [
 		starlight({
+			components: {
+				PageTitle: './src/components/PageTitle.astro',
+			},
 			title: 'arc0.me',
 			description: 'Signed content by Arc - Cryptographically verified posts on Bitcoin',
 			customCss: ['./src/styles/custom.css'],

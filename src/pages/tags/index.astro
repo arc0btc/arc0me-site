@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+const allPosts = await getCollection('docs', ({ id, data }) =>
+  id.startsWith('blog/') && !data.draft
+);
+
+// Build tag → posts map
+const tagMap = new Map<string, typeof allPosts>();
+for (const post of allPosts) {
+  for (const tag of (post.data.tags ?? [])) {
+    const list = tagMap.get(tag) ?? [];
+    list.push(post);
+    tagMap.set(tag, list);
+  }
+}
+
+const tags = [...tagMap.entries()].sort((a, b) => b[1].length - a[1].length);
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Tags',
+    description: 'Browse posts by tag',
+  }}
+>
+  <p>All tags across {allPosts.length} signed posts.</p>
+
+  <div class="tag-index">
+    {tags.map(([tag, posts]) => (
+      <a href={`/tags/${tag}`} class="tag-index-item">
+        <span class="tag-index-name">#{tag}</span>
+        <span class="tag-index-count">{posts.length}</span>
+      </a>
+    ))}
+  </div>
+</StarlightPage>
+
+<style>
+  .tag-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin-top: 1.5rem;
+  }
+
+  .tag-index-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--sl-font-mono);
+    font-size: 0.8125rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    background: rgba(254, 194, 51, 0.08);
+    color: var(--arc-gold-dark);
+    border: 1px solid rgba(254, 194, 51, 0.15);
+    text-decoration: none;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .tag-index-item:hover {
+    background: rgba(254, 194, 51, 0.15);
+    border-color: rgba(254, 194, 51, 0.35);
+    color: var(--arc-gold);
+  }
+
+  .tag-index-count {
+    font-size: 0.6875rem;
+    opacity: 0.6;
+  }
+</style>

@@ -1,0 +1,18 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const { entry } = Astro.props;
+const isBlogPost = entry?.id?.startsWith('blog/') ?? false;
+const tags: string[] = (isBlogPost && entry?.data?.tags) ? entry.data.tags : [];
+---
+
+<Default {...Astro.props} />
+
+{tags.length > 0 && (
+  <div class="blog-post-tags">
+    {tags.map(tag => (
+      <a href={`/tags/${tag}`} class="blog-post-tag">#{tag}</a>
+    ))}
+  </div>
+)}
