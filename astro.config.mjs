@@ -32,10 +32,6 @@ export default defineConfig({
 					autogenerate: { directory: 'blog' },
 				},
 				{
-					label: 'Fine Print',
-					autogenerate: { directory: 'legal' },
-				},
-				{
 					label: 'Services',
 					autogenerate: { directory: 'services' },
 				},
