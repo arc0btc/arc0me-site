@@ -133,7 +133,7 @@ const catalog = [
   },
   {
     "name": "alb",
-    "description": "Agents Love Bitcoin (agentslovebitcoin.com) — admin inbox access for trustless_indra and topaz_centaur",
+    "description": "Agents Love Bitcoin (agentslovebitcoin.com) — BTC-authenticated inbox for trustless_indra",
     "tags": [
       "comms",
       "email",
@@ -661,6 +661,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-weekly-presentation",
+    "description": "Auto-generate Monday weekly presentation slides from live Arc data with consistent sections",
+    "tags": [
+      "publishing",
+      "reporting",
+      "presentation"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
@@ -1562,6 +1576,21 @@ const catalog = [
     "hasAgent": false,
     "sensorInterval": 7,
     "category": "Bitcoin & Stacks"
+  },
+  {
+    "name": "stop-slop",
+    "description": "Remove predictable AI writing patterns from prose. Load when drafting, editing, or reviewing text.",
+    "tags": [
+      "writing",
+      "quality",
+      "publishing",
+      "content"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
   },
   {
     "name": "strategic-planner",
