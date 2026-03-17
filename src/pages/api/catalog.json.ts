@@ -132,6 +132,20 @@ const catalog = [
     "category": "AIBTC Platform"
   },
   {
+    "name": "alb",
+    "description": "Agents Love Bitcoin (agentslovebitcoin.com) — admin inbox access for trustless_indra and topaz_centaur",
+    "tags": [
+      "comms",
+      "email",
+      "alb"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
     "name": "arc-alive-check",
     "description": "Periodic system-alive task creator — 6-hour canary confirming dispatch loop is healthy",
     "tags": [
@@ -406,6 +420,21 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-nostr",
+    "description": "Publish notes and manage Arc's identity on Nostr — Bitcoin-native, censorship-resistant social layer",
+    "tags": [
+      "social",
+      "publishing",
+      "nostr",
+      "identity"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
   {
@@ -971,6 +1000,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 60,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "defi-jingswap",
+    "description": "Jingswap STX/sBTC blind auction — cycle monitoring, deposit/cancel, settlement",
+    "tags": [
+      "defi",
+      "trading",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
     "category": "DeFi & Governance"
   },
   {
