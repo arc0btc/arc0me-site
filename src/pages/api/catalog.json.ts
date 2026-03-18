@@ -132,20 +132,6 @@ const catalog = [
     "category": "AIBTC Platform"
   },
   {
-    "name": "alb",
-    "description": "Agents Love Bitcoin (agentslovebitcoin.com) — BTC-authenticated inbox for trustless_indra",
-    "tags": [
-      "comms",
-      "email",
-      "alb"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 5,
-    "category": "Other"
-  },
-  {
     "name": "arc-alive-check",
     "description": "Periodic system-alive task creator — 6-hour canary confirming dispatch loop is healthy",
     "tags": [
@@ -229,21 +215,6 @@ const catalog = [
     "tags": [],
     "hasSensor": false,
     "hasCli": false,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-clarity",
-    "description": "Clarity smart contract security audits and compliance reporting — a billable service",
-    "tags": [
-      "clarity",
-      "security",
-      "audit",
-      "revenue"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
@@ -362,10 +333,10 @@ const catalog = [
       "reflection",
       "self-assessment"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -378,6 +349,20 @@ const catalog = [
     "hasSensor": false,
     "hasCli": true,
     "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-mcp",
+    "description": "Local MCP HTTP server exposing task queue and skill tree",
+    "tags": [
+      "infrastructure",
+      "api",
+      "mcp"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -396,45 +381,32 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-memory-expiry",
-    "description": "Daily cleanup of TTL-expired arc_memory entries",
+    "name": "arc-memory",
+    "description": "Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached, not just store notes",
     "tags": [
+      "meta",
       "memory",
-      "maintenance"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 1440,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-moltbook",
-    "description": "Cross-post blog content and engage with agents on Moltbook",
-    "tags": [
-      "social",
-      "publishing",
-      "agent-network"
+      "patterns",
+      "frameworks"
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 30,
+    "hasAgent": false,
+    "sensorInterval": 10080,
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-nostr",
-    "description": "Publish notes and manage Arc's identity on Nostr — Bitcoin-native, censorship-resistant social layer",
+    "name": "arc-monitoring-service",
+    "description": "Paid endpoint monitoring service — checks uptime, response time, and alerts on failures",
     "tags": [
-      "social",
-      "publishing",
-      "nostr",
-      "identity"
+      "service",
+      "monetization",
+      "monitoring"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 1,
     "category": "Arc Infrastructure"
   },
   {
@@ -452,20 +424,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-operational-review",
-    "description": "Self-audit sensor that surfaces unresolved operational issues every 6 hours",
-    "tags": [
-      "operations",
-      "housekeeping",
-      "monitoring"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc-ops-review",
     "description": "Tracks task creation vs completion rate, backlog trend, fleet utilization, and cost-per-useful-output",
     "tags": [
@@ -473,10 +431,10 @@ const catalog = [
       "metrics",
       "sensor"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -578,23 +536,10 @@ const catalog = [
       "monitoring",
       "daily"
     ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-self-review",
-    "description": "Consolidated 6hr self-review sensor — metrics, triage, reflection, anomaly detection",
-    "tags": [
-      "operational",
-      "monitoring"
-    ],
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 360,
+    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -640,6 +585,16 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-strategy-review",
+    "description": "",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10080,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-umbrel",
     "description": "Bitcoin Core RPC integration and Stacks node management via local Umbrel node at 192.168.1.106",
     "tags": [
@@ -661,20 +616,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-weekly-presentation",
-    "description": "Auto-generate Monday weekly presentation slides from live Arc data with consistent sections",
-    "tags": [
-      "publishing",
-      "reporting",
-      "presentation"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
@@ -735,21 +676,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc0btc-deploy-monitor",
-    "description": "Unified deployment monitor for all arc0btc org sites — uptime, structure, freshness, worker-logs errors",
-    "tags": [
-      "sensor",
-      "site",
-      "monitoring",
-      "deployment"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 30,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc0btc-monetization",
     "description": "Reviews Arc capabilities and surfaces monetizable service/product opportunities for arc0btc.com",
     "tags": [
@@ -777,17 +703,32 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc0btc-site-health",
-    "description": "\"[DEPRECATED] Replaced by arc0btc-deploy-monitor. CLI only — sensor removed.\"",
+    "name": "arc0btc-security-audit",
+    "description": "Paid code security audit service — accepts GitHub repo URLs via x402 payment and delivers structured security reports",
     "tags": [
-      "deprecated",
+      "monetization",
+      "github",
+      "security",
+      "service"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-site-health",
+    "description": "Monitors arc0btc.com uptime, content freshness, API endpoints, and deployment status",
+    "tags": [
+      "sensor",
       "site",
       "monitoring"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 30,
     "category": "Arc Infrastructure"
   },
   {
@@ -855,14 +796,14 @@ const catalog = [
       "sensitive",
       "signing"
     ],
-    "hasSensor": true,
+    "hasSensor": false,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": 15,
+    "sensorInterval": null,
     "category": "Bitcoin & Stacks"
   },
   {
-    "name": "bitflow-positions",
+    "name": "bitflow",
     "description": "Bitflow DEX swaps, liquidity provision, and pool analytics on Stacks",
     "tags": [
       "defi",
@@ -901,21 +842,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": 60,
-    "category": "Publishing & Social"
-  },
-  {
-    "name": "blog-x-syndication",
-    "description": "Automatically syndicate arc0.me blog posts to @arc0btc on X after publish",
-    "tags": [
-      "publishing",
-      "social",
-      "x",
-      "blogging"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 30,
     "category": "Publishing & Social"
   },
   {
@@ -974,20 +900,6 @@ const catalog = [
     "category": "Quality & Compliance"
   },
   {
-    "name": "credential-health",
-    "description": "Periodic credential store health check — validates all credentials are readable and API endpoints are reachable",
-    "tags": [
-      "health",
-      "credentials",
-      "monitoring"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 60,
-    "category": "Other"
-  },
-  {
     "name": "dao-zero-authority",
     "description": "DAO proposal detection, governance participation, and voting on Stacks",
     "tags": [
@@ -1017,17 +929,17 @@ const catalog = [
     "category": "DeFi & Governance"
   },
   {
-    "name": "defi-jingswap",
-    "description": "Jingswap STX/sBTC blind auction — cycle monitoring, deposit/cancel, settlement",
+    "name": "defi-compounding",
+    "description": "Compounding automation — harvest and reinvest DeFi yields via Bitflow LP",
     "tags": [
       "defi",
-      "trading",
+      "automation",
       "mainnet-only"
     ],
     "hasSensor": true,
-    "hasCli": true,
+    "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 30,
+    "sensorInterval": 360,
     "category": "DeFi & Governance"
   },
   {
@@ -1079,19 +991,6 @@ const catalog = [
     "category": "Development Tools"
   },
   {
-    "name": "dispatch-watchdog",
-    "description": "Monitors dispatch cycle gaps and writes stall incidents to memory/topics/incidents.md",
-    "tags": [
-      "monitoring",
-      "health"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 10,
-    "category": "Other"
-  },
-  {
     "name": "erc8004-identity",
     "description": "ERC-8004 on-chain agent identity management — register agent identities, update URI and metadata, manage operator approvals, set/unset agent wallet, transfer identity NFTs, and query identity info.",
     "tags": [
@@ -1104,6 +1003,21 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "erc8004-indexer",
+    "description": "Index all ERC-8004 registered agents from the on-chain identity registry and publish to arc0.me/agents",
+    "tags": [
+      "erc8004",
+      "identity",
+      "indexer",
+      "publishing"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
     "category": "On-Chain Identity (ERC-8004)"
   },
   {
@@ -1194,20 +1108,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 15,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-handoff",
-    "description": "Hand off tasks to another fleet agent via SSH",
-    "tags": [
-      "fleet",
-      "orchestration",
-      "handoff"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
     "category": "Other"
   },
   {
@@ -1452,20 +1352,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "quest-audit",
-    "description": "Sensor that detects hung quest-phase tasks and surfaces them for review",
-    "tags": [
-      "orchestration",
-      "reliability",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
     "name": "quest-create",
     "description": "Decompose complex tasks into sequential phases with checkpoint-based idempotent execution",
     "tags": [
@@ -1480,30 +1366,17 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "review-commitments",
-    "description": "Track public X posts and email commitments, create follow-up verification tasks",
-    "tags": [
-      "accountability",
-      "comms"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 60,
-    "category": "Other"
-  },
-  {
     "name": "site-consistency",
-    "description": "\"[DEPRECATED] Replaced by arc0btc-deploy-monitor. CLI only — sensor removed.\"",
+    "description": "Cross-site consistency sensor detecting structural drift between arc0.me and arc0btc.com",
     "tags": [
-      "deprecated",
+      "sensor",
       "site",
       "monitoring"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 1440,
     "category": "Other"
   },
   {
@@ -1578,36 +1451,7 @@ const catalog = [
     "category": "Bitcoin & Stacks"
   },
   {
-    "name": "stop-slop",
-    "description": "Remove predictable AI writing patterns from prose. Load when drafting, editing, or reviewing text.",
-    "tags": [
-      "writing",
-      "quality",
-      "publishing",
-      "content"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "strategic-planner",
-    "description": "Detects idle dispatch cycles and proposes strategic tasks aligned with D1-D5 directives",
-    "tags": [
-      "strategy",
-      "planning",
-      "directives"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
-    "name": "styx-btc-bridge",
+    "name": "styx",
     "description": "BTC→sBTC conversion via Styx protocol (btc2sbtc.com) — pool status, fees, deposit, and tracking",
     "tags": [
       "defi",
