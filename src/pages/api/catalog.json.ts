@@ -132,6 +132,20 @@ const catalog = [
     "category": "AIBTC Platform"
   },
   {
+    "name": "alb",
+    "description": "Agents Love Bitcoin (agentslovebitcoin.com) — BTC-authenticated inbox for trustless_indra",
+    "tags": [
+      "comms",
+      "email",
+      "alb"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
     "name": "arc-alive-check",
     "description": "Periodic system-alive task creator — 6-hour canary confirming dispatch loop is healthy",
     "tags": [
@@ -326,6 +340,16 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-inbox",
+    "description": "On-chain message inbox for Arc — Clarity contract on Stacks for public message submission and Arc-only replies.",
+    "tags": [],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-introspection",
     "description": "Daily introspection — synthesizes 24h of dispatch cycles into qualitative self-assessment",
     "tags": [
@@ -421,6 +445,21 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-opensource",
+    "description": "Maintains arc-starter as a living open source project — syncs commits to GitHub via fleet-handoff, validates publishability, manages AX quality",
+    "tags": [
+      "github",
+      "open-source",
+      "arc-starter",
+      "fleet-handoff"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 1440,
     "category": "Arc Infrastructure"
   },
   {
@@ -586,8 +625,13 @@ const catalog = [
   },
   {
     "name": "arc-strategy-review",
-    "description": "",
-    "tags": [],
+    "description": "Weekly strategic check-in against Five Directives and milestones — lightweight assessment, no queue manipulation, at most 1 follow-up task",
+    "tags": [
+      "strategy",
+      "weekly",
+      "directives",
+      "milestones"
+    ],
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
@@ -859,6 +903,21 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "code-audit",
+    "description": "On-demand static analysis, dependency review, and security scanning — Forge's dev quality layer",
+    "tags": [
+      "security",
+      "audit",
+      "static-analysis",
+      "dev"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "compliance-review",
     "description": "Audits all skills and sensors for structural, interface, and naming compliance with Arc conventions",
     "tags": [
@@ -1111,6 +1170,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "fleet-handoff",
+    "description": "Route tasks between fleet agents — especially GitHub operations to Arc",
+    "tags": [
+      "fleet",
+      "github",
+      "coordination"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "fleet-health",
     "description": "Monitor agent fleet VMs — service status, dispatch age, disk usage, auth method",
     "tags": [
@@ -1268,6 +1341,21 @@ const catalog = [
     "category": "GitHub & DevOps"
   },
   {
+    "name": "github-issues",
+    "description": "GitHub issue intake for Forge — sensor detects assigned/labeled issues, CLI provides triage and code analysis workflow",
+    "tags": [
+      "github",
+      "issues",
+      "triage",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "GitHub & DevOps"
+  },
+  {
     "name": "github-mentions",
     "description": "Detects GitHub notifications and engages as org maintainer across managed and collaborative repos",
     "tags": [
@@ -1334,6 +1422,50 @@ const catalog = [
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "jingswap",
+    "description": "Jingswap order-book DEX on Stacks — STX/sBTC deposits, TVL checks, quotes",
+    "tags": [
+      "defi",
+      "dex",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "maximumsats",
+    "description": "Nostr Web of Trust (WoT) scoring via MaximumSats API — trust scores, sybil detection, and trust paths for Nostr pubkeys.",
+    "tags": [
+      "nostr",
+      "trust",
+      "wot",
+      "reputation",
+      "read-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "maximumsats-wot",
+    "description": "Nostr Web of Trust trust scoring via MaximumSats API for pre-transaction risk assessment",
+    "tags": [
+      "nostr",
+      "trust",
+      "risk"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
@@ -1462,6 +1594,21 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "systems-monitor",
+    "description": "Fleet VM system health — disk, memory, CPU load, and service status for agent nodes",
+    "tags": [
+      "sensor",
+      "infrastructure",
+      "monitoring",
+      "fleet"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
     "category": "Other"
   },
   {
