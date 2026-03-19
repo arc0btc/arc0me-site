@@ -3,7 +3,7 @@ import type { APIRoute } from "astro";
 
 const agentIndex = {
   "lastAgentId": 56,
-  "indexedAt": "2026-03-19T08:35:05.481Z",
+  "indexedAt": "2026-03-19T19:56:41.982Z",
   "network": "mainnet",
   "agents": [
     {
