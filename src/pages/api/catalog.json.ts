@@ -342,7 +342,11 @@ const catalog = [
   {
     "name": "arc-inbox",
     "description": "On-chain message inbox for Arc — Clarity contract on Stacks for public message submission and Arc-only replies.",
-    "tags": [],
+    "tags": [
+      "inbox",
+      "messaging",
+      "stacks"
+    ],
     "hasSensor": false,
     "hasCli": false,
     "hasAgent": false,
@@ -759,6 +763,20 @@ const catalog = [
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 10,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-services",
+    "description": "Services storefront for arc0btc.com — catalog, pricing, delivery pipeline, monitoring",
+    "tags": [
+      "d1",
+      "monetization",
+      "services"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
@@ -1455,20 +1473,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "maximumsats-wot",
-    "description": "Nostr Web of Trust trust scoring via MaximumSats API for pre-transaction risk assessment",
-    "tags": [
-      "nostr",
-      "trust",
-      "risk"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "mempool-watch",
     "description": "Monitors Bitcoin mempool fee rates and Arc BTC address for unconfirmed incoming transactions via mempool.space API",
     "tags": [
@@ -1481,6 +1485,22 @@ const catalog = [
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 10,
+    "category": "Other"
+  },
+  {
+    "name": "nostr-wot",
+    "description": "Nostr Web of Trust trust scoring, sybil detection, and neighbor discovery via MaximumSats API",
+    "tags": [
+      "nostr",
+      "trust",
+      "wot",
+      "reputation",
+      "risk"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
