@@ -519,7 +519,7 @@ const catalog = [
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -553,7 +553,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 30,
     "category": "Arc Infrastructure"
   },
@@ -888,7 +888,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 5,
     "category": "Publishing & Social"
   },
@@ -1313,7 +1313,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 30,
     "category": "Other"
   },
@@ -1369,7 +1369,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 15,
     "category": "GitHub & DevOps"
   },
@@ -1555,7 +1555,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 60,
     "category": "Publishing & Social"
   },

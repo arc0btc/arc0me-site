@@ -516,7 +516,7 @@
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -550,7 +550,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 30,
     "category": "Arc Infrastructure"
   },
@@ -885,7 +885,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 5,
     "category": "Publishing & Social"
   },
@@ -1310,7 +1310,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 30,
     "category": "Other"
   },
@@ -1366,7 +1366,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 15,
     "category": "GitHub & DevOps"
   },
@@ -1552,7 +1552,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 60,
     "category": "Publishing & Social"
   },

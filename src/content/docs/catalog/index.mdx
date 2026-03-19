@@ -141,10 +141,10 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-ops-review** | Tracks task creation vs completion rate, backlog trend, fleet utilization, and cost-per-useful-output | sensor(12h) |
 | **arc-payments** | Watch Stacks blockchain for STX and sBTC payments to Arc's address and create service tasks from arc: memo codes | sensor(3m), cli |
 | **arc-performance-analytics** | Cost and token analytics by model tier, skill, and time period | cli |
-| **arc-remote-setup** | SSH-based VM provisioning for agent fleet deployment | cli |
+| **arc-remote-setup** | SSH-based VM provisioning for agent fleet deployment | cli, agent |
 | **arc-report-email** | Email watch reports when new ones are generated — sensor-only, fires after CEO review completes | sensor(30m) |
 | **arc-reporting** | Generate watch reports (HTML, 6-hour) and overnight briefs (markdown, daily 6am PST) | sensor(1h), agent |
-| **arc-reputation** | Signed peer reviews with BIP-322 signatures, local SQLite storage, and give-feedback CLI | sensor(30m), cli |
+| **arc-reputation** | Signed peer reviews with BIP-322 signatures, local SQLite storage, and give-feedback CLI | sensor(30m), cli, agent |
 | **arc-scheduler** | Manages future task scheduling with deferred creation, overdue detection, and priority boost for past-due tasks | sensor(5m) |
 | **arc-self-audit** | Daily operational self-audit — task queue health, cost trends, skill/sensor health, recent codebase changes | sensor(12h) |
 | **arc-service-health** | System health monitor — detects stale cycles and stuck dispatch, triggers high-priority alerts | sensor(5m) |
@@ -212,7 +212,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **github-ci-status** | Monitors GitHub Actions CI runs on our PRs and detects failures | sensor(15m) |
 | **github-interceptor** | Detects blocked GitHub credential tasks on workers and auto-routes them to Arc | sensor(10m) |
 | **github-issue-monitor** | Monitors GitHub issues on managed and collaborative repos, creates triage tasks with org maintainer context | sensor(15m) |
-| **github-issues** | GitHub issue intake for Forge — sensor detects assigned/labeled issues, CLI provides triage and code analysis workflow | sensor(15m), cli |
+| **github-issues** | GitHub issue intake for Forge — sensor detects assigned/labeled issues, CLI provides triage and code analysis workflow | sensor(15m), cli, agent |
 | **github-mentions** | Detects GitHub notifications and engages as org maintainer across managed and collaborative repos | sensor(5m) |
 | **github-release-watcher** | Detects new releases on bun, claude-code, stacks-core, aibtcdev/skills and 5 other watched repos — creates P7 review tasks | sensor(1h) |
 | **github-security-alerts** | Monitor Dependabot security alerts on managed repos — P3/P4 alerts for critical/high CVEs | sensor(6h) |
@@ -222,9 +222,9 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 
 | Skill | Description | Components |
 |-------|-------------|------------|
-| **blog-deploy** | Auto-deploy arc0me-site to Cloudflare Workers on content changes | sensor(5m), cli |
+| **blog-deploy** | Auto-deploy arc0me-site to Cloudflare Workers on content changes | sensor(5m), cli, agent |
 | **blog-publishing** | Create, manage, and publish blog posts with ISO8601 content pattern | sensor(1h), cli, agent |
-| **social-agent-engagement** | Proactive outreach to AIBTC network agents for collaboration on shared interests | sensor(1h), cli |
+| **social-agent-engagement** | Proactive outreach to AIBTC network agents for collaboration on shared interests | sensor(1h), cli, agent |
 | **social-x-ecosystem** | Monitor X for ecosystem keywords (Bitcoin, Stacks, AIBTC, Claude Code, etc.) and file research tasks for high-signal tweets | sensor(15m) |
 | **social-x-posting** | Post tweets, read timeline, and manage presence on X (Twitter) via API v2 | sensor(15m), cli, agent |
 
@@ -264,7 +264,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **fleet-rebalance** | Work-stealing rebalancer — moves tasks from overloaded agents to idle ones | sensor(5m), cli |
 | **fleet-router** | Automated task routing from Arc to fleet agents based on domain matching | sensor(30m), cli |
 | **fleet-self-sync** | Worker-local git bundle detection, apply, service restart, and health validation | sensor(5m), cli |
-| **fleet-sync** | Sync CLAUDE.md, skills, and git commits across fleet agents via SSH | sensor(30m), cli |
+| **fleet-sync** | Sync CLAUDE.md, skills, and git commits across fleet agents via SSH | sensor(30m), cli, agent |
 | **identity-guard** | Validates agent identity files match hostname — detects and alerts on identity drift | sensor(30m) |
 | **jingswap** | Jingswap order-book DEX on Stacks — STX/sBTC deposits, TVL checks, quotes | cli |
 | **maximumsats** | Nostr Web of Trust (WoT) scoring via MaximumSats API — trust scores, sybil detection, and trust paths for Nostr pubkeys. | cli, agent |
