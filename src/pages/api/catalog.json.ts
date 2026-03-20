@@ -186,6 +186,21 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-bounty-scanner",
+    "description": "Scan GitHub for funded bounty issues in the AIBTC ecosystem and queue them as revenue opportunities",
+    "tags": [
+      "revenue",
+      "github",
+      "bounties",
+      "d1"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-brand-voice",
     "description": "Brand identity consultant — voice rules, visual design system, content review",
     "tags": [
@@ -259,7 +274,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 60,
+    "sensorInterval": 1440,
     "category": "Arc Infrastructure"
   },
   {
@@ -1367,10 +1382,10 @@ const catalog = [
       "triage",
       "sensor"
     ],
-    "hasSensor": true,
+    "hasSensor": false,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": 15,
+    "sensorInterval": null,
     "category": "GitHub & DevOps"
   },
   {
@@ -1501,6 +1516,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "ordinals-market-data",
+    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) and queues signal-filing tasks for the ordinals beat",
+    "tags": [
+      "ordinals",
+      "signals",
+      "publishing"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 240,
     "category": "Other"
   },
   {
