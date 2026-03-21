@@ -601,6 +601,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-self-review",
+    "description": "Periodic self-review cycle sensor and workflow integration",
+    "tags": [
+      "health",
+      "monitoring",
+      "self-review"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-service-health",
     "description": "System health monitor — detects stale cycles and stuck dispatch, triggers high-priority alerts",
     "tags": [
@@ -1459,7 +1473,7 @@ const catalog = [
   },
   {
     "name": "jingswap",
-    "description": "Jingswap order-book DEX on Stacks — STX/sBTC deposits, TVL checks, quotes",
+    "description": "Jingswap blind batch auction on Stacks — sBTC/STX and sBTC/USDCx markets, cycle state, deposits, settlements",
     "tags": [
       "defi",
       "dex",
