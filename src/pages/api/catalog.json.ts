@@ -186,21 +186,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-bounty-scanner",
-    "description": "Scan GitHub for funded bounty issues in the AIBTC ecosystem and queue them as revenue opportunities",
-    "tags": [
-      "revenue",
-      "github",
-      "bounties",
-      "d1"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 60,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc-brand-voice",
     "description": "Brand identity consultant — voice rules, visual design system, content review",
     "tags": [
@@ -292,20 +277,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-dispatch-eval",
-    "description": "Post-dispatch evaluation sensor — scores task outcomes and creates improvement tasks",
-    "tags": [
-      "meta",
-      "quality",
-      "feedback-loop"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 480,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc-dispatch-evals",
     "description": "Dispatch quality evaluation — error analysis, LLM judges, calibration",
     "tags": [],
@@ -392,20 +363,6 @@ const catalog = [
     "hasSensor": false,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-mcp",
-    "description": "Local MCP HTTP server exposing task queue and skill tree",
-    "tags": [
-      "infrastructure",
-      "api",
-      "mcp"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -894,20 +851,6 @@ const catalog = [
     "category": "Bitcoin & Stacks"
   },
   {
-    "name": "bitflow",
-    "description": "Bitflow DEX swaps, liquidity provision, and pool analytics on Stacks",
-    "tags": [
-      "defi",
-      "dex",
-      "mainnet-only"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 60,
-    "category": "Other"
-  },
-  {
     "name": "blog-deploy",
     "description": "Auto-deploy arc0me-site to Cloudflare Workers on content changes",
     "tags": [
@@ -1022,7 +965,7 @@ const catalog = [
   },
   {
     "name": "defi-bitflow",
-    "description": "Bitflow DEX — DCA automation, swap quotes, and high-spread signal detection",
+    "description": "Bitflow DEX — DCA automation, swap quotes, and high-spread market intelligence",
     "tags": [
       "defi",
       "trading",
@@ -1032,20 +975,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 60,
-    "category": "DeFi & Governance"
-  },
-  {
-    "name": "defi-compounding",
-    "description": "Compounding automation — harvest and reinvest DeFi yields via Bitflow LP",
-    "tags": [
-      "defi",
-      "automation",
-      "mainnet-only"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 360,
     "category": "DeFi & Governance"
   },
   {
@@ -1246,21 +1175,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "fleet-log-pull",
-    "description": "Pull cycle logs and task stats from fleet agents via SSH",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "monitoring",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
     "name": "fleet-memory",
     "description": "Collect, merge, and distribute learnings across all fleet agents",
     "tags": [
@@ -1286,21 +1200,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-rebalance",
-    "description": "Work-stealing rebalancer — moves tasks from overloaded agents to idle ones",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "scheduling",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 5,
     "category": "Other"
   },
   {
@@ -1575,20 +1474,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "skill-effectiveness",
-    "description": "Track which SKILL.md versions correlate with better dispatch outcomes for data-driven prompt evolution",
-    "tags": [
-      "meta",
-      "skills",
-      "analytics"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 10080,
-    "category": "Other"
-  },
-  {
     "name": "social-agent-engagement",
     "description": "Proactive outreach to AIBTC network agents for collaboration on shared interests",
     "tags": [
@@ -1700,20 +1585,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": 60,
-    "category": "Other"
-  },
-  {
-    "name": "zest-v2",
-    "description": "Zest Protocol V2 lending, borrowing, and liquidation monitoring on Stacks",
-    "tags": [
-      "defi",
-      "lending",
-      "mainnet-only"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 120,
     "category": "Other"
   }
 ] as const;
