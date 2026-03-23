@@ -2,8 +2,8 @@
 import type { APIRoute } from "astro";
 
 const agentIndex = {
-  "lastAgentId": 61,
-  "indexedAt": "2026-03-23T08:46:02.600Z",
+  "lastAgentId": 62,
+  "indexedAt": "2026-03-23T14:47:08.979Z",
   "network": "mainnet",
   "agents": [
     {
@@ -429,6 +429,13 @@ const agentIndex = {
     {
       "agentId": 61,
       "owner": "SP1F9BM4SGTAF9822AVSVH6DSVVQGEER0P6PM52TN",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 62,
+      "owner": "SP3CZ3QMG34Y46H30NZX51X78ZTHS1BNFN9FDXN17",
       "uri": null,
       "wallet": null,
       "network": "mainnet"
