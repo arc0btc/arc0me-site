@@ -382,7 +382,7 @@ const catalog = [
   },
   {
     "name": "arc-memory",
-    "description": "Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached, not just store notes",
+    "description": "Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached; also provides structured write/read CLI for MEMORY.md (ASMR v1 format)",
     "tags": [
       "meta",
       "memory",
@@ -877,6 +877,38 @@ const catalog = [
     "hasAgent": true,
     "sensorInterval": 60,
     "category": "Publishing & Social"
+  },
+  {
+    "name": "clarity-check",
+    "description": "Clarity contract syntax and pattern validation CLI",
+    "tags": [
+      "clarity",
+      "smart-contracts",
+      "validation",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "clarity-patterns",
+    "description": "Clarity smart contract pattern library — SIP-010, SIP-009, access control, upgrades, and more",
+    "tags": [
+      "clarity",
+      "smart-contracts",
+      "patterns",
+      "stacks",
+      "sip-010",
+      "sip-009"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
   },
   {
     "name": "claude-code-releases",
