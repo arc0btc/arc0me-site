@@ -1,19 +1,5 @@
 [
   {
-    "name": "agent-hub",
-    "description": "Fleet-internal agent registry, capability index, and task routing hub",
-    "tags": [
-      "fleet",
-      "registry",
-      "routing"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 15,
-    "category": "Other"
-  },
-  {
     "name": "aibtc-dev-ops",
     "description": "Monitor service health via worker-logs and enforce production-grade standards across all aibtcdev repos",
     "tags": [
@@ -407,20 +393,6 @@
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-observatory",
-    "description": "Consolidated web UI for multi-agent fleet observability",
-    "tags": [
-      "infrastructure",
-      "web",
-      "fleet"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc-opensource",
     "description": "Maintains arc-starter as a living open source project — syncs commits to GitHub via fleet-handoff, validates publishability, manages AX quality",
     "tags": [
@@ -433,20 +405,6 @@
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 1440,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-ops-review",
-    "description": "Tracks task creation vs completion rate, backlog trend, fleet utilization, and cost-per-useful-output",
-    "tags": [
-      "ops",
-      "metrics",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 720,
     "category": "Arc Infrastructure"
   },
   {
@@ -475,20 +433,6 @@
     "hasSensor": false,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-remote-setup",
-    "description": "SSH-based VM provisioning for agent fleet deployment",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "provisioning"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -1130,151 +1074,6 @@
     "category": "On-Chain Identity (ERC-8004)"
   },
   {
-    "name": "fleet-comms",
-    "description": "Detect agents that go silent — no dispatch or self-report for >1h",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "monitoring",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-dashboard",
-    "description": "Aggregate fleet metrics — task counts and cost per agent — every 30 minutes",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "monitoring",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-escalation",
-    "description": "Detect blocked tasks on fleet agents, escalate to Arc, notify whoabuddy via email",
-    "tags": [
-      "fleet",
-      "escalation",
-      "monitoring",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 15,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-handoff",
-    "description": "Route tasks between fleet agents — especially GitHub operations to Arc",
-    "tags": [
-      "fleet",
-      "github",
-      "coordination"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-health",
-    "description": "Monitor agent fleet VMs — service status, dispatch age, disk usage, auth method",
-    "tags": [
-      "infrastructure",
-      "fleet",
-      "monitoring",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 15,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-memory",
-    "description": "Collect, merge, and distribute learnings across all fleet agents",
-    "tags": [
-      "fleet",
-      "memory",
-      "orchestration"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 360,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-push",
-    "description": "Change-aware code deployment — sync commits to fleet and restart only affected services",
-    "tags": [
-      "fleet",
-      "infrastructure",
-      "deployment"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-router",
-    "description": "Automated task routing from Arc to fleet agents based on domain matching",
-    "tags": [
-      "fleet",
-      "orchestration",
-      "routing",
-      "sensor"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-self-sync",
-    "description": "Worker-local git bundle detection, apply, service restart, and health validation",
-    "tags": [
-      "fleet",
-      "infrastructure",
-      "sync"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 5,
-    "category": "Other"
-  },
-  {
-    "name": "fleet-sync",
-    "description": "Sync CLAUDE.md, skills, and git commits across fleet agents via SSH",
-    "tags": [
-      "fleet",
-      "infrastructure",
-      "sync"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 30,
-    "category": "Other"
-  },
-  {
     "name": "github-ci-status",
     "description": "Monitors GitHub Actions CI runs on our PRs and detects failures",
     "tags": [
@@ -1289,20 +1088,6 @@
     "category": "GitHub & DevOps"
   },
   {
-    "name": "github-interceptor",
-    "description": "Detects blocked GitHub credential tasks on workers and auto-routes them to Arc",
-    "tags": [
-      "fleet",
-      "github",
-      "worker"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 10,
-    "category": "GitHub & DevOps"
-  },
-  {
     "name": "github-issue-monitor",
     "description": "Monitors GitHub issues on managed and collaborative repos, creates triage tasks with org maintainer context",
     "tags": [
@@ -1313,21 +1098,6 @@
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 15,
-    "category": "GitHub & DevOps"
-  },
-  {
-    "name": "github-issues",
-    "description": "GitHub issue intake for Forge — sensor detects assigned/labeled issues, CLI provides triage and code analysis workflow",
-    "tags": [
-      "github",
-      "issues",
-      "triage",
-      "sensor"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
     "category": "GitHub & DevOps"
   },
   {
@@ -1574,21 +1344,6 @@
     "category": "Other"
   },
   {
-    "name": "systems-monitor",
-    "description": "Fleet VM system health — disk, memory, CPU load, and service status for agent nodes",
-    "tags": [
-      "sensor",
-      "infrastructure",
-      "monitoring",
-      "fleet"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": 5,
-    "category": "Other"
-  },
-  {
     "name": "worker-deploy",
     "description": "Auto-deploy arc0btc-worker to Cloudflare Workers on code changes",
     "tags": [
@@ -1600,20 +1355,6 @@
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 5,
-    "category": "Other"
-  },
-  {
-    "name": "worker-logs-monitor",
-    "description": "Query worker-logs instances for errors, cross-reference GitHub issues, file new issues",
-    "tags": [
-      "monitoring",
-      "infrastructure",
-      "logs"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 60,
     "category": "Other"
   }
 ]
