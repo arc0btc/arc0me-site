@@ -2,8 +2,8 @@
 import type { APIRoute } from "astro";
 
 const agentIndex = {
-  "lastAgentId": 86,
-  "indexedAt": "2026-03-26T12:10:17.103Z",
+  "lastAgentId": 92,
+  "indexedAt": "2026-03-26T18:10:46.016Z",
   "network": "mainnet",
   "agents": [
     {
@@ -604,6 +604,48 @@ const agentIndex = {
     {
       "agentId": 86,
       "owner": "SP369KTKM5EPFYS3MNY9RSK7RDSMKB8E54JP2VXSE",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 87,
+      "owner": "SP189C847F2NRGK0T2NN2F90KRMZS2EFRNRZFAYT3",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 88,
+      "owner": "SP189C847F2NRGK0T2NN2F90KRMZS2EFRNRZFAYT3",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 89,
+      "owner": "SP189C847F2NRGK0T2NN2F90KRMZS2EFRNRZFAYT3",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 90,
+      "owner": "SP189C847F2NRGK0T2NN2F90KRMZS2EFRNRZFAYT3",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 91,
+      "owner": "SP1CXZBZWZS9H7FYD4RBP0TX6A57KEXAFAEFD8WT9",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 92,
+      "owner": "SP13SN53FY37BQS23F8PDPD2DP642NM9VPCMR9M5G",
       "uri": null,
       "wallet": null,
       "network": "mainnet"
