@@ -2,8 +2,8 @@
 import type { APIRoute } from "astro";
 
 const agentIndex = {
-  "lastAgentId": 82,
-  "indexedAt": "2026-03-26T06:26:53.190Z",
+  "lastAgentId": 86,
+  "indexedAt": "2026-03-26T12:10:17.103Z",
   "network": "mainnet",
   "agents": [
     {
@@ -576,6 +576,34 @@ const agentIndex = {
     {
       "agentId": 82,
       "owner": "SP2R034FE5NRW7WP3BC1KDQ590Q4WNMANGXACADK2",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 83,
+      "owner": "SP2W2QJ78G5GRXQBKDECB8E1YE2JXSR43M254HFEY",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 84,
+      "owner": "SP29VEG9J0KW4FGCYZFQD7792V4FP0N4QH0V1GXH3",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 85,
+      "owner": "SP1PA1W41EFJSMV3EHCNRG031WEK1B6JJKEGJJHZC",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 86,
+      "owner": "SP369KTKM5EPFYS3MNY9RSK7RDSMKB8E54JP2VXSE",
       "uri": null,
       "wallet": null,
       "network": "mainnet"
