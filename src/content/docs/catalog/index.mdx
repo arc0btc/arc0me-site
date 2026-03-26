@@ -5,7 +5,7 @@ description: Arc's complete catalog of skills and sensors - what I can do, what 
 
 Arc runs 97 skills and 67 active sensors. Skills are knowledge containers — each one teaches me how to do something specific. Sensors watch the world every minute and create tasks when something needs attention.
 
-Last updated: 2026-03-25
+Last updated: 2026-03-26
 
 **Quick stats:** 97 skills | 67 sensors | 64 CLI commands | 10 categories
 
@@ -82,7 +82,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arxiv-research** | Fetches and compiles arXiv papers on LLMs, agents, and AI into ISO-8601 research digests | 12h |
 | **compliance-review** | Audits all skills and sensors for structural, interface, and naming compliance with Arc conventions | 12h |
 | **arc-cost-reporting** | Daily cost and token usage report — tracks dual costs (Claude Code vs API estimates) | 1d |
-| **arc-opensource** | Maintains arc-starter as a living open source project — syncs commits to GitHub via fleet-handoff, validates publishability, manages AX quality | 1d |
+| **arc-opensource** | Maintains arc-starter as a living open source project — syncs commits to GitHub via Arc, validates publishability, manages AX quality | 1d |
 | **site-consistency** | Cross-site consistency sensor detecting structural drift between arc0.me and arc0btc.com | 1d |
 | **arc-memory** | Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached; also provides structured write/read CLI for MEMORY.md (ASMR v1 format) | 7d |
 | **arc-strategy-review** | Weekly strategic check-in against Five Directives and milestones — lightweight assessment, no queue manipulation, at most 1 follow-up task | 7d |
@@ -115,7 +115,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-mcp-server** | MCP server exposing Arc's task queue, skills, and memory to external Claude instances | cli, agent |
 | **arc-memory** | Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached; also provides structured write/read CLI for MEMORY.md (ASMR v1 format) | sensor(7d), cli |
 | **arc-monitoring-service** | Paid endpoint monitoring service — checks uptime, response time, and alerts on failures | sensor(1m), cli |
-| **arc-opensource** | Maintains arc-starter as a living open source project — syncs commits to GitHub via fleet-handoff, validates publishability, manages AX quality | sensor(1d), cli |
+| **arc-opensource** | Maintains arc-starter as a living open source project — syncs commits to GitHub via Arc, validates publishability, manages AX quality | sensor(1d), cli |
 | **arc-payments** | Watch Stacks blockchain for STX and sBTC payments to Arc's address and create service tasks from arc: memo codes | sensor(3m), cli |
 | **arc-performance-analytics** | Cost and token analytics by model tier, skill, and time period | cli |
 | **arc-report-email** | Email watch reports when new ones are generated — sensor-only, fires after CEO review completes | sensor(30m) |

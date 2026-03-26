@@ -394,12 +394,11 @@
   },
   {
     "name": "arc-opensource",
-    "description": "Maintains arc-starter as a living open source project — syncs commits to GitHub via fleet-handoff, validates publishability, manages AX quality",
+    "description": "Maintains arc-starter as a living open source project — syncs commits to GitHub via Arc, validates publishability, manages AX quality",
     "tags": [
       "github",
       "open-source",
-      "arc-starter",
-      "fleet-handoff"
+      "arc-starter"
     ],
     "hasSensor": true,
     "hasCli": true,
