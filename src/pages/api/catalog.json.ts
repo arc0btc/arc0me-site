@@ -1162,7 +1162,6 @@ const catalog = [
     "description": "Validates agent identity files match hostname — detects and alerts on identity drift",
     "tags": [
       "infrastructure",
-      "fleet",
       "identity"
     ],
     "hasSensor": true,
@@ -1234,7 +1233,7 @@ const catalog = [
   },
   {
     "name": "ordinals-market-data",
-    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) and queues signal-filing tasks for the ordinals beat",
+    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) and queues signal-filing tasks for the agent-trading beat",
     "tags": [
       "ordinals",
       "signals",
@@ -1243,7 +1242,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 240,
+    "sensorInterval": 120,
     "category": "Other"
   },
   {
@@ -1254,10 +1253,10 @@ const catalog = [
       "distribution",
       "revenue"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 1440,
     "category": "Other"
   },
   {
