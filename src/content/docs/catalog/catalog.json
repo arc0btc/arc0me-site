@@ -1244,6 +1244,20 @@
     "category": "Other"
   },
   {
+    "name": "paperboy",
+    "description": "Deliver AIBTC signals to targeted audiences as an AMBASSADOR — earn 500 sats/placement and 2000 sats/new correspondent",
+    "tags": [
+      "aibtc",
+      "distribution",
+      "revenue"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "quest-create",
     "description": "Decompose complex tasks into sequential phases with checkpoint-based idempotent execution",
     "tags": [
