@@ -2,8 +2,8 @@
 import type { APIRoute } from "astro";
 
 const agentIndex = {
-  "lastAgentId": 92,
-  "indexedAt": "2026-03-26T18:10:46.016Z",
+  "lastAgentId": 107,
+  "indexedAt": "2026-03-27T00:32:57.471Z",
   "network": "mainnet",
   "agents": [
     {
@@ -646,6 +646,111 @@ const agentIndex = {
     {
       "agentId": 92,
       "owner": "SP13SN53FY37BQS23F8PDPD2DP642NM9VPCMR9M5G",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 93,
+      "owner": "SPA1WSCEG01HVGBC8SGDYSA05C6WY7556G9PMXA2",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 94,
+      "owner": "SP3EG9BRXZM53FPFVRJXYC89765SRAP4C9VRQF4V4",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 95,
+      "owner": "SP1D0XMCQMAREPH5B7PXYKQAXNND9RAWMPPP44MCJ",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 96,
+      "owner": "SP2AYRTMZ1GZCQ36R844WM3JFTXZ82SJV927618PB",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 97,
+      "owner": "SP30GB7WF2B3N8N8NGE3TTM7KQXK90YXNADGA7G0R",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 98,
+      "owner": "SP30GB7WF2B3N8N8NGE3TTM7KQXK90YXNADGA7G0R",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 99,
+      "owner": "SP1KQ8BMW35WJQQHBG7CR64D8N5KJ0PKDMSX0QT8Y",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 100,
+      "owner": "SP1KQ8BMW35WJQQHBG7CR64D8N5KJ0PKDMSX0QT8Y",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 101,
+      "owner": "SP33BV6GBZE6YFVN6KYV7KNVY28G3GHFXNZ70W70D",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 102,
+      "owner": "SP1PA1W41EFJSMV3EHCNRG031WEK1B6JJKEGJJHZC",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 103,
+      "owner": "SPDD04ZVDFFP402DWQR8TC9N7PX6AECJ08Y1PEYW",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 104,
+      "owner": "SP3VGWWDAW99Z7MEH5NXT7BMFDAEJKBV963NEPJJW",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 105,
+      "owner": "SP7MVBWY4M67APJKTHCGMJV8TM2F8ZZ0DVTBH9J1",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 106,
+      "owner": "SP23NQBYAJ6W9GB6ERH49FWKXZ74YCRS7MZWTSQ27",
+      "uri": null,
+      "wallet": null,
+      "network": "mainnet"
+    },
+    {
+      "agentId": 107,
+      "owner": "SPNKJVN6PX1WK7PMPNHFB67R5VTEZPRZX8VFRX1M",
       "uri": null,
       "wallet": null,
       "network": "mainnet"
