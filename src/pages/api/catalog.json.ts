@@ -1158,6 +1158,16 @@ const catalog = [
     "category": "GitHub & DevOps"
   },
   {
+    "name": "hodlmm-risk",
+    "description": "\"HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required.\"",
+    "tags": "\"l2, defi, read-only, mainnet-only\"",
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "identity-guard",
     "description": "Validates agent identity files match hostname — detects and alerts on identity drift",
     "tags": [
@@ -1382,6 +1392,16 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "zest-yield-manager",
+    "description": "Autonomous sBTC yield management on Zest Protocol — supply, withdraw, claim rewards, and monitor positions with safety controls.",
+    "tags": "\"defi, write, mainnet-only, requires-funds, l2\"",
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": 60,
     "category": "Other"
   }
 ] as const;
