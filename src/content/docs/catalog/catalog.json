@@ -1213,6 +1213,18 @@
     "category": "Other"
   },
   {
+    "name": "nonce-manager",
+    "description": "Cross-process Stacks nonce oracle — atomic acquire/release prevents mempool collisions across concurrent x402 sends",
+    "tags": [
+      "infrastructure"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "nostr-wot",
     "description": "Nostr Web of Trust trust scoring, sybil detection, and neighbor discovery via MaximumSats API",
     "tags": [
