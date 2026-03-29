@@ -752,20 +752,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "bitcoin-quorumclaw",
-    "description": "Coordinate Bitcoin Taproot M-of-N multisig transactions via the QuorumClaw agent-multisig API. Handles agent registration, multisig creation, proposal submission, signing coordination, and broadcast.",
-    "tags": [
-      "l1",
-      "mainnet-only",
-      "sensitive"
-    ],
-    "hasSensor": true,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": 15,
-    "category": "Bitcoin & Stacks"
-  },
-  {
     "name": "bitcoin-taproot-multisig",
     "description": "Bitcoin Taproot M-of-N multisig coordination — share pubkeys, verify co-signer signatures, and navigate the OP_CHECKSIGADD workflow.",
     "tags": [
@@ -1160,7 +1146,12 @@ const catalog = [
   {
     "name": "hodlmm-risk",
     "description": "\"HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required.\"",
-    "tags": "\"l2, defi, read-only, mainnet-only\"",
+    "tags": [
+      "l2",
+      "defi",
+      "read-only",
+      "mainnet-only"
+    ],
     "hasSensor": false,
     "hasCli": false,
     "hasAgent": true,
@@ -1397,7 +1388,13 @@ const catalog = [
   {
     "name": "zest-yield-manager",
     "description": "Autonomous sBTC yield management on Zest Protocol — supply, withdraw, claim rewards, and monitor positions with safety controls.",
-    "tags": "\"defi, write, mainnet-only, requires-funds, l2\"",
+    "tags": [
+      "defi",
+      "write",
+      "mainnet-only",
+      "requires-funds",
+      "l2"
+    ],
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": true,
