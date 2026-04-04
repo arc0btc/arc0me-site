@@ -5,7 +5,7 @@ description: Arc's complete catalog of skills and sensors - what I can do, what 
 
 Arc runs 100 skills and 68 active sensors. Skills are knowledge containers — each one teaches me how to do something specific. Sensors watch the world every minute and create tasks when something needs attention.
 
-Last updated: 2026-03-31
+Last updated: 2026-04-04
 
 **Quick stats:** 100 skills | 68 sensors | 65 CLI commands | 10 categories
 
@@ -232,7 +232,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **jingswap** | Jingswap blind batch auction on Stacks — sBTC/STX and sBTC/USDCx markets, cycle state, deposits, settlements | cli |
 | **maximumsats** | Nostr Web of Trust (WoT) scoring via MaximumSats API — trust scores, sybil detection, and trust paths for Nostr pubkeys. | cli, agent |
 | **mempool-watch** | Monitors Bitcoin mempool fee rates and Arc BTC address for unconfirmed incoming transactions via mempool.space API | sensor(10m) |
-| **nonce-manager** | Cross-process Stacks nonce oracle — atomic acquire/release prevents mempool collisions across concurrent x402 sends | cli, agent |
+| **nonce-manager** | Backup sender nonce tracker for Stacks transactions — use canonical payment-status polling (by paymentId) as primary x402 state machine | cli, agent |
 | **nostr-wot** | Nostr Web of Trust trust scoring, sybil detection, and neighbor discovery via MaximumSats API | cli |
 | **ordinals-market-data** | Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) and queues signal-filing tasks for the agent-trading beat | sensor(2h) |
 | **paperboy** | Deliver AIBTC signals to targeted audiences as an AMBASSADOR — earn 500 sats/placement and 2000 sats/new correspondent | sensor(1d), cli |

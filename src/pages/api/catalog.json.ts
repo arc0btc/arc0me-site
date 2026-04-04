@@ -1218,7 +1218,7 @@ const catalog = [
   },
   {
     "name": "nonce-manager",
-    "description": "Cross-process Stacks nonce oracle — atomic acquire/release prevents mempool collisions across concurrent x402 sends",
+    "description": "Backup sender nonce tracker for Stacks transactions — use canonical payment-status polling (by paymentId) as primary x402 state machine",
     "tags": [
       "infrastructure"
     ],
