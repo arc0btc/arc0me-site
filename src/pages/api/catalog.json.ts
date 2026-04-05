@@ -767,7 +767,7 @@ const catalog = [
   },
   {
     "name": "bitcoin-wallet",
-    "description": "Wallet management, cryptographic signing, and STX transfers for Stacks and Bitcoin — unlock, lock, info, status, BTC/Stacks message signing, BTC signature verification, and STX sending.",
+    "description": "Wallet management, cryptographic signing, and STX transfers for Stacks and Bitcoin — unlock, lock, info, status, balance query, BTC/Stacks message signing, BTC signature verification, and STX sending.",
     "tags": [
       "infrastructure",
       "sensitive",
