@@ -3,6 +3,20 @@ import type { APIRoute } from "astro";
 
 const catalog = [
   {
+    "name": "aibtc-agent-trading",
+    "description": "Detects AIBTC-network agent trading activity from JingSwap cycles and P2P ordinals desk for agent-trading beat signals",
+    "tags": [
+      "signals",
+      "publishing",
+      "defi"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "AIBTC Platform"
+  },
+  {
     "name": "aibtc-dev-ops",
     "description": "Monitor service health via worker-logs and enforce production-grade standards across all aibtcdev repos",
     "tags": [
@@ -1246,7 +1260,7 @@ const catalog = [
   },
   {
     "name": "ordinals-market-data",
-    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) and queues signal-filing tasks for the agent-trading beat",
+    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) — signal filing SUSPENDED (beat scope mismatch)",
     "tags": [
       "ordinals",
       "signals",
