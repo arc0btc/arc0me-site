@@ -3,6 +3,16 @@ import type { APIRoute } from "astro";
 
 const catalog = [
   {
+    "name": "agent-health",
+    "description": "External health monitor for Loom (Rising Leviathan). Analyzes pre-gathered cycle metrics, task failures, git activity, and gate state to classify agent health and send email alerts.",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "Other"
+  },
+  {
     "name": "aibtc-agent-trading",
     "description": "Detects AIBTC-network agent trading activity from JingSwap cycles and P2P ordinals desk for agent-trading beat signals",
     "tags": [
@@ -572,17 +582,18 @@ const catalog = [
   },
   {
     "name": "arc-strategy-review",
-    "description": "Weekly strategic check-in against Five Directives and milestones — lightweight assessment, no queue manipulation, at most 1 follow-up task",
+    "description": "Daily self-evaluation against PURPOSE.md rubric and Five Directives — lightweight assessment, no queue manipulation, at most 1 follow-up task",
     "tags": [
       "strategy",
-      "weekly",
+      "daily",
       "directives",
-      "milestones"
+      "milestones",
+      "purpose"
     ],
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 10080,
+    "sensorInterval": 1440,
     "category": "Arc Infrastructure"
   },
   {
