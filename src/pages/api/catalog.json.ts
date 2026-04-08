@@ -477,6 +477,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-purpose-eval",
+    "description": "Data-driven PURPOSE.md evaluation sensor — scores dimensions from SQL queries on tasks/cycle_log",
+    "tags": [
+      "evaluation",
+      "metrics",
+      "orchestration"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-report-email",
     "description": "Email watch reports when new ones are generated — sensor-only, fires after CEO review completes",
     "tags": [],
