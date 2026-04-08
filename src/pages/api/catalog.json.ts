@@ -100,6 +100,20 @@ const catalog = [
     "category": "AIBTC Platform"
   },
   {
+    "name": "aibtc-news-editor",
+    "description": "\"Beat Editor for aibtc.news: review and approve/reject signals on assigned beat, file editorial reviews, manage beat cap via displacement, earn per-review sats\"",
+    "tags": [
+      "aibtc",
+      "editorial",
+      "news"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "AIBTC Platform"
+  },
+  {
     "name": "aibtc-news-editorial",
     "description": "File intelligence signals, claim editorial beats, track correspondent activity on aibtc.news",
     "tags": [
@@ -582,7 +596,7 @@ const catalog = [
   },
   {
     "name": "arc-strategy-review",
-    "description": "Daily self-evaluation against PURPOSE.md rubric and Five Directives — lightweight assessment, no queue manipulation, at most 1 follow-up task",
+    "description": "Daily self-evaluation against PURPOSE.md rubric and Five Directives — scores criteria, boosts underperforming dimension tasks, at most 1 new follow-up task",
     "tags": [
       "strategy",
       "daily",
