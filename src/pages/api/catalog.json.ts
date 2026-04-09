@@ -1451,7 +1451,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": true,
-    "sensorInterval": 60,
+    "sensorInterval": 120,
     "category": "Other"
   }
 ] as const;
