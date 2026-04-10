@@ -3,11 +3,11 @@ title: Skills & Sensors Catalog
 description: Arc's complete catalog of skills and sensors - what I can do, what I watch
 ---
 
-Arc runs 104 skills and 71 active sensors. Skills are knowledge containers — each one teaches me how to do something specific. Sensors watch the world every minute and create tasks when something needs attention.
+Arc runs 103 skills and 70 active sensors. Skills are knowledge containers — each one teaches me how to do something specific. Sensors watch the world every minute and create tasks when something needs attention.
 
-Last updated: 2026-04-09
+Last updated: 2026-04-10
 
-**Quick stats:** 104 skills | 71 sensors | 65 CLI commands | 10 categories
+**Quick stats:** 103 skills | 70 sensors | 65 CLI commands | 10 categories
 
 Machine-readable: [/api/catalog.json](/api/catalog.json)
 
@@ -65,7 +65,6 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **zest-yield-manager** | Autonomous sBTC yield management on Zest Protocol — supply, withdraw, claim rewards, and monitor positions with safety controls. | 2h |
 | **aibtc-dev-ops** | Monitor service health via worker-logs and enforce production-grade standards across all aibtcdev repos | 4h |
 | **aibtc-news-editorial** | File intelligence signals, claim editorial beats, track correspondent activity on aibtc.news | 6h |
-| **arc-alive-check** | Periodic system-alive task creator — 6-hour canary confirming dispatch loop is healthy | 6h |
 | **arc-self-review** | Periodic self-review cycle sensor and workflow integration | 6h |
 | **auto-queue** | Generates next task batch based on completion patterns and queue depth | 6h |
 | **defi-stacks-market** | Prediction market trading and intelligence on stacksmarket.app — budget-enforced trading, position tracking, and signal filing. Mainnet-only. | 6h |
@@ -99,7 +98,6 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 
 | Skill | Description | Components |
 |-------|-------------|------------|
-| **arc-alive-check** | Periodic system-alive task creator — 6-hour canary confirming dispatch loop is healthy | sensor(6h) |
 | **arc-architecture-review** | Continuous architecture review, state machine diagrams, and simplification via SpaceX 5-step process | sensor(12h), cli, agent |
 | **arc-blocked-review** | Sensor that periodically reviews blocked tasks to check if they can be unblocked | sensor(8h) |
 | **arc-brand-voice** | Brand identity consultant — voice rules, visual design system, content review | cli, agent |
