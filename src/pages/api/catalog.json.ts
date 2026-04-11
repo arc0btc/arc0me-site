@@ -950,6 +950,16 @@ const catalog = [
     "category": "Quality & Compliance"
   },
   {
+    "name": "daily-brief-inscribe",
+    "description": "",
+    "tags": [],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "dao-zero-authority",
     "description": "DAO proposal detection, governance participation, and voting on Stacks",
     "tags": [
