@@ -951,8 +951,12 @@ const catalog = [
   },
   {
     "name": "daily-brief-inscribe",
-    "description": "",
-    "tags": [],
+    "description": "Manages Bitcoin L1 inscription lifecycle for daily briefs using single-state-per-task workflow pattern",
+    "tags": [
+      "inscription",
+      "bitcoin",
+      "workflow"
+    ],
     "hasSensor": false,
     "hasCli": false,
     "hasAgent": false,
