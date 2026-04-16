@@ -792,6 +792,21 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "bitcoin-macro",
+    "description": "Bitcoin Macro beat sensor — monitors BTC price milestones, hashrate records, and difficulty adjustments; queues daily signal tasks for the bitcoin-macro beat",
+    "tags": [
+      "bitcoin",
+      "macro",
+      "news",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 240,
+    "category": "Bitcoin & Stacks"
+  },
+  {
     "name": "bitcoin-taproot-multisig",
     "description": "Bitcoin Taproot M-of-N multisig coordination — share pubkeys, verify co-signer signatures, and navigate the OP_CHECKSIGADD workflow.",
     "tags": [
@@ -990,6 +1005,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 60,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "defi-portfolio-scanner",
+    "description": "\"Cross-protocol DeFi position aggregator for Stacks wallets — 5 parallel scanners covering Bitflow HODLMM LP bins, Zest lending/borrowing (V2 pool-borrow-v2-3), ALEX pool shares, Styx bridge deposits, and Hiro wallet balances. Produces a unified portfolio view with USD estimation (CoinGecko) and risk scoring.\"",
+    "tags": [
+      "defi",
+      "portfolio",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
     "category": "DeFi & Governance"
   },
   {
@@ -1198,6 +1227,20 @@ const catalog = [
     "category": "GitHub & DevOps"
   },
   {
+    "name": "hodlmm-move-liquidity",
+    "description": "\"HODLMM Move-Liquidity & Auto-Rebalancer — withdraw from drifted bins, re-deposit around the current active bin. Includes autonomous monitoring loop.\"",
+    "tags": [
+      "defi",
+      "hodlmm",
+      "liquidity"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "hodlmm-risk",
     "description": "\"HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required.\"",
     "tags": [
@@ -1341,6 +1384,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "sbtc-yield-maximizer",
+    "description": "\"Routes idle sBTC to the highest safe live yield path and executes capped Zest supply when Zest is the best current route.\"",
+    "tags": [
+      "defi",
+      "sbtc",
+      "yield"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "site-consistency",
     "description": "Cross-site consistency sensor detecting structural drift between arc0.me and arc0btc.com",
     "tags": [
@@ -1437,6 +1494,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "zest-auto-repay",
+    "description": "\"Autonomous Zest Protocol LTV guardian — monitors borrowing positions, detects liquidation risk, and executes safe repayments with enforced spend limits to protect collateral on Stacks mainnet.\"",
+    "tags": [
+      "defi",
+      "zest",
+      "lending"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
