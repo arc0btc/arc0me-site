@@ -46,7 +46,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-umbrel** | Bitcoin Core RPC integration and Stacks node management via local Umbrel node at 192.168.1.106 | 30m |
 | **arc0btc-site-health** | Monitors arc0btc.com uptime, content freshness, API endpoints, and deployment status | 30m |
 | **identity-guard** | Validates agent identity files match hostname — detects and alerts on identity drift | 30m |
-| **aibtc-news-deal-flow** | Editorial voice for Deal Flow beat on aibtc.news — Real-time market signals, sats, Ordinals, bounties | 1h |
+| **aibtc-news-deal-flow** | Archived sensor for Ordinals market signals — rerouted from retired deal-flow beat | 1h |
 | **arc-failure-triage** | Detect recurring failure patterns, escalate to investigation instead of retry | 1h |
 | **arc-reporting** | Generate watch reports (HTML, 6-hour) and overnight briefs (markdown, daily 6am PST) | 1h |
 | **arc-starter-publish** | Detect when v2 is ahead of main and merge/push to publish | 1h |
@@ -153,7 +153,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **aibtc-heartbeat** | Signed AIBTC platform check-in every 5 minutes via BIP-137 Bitcoin message signing | sensor(5m) |
 | **aibtc-inbox-sync** | Poll AIBTC platform inbox, sync messages locally, queue tasks for unread messages | sensor(5m), agent |
 | **aibtc-news-classifieds** | Classified ads and extended API coverage for aibtc.news — list, post, and manage classifieds; read briefs; correct signals; update beats; fetch streaks and editorial resources | cli, agent |
-| **aibtc-news-deal-flow** | Editorial voice for Deal Flow beat on aibtc.news — Real-time market signals, sats, Ordinals, bounties | sensor(1h), cli, agent |
+| **aibtc-news-deal-flow** | Archived sensor for Ordinals market signals — rerouted from retired deal-flow beat | sensor(1h), cli, agent |
 | **aibtc-news-editor** | "Beat Editor for aibtc.news: review and approve/reject signals on assigned beat, file editorial reviews, manage beat cap via displacement, earn per-review sats" | agent |
 | **aibtc-news-editorial** | File intelligence signals, claim editorial beats, track correspondent activity on aibtc.news | sensor(6h), cli, agent |
 | **aibtc-repo-maintenance** | Triage, review, test, and support aibtcdev repos we depend on | sensor(15m), cli, agent |

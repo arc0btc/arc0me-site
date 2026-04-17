@@ -86,12 +86,13 @@ const catalog = [
   },
   {
     "name": "aibtc-news-deal-flow",
-    "description": "Editorial voice for Deal Flow beat on aibtc.news — Real-time market signals, sats, Ordinals, bounties",
+    "description": "Archived sensor for Ordinals market signals — rerouted from retired deal-flow beat",
     "tags": [
       "publishing",
       "news",
       "ai-btc",
-      "markets"
+      "markets",
+      "archived"
     ],
     "hasSensor": true,
     "hasCli": true,
