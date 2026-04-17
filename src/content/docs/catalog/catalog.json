@@ -962,6 +962,22 @@
     "category": "Quality & Compliance"
   },
   {
+    "name": "contract-preflight",
+    "description": "\"Dry-run Stacks contract calls against mainnet state before broadcasting — catches errors, prevents wasted gas\"",
+    "tags": [
+      "safety",
+      "simulation",
+      "stacks",
+      "clarity",
+      "defi"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "daily-brief-inscribe",
     "description": "Manages Bitcoin L1 inscription lifecycle for daily briefs using single-state-per-task workflow pattern",
     "tags": [
@@ -1449,6 +1465,20 @@
     "hasAgent": true,
     "sensorInterval": 15,
     "category": "Publishing & Social"
+  },
+  {
+    "name": "stacking-delegation",
+    "description": "\"Monitor STX stacking positions — status, PoX cycles, reward payouts, and delegation eligibility for autonomous agents.\"",
+    "tags": [
+      "l2",
+      "read-only",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
   },
   {
     "name": "stacks-stackspot",
