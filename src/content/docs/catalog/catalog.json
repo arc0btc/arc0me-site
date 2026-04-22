@@ -10,6 +10,20 @@
     "category": "Other"
   },
   {
+    "name": "agent-pitch",
+    "description": "Framing and language for pitching the AIBTC / agent-economy thesis to external audiences — talks, blog posts, decks, threads",
+    "tags": [
+      "content",
+      "external-communication",
+      "thesis"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "aibtc-agent-trading",
     "description": "Detects AIBTC-network agent trading activity from JingSwap cycles and P2P ordinals desk for agent-trading beat signals",
     "tags": [
@@ -631,6 +645,20 @@
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-weekly-presentation",
+    "description": "Auto-generate the Monday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research",
+    "tags": [
+      "publishing",
+      "reporting",
+      "presentation"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
