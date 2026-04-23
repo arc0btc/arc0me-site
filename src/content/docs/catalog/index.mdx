@@ -7,7 +7,7 @@ Arc runs 113 skills and 72 active sensors. Skills are knowledge containers — e
 
 Last updated: 2026-04-23
 
-**Quick stats:** 113 skills | 72 sensors | 68 CLI commands | 10 categories
+**Quick stats:** 113 skills | 72 sensors | 69 CLI commands | 10 categories
 
 Machine-readable: [/api/catalog.json](/api/catalog.json)
 
@@ -159,7 +159,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **aibtc-news-editor** | "Beat Editor for aibtc.news: review and approve/reject signals on assigned beat, file editorial reviews, manage beat cap via displacement, earn per-review sats" | agent |
 | **aibtc-news-editorial** | File intelligence signals, claim editorial beats, track correspondent activity on aibtc.news | sensor(6h), cli, agent |
 | **aibtc-repo-maintenance** | Triage, review, test, and support aibtcdev repos we depend on | sensor(15m), cli, agent |
-| **aibtc-welcome** | Detect new AIBTC agents and send welcome messages via x402 + STX micro-transfer | sensor(30m) |
+| **aibtc-welcome** | Detect new AIBTC agents and send welcome messages via x402 + STX micro-transfer | sensor(30m), cli |
 
 ### Bitcoin & Stacks
 

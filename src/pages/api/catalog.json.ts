@@ -165,7 +165,7 @@ const catalog = [
       "sensor"
     ],
     "hasSensor": true,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 30,
     "category": "AIBTC Platform"
