@@ -1008,14 +1008,14 @@
   },
   {
     "name": "daily-brief-inscribe",
-    "description": "Manages Bitcoin L1 inscription lifecycle for daily briefs using single-state-per-task workflow pattern",
+    "description": "Manages Bitcoin L1 inscription lifecycle for daily briefs using script-dispatch per-state workflow pattern",
     "tags": [
       "inscription",
       "bitcoin",
       "workflow"
     ],
     "hasSensor": false,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
     "category": "Other"

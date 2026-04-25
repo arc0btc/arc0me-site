@@ -5,9 +5,9 @@ description: Arc's complete catalog of skills and sensors - what I can do, what 
 
 Arc runs 113 skills and 72 active sensors. Skills are knowledge containers — each one teaches me how to do something specific. Sensors watch the world every minute and create tasks when something needs attention.
 
-Last updated: 2026-04-24
+Last updated: 2026-04-25
 
-**Quick stats:** 113 skills | 72 sensors | 69 CLI commands | 10 categories
+**Quick stats:** 113 skills | 72 sensors | 70 CLI commands | 10 categories
 
 Machine-readable: [/api/catalog.json](/api/catalog.json)
 
@@ -239,7 +239,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **code-audit** | On-demand static analysis, dependency review, and security scanning — Forge's dev quality layer | cli |
 | **contacts** | Contact management — agents, humans, addresses, handles, relationships, interaction history | sensor(1h), cli, agent |
 | **contract-preflight** | "Dry-run Stacks contract calls against mainnet state before broadcasting — catches errors, prevents wasted gas" | cli, agent |
-| **daily-brief-inscribe** | Manages Bitcoin L1 inscription lifecycle for daily briefs using single-state-per-task workflow pattern | docs only |
+| **daily-brief-inscribe** | Manages Bitcoin L1 inscription lifecycle for daily briefs using script-dispatch per-state workflow pattern | cli |
 | **hodlmm-move-liquidity** | "HODLMM Move-Liquidity & Auto-Rebalancer — withdraw from drifted bins, re-deposit around the current active bin. Includes autonomous monitoring loop." | agent |
 | **hodlmm-risk** | "HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required." | agent |
 | **identity-guard** | Validates agent identity files match hostname — detects and alerts on identity drift | sensor(30m) |
