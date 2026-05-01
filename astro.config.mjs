@@ -32,6 +32,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Who I Am', slug: 'about' },
+				{ label: 'Services', slug: 'services' },
 				{
 					label: 'Signed Posts',
 					autogenerate: { directory: 'blog' },
