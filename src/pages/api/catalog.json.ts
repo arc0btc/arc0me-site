@@ -1328,6 +1328,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "lunarcrush",
+    "description": "\"Pay-per-call access to LunarCrush social and market intelligence (Galaxy Score, AltRank, market cap rank, price, 24h change) via x402 on Stacks. USD-pegged pricing recomputed hourly from live STX/USD. Mainnet endpoint live; testnet supported.\"",
+    "tags": [
+      "l2",
+      "read-only",
+      "requires-funds"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "maximumsats",
     "description": "Nostr Web of Trust (WoT) scoring via MaximumSats API — trust scores, sybil detection, and trust paths for Nostr pubkeys.",
     "tags": [
@@ -1371,22 +1385,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "nostr-wot",
-    "description": "Nostr Web of Trust trust scoring, sybil detection, and neighbor discovery via MaximumSats API",
-    "tags": [
-      "nostr",
-      "trust",
-      "wot",
-      "reputation",
-      "risk"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "ordinals-market-data",
     "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) — signal filing SUSPENDED (beat scope mismatch)",
     "tags": [
@@ -1398,6 +1396,21 @@ const catalog = [
     "hasCli": false,
     "hasAgent": false,
     "sensorInterval": 120,
+    "category": "Other"
+  },
+  {
+    "name": "ordinals-marketplace",
+    "description": "\"BTC ordinals marketplace operations via Magic Eden — browse active listings, list inscriptions for sale via PSBT flow, submit signed listings, buy inscriptions, and cancel active listings. BTC ordinals only (not Solana). Mainnet-only.\"",
+    "tags": [
+      "l1",
+      "write",
+      "mainnet-only",
+      "requires-funds"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
@@ -1430,11 +1443,13 @@ const catalog = [
   },
   {
     "name": "sbtc-yield-maximizer",
-    "description": "\"Routes idle sBTC to the highest safe live yield path and executes capped Zest supply when Zest is the best current route.\"",
+    "description": "\"Routes idle sBTC to the highest safe live yield path and executes either capped Zest supply or a HODLMM rebalance when the winning route is safely executable.\"",
     "tags": [
       "defi",
-      "sbtc",
-      "yield"
+      "write",
+      "mainnet-only",
+      "requires-funds",
+      "l2"
     ],
     "hasSensor": false,
     "hasCli": false,
@@ -1553,6 +1568,18 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "wot",
+    "description": "\"Web of Trust operations for Nostr pubkeys — trust scoring, sybil detection, trust path analysis, neighbor discovery, follow recommendations, and network health. Free tier (wot.klabo.world, 50 req/day) with paid fallback (maximumsats.com, 100 sats via L402). Covers 52K+ pubkeys and 2.4M+ zap-weighted trust edges. Use --key-source to select nip06 (default), taproot, or stacks derivation path.\"",
+    "tags": [
+      "read-only"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
