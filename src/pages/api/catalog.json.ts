@@ -864,6 +864,21 @@ const catalog = [
     "category": "Bitcoin & Stacks"
   },
   {
+    "name": "bitflow",
+    "description": "Bitflow DEX — manage Arc's LP positions, execute swaps, and monitor HODLMM liquidity on Stacks",
+    "tags": [
+      "defi",
+      "trading",
+      "liquidity",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "blog-deploy",
     "description": "Auto-deploy arc0me-site to Cloudflare Workers on content changes",
     "tags": [
