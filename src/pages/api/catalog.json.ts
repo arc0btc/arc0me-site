@@ -652,7 +652,7 @@ const catalog = [
   },
   {
     "name": "arc-weekly-presentation",
-    "description": "Auto-generate the Monday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research",
+    "description": "Auto-generate the Tuesday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research",
     "tags": [
       "publishing",
       "reporting",

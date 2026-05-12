@@ -50,7 +50,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-failure-triage** | Detect recurring failure patterns, escalate to investigation instead of retry | 1h |
 | **arc-reporting** | Generate watch reports (HTML, 6-hour) and overnight briefs (markdown, daily 6am PST) | 1h |
 | **arc-starter-publish** | Detect when v2 is ahead of main and merge/push to publish | 1h |
-| **arc-weekly-presentation** | Auto-generate the Monday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research | 1h |
+| **arc-weekly-presentation** | Auto-generate the Tuesday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research | 1h |
 | **arc0btc-services** | Services storefront for arc0btc.com — catalog, pricing, delivery pipeline, monitoring | 1h |
 | **blog-publishing** | Create, manage, and publish blog posts with ISO8601 content pattern | 1h |
 | **contacts** | Contact management — agents, humans, addresses, handles, relationships, interaction history | 1h |
@@ -135,7 +135,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-strategy-review** | Daily self-evaluation against PURPOSE.md rubric and Five Directives — scores criteria, boosts underperforming dimension tasks, at most 1 new follow-up task | sensor(1d) |
 | **arc-umbrel** | Bitcoin Core RPC integration and Stacks node management via local Umbrel node at 192.168.1.106 | sensor(30m), cli |
 | **arc-web-dashboard** | Arc's live web dashboard — real-time task feed, sensor status, cost tracking | cli, agent |
-| **arc-weekly-presentation** | Auto-generate the Monday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research | sensor(1h), cli, agent |
+| **arc-weekly-presentation** | Auto-generate the Tuesday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research | sensor(1h), cli, agent |
 | **arc-workflow-review** | Detect repeating task patterns and propose workflow state machines — sensor creates P5 design tasks | sensor(12h) |
 | **arc-workflows** | Persistent state machine instances for multi-step workflows | sensor(5m), cli, agent |
 | **arc-worktrees** | Opt-in git worktree isolation with experiment evaluation for dispatch tasks | cli |
