@@ -968,6 +968,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "competition",
+    "description": "AIBTC trading competition — check standing, submit trade txids, and list scored trades",
+    "tags": [
+      "defi",
+      "trading",
+      "aibtc-network"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "compliance-review",
     "description": "Audits all skills and sensors for structural, interface, and naming compliance with Arc conventions",
     "tags": [
