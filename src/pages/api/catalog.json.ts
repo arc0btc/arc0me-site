@@ -1586,6 +1586,39 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "trading-comp",
+    "description": "AIBTC Trading Competition strategy — competition-submit wrapper, daily metrics, hooks for competitor/pair/ecosystem sensors",
+    "tags": [
+      "defi",
+      "trading",
+      "competition",
+      "aibtc-network",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "trading-comp-mirror",
+    "description": "Competitor trade watcher for the AIBTC Trading Competition — polls each tracked competitor's trade history, detects new trades, and caches them locally for pair-frequency analysis",
+    "tags": [
+      "defi",
+      "trading",
+      "competition",
+      "sensor",
+      "aibtc-network",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 10,
+    "category": "Other"
+  },
+  {
     "name": "worker-deploy",
     "description": "Auto-deploy arc0btc-worker to Cloudflare Workers on code changes",
     "tags": [
