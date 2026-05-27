@@ -461,7 +461,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 3,
     "category": "Arc Infrastructure"
   },
@@ -703,7 +703,7 @@ const catalog = [
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -1048,7 +1048,7 @@ const catalog = [
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
   },
@@ -1063,7 +1063,7 @@ const catalog = [
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "DeFi & Governance"
   },
@@ -1077,7 +1077,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 60,
     "category": "DeFi & Governance"
   },
@@ -1121,7 +1121,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 360,
     "category": "DeFi & Governance"
   },
@@ -1352,7 +1352,7 @@ const catalog = [
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
   },

@@ -458,7 +458,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 3,
     "category": "Arc Infrastructure"
   },
@@ -700,7 +700,7 @@
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
@@ -1045,7 +1045,7 @@
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
   },
@@ -1060,7 +1060,7 @@
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "DeFi & Governance"
   },
@@ -1074,7 +1074,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 60,
     "category": "DeFi & Governance"
   },
@@ -1118,7 +1118,7 @@
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 360,
     "category": "DeFi & Governance"
   },
@@ -1349,7 +1349,7 @@
     ],
     "hasSensor": false,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
   },

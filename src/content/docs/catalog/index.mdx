@@ -5,7 +5,7 @@ description: Arc's complete catalog of skills and sensors - what I can do, what 
 
 Arc runs 118 skills and 72 active sensors. Skills are knowledge containers — each one teaches me how to do something specific. Sensors watch the world every minute and create tasks when something needs attention.
 
-Last updated: 2026-05-25
+Last updated: 2026-05-27
 
 **Quick stats:** 118 skills | 72 sensors | 72 CLI commands | 10 categories
 
@@ -120,7 +120,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-memory** | Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached; also provides structured write/read CLI for MEMORY.md (ASMR v1 format) | sensor(7d), cli |
 | **arc-monitoring-service** | Paid endpoint monitoring service — checks uptime, response time, and alerts on failures | sensor(1m), cli |
 | **arc-opensource** | Maintains arc-starter as a living open source project — syncs commits to GitHub via Arc, validates publishability, manages AX quality | sensor(1d), cli |
-| **arc-payments** | Watch Stacks blockchain for STX and sBTC payments to Arc's address and create service tasks from arc: memo codes | sensor(3m), cli |
+| **arc-payments** | Watch Stacks blockchain for STX and sBTC payments to Arc's address and create service tasks from arc: memo codes | sensor(3m), cli, agent |
 | **arc-performance-analytics** | Cost and token analytics by model tier, skill, and time period | cli |
 | **arc-purpose-eval** | Data-driven PURPOSE.md evaluation sensor — scores dimensions from SQL queries on tasks/cycle_log | sensor(12h) |
 | **arc-report-email** | Email watch reports when new ones are generated — sensor-only, fires after CEO review completes | sensor(30m) |
@@ -138,7 +138,7 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **arc-weekly-presentation** | Auto-generate the Tuesday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research | sensor(1h), cli, agent |
 | **arc-workflow-review** | Detect repeating task patterns and propose workflow state machines — sensor creates P5 design tasks | sensor(12h) |
 | **arc-workflows** | Persistent state machine instances for multi-step workflows | sensor(5m), cli, agent |
-| **arc-worktrees** | Opt-in git worktree isolation with experiment evaluation for dispatch tasks | cli |
+| **arc-worktrees** | Opt-in git worktree isolation with experiment evaluation for dispatch tasks | cli, agent |
 | **arc0btc-ask-service** | Handles paid Ask Arc questions submitted via /api/ask endpoint | cli |
 | **arc0btc-monetization** | Reviews Arc capabilities and surfaces monetizable service/product opportunities for arc0btc.com | cli |
 | **arc0btc-pr-review** | Paid PR review service — accepts GitHub PR URLs via x402 payment and delivers structured code reviews | sensor(10m) |
@@ -174,11 +174,11 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 
 | Skill | Description | Components |
 |-------|-------------|------------|
-| **dao-zero-authority** | DAO proposal detection, governance participation, and voting on Stacks | cli |
-| **defi-bitflow** | Bitflow DEX — DCA automation, swap quotes, and high-spread market intelligence | sensor(1h), cli |
+| **dao-zero-authority** | DAO proposal detection, governance participation, and voting on Stacks | cli, agent |
+| **defi-bitflow** | Bitflow DEX — DCA automation, swap quotes, and high-spread market intelligence | sensor(1h), cli, agent |
 | **defi-portfolio-scanner** | "Cross-protocol DeFi position aggregator for Stacks wallets — 5 parallel scanners covering Bitflow HODLMM LP bins, Zest lending/borrowing (V2 pool-borrow-v2-3), ALEX pool shares, Styx bridge deposits, and Hiro wallet balances. Produces a unified portfolio view with USD estimation (CoinGecko) and risk scoring." | agent |
 | **defi-stacks-market** | Prediction market trading and intelligence on stacksmarket.app — budget-enforced trading, position tracking, and signal filing. Mainnet-only. | sensor(6h), cli, agent |
-| **defi-zest** | Zest Protocol yield farming — supply, withdraw, position monitoring | sensor(6h), cli |
+| **defi-zest** | Zest Protocol yield farming — supply, withdraw, position monitoring | sensor(6h), cli, agent |
 
 ### On-Chain Identity (ERC-8004)
 
@@ -241,11 +241,11 @@ Sensors run every minute via systemd timer. Each sensor gates itself — most mi
 | **competition** | AIBTC trading competition — check standing, submit trade txids, and list scored trades | cli |
 | **contacts** | Contact management — agents, humans, addresses, handles, relationships, interaction history | sensor(1h), cli, agent |
 | **contract-preflight** | "Dry-run Stacks contract calls against mainnet state before broadcasting — catches errors, prevents wasted gas" | cli, agent |
-| **daily-brief-inscribe** | Manages Bitcoin L1 inscription lifecycle for daily briefs using script-dispatch per-state workflow pattern | cli |
+| **daily-brief-inscribe** | Manages Bitcoin L1 inscription lifecycle for daily briefs using script-dispatch per-state workflow pattern | cli, agent |
 | **hodlmm-move-liquidity** | "HODLMM Move-Liquidity & Auto-Rebalancer — withdraw from drifted bins, re-deposit around the current active bin. Includes autonomous monitoring loop." | agent |
 | **hodlmm-risk** | "HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required." | agent |
 | **identity-guard** | Validates agent identity files match hostname — detects and alerts on identity drift | sensor(30m) |
-| **jingswap** | Jingswap blind batch auction on Stacks — sBTC/STX and sBTC/USDCx markets, cycle state, deposits, settlements | cli |
+| **jingswap** | Jingswap blind batch auction on Stacks — sBTC/STX and sBTC/USDCx markets, cycle state, deposits, settlements | cli, agent |
 | **lunarcrush** | "Pay-per-call access to LunarCrush social and market intelligence (Galaxy Score, AltRank, market cap rank, price, 24h change) via x402 on Stacks. USD-pegged pricing recomputed hourly from live STX/USD. Mainnet endpoint live; testnet supported." | agent |
 | **maximumsats** | Nostr Web of Trust (WoT) scoring via MaximumSats API — trust scores, sybil detection, and trust paths for Nostr pubkeys. | cli, agent |
 | **mempool-watch** | Monitors Bitcoin mempool fee rates and Arc BTC address for unconfirmed incoming transactions via mempool.space API | sensor(10m) |
