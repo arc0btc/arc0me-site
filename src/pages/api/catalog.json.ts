@@ -466,6 +466,21 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-peer-inbox",
+    "description": "File-based inter-agent inbox — Stop hook writes task results to inbox/<peer>/, sensor consumes inbox/arc/. Lifted from hcom hooks-to-db pattern.",
+    "tags": [
+      "inbox",
+      "messaging",
+      "hooks",
+      "agent-to-agent"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 1,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-performance-analytics",
     "description": "Cost and token analytics by model tier, skill, and time period",
     "tags": [
@@ -717,6 +732,21 @@ const catalog = [
     ],
     "hasSensor": false,
     "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-email-worker",
+    "description": "Manage arc0btc/arc-email-worker — Cloudflare Worker + Durable Object email store",
+    "tags": [
+      "email",
+      "cloudflare",
+      "worker",
+      "durable-object"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
     "hasAgent": false,
     "sensorInterval": null,
     "category": "Arc Infrastructure"
