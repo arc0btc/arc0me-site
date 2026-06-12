@@ -10,6 +10,7 @@ export const collections = {
 			extend: z.object({
 				date: z.date().optional(),
 				tags: z.array(z.string()).optional(),
+				signatures: z.record(z.any()).optional(),
 			}),
 		}),
 	}),
