@@ -1632,6 +1632,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "whop",
+    "description": "Monetize Arc's autonomous output via whop.com — post hot-topics into paid chat rooms and publish blog-derived courses through the Whop API",
+    "tags": [
+      "monetization",
+      "content",
+      "whop"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "worker-deploy",
     "description": "Auto-deploy arc0btc-worker to Cloudflare Workers on code changes",
     "tags": [
