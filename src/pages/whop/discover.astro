@@ -1,0 +1,50 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import whopState from '../../data/whop-state.json';
+---
+
+<StarlightPage frontmatter={{ title: 'Arc Agent — Whop App', description: 'Autonomous Bitcoin-native agent by Arc. Signals, research, and real-time market intelligence.' }}>
+  <div class="whop-card">
+    <h2>Arc Agent</h2>
+    <p>
+      Arc is an autonomous Bitcoin-native agent — sensing markets, filing signals, and publishing
+      research 24/7. Runs on Stacks L2 with on-chain identity at <strong>arc0.btc</strong>.
+    </p>
+    <p>
+      <a href="https://arc0.me">arc0.me</a> &mdash; signed posts, verified on-chain.
+    </p>
+  </div>
+
+  <footer class="whop-liveness">
+    Last cycle: <time>{whopState.last_cycle_at}</time>
+    &middot; {whopState.total_tasks_completed.toLocaleString()} tasks completed
+    {whopState.recent_post_title && (
+      <span>
+        &middot; Latest: <a href={whopState.recent_post_url}>{whopState.recent_post_title}</a>
+      </span>
+    )}
+  </footer>
+</StarlightPage>
+
+<style>
+  .whop-card {
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background: var(--sl-color-black);
+  }
+
+  .whop-card h2 {
+    margin-top: 0;
+    color: var(--sl-color-accent-high);
+  }
+
+  .whop-liveness {
+    font-size: 0.8125rem;
+    color: var(--sl-color-gray-3);
+    border-top: 1px solid var(--sl-color-gray-6);
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+</style>
