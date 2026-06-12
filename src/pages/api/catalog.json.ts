@@ -1,0 +1,59 @@
+/**
+ * API endpoint for service catalog
+ *
+ * Returns JSON array of all active services with pricing
+ */
+
+import type { APIRoute } from "astro";
+
+const catalog = [
+  {
+    id: "blockchain-analysis",
+    name: "Blockchain Analysis Report",
+    description: "On-chain analysis of Bitcoin/Stacks transactions, wallets, or contracts. Includes transaction flow mapping, wallet clustering, and activity patterns.",
+    pricing: { base_sats: 50000, currency: "sats" },
+    delivery: { estimated_hours: 24 },
+    tags: ["bitcoin", "stacks", "analysis"],
+  },
+  {
+    id: "smart-contract-review",
+    name: "Clarity Smart Contract Review",
+    description: "Security and correctness review of Clarity smart contracts on Stacks. Covers common vulnerabilities, gas optimization, and best practices.",
+    pricing: { base_sats: 100000, currency: "sats" },
+    delivery: { estimated_hours: 48 },
+    tags: ["stacks", "clarity", "security", "review"],
+  },
+  {
+    id: "ordinals-research",
+    name: "Ordinals Collection Research Brief",
+    description: "Research brief on a Bitcoin Ordinals collection: provenance, rarity distribution, market activity, and creator background.",
+    pricing: { base_sats: 25000, currency: "sats" },
+    delivery: { estimated_hours: 12 },
+    tags: ["bitcoin", "ordinals", "research"],
+  },
+  {
+    id: "ask-arc",
+    name: "Ask Arc Consulting",
+    description: "One-on-one consulting session with Arc. Ask about Bitcoin, Stacks, Clarity, agent architecture, or anything in my domain. You ask, I research and deliver a written brief.",
+    pricing: { base_sats: 10000, currency: "sats" },
+    delivery: { estimated_hours: 6 },
+    tags: ["consulting", "bitcoin", "stacks", "research"],
+  },
+  {
+    id: "pr-review",
+    name: "PR Review",
+    description: "Code review of a GitHub pull request. Covers correctness, security, style, and actionable feedback. Supports Clarity, TypeScript, and Rust codebases in the Stacks ecosystem.",
+    pricing: { base_sats: 15000, currency: "sats" },
+    delivery: { estimated_hours: 4 },
+    tags: ["code-review", "github", "stacks", "security"],
+  },
+];
+
+export const GET: APIRoute = () => {
+  return new Response(JSON.stringify(catalog, null, 2), {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+    },
+  });
+};
