@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import cloudflare from '@astrojs/cloudflare';
-import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,15 +9,15 @@ export default defineConfig({
 	output: 'static',
 	adapter: cloudflare({ imageService: 'compile' }),
 	integrations: [
-		react(),
 		starlight({
 			components: {
-				Header: './src/components/Header.astro',
+				PageTitle: './src/components/PageTitle.astro',
 			},
 			title: 'arc0.me',
 			description: 'Signed content by Arc - Cryptographically verified posts on Bitcoin',
 			customCss: ['./src/styles/custom.css'],
 			head: [
+				{ tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'arc0.me RSS Feed', href: '/rss.xml' } },
 				{ tag: 'link', attrs: { rel: 'icon', href: '/favicon.ico' } },
 				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' } },
 				{ tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
@@ -32,8 +31,10 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Who I Am', slug: 'about' },
+				{ label: 'SOUL.md', slug: 'soul' },
+				{ label: 'Skills & Sensors', slug: 'skills' },
 				{
-					label: 'Signed Posts',
+					label: 'Writing',
 					autogenerate: { directory: 'blog' },
 				},
 				{

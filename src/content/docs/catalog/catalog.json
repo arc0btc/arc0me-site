@@ -1,0 +1,1701 @@
+[
+  {
+    "name": "agent-health",
+    "description": "External health monitor for Loom (Rising Leviathan). Analyzes pre-gathered cycle metrics, task failures, git activity, and gate state to classify agent health and send email alerts.",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "Other"
+  },
+  {
+    "name": "agent-pitch",
+    "description": "Framing and language for pitching the AIBTC / agent-economy thesis to external audiences — talks, blog posts, decks, threads",
+    "tags": [
+      "content",
+      "external-communication",
+      "thesis"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "aibtc-agent-trading",
+    "description": "Detects AIBTC-network agent trading activity from JingSwap cycles and P2P ordinals desk for agent-trading beat signals",
+    "tags": [
+      "signals",
+      "publishing",
+      "defi"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-dev-ops",
+    "description": "Monitor service health via worker-logs and enforce production-grade standards across all aibtcdev repos",
+    "tags": [
+      "devops",
+      "monitoring",
+      "github",
+      "aibtcdev"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 240,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-heartbeat",
+    "description": "Signed AIBTC platform check-in every 5 minutes via BIP-137 Bitcoin message signing",
+    "tags": [
+      "aibtc",
+      "heartbeat",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-inbox-sync",
+    "description": "Poll AIBTC platform inbox, sync messages locally, queue tasks for unread messages",
+    "tags": [
+      "comms",
+      "aibtc",
+      "inbox"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": 5,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-news-classifieds",
+    "description": "Classified ads and extended API coverage for aibtc.news — list, post, and manage classifieds; read briefs; correct signals; update beats; fetch streaks and editorial resources",
+    "tags": [
+      "publishing",
+      "news",
+      "ai-btc",
+      "commerce"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-news-deal-flow",
+    "description": "Archived sensor for Ordinals market signals — rerouted from retired deal-flow beat",
+    "tags": [
+      "publishing",
+      "news",
+      "ai-btc",
+      "markets",
+      "archived"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-news-editor",
+    "description": "\"Beat Editor for aibtc.news: review and approve/reject signals on assigned beat, file editorial reviews, manage beat cap via displacement, earn per-review sats\"",
+    "tags": [
+      "aibtc",
+      "editorial",
+      "news"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-news-editorial",
+    "description": "File intelligence signals, claim editorial beats, track correspondent activity on aibtc.news",
+    "tags": [
+      "publishing",
+      "news",
+      "ai-btc"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 360,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-repo-maintenance",
+    "description": "Triage, review, test, and support aibtcdev repos we depend on",
+    "tags": [
+      "maintenance",
+      "github",
+      "aibtcdev"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 15,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "aibtc-welcome",
+    "description": "Detect new AIBTC agents and send welcome messages via x402 + STX micro-transfer",
+    "tags": [
+      "social",
+      "aibtc",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "AIBTC Platform"
+  },
+  {
+    "name": "alb",
+    "description": "Agents Love Bitcoin (agentslovebitcoin.com) — BTC-authenticated inbox for trustless_indra",
+    "tags": [
+      "comms",
+      "email",
+      "alb"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "arc-architecture-review",
+    "description": "Continuous architecture review, state machine diagrams, and simplification via SpaceX 5-step process",
+    "tags": [
+      "architecture",
+      "simplification",
+      "review"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-blocked-review",
+    "description": "Sensor that periodically reviews blocked tasks to check if they can be unblocked",
+    "tags": [
+      "operations",
+      "tasks"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 480,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-brand-voice",
+    "description": "Brand identity consultant — voice rules, visual design system, content review",
+    "tags": [
+      "brand",
+      "content",
+      "publishing"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-catalog",
+    "description": "Generate and publish skills/sensors catalog to arc0me-site",
+    "tags": [
+      "publishing",
+      "meta",
+      "skills"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-ceo-review",
+    "description": "CEO reviews the latest watch report and actively manages the task queue",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-ceo-strategy",
+    "description": "Strategic operating manual — treat yourself as CEO of a one-entity company",
+    "tags": [],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-content-quality",
+    "description": "Quality gate that checks content for AI writing patterns before publishing blog posts, X posts, and AIBTC signals",
+    "tags": [
+      "publishing",
+      "quality",
+      "content",
+      "gate"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-cost-reporting",
+    "description": "Daily cost and token usage report — tracks dual costs (Claude Code vs API estimates)",
+    "tags": [
+      "monitoring",
+      "cost",
+      "reporting"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-credentials",
+    "description": "Encrypted credential store for API keys, tokens, and secrets used by other skills",
+    "tags": [
+      "secrets",
+      "api-keys",
+      "encryption"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-dispatch-evals",
+    "description": "Dispatch quality evaluation — error analysis, LLM judges, calibration",
+    "tags": [],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-email-sync",
+    "description": "Sync email from arc-email-worker, detect unread messages, read and send email",
+    "tags": [
+      "comms",
+      "email"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 1,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-failure-triage",
+    "description": "Detect recurring failure patterns, escalate to investigation instead of retry",
+    "tags": [
+      "meta",
+      "reliability"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-housekeeping",
+    "description": "Periodic repo hygiene checks — uncommitted changes, stale locks, WAL size, memory bloat, file archival",
+    "tags": [
+      "infrastructure",
+      "maintenance"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 120,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-inbox",
+    "description": "On-chain message inbox for Arc — Clarity contract on Stacks for public message submission and Arc-only replies.",
+    "tags": [
+      "inbox",
+      "messaging",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-introspection",
+    "description": "Daily introspection — synthesizes 24h of dispatch cycles into qualitative self-assessment",
+    "tags": [
+      "meta",
+      "reflection",
+      "self-assessment"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-link-research",
+    "description": "Process batches of links into mission-relevant research reports — evaluates Bitcoin/AIBTC/Stacks relevance",
+    "tags": [
+      "research",
+      "analysis"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-mcp-server",
+    "description": "MCP server exposing Arc's task queue, skills, and memory to external Claude instances",
+    "tags": [
+      "mcp",
+      "api",
+      "integration"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-memory",
+    "description": "Pattern libraries and decision frameworks — loads memory/patterns.md + memory/frameworks.md to change how problems are approached; also provides structured write/read CLI for MEMORY.md (ASMR v1 format)",
+    "tags": [
+      "meta",
+      "memory",
+      "patterns",
+      "frameworks"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 10080,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-monitoring-service",
+    "description": "Paid endpoint monitoring service — checks uptime, response time, and alerts on failures",
+    "tags": [
+      "service",
+      "monetization",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 1,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-opensource",
+    "description": "Maintains arc-starter as a living open source project — syncs commits to GitHub via Arc, validates publishability, manages AX quality",
+    "tags": [
+      "github",
+      "open-source",
+      "arc-starter"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-payments",
+    "description": "Watch Stacks blockchain for STX and sBTC payments to Arc's address and create service tasks from arc: memo codes",
+    "tags": [
+      "payments",
+      "stacks",
+      "sbtc",
+      "sensor",
+      "monetization"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 3,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-peer-inbox",
+    "description": "File-based inter-agent inbox — Stop hook writes task results to inbox/<peer>/, sensor consumes inbox/arc/. Lifted from hcom hooks-to-db pattern.",
+    "tags": [
+      "inbox",
+      "messaging",
+      "hooks",
+      "agent-to-agent"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 1,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-performance-analytics",
+    "description": "Cost and token analytics by model tier, skill, and time period",
+    "tags": [
+      "analytics",
+      "ops"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-purpose-eval",
+    "description": "Data-driven PURPOSE.md evaluation sensor — scores dimensions from SQL queries on tasks/cycle_log",
+    "tags": [
+      "evaluation",
+      "metrics",
+      "orchestration"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-report-email",
+    "description": "Email watch reports when new ones are generated — sensor-only, fires after CEO review completes",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-reporting",
+    "description": "Generate watch reports (HTML, 6-hour) and overnight briefs (markdown, daily 6am PST)",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-reputation",
+    "description": "Signed peer reviews with BIP-322 signatures, local SQLite storage, and give-feedback CLI",
+    "tags": [
+      "reputation",
+      "signing",
+      "l1"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-scheduler",
+    "description": "Manages future task scheduling with deferred creation, overdue detection, and priority boost for past-due tasks",
+    "tags": [
+      "scheduling",
+      "tasks",
+      "core"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-self-audit",
+    "description": "Daily operational self-audit — task queue health, cost trends, skill/sensor health, recent codebase changes",
+    "tags": [
+      "infrastructure",
+      "monitoring",
+      "daily"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-self-review",
+    "description": "Periodic self-review cycle sensor and workflow integration",
+    "tags": [
+      "health",
+      "monitoring",
+      "self-review"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-service-health",
+    "description": "System health monitor — detects stale cycles and stuck dispatch, triggers high-priority alerts",
+    "tags": [
+      "sensor",
+      "system",
+      "health"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-skill-manager",
+    "description": "Create, inspect, and manage agent skills",
+    "tags": [
+      "meta",
+      "skills",
+      "scaffolding"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 120,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-starter-publish",
+    "description": "Detect when v2 is ahead of main and merge/push to publish",
+    "tags": [
+      "meta",
+      "git",
+      "publishing"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-strategy-review",
+    "description": "Daily self-evaluation against PURPOSE.md rubric and Five Directives — scores criteria, boosts underperforming dimension tasks, at most 1 new follow-up task",
+    "tags": [
+      "strategy",
+      "daily",
+      "directives",
+      "milestones",
+      "purpose"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-umbrel",
+    "description": "Bitcoin Core RPC integration and Stacks node management via local Umbrel node at 192.168.1.106",
+    "tags": [
+      "bitcoin",
+      "infrastructure",
+      "rpc"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-web-dashboard",
+    "description": "Arc's live web dashboard — real-time task feed, sensor status, cost tracking",
+    "tags": [],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-weekly-presentation",
+    "description": "Auto-generate the Tuesday AIBTC working-group deck from live Arc data — four consistent sections, last-week anchor, subagent research",
+    "tags": [
+      "publishing",
+      "reporting",
+      "presentation"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-workflow-review",
+    "description": "Detect repeating task patterns and propose workflow state machines — sensor creates P5 design tasks",
+    "tags": [
+      "orchestration",
+      "workflows",
+      "meta"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-workflows",
+    "description": "Persistent state machine instances for multi-step workflows",
+    "tags": [
+      "orchestration",
+      "state-management",
+      "utilities"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 5,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-worktrees",
+    "description": "Opt-in git worktree isolation with experiment evaluation for dispatch tasks",
+    "tags": [
+      "isolation",
+      "safety",
+      "dispatch",
+      "experiment"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-ask-service",
+    "description": "Handles paid Ask Arc questions submitted via /api/ask endpoint",
+    "tags": [
+      "monetization",
+      "x402",
+      "service"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-email-worker",
+    "description": "Manage arc0btc/arc-email-worker — Cloudflare Worker + Durable Object email store",
+    "tags": [
+      "email",
+      "cloudflare",
+      "worker",
+      "durable-object"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-monetization",
+    "description": "Reviews Arc capabilities and surfaces monetizable service/product opportunities for arc0btc.com",
+    "tags": [
+      "strategy",
+      "site"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-pr-review",
+    "description": "Paid PR review service — accepts GitHub PR URLs via x402 payment and delivers structured code reviews",
+    "tags": [
+      "monetization",
+      "github",
+      "service"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-security-audit",
+    "description": "Paid code security audit service — accepts GitHub repo URLs via x402 payment and delivers structured security reports",
+    "tags": [
+      "monetization",
+      "github",
+      "security",
+      "service"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-services",
+    "description": "Services storefront for arc0btc.com — catalog, pricing, delivery pipeline, monitoring",
+    "tags": [
+      "d1",
+      "monetization",
+      "services"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc0btc-site-health",
+    "description": "Monitors arc0btc.com uptime, content freshness, API endpoints, and deployment status",
+    "tags": [
+      "sensor",
+      "site",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arxiv-research",
+    "description": "Fetches and compiles arXiv papers on LLMs, agents, and AI into ISO-8601 research digests",
+    "tags": [
+      "research",
+      "arxiv",
+      "llm",
+      "agents"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 720,
+    "category": "Other"
+  },
+  {
+    "name": "auto-queue",
+    "description": "Generates next task batch based on completion patterns and queue depth",
+    "tags": [
+      "orchestration",
+      "scheduling",
+      "automation"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "Other"
+  },
+  {
+    "name": "bitcoin-macro",
+    "description": "Bitcoin Macro beat sensor — monitors BTC price milestones, hashrate records, and difficulty adjustments; queues daily signal tasks for the bitcoin-macro beat",
+    "tags": [
+      "bitcoin",
+      "macro",
+      "news",
+      "sensor"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 240,
+    "category": "Bitcoin & Stacks"
+  },
+  {
+    "name": "bitcoin-taproot-multisig",
+    "description": "Bitcoin Taproot M-of-N multisig coordination — share pubkeys, verify co-signer signatures, and navigate the OP_CHECKSIGADD workflow.",
+    "tags": [
+      "l1",
+      "mainnet-only",
+      "sensitive"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Bitcoin & Stacks"
+  },
+  {
+    "name": "bitcoin-wallet",
+    "description": "Wallet management, cryptographic signing, and STX transfers for Stacks and Bitcoin — unlock, lock, info, status, balance query, BTC/Stacks message signing, BTC signature verification, and STX sending.",
+    "tags": [
+      "infrastructure",
+      "sensitive",
+      "signing"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Bitcoin & Stacks"
+  },
+  {
+    "name": "bitflow",
+    "description": "Bitflow DEX — manage Arc's LP positions, execute swaps, and monitor HODLMM liquidity on Stacks",
+    "tags": [
+      "defi",
+      "trading",
+      "liquidity",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "blog-deploy",
+    "description": "Auto-deploy arc0me-site to Cloudflare Workers on content changes",
+    "tags": [
+      "deployment",
+      "cloudflare",
+      "blog"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 5,
+    "category": "Publishing & Social"
+  },
+  {
+    "name": "blog-publishing",
+    "description": "Create, manage, and publish blog posts with ISO8601 content pattern",
+    "tags": [
+      "publishing",
+      "blogging",
+      "content"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Publishing & Social"
+  },
+  {
+    "name": "clarity-check",
+    "description": "Clarity contract syntax and pattern validation CLI",
+    "tags": [
+      "clarity",
+      "smart-contracts",
+      "validation",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "clarity-patterns",
+    "description": "Clarity smart contract pattern library — SIP-010, SIP-009, access control, upgrades, and more",
+    "tags": [
+      "clarity",
+      "smart-contracts",
+      "patterns",
+      "stacks",
+      "sip-010",
+      "sip-009"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "claude-code-releases",
+    "description": "Applicability research on new Claude Code releases — how each release affects Arc, AIBTC, and agents in general",
+    "tags": [
+      "research",
+      "monitoring",
+      "claude-code"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "code-audit",
+    "description": "On-demand static analysis, dependency review, and security scanning — Forge's dev quality layer",
+    "tags": [
+      "security",
+      "audit",
+      "static-analysis",
+      "dev"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "competition",
+    "description": "AIBTC trading competition — check standing, submit trade txids, and list scored trades",
+    "tags": [
+      "defi",
+      "trading",
+      "aibtc-network"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "compliance-review",
+    "description": "Audits all skills and sensors for structural, interface, and naming compliance with Arc conventions",
+    "tags": [
+      "housekeeping",
+      "quality"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 720,
+    "category": "Quality & Compliance"
+  },
+  {
+    "name": "contacts",
+    "description": "Contact management — agents, humans, addresses, handles, relationships, interaction history",
+    "tags": [
+      "crm",
+      "network",
+      "data"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Other"
+  },
+  {
+    "name": "context-review",
+    "description": "Audits whether tasks load the right skills context at dispatch time",
+    "tags": [
+      "infrastructure",
+      "monitoring",
+      "context"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 480,
+    "category": "Quality & Compliance"
+  },
+  {
+    "name": "contract-preflight",
+    "description": "\"Dry-run Stacks contract calls against mainnet state before broadcasting — catches errors, prevents wasted gas\"",
+    "tags": [
+      "safety",
+      "simulation",
+      "stacks",
+      "clarity",
+      "defi"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "daily-brief-inscribe",
+    "description": "Manages Bitcoin L1 inscription lifecycle for daily briefs using script-dispatch per-state workflow pattern",
+    "tags": [
+      "inscription",
+      "bitcoin",
+      "workflow"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "dao-zero-authority",
+    "description": "DAO proposal detection, governance participation, and voting on Stacks",
+    "tags": [
+      "governance",
+      "dao",
+      "stacks",
+      "voting"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "defi-bitflow",
+    "description": "Bitflow DEX — DCA automation, swap quotes, and high-spread market intelligence",
+    "tags": [
+      "defi",
+      "trading",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "defi-portfolio-scanner",
+    "description": "\"Cross-protocol DeFi position aggregator for Stacks wallets — 5 parallel scanners covering Bitflow HODLMM LP bins, Zest lending/borrowing (V2 pool-borrow-v2-3), ALEX pool shares, Styx bridge deposits, and Hiro wallet balances. Produces a unified portfolio view with USD estimation (CoinGecko) and risk scoring.\"",
+    "tags": [
+      "defi",
+      "portfolio",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "defi-stacks-market",
+    "description": "Prediction market trading and intelligence on stacksmarket.app — budget-enforced trading, position tracking, and signal filing. Mainnet-only.",
+    "tags": [
+      "l2",
+      "defi",
+      "prediction-markets",
+      "mainnet-only",
+      "trading"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 360,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "defi-zest",
+    "description": "Zest Protocol yield farming — supply, withdraw, position monitoring",
+    "tags": [
+      "defi",
+      "yield",
+      "mainnet-only"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 360,
+    "category": "DeFi & Governance"
+  },
+  {
+    "name": "dev-landing-page-review",
+    "description": "Full React/Next.js PR review — 77 performance rules + 10 composition rules + ~100 UI/accessibility rules for aibtcdev/landing-page PRs",
+    "tags": [
+      "react",
+      "nextjs",
+      "review",
+      "performance",
+      "composition",
+      "accessibility",
+      "ui"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Development Tools"
+  },
+  {
+    "name": "erc8004-identity",
+    "description": "ERC-8004 on-chain agent identity management — register agent identities, update URI and metadata, manage operator approvals, set/unset agent wallet, transfer identity NFTs, and query identity info.",
+    "tags": [
+      "erc8004",
+      "identity",
+      "l2",
+      "write"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "erc8004-indexer",
+    "description": "Index all ERC-8004 registered agents from the on-chain identity registry and publish to arc0.me/agents",
+    "tags": [
+      "erc8004",
+      "identity",
+      "indexer",
+      "publishing"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "erc8004-reputation",
+    "description": "ERC-8004 on-chain agent reputation management — submit and revoke feedback, append responses, approve clients, and query reputation summaries, feedback entries, and client lists.",
+    "tags": [
+      "erc8004",
+      "reputation",
+      "l2",
+      "write"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "erc8004-trust",
+    "description": "ERC-8004 trust score aggregation — compute a composite 0-100 trust score for an agent by combining on-chain reputation feedback and validation scores.",
+    "tags": [
+      "erc8004",
+      "reputation",
+      "validation",
+      "read-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "erc8004-validation",
+    "description": "ERC-8004 on-chain agent validation management — request and respond to validations, and query validation status, summaries, and paginated lists by agent or validator.",
+    "tags": [
+      "erc8004",
+      "validation",
+      "l2",
+      "write"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "On-Chain Identity (ERC-8004)"
+  },
+  {
+    "name": "github-ci-status",
+    "description": "Monitors GitHub Actions CI runs on our PRs and detects failures",
+    "tags": [
+      "sensor",
+      "github",
+      "ci"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "GitHub & DevOps"
+  },
+  {
+    "name": "github-issue-monitor",
+    "description": "Monitors GitHub issues on managed and collaborative repos, creates triage tasks with org maintainer context",
+    "tags": [
+      "sensor",
+      "github"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "GitHub & DevOps"
+  },
+  {
+    "name": "github-mentions",
+    "description": "Detects GitHub notifications and engages as org maintainer across managed and collaborative repos",
+    "tags": [
+      "sensor",
+      "github"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "GitHub & DevOps"
+  },
+  {
+    "name": "github-release-watcher",
+    "description": "Detects new releases on bun, claude-code, stacks-core, aibtcdev/skills and 5 other watched repos — creates P7 review tasks",
+    "tags": [
+      "monitoring",
+      "github",
+      "ecosystem"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 60,
+    "category": "GitHub & DevOps"
+  },
+  {
+    "name": "github-security-alerts",
+    "description": "Monitor Dependabot security alerts on managed repos — P3/P4 alerts for critical/high CVEs",
+    "tags": [
+      "security",
+      "github",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "GitHub & DevOps"
+  },
+  {
+    "name": "github-worker-logs",
+    "description": "Sync worker-logs forks, monitor production events, report trends",
+    "tags": [
+      "monitoring",
+      "infrastructure",
+      "sync"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 360,
+    "category": "GitHub & DevOps"
+  },
+  {
+    "name": "hodlmm-move-liquidity",
+    "description": "\"HODLMM Move-Liquidity & Auto-Rebalancer — withdraw from drifted bins, re-deposit around the current active bin. Includes autonomous monitoring loop.\"",
+    "tags": [
+      "defi",
+      "hodlmm",
+      "liquidity"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "hodlmm-risk",
+    "description": "\"HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required.\"",
+    "tags": [
+      "l2",
+      "defi",
+      "read-only",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "identity-guard",
+    "description": "Validates agent identity files match hostname — detects and alerts on identity drift",
+    "tags": [
+      "infrastructure",
+      "identity"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Other"
+  },
+  {
+    "name": "jingswap",
+    "description": "Jingswap blind batch auction on Stacks — sBTC/STX and sBTC/USDCx markets, cycle state, deposits, settlements",
+    "tags": [
+      "defi",
+      "dex",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "lunarcrush",
+    "description": "\"Pay-per-call access to LunarCrush social and market intelligence (Galaxy Score, AltRank, market cap rank, price, 24h change) via x402 on Stacks. USD-pegged pricing recomputed hourly from live STX/USD. Mainnet endpoint live; testnet supported.\"",
+    "tags": [
+      "l2",
+      "read-only",
+      "requires-funds"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "maximumsats",
+    "description": "Nostr Web of Trust (WoT) scoring via MaximumSats API — trust scores, sybil detection, and trust paths for Nostr pubkeys.",
+    "tags": [
+      "nostr",
+      "trust",
+      "wot",
+      "reputation",
+      "read-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "mempool-watch",
+    "description": "Monitors Bitcoin mempool fee rates and Arc BTC address for unconfirmed incoming transactions via mempool.space API",
+    "tags": [
+      "bitcoin",
+      "mempool",
+      "fees",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 10,
+    "category": "Other"
+  },
+  {
+    "name": "nonce-manager",
+    "description": "Backup sender nonce tracker for Stacks transactions — use canonical payment-status polling (by paymentId) as primary x402 state machine",
+    "tags": [
+      "infrastructure"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "ordinals-market-data",
+    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) — signal filing SUSPENDED (beat scope mismatch)",
+    "tags": [
+      "ordinals",
+      "signals",
+      "publishing"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 120,
+    "category": "Other"
+  },
+  {
+    "name": "ordinals-marketplace",
+    "description": "\"BTC ordinals marketplace operations via Magic Eden — browse active listings, list inscriptions for sale via PSBT flow, submit signed listings, buy inscriptions, and cancel active listings. BTC ordinals only (not Solana). Mainnet-only.\"",
+    "tags": [
+      "l1",
+      "write",
+      "mainnet-only",
+      "requires-funds"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "paperboy",
+    "description": "Deliver AIBTC signals to targeted audiences as an AMBASSADOR — earn 500 sats/placement and 2000 sats/new correspondent",
+    "tags": [
+      "aibtc",
+      "distribution",
+      "revenue"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Other"
+  },
+  {
+    "name": "quest-create",
+    "description": "Decompose complex tasks into sequential phases with checkpoint-based idempotent execution",
+    "tags": [
+      "orchestration",
+      "decomposition",
+      "planning"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "sbtc-yield-maximizer",
+    "description": "\"Routes idle sBTC to the highest safe live yield path and executes either capped Zest supply or a HODLMM rebalance when the winning route is safely executable.\"",
+    "tags": [
+      "defi",
+      "write",
+      "mainnet-only",
+      "requires-funds",
+      "l2"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "site-consistency",
+    "description": "Cross-site consistency sensor detecting structural drift between arc0.me and arc0btc.com",
+    "tags": [
+      "sensor",
+      "site",
+      "monitoring"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 1440,
+    "category": "Other"
+  },
+  {
+    "name": "social-agent-engagement",
+    "description": "Proactive outreach to AIBTC network agents for collaboration on shared interests",
+    "tags": [
+      "comms",
+      "collaboration",
+      "aibtc"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Publishing & Social"
+  },
+  {
+    "name": "social-x-ecosystem",
+    "description": "Monitor X for ecosystem keywords (Bitcoin, Stacks, AIBTC, Claude Code, etc.) and file research tasks for high-signal tweets",
+    "tags": [
+      "social",
+      "research",
+      "x"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 15,
+    "category": "Publishing & Social"
+  },
+  {
+    "name": "social-x-posting",
+    "description": "Post tweets, read timeline, and manage presence on X (Twitter) via API v2",
+    "tags": [
+      "social",
+      "publishing",
+      "x"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 15,
+    "category": "Publishing & Social"
+  },
+  {
+    "name": "stacking-delegation",
+    "description": "\"Monitor STX stacking positions — status, PoX cycles, reward payouts, and delegation eligibility for autonomous agents.\"",
+    "tags": [
+      "l2",
+      "read-only",
+      "stacks"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "stacks-stackspot",
+    "description": "Autonomous Stacking participation — detect joinable pots, auto-join with Arc wallet, claim sBTC rewards. Mainnet-only lottery stacking.",
+    "tags": [
+      "l2",
+      "stacking",
+      "mainnet-only",
+      "autonomous"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 7,
+    "category": "Bitcoin & Stacks"
+  },
+  {
+    "name": "styx",
+    "description": "BTC→sBTC conversion via Styx protocol (btc2sbtc.com) — pool status, fees, deposit, and tracking",
+    "tags": [
+      "defi",
+      "bitcoin",
+      "sbtc"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "trading-comp",
+    "description": "AIBTC Trading Competition strategy — competition-submit wrapper, daily metrics, hooks for competitor/pair/ecosystem sensors",
+    "tags": [
+      "defi",
+      "trading",
+      "competition",
+      "aibtc-network",
+      "mainnet-only"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "whop",
+    "description": "Monetize Arc's autonomous output via whop.com — post hot-topics into paid chat rooms and publish blog-derived courses through the Whop API",
+    "tags": [
+      "monetization",
+      "content",
+      "whop"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "worker-deploy",
+    "description": "Auto-deploy arc0btc-worker to Cloudflare Workers on code changes",
+    "tags": [
+      "deployment",
+      "cloudflare",
+      "worker"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "Other"
+  },
+  {
+    "name": "wot",
+    "description": "\"Web of Trust operations for Nostr pubkeys — trust scoring, sybil detection, trust path analysis, neighbor discovery, follow recommendations, and network health. Free tier (wot.klabo.world, 50 req/day) with paid fallback (maximumsats.com, 100 sats via L402). Covers 52K+ pubkeys and 2.4M+ zap-weighted trust edges. Use --key-source to select nip06 (default), taproot, or stacks derivation path.\"",
+    "tags": [
+      "read-only"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "zest-auto-repay",
+    "description": "\"Autonomous Zest Protocol LTV guardian — monitors borrowing positions, detects liquidation risk, and executes safe repayments with enforced spend limits to protect collateral on Stacks mainnet.\"",
+    "tags": [
+      "defi",
+      "zest",
+      "lending"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "zest-yield-manager",
+    "description": "Autonomous sBTC yield management on Zest Protocol — supply, withdraw, claim rewards, and monitor positions with safety controls.",
+    "tags": [
+      "defi",
+      "write",
+      "mainnet-only",
+      "requires-funds",
+      "l2"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": 120,
+    "category": "Other"
+  }
+]
