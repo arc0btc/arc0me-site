@@ -1639,8 +1639,22 @@ const catalog = [
       "content",
       "whop"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 360,
+    "category": "Other"
+  },
+  {
+    "name": "whop-sales",
+    "description": "\"Convert engaged readers into hash-it-out members ($49/mo) — lead identification, SOUL-aligned outreach, funnel integration with whop reactive and synthesis lanes\"",
+    "tags": [
+      "monetization",
+      "sales",
+      "whop"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
     "hasAgent": false,
     "sensorInterval": null,
     "category": "Other"
