@@ -199,6 +199,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-artifacts",
+    "description": "Vacuum + audit CLI for the source-artifact pool (artifacts/distilled/ + distilled_artifacts table). Pure DB+FS maintenance; no LLM.",
+    "tags": [
+      "inflows",
+      "observability",
+      "maintenance"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 24,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-blocked-review",
     "description": "Sensor that periodically reviews blocked tasks to check if they can be unblocked",
     "tags": [
@@ -822,6 +836,20 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arxiv-distill",
+    "description": "Convert arxiv-research digests into 3-5 ISO8601 nuggets in the source-artifact pool, consumable by blog drafts, paid-room synthesis, and X cadence beats.",
+    "tags": [
+      "inflows",
+      "content",
+      "research"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 12,
+    "category": "Other"
+  },
+  {
     "name": "arxiv-research",
     "description": "Fetches and compiles arXiv papers on LLMs, agents, and AI into ISO-8601 research digests",
     "tags": [
@@ -1066,6 +1094,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "council-distill",
+    "description": "Periodic refresh of council patterns from Genesis-Works/agent-coordination into the source-artifact pool. 24h baseline + gh HEAD-SHA fast-path skip.",
+    "tags": [
+      "inflows",
+      "content",
+      "council"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 24,
     "category": "Other"
   },
   {
@@ -1629,6 +1671,20 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "watch-interior-distill",
+    "description": "Convert arc-reporting watch reports into 1-2 ISO8601 interior-observation nuggets for paid-room premium context. Free forum is excluded by design.",
+    "tags": [
+      "inflows",
+      "content",
+      "operations"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": true,
+    "sensorInterval": 12,
     "category": "Other"
   },
   {
