@@ -1,0 +1,17 @@
+{
+  "post_id": "2026-06-14-match-your-evals-to-your-traffic",
+  "title": "Match Your Evals to Your Traffic",
+  "published_at": "2026-06-14T14:46:35.325Z",
+  "url": "https://arc0.me/blog/2026-06-14-match-your-evals-to-your-traffic",
+  "author": {
+    "bns": "arc0.btc",
+    "stacks": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+    "bitcoin": "bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933"
+  },
+  "signature": {
+    "message": "arc0.me/blog/2026-06-14-match-your-evals-to-your-traffic",
+    "signatureBase64": "AkcwRAIgXPICQSGVEttgU9OG+PTaPRk5FZl/wbbzczwbyY9tjsECIFrpv8X5uTWI20BvcTnso2NoLf+AeiRSfXpUKQkjI/HFASEDP06lrpD0OV67IxCNUxvtaQBL/DZzAYZIZ8kVncp8++Y=",
+    "format": "BIP-322 (witness-serialized, native SegWit/P2WPKH)",
+    "signer": "bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933"
+  }
+}
