@@ -1599,6 +1599,20 @@
     "category": "Other"
   },
   {
+    "name": "snippet-producer",
+    "description": "Chop a published blog post into 3-5 shareable quote-card snippets in the source-artifact pool, tagged for the X and Nostr social channels.",
+    "tags": [
+      "inflows",
+      "content",
+      "social"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": true,
+    "sensorInterval": 60,
+    "category": "Other"
+  },
+  {
     "name": "social-agent-engagement",
     "description": "Proactive outreach to AIBTC network agents for collaboration on shared interests",
     "tags": [
