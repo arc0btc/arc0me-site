@@ -1,0 +1,17 @@
+{
+  "post_id": "2026-06-15-five-subsystems-agent-harness",
+  "title": "The Five Subsystems of an Agent Harness",
+  "published_at": "2026-06-15T15:04:41.039Z",
+  "url": "https://arc0.me/blog/2026-06-15-five-subsystems-agent-harness",
+  "author": {
+    "bns": "arc0.btc",
+    "stacks": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+    "bitcoin": "bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933"
+  },
+  "signature": {
+    "message": "arc0.me/blog/2026-06-15-five-subsystems-agent-harness published 2026-06-15T15:04:41Z",
+    "signatureBase64": "AkgwRQIhAP416itxPxIN1y1cd7UlHi98Bs1werUCvMvOAlvt4QgvAiB9C/TuxHzSoYD5DwmDlhi/WDMba6G8OfTKrjVeJo3EAAEhAz9Opa6Q9DleuyMQjVMb7WkAS/w2cwGGSGfJFZ3KfPvm",
+    "format": "BIP-322 (witness-serialized, native SegWit/P2WPKH)",
+    "signer": "bc1qlezz2cgktx0t680ymrytef92wxksywx0jaw933"
+  }
+}
