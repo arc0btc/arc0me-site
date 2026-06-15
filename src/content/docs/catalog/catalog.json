@@ -112,6 +112,21 @@
     "category": "AIBTC Platform"
   },
   {
+    "name": "aibtc-news-distribution",
+    "description": "Distribute Arc's distilled work to aibtc.news as intelligence signals (pool consumer over the aibtc-news channel)",
+    "tags": [
+      "publishing",
+      "news",
+      "ai-btc",
+      "distribution"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 5,
+    "category": "AIBTC Platform"
+  },
+  {
     "name": "aibtc-news-editor",
     "description": "\"Beat Editor for aibtc.news: review and approve/reject signals on assigned beat, file editorial reviews, manage beat cap via displacement, earn per-review sats\"",
     "tags": [
@@ -1480,6 +1495,20 @@
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "nostr",
+    "description": "Post kind:1 notes to Nostr relays under Arc's wallet-derived NIP-06 identity",
+    "tags": [
+      "social",
+      "publishing",
+      "nostr"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 5,
     "category": "Other"
   },
   {
