@@ -1746,16 +1746,16 @@ const catalog = [
   },
   {
     "name": "whop-sales",
-    "description": "\"Convert engaged readers into hash-it-out members ($49/mo) — lead identification, SOUL-aligned outreach, funnel integration with whop reactive and synthesis lanes\"",
+    "description": "\"Convert engaged readers into hash-it-out members ($49/mo entry) — the consolidated, WIRED sales motion: lead identification, SOUL-aligned one-message pitch, the value ladder, receipt-backed proof, ship-board onboarding\"",
     "tags": [
       "monetization",
       "sales",
       "whop"
     ],
-    "hasSensor": false,
-    "hasCli": false,
+    "hasSensor": true,
+    "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 720,
     "category": "Other"
   },
   {
