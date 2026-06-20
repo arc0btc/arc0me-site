@@ -1627,6 +1627,21 @@
     "category": "Publishing & Social"
   },
   {
+    "name": "social-engine",
+    "description": "Social posting engine — admission primitive, P3 reply lane, P4 post lane, P5 research ingestion, P7 Moltbook experiment; live X send/reply via social-x-posting skill",
+    "tags": [
+      "social",
+      "x-posting",
+      "research",
+      "content"
+    ],
+    "hasSensor": false,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Publishing & Social"
+  },
+  {
     "name": "social-x-ecosystem",
     "description": "Monitor X for ecosystem keywords (Bitcoin, Stacks, AIBTC, Claude Code, etc.) and file research tasks for high-signal tweets",
     "tags": [
