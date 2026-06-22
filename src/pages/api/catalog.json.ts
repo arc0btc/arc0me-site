@@ -1639,7 +1639,7 @@ const catalog = [
       "content"
     ],
     "hasSensor": false,
-    "hasCli": false,
+    "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
     "category": "Publishing & Social"
