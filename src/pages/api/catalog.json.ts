@@ -1800,6 +1800,21 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "x402-pull-loop",
+    "description": "Sync x402 honored entries from Worker to SQLite",
+    "tags": [
+      "x402",
+      "payments",
+      "sync",
+      "infrastructure"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "zest-auto-repay",
     "description": "\"Autonomous Zest Protocol LTV guardian — monitors borrowing positions, detects liquidation risk, and executes safe repayments with enforced spend limits to protect collateral on Stacks mainnet.\"",
     "tags": [
