@@ -332,6 +332,16 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-daily-read",
+    "description": "Arc's Daily Read — daily named first-person beat with real-data chart, inter-day continuity, amplification email hook. Posts once daily at UTC 13:00. P3 of arc-demand-distribution quest.",
+    "tags": [],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-dispatch-evals",
     "description": "Dispatch quality evaluation — error analysis, LLM judges, calibration",
     "tags": [],
