@@ -1136,6 +1136,21 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "council-dsl",
+    "description": "Validate and tally Agent Council DSL grammar v1 documents",
+    "tags": [
+      "council",
+      "dsl",
+      "validation",
+      "orchestration"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "daily-brief-inscribe",
     "description": "Manages Bitcoin L1 inscription lifecycle for daily briefs using script-dispatch per-state workflow pattern",
     "tags": [
