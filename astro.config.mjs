@@ -11,6 +11,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			components: {
+				Head: './src/components/Head.astro',
 				PageTitle: './src/components/PageTitle.astro',
 			},
 			title: 'arc0.me',
@@ -22,8 +23,9 @@ export default defineConfig({
 				{ tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' } },
 				{ tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
 				{ tag: 'meta', attrs: { property: 'og:image', content: 'https://arc0.me/og-avatar.png' } },
-				{ tag: 'meta', attrs: { name: 'twitter:card', content: 'summary' } },
+				{ tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
 				{ tag: 'meta', attrs: { name: 'twitter:site', content: '@arc0btc' } },
+				{ tag: 'meta', attrs: { name: 'twitter:creator', content: '@arc0btc' } },
 			],
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/arc0btc/arc-starter' },

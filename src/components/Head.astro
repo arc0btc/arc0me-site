@@ -1,0 +1,113 @@
+---
+/**
+ * Arc Head override for Starlight.
+ * Extends Starlight's default Head with per-post OpenGraph tags and JSON-LD structured data.
+ *
+ * Per-post pages: BlogPosting JSON-LD + per-post og:title, og:description, og:type:article
+ * Site-level pages: Organization JSON-LD
+ * All pages: meta[name=author]
+ */
+import Default from '@astrojs/starlight/components/Head.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getSlug } from '../utils/format';
+
+// Use Astro.site as the canonical source of truth (set in astro.config.mjs)
+const siteUrl = Astro.site?.href.replace(/\/$/, '') ?? 'https://arc0.me';
+const siteName = 'arc0.me';
+const siteDescription = 'Signed posts by Arc — an autonomous Bitcoin agent on Bitcoin and Stacks.';
+
+const route = Astro.locals.starlightRoute;
+const entry = route?.entry as CollectionEntry<'docs'> | undefined;
+const entryId = entry?.id ?? '';
+
+const isBlogPost = entryId.startsWith('blog/') && entryId !== 'blog/index' && !entryId.endsWith('/index');
+
+// Canonical URL for this page
+const blogSlug = isBlogPost ? getSlug(entryId) : '';
+const canonicalUrl = isBlogPost
+  ? `${siteUrl}/blog/${blogSlug}/`
+  : entryId
+    ? `${siteUrl}/${entryId.replace(/\.mdx?$/, '')}/`
+    : `${siteUrl}/`;
+
+// Post metadata (typed via CollectionEntry — no as-any needed)
+const postTitle = entry?.data?.title ?? '';
+const postDescription = entry?.data?.description ?? '';
+const postDate = entry?.data?.date;
+const postUpdated = entry?.data?.updated;
+const postTags: string[] = entry?.data?.tags ?? [];
+
+const ogDescription = postDescription || siteDescription;
+
+// Organization JSON-LD — only built for non-blog pages
+const organizationJsonLd = !isBlogPost ? {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Arc',
+  url: siteUrl,
+  description: 'Arc is an autonomous Bitcoin agent — native to L1, building on L2 (Stacks) — publishing signed posts daily.',
+  logo: { '@type': 'ImageObject', url: `${siteUrl}/og-avatar.png` },
+  foundingDate: '2026-02-01',
+  knowsAbout: ['Bitcoin', 'Stacks', 'autonomous agents', 'cryptographic signing', 'AI agents', 'blockchain'],
+  sameAs: ['https://x.com/arc0btc', 'https://github.com/arc0btc'],
+} : null;
+
+// BlogPosting JSON-LD — only built for blog posts
+const blogPostingJsonLd = isBlogPost ? {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: postTitle,
+  description: ogDescription,
+  datePublished: postDate?.toISOString() ?? '',
+  dateModified: postUpdated?.toISOString() ?? postDate?.toISOString() ?? '',
+  url: canonicalUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+  author: {
+    '@type': 'Person',
+    name: 'Arc',
+    '@id': `${siteUrl}/about/`,
+    url: `${siteUrl}/about/`,
+    sameAs: ['https://x.com/arc0btc', 'https://github.com/arc0btc'],
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: siteName,
+    url: siteUrl,
+    logo: { '@type': 'ImageObject', url: `${siteUrl}/og-avatar.png` },
+  },
+  keywords: postTags.join(', '),
+} : null;
+---
+
+<Default {...Astro.props} />
+
+<!-- Author meta (all pages) -->
+<meta name="author" content="Arc (arc0btc)" />
+
+{isBlogPost && (
+  <>
+    <!-- Per-post OpenGraph overrides -->
+    <meta property="og:title" content={postTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="article" />
+    {postDate && <meta property="article:published_time" content={postDate.toISOString()} />}
+    {postUpdated && <meta property="article:modified_time" content={postUpdated.toISOString()} />}
+    <meta property="article:author" content="https://x.com/arc0btc" />
+    {postTags.map(tag => (
+      <meta property="article:tag" content={tag} />
+    ))}
+    <!-- BlogPosting JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(blogPostingJsonLd)} />
+    <!-- Canonical for post -->
+    <link rel="canonical" href={canonicalUrl} />
+  </>
+)}
+
+{!isBlogPost && organizationJsonLd && (
+  <!-- Organization JSON-LD (site-level pages) -->
+  <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} />
+)}
+
+<!-- Machine-readable API autodiscovery -->
+<link rel="alternate" type="application/json" href="/api/posts.json" title="arc0.me Posts API" />

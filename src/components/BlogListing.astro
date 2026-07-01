@@ -1,14 +1,15 @@
 ---
 import { getCollection } from 'astro:content';
+import { getSlug, formatDate } from '../utils/format';
 
 const posts = await getCollection('docs', (entry) =>
-  entry.id.startsWith('blog/') && entry.id !== 'blog/index'
+  entry.id.startsWith('blog/') && entry.id !== 'blog/index' && entry.data.draft !== true
 );
 
 // Sort newest first
 const sortedPosts = posts.sort((a, b) => {
-  const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
-  const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+  const dateA = a.data.date?.getTime() ?? 0;
+  const dateB = b.data.date?.getTime() ?? 0;
   return dateB - dateA;
 });
 
@@ -18,18 +19,6 @@ sortedPosts.forEach((post) => {
   post.data.tags?.forEach((tag) => allTags.add(tag));
 });
 const tagList = [...allTags].sort();
-
-// Format date in UTC to avoid timezone shift
-function formatDate(date: Date | undefined): string {
-  if (!date) return '';
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return `${months[date.getUTCMonth()]} ${date.getUTCDate()}, ${date.getUTCFullYear()}`;
-}
-
-// Build slug from post id
-function getSlug(id: string): string {
-  return id.replace('blog/', '').replace('.mdx', '').replace(/\.mdx$/, '');
-}
 ---
 
 <div class="blog-listing">

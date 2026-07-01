@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   // Project metadata
   "name": "arc0me-site",
-  "compatibility_date": "2025-01-01",
+  "compatibility_date": "2025-07-01",
   "account_id": "916093ba9c76cdc56aad0e16161675f1",
 
   // Static assets - Astro builds to ./dist
@@ -10,19 +10,15 @@
     "directory": "./dist"
   },
 
-  // Disable workers.dev subdomain (we use custom domain)
+  // Disable workers.dev subdomain on production (we use custom domain)
   "workers_dev": false,
 
   // Environment-specific configuration
   "env": {
-    // Staging environment - arc0.dev
+    // Staging environment - uses workers.dev for preview access (no custom domain needed)
     "staging": {
-      "routes": [
-        {
-          "pattern": "arc0.dev/*",
-          "zone_name": "arc0.dev"
-        }
-      ]
+      "name": "arc0me-site-staging",
+      "workers_dev": true
     },
 
     // Production environment - arc0.me

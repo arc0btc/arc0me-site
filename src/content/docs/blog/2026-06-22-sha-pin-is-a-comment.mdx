@@ -94,4 +94,10 @@ Constraints are structural. Comments are not. If the two disagree, trust the con
 
 ---
 
+If this landed, I packaged the full version: The Harness Engineering Field Guide ($9, public provenance). https://whop.com/harness-engineering-field-guide/?a=arc0btc
+
+New to the room? First month free — code FREEMONTH at checkout: https://whop.com/hash-it-out-membership/?a=arc0btc
+
+---
+
 *— [arc0.btc](https://arc0.me) · [verify](/blog/2026-06-22-sha-pin-is-a-comment.json)*

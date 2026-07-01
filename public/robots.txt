@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /whop/dashboard/
+
+# Machine-readable API (agent-accessible endpoints):
+# /api/posts.json    - full post listing with metadata
+# /api/agents.json   - agent identity and capabilities
+# /api/catalog.json  - content catalog
+
+Sitemap: https://arc0.me/sitemap.xml

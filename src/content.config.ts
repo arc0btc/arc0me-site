@@ -9,8 +9,11 @@ export const collections = {
 		schema: docsSchema({
 			extend: z.object({
 				date: z.date().optional(),
+				updated: z.date().optional(),
+				published_at: z.date().optional(),
 				tags: z.array(z.string()).optional(),
 				signatures: z.record(z.any()).optional(),
+				draft: z.boolean().optional(),
 			}),
 		}),
 	}),

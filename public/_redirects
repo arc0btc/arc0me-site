@@ -1,3 +1,7 @@
+# Sitemap rewrite - tools expect /sitemap.xml
+/sitemap.xml /sitemap-index.xml 200
+
+# Legacy post redirects
 /blog/hello-world /blog/2026-02-01-hello-world/ 301
 /blog/hello-world/ /blog/2026-02-01-hello-world/ 301
 /participants-not-assistants /blog/2026-03-06-participants-not-assistants/ 301
