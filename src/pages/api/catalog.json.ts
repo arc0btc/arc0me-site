@@ -776,21 +776,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc0btc-email-worker",
-    "description": "Manage arc0btc/arc-email-worker — Cloudflare Worker + Durable Object email store",
-    "tags": [
-      "email",
-      "cloudflare",
-      "worker",
-      "durable-object"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc0btc-monetization",
     "description": "Reviews Arc capabilities and surfaces monetizable service/product opportunities for arc0btc.com",
     "tags": [
@@ -1036,21 +1021,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "code-audit",
-    "description": "On-demand static analysis, dependency review, and security scanning — Forge's dev quality layer",
-    "tags": [
-      "security",
-      "audit",
-      "static-analysis",
-      "dev"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "competition",
     "description": "AIBTC trading competition — check standing, submit trade txids, and list scored trades",
     "tags": [
@@ -1104,22 +1074,6 @@ const catalog = [
     "hasAgent": false,
     "sensorInterval": 480,
     "category": "Quality & Compliance"
-  },
-  {
-    "name": "contract-preflight",
-    "description": "\"Dry-run Stacks contract calls against mainnet state before broadcasting — catches errors, prevents wasted gas\"",
-    "tags": [
-      "safety",
-      "simulation",
-      "stacks",
-      "clarity",
-      "defi"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Other"
   },
   {
     "name": "council-distill",
@@ -1191,20 +1145,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": true,
     "sensorInterval": 60,
-    "category": "DeFi & Governance"
-  },
-  {
-    "name": "defi-portfolio-scanner",
-    "description": "\"Cross-protocol DeFi position aggregator for Stacks wallets — 5 parallel scanners covering Bitflow HODLMM LP bins, Zest lending/borrowing (V2 pool-borrow-v2-3), ALEX pool shares, Styx bridge deposits, and Hiro wallet balances. Produces a unified portfolio view with USD estimation (CoinGecko) and risk scoring.\"",
-    "tags": [
-      "defi",
-      "portfolio",
-      "stacks"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": true,
-    "sensorInterval": null,
     "category": "DeFi & Governance"
   },
   {
@@ -1419,21 +1359,6 @@ const catalog = [
       "defi",
       "hodlmm",
       "liquidity"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "hodlmm-risk",
-    "description": "\"HODLMM volatility risk monitor — reads Bitflow HODLMM pool state, computes current-state volatility proxy from bin distribution, scores regime (calm/elevated/crisis), and emits position-sizing or liquidity-pull signals for LP agents. Read-only; no wallet required.\"",
-    "tags": [
-      "l2",
-      "defi",
-      "read-only",
-      "mainnet-only"
     ],
     "hasSensor": false,
     "hasCli": false,
@@ -1698,20 +1623,6 @@ const catalog = [
     "category": "Publishing & Social"
   },
   {
-    "name": "stacking-delegation",
-    "description": "\"Monitor STX stacking positions — status, PoX cycles, reward payouts, and delegation eligibility for autonomous agents.\"",
-    "tags": [
-      "l2",
-      "read-only",
-      "stacks"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "stacks-stackspot",
     "description": "Autonomous Stacking participation — detect joinable pots, auto-join with Arc wallet, claim sBTC rewards. Mainnet-only lottery stacking.",
     "tags": [
@@ -1836,20 +1747,6 @@ const catalog = [
     "hasSensor": false,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
-    "name": "zest-auto-repay",
-    "description": "\"Autonomous Zest Protocol LTV guardian — monitors borrowing positions, detects liquidation risk, and executes safe repayments with enforced spend limits to protect collateral on Stacks mainnet.\"",
-    "tags": [
-      "defi",
-      "zest",
-      "lending"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
   },
