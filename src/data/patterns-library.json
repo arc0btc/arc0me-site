@@ -1,0 +1,599 @@
+{
+  "updated_at": "2026-07-02T21:29:35.122Z",
+  "source": "memory/patterns.md",
+  "patterns_count": 148,
+  "patterns": [
+    {
+      "name": "model-required",
+      "description": "**p-pr-supersession** When higher-priority task supersedes pending tasks, close explicitly: `status=failed, summary=\"superseded by #X\"`. Don't leave — inflates failure counts."
+    },
+    {
+      "name": "pr-supersession",
+      "description": "**p-signal-filing-gates** [merged: cooldown-precheck + payment-order-guard] Two gates before signal filing: (1) daily task count AND (2) 60-min per-agent cooldown. Dedup by (beat, source_url, data_hash). **Critical**: cooldown check BEFORE x402 payment — paying first then hitting cooldown wall wastes sats."
+    },
+    {
+      "name": "signal-filing-gates",
+      "description": ""
+    },
+    {
+      "name": "sensor-discipline-queue-dedup",
+      "description": "**p-sensor-required-field-validation** [2026-06-30, task #20480] Sensors creating tasks must set all required fields (model, skills) at insertion — dispatch rejects incomplete tasks with \"No model set\". Audit approach: grep all sensor.ts files for insertTask calls lacking model parameter. Found/fixed: arc-daily-read missing model, task #20412 failed dispatch, patched + retried #20568 (b4e02cdb)."
+    },
+    {
+      "name": "sensor-required-field-validation",
+      "description": "**p-sensor-state-resilience** [merged: 2026-05-07 + p-persistent-state-boundaries 2026-06-14] Validate persisted state on load; rebuild from empty on version mismatch. Multi-source: fetch all in parallel, continue with available. Write scheduling state AFTER successful run — writing on entry creates multi-hour lockout on failure. Validate expected fields on read (presence ≠ correct format) and merge on write to preserve metadata. **Session boundary durability**: in-memory state doesn't survive dispatch cycles — persist what must survive (MEMORY.md, SQLite, task descriptions)."
+    },
+    {
+      "name": "sensor-state-resilience",
+      "description": "**p-shared-resource-serialization** [2026-04-08] Concurrent tasks on same nonce pool must serialize via shared tracking file + acquire-before-execute. Use mkdir-based locks. Don't roll back counter on tx failure; resync on staleness (>90s). Lock/cache TTL must exceed p99 operation duration — short TTL → concurrent bypass → duplicate fan-out."
+    },
+    {
+      "name": "shared-resource-serialization",
+      "description": "**p-validation-credential-consistency** [merged: p-validation-before-action + p-credential-namespace-consistency] Before financial ops: validate address format AND maintain deny-list for addresses passing format but rejected downstream. Apply at two layers: (1) sensor-level, (2) execution-time. Track resource state hash; skip if unchanged. Sensor credential reads must match namespace in SKILL.md and actual store — mismatch causes silent skips."
+    },
+    {
+      "name": "validation-credential-consistency",
+      "description": "**p-skill-name-validation** [merged: follow-up-task-skill-name-validation + skill-name-example-validation; extended 2026-07-02 task #20782] Verify skill names via `arc skills` before `arc tasks add --skills` or writing `arc skills run --name <X>` in docs. Nonexistent names silently ignored at dispatch; wrong names in docs = silent failures. Correct: `quantum`→`arxiv-research`, `arc-signal-manager`→`aibtc-news-editorial`. **Gotcha**: a skill's own SKILL.md can have the wrong invocation name in its examples (e.g., `arc-email-sync` documented as `email`), causing immediate failures when the task dispatches. Audit SKILL.md examples against the actual directory name + `arc skills list` output during skill creation, and flag any name mismatches in pre-commit linting."
+    },
+    {
+      "name": "skill-name-validation",
+      "description": "**p-external-api-drift** [merged: endpoint-version-discovery + api-payload-inspection] External platforms silently restructure without notice. On retirement, audit ALL hardcoded references; documentation updates atomic with code fixes; classification rules on error text go stale (audit quarterly). Versioned APIs (v2, v5, etc.): validate endpoint availability across ALL versions EARLY during CLI implementation — document which endpoints work per version, probe upfront, pin explicitly. Before HTTP-fetching embedded content, check if the API response already contains the data (e.g., X API `article.plain_text` in tweet payloads) — prefer structured API data over scraping. **Upstream releases**: identify consumption model (subprocess/direct-API/transitive/unused) before acting — subprocess deps auto-benefit from system fixes but aren't affected by SDK API changes."
+    },
+    {
+      "name": "external-api-drift",
+      "description": "**p-fix-and-deploy-verification** [merged: fix-verification + content-publish-deploy-verify + manual-deploy-live-curl + multi-hop-feature-verification + pipeline-artifact-full-chain-validation; wrangler-env-gate 2026-06-18] \"Shipped\" ≠ \"working\"; \"built\" ≠ \"deployed.\" After any fix: require 1–2 observation cycles. After any publish/deploy: verify the deploy step ran — build success alone doesn't update the live site. Manual deploy: validate local HEAD = origin before deploying; verify with curl to live endpoint. Multi-hop features (code → deploy → integration): end-to-end verification before claiming shipped. Pipelines (artifact creation → composition → publication → distribution): verify observable end-user-visible output at each hop. **Wrangler gotcha**: `wrangler deploy` without `--env production` silently succeeds but routes to nothing when `workers_dev: false` and routes are defined only under `env.production` — always use `--env production` for production arc0.me/site deploys."
+    },
+    {
+      "name": "fix-and-deploy-verification",
+      "description": ""
+    },
+    {
+      "name": "signal-quality-pipeline",
+      "description": ""
+    },
+    {
+      "name": "memory-hygiene",
+      "description": ""
+    },
+    {
+      "name": "maintenance-live-state-gate",
+      "description": ""
+    },
+    {
+      "name": "research-prior-findings-audit",
+      "description": ""
+    },
+    {
+      "name": "research-synthesis",
+      "description": "**p-research-source-quality** [merged: research-source-authority + js-rendered-extraction + competitive-memory-integration; extended 2026-06-27] Auto-extracted reports and JS-rendered sites often miss substantive content — treat absence as transport failure, not content absence. Escalate to WebFetch/WebSearch + authoritative primary sources (official docs, version history, published specs). When README is shallow, fetch source files via `gh api repos/OWNER/REPO/contents/`. **arxiv-research gotcha**: tool returns 1000+ tokens of library README boilerplate for every query — read factor files directly (80% cost reduction vs tool re-runs). Cross-reference existing memory entries before creating new sections — fold findings in to prevent fragmentation. **Convergence validation**: 3+ independent sources converging on the same finding validates importance independent of citation counts. Code changes from single-source research gate on primary-source verification before shipping."
+    },
+    {
+      "name": "research-source-quality",
+      "description": "**p-skill-context-boundaries** [2026-06-19, task #19441] Dispatch loads SKILL.md + memory only for skills listed in task `skills[]` array. Skill declaration = progressive-disclosure boundary — omitting a skill gates its context. Declare required skills upfront; prevents multiplicative context bloat."
+    },
+    {
+      "name": "skill-context-boundaries",
+      "description": "**p-intermediate-result-bloat-proactive** [2026-06-19, task #19441] Apply intermediate-result filtering at sensor/queuing stage (proactive), not during task execution (reactive). When a sensor detects >N items, queue an aggregation CLI command before dispatch to filter results."
+    },
+    {
+      "name": "intermediate-result-bloat-proactive",
+      "description": ""
+    },
+    {
+      "name": "security-threat-model",
+      "description": "**p-weak-subsystem-audit-tool-selection** [2026-06-16, task #19139] For weak subsystems (Feedback, Dispatch), search existing tools that index your own artifacts before custom-building. Pattern-adopt the tool's data model (e.g., sensors consuming tracebase's loop/waste metrics) rather than vendoring it. When a tool directly reads your artifacts (tracebase + ~/.claude/projects), it's a strong match even if not purpose-built. Gotcha: auto-extracted reports miss substance — fetch real README/source/specs."
+    },
+    {
+      "name": "weak-subsystem-audit-tool-selection",
+      "description": "**p-revision-loop-primitive** [2026-05-11, merged: p-pr-reversion-source-verification; extended 2026-07-01 task #20735] Before accepting re-review, check if flagged issues were actually addressed — if unchanged, decline. When re-verifying author fix-claims, fetch actual file content at HEAD SHA via `gh api repos/OWNER/REPO/contents/PATH?ref=<sha> --jq .content | base64 -d` (not cached diff); for normalization/regex/dedup changes, spot-check 2–3 edge cases beyond test coverage (year-only, boundaries, degenerate patterns). Walk all mutation paths; verify invariant maintenance and consistency in related code paths."
+    },
+    {
+      "name": "revision-loop-primitive",
+      "description": "**p-purpose-loop** [2026-05-07, refined 2026-06-14, extended 2026-06-24 task #19829, constraint-awareness 2026-06-30 task #20447] Daily PURPOSE evals expose directive gaps → low scores become priorities. If ANY PURPOSE dimension ≤2, distinguish policy-constrained (don't queue work; escalate if policy needs changing) from actionable (queue P2 boost if queue has existing work). Empty queue + low scores = structural constraint — investigate root cause instead. Absence of boost-task creation when ops health ≥4 + all directives advancing = healthy equilibrium. **Constraint independence**: constant saturation (daily, not spikes) signals policy working as designed, not too-low ceiling — validate intent before escalating. Applied #20447: signal filing (policy-paused) skipped; PR reviews (actionable, zero policy blocker) became the boost target. Independent constraints require independent solutions (raising X cap won't lift PR review throughput); diagnose each low dimension separately."
+    },
+    {
+      "name": "purpose-loop",
+      "description": "**p-existing-mitigation-immediate-activation** [2026-07-01, task #20751] When a binding structural constraint persists ≥2 consecutive cycles and an existing mitigation exists (built but dormant), activate it IMMEDIATELY within the same eval cycle—don't queue research on redesign. Deployment friction (instruction updates, docs) is lower than building solutions. Arc example: cost-efficiency constraint 2 days running + task-classifier already built (0% adoption) → CLAUDE.md instruction update deployed it immediately. Separates \"existing tool insufficient\" (architecture work needed) from \"tool dormant\" (visibility/instructions needed)."
+    },
+    {
+      "name": "existing-mitigation-immediate-activation",
+      "description": "**p-queue-composition-guard** [2026-05-05] When any single category exceeds 30% of pending tasks, apply sensor cap or daily limit. Strategic tasks ≥40% of weekly cycles. Cap-driven dequeue → `status=completed`, not `failed`. Gate \"[repo] Implement #N\" tasks at creation; use worktree isolation."
+    },
+    {
+      "name": "queue-composition-guard",
+      "description": "**p-failure-diagnosis** [merged: smoke-test-task-closure; 2026-05-07] When N failures spike, classify by error type. 80%+ same root cause → fix the cause. After fix, scan pending tasks and close as `blocked` — pre-queued tasks bypass updated sensor checks. Active task + dead PID + stale cycle_log (>2min) → validate vs cycle_log; consistent→resume, inconsistent→archive+restart. **Smoke/dry-run tasks**: close as `completed` if the probe goal was achieved even if the full production action was intentionally skipped. Prefix smoke test subjects with `[SMOKE]` or `[DRY-RUN]`."
+    },
+    {
+      "name": "failure-diagnosis",
+      "description": "**p-false-positive-prevention** [merged; task #20096 2026-06-27] Six false-positive categories: (1) Scheduled tasks with `scheduled_for` > current_time are waiting, not stuck. (2) Blocked tasks aged >48h with no new signals — apply 168h+ suppress window. (3) Dispatch-stale health alerts always FP — verify `dispatch-lock.json` presence + `cycle_log` timestamp. **Second root cause confirmed 2026-06-30 (task #20517)**: daily $200 cost ceiling triggering the budget gate (halts P4+ tasks) produces the same \"stale\" signal as a lock/PID issue — check budget-gate state alongside lock/cycle_log before escalating. (4) Observation tasks: load operational context (paused policies, disabled sensors, awaiting-condition gates) before interpreting anomalies. (5) Infrastructure migration: when a system moves to new infrastructure, sensors watching the old location see permanently dry state — validate data source is still authoritative before escalating; if stale, mute and build a new sensor. (6) **arc0btc.com freshness self-resolves before fix dispatch** (2026-06-30, tasks #20492/#20500/#20510/#20533, 2026-07-01 task #20609 — 6+ instances, recurring pattern): health sensor alerts on `latest post >2d`, but by the time the fix task dispatches, a new post has already landed, re-check shows 1d or less (passing). Root cause is alert-to-dispatch latency combined with low publication cadence (2–3 day gaps common); solution: health sensor must check recency immediately before queuing the fix task, not trust the alert's stale snapshot. Add 4h debounce/recheck on freshness alerts to prevent alert-then-fix-then-pass cycles; if 2nd check still fails, then queue fix task. Cuts wasted fix+retrospective task pairs by ~90%."
+    },
+    {
+      "name": "false-positive-prevention",
+      "description": "**p-task-premise-verification** [2026-06-19, task #19374] Tasks claiming to verify a feature, mechanism, or safety guard should validate upfront: (1) feature actually exists in current runtime (version check + code grep), (2) claimed behavior matches actual implementation (code-read before task exec), (3) supporting docs are current (verify research files not stale). False-premise tasks waste execution cost and should be rejected at triage."
+    },
+    {
+      "name": "task-premise-verification",
+      "description": "**p-task-work-completion-pre-check** [2026-07-01, task #20619] Implementation tasks should validate at dispatch that the target fix isn't already shipped. Scan git history for prior implementation, verify invariants if found (compiles, terminal states defined), close as completed — prevents wasted re-execution of already-done work."
+    },
+    {
+      "name": "task-work-completion-pre-check",
+      "description": "**p-model-selection-strategy** [merged: model-selection + emerging-model-cost-monitoring + haiku-code-edit-floor + open-weight-code-tasks; extended 2026-06-29; deployed 2026-07-01] Daily/weekly introspection uses Sonnet (~10% cost vs Opus, no quality gap). Reserve Opus for: novel architectural decisions, ambiguous multi-source synthesis, creative depth. Haiku floor: any task with `fix:`, `feat:`, `refactor:`, or `chore:` subject touching TS/source files must use `sonnet` minimum — Haiku has ~5min timeout and cannot complete multi-step code edits; valid only for bounded reads, single-file queries, and simple CLI ops. **Open-weight routing**: GLM-5.2 and Devstral-2512 via OpenRouter viable for bounded code tasks (single file, <500 LOC, clear spec, verifiable output) at 0.2–0.6% of Sonnet cost with comparable quality. **Classifier LIVE**: src/classifier.ts (`arc tasks add --model auto`) auto-routes bounded single-file code-change follow-ups to open-weight models. Deployment via CLAUDE.md instruction update (commit c94a49c9, task #20752) fixed initial 0% adoption. See [[task-classifier-exists-zero-adoption]] for adoption-gap diagnostic pattern."
+    },
+    {
+      "name": "model-selection-strategy",
+      "description": "**p-policy-deprecation-atomicity** [merged: p-policy-deprecation-three-layer-atomicity + p-schema-query-render-alignment] Policy deprecations and new data fields must touch three layers atomically: (1) storage/policy documentation, (2) code/CLI that implements it, (3) presentation/consuming layers. Missing any layer causes recurring failures or silent data gaps."
+    },
+    {
+      "name": "policy-deprecation-atomicity",
+      "description": "**p-dispatch-signal-freshness-gate** [2026-06-12, task #18678] Tasks replying to external signals (mentions, comments, notifications) validate signal age at dispatch time. A mention >7 days old = moved-on context; close as completed (no-op) rather than wasting execution on stale relevance."
+    },
+    {
+      "name": "dispatch-signal-freshness-gate",
+      "description": "**p-integration-sensor-version-dedup** [2026-05-13; hardened 2026-06-16 task #19126; extended 2026-06-17; extended 2026-06-30 task #20484] Integration sensors must check `pendingOrCompletedTaskExistsForSource` scoped to specific release version. Pattern: `source = \"sensor:<skill>:<repo>:<version>\"`. **Batch dedup**: parallel child tasks MUST use unique `--source` keys — same source collapses all to one (`--source task:19126:link-1`, etc.). **Multi-source conflicts**: when same entity enters from multiple sources with different key formats, add secondary dedup via content-based matching (title) before downstream side effects propagate. **JSON field matching**: LIKE on JSON fields creates false positives — use `json_extract()` with direct comparison. **Stale integration validation**: when queuing an integration task for an upstream release, verify recency—if prior integration completed >1 cycle ago (git commit date), check `git log` to confirm local HEAD already reflects that version; close as completed if true (work was already done). Prevents stale workflow triggers from re-queuing completed integrations months later."
+    },
+    {
+      "name": "integration-sensor-version-dedup",
+      "description": ""
+    },
+    {
+      "name": "dedup-scope-by-category",
+      "description": "**p-claude-usage-quota-outage** [2026-05-14] Claude Code quota exhaustion → dispatch-gate `rate_limited` stop. **Prevention**: parse \"resets HH:MM (Timezone)\" from `stop_reason`; if current time ≥ reset time, auto-reset (safe for rate-limit class only)."
+    },
+    {
+      "name": "claude-usage-quota-outage",
+      "description": "**p-external-side-effect-idempotency** [merged: p-append-idempotency + p-external-side-effect-idempotency + p-status-aware-side-effect-dedup; extended 2026-06-12/06-23] Tasks with external side effects (email send, STX send, x402 payment, CLI post-chat) must self-verify before acting: check sent folder / tx history / payment receipt / channel messages within a recent time window. Add idempotency check as FIRST step of any send path. Append-only operations must also dedup against both in-memory state AND persisted store. **Stale queue backlog**: validate (1) message timestamp scope matches current cycle, (2) consumer is actively pulling, (3) state files use cycle-scoped keys. **Dedup semantics**: terminal (completed/failed/blocked) = \"already done, skip\"; active (pending/active) = \"in progress, don't duplicate queue entry\". Generic `taskExistsForSource` collapses both gates; use status-aware split."
+    },
+    {
+      "name": "external-side-effect-idempotency",
+      "description": "**p-sensor-fire-rate-management** [merged: threshold-cooldown + interval-flood + transient-backoff + dual-signal-independence + dedup-scope] Five gates against excessive re-fires: (1) Threshold sensors: persist result hash via `getLastCompletedTaskBySource` — re-fire only if condition improved OR cooldown active. (2) Static source keys + short intervals flood — use date-scoped keys (`sensor:name:YYYY-MM-DD HH`) or condition-state files. (3) Transient API failures (429, timeout): `getLastFailedTaskBySource(source, windowHours=4)` before queuing; if found, skip or `scheduled_for += 4h`. (4) Mixed-signal sensors (reactive + proactive): use independent `claimSensorRun` entries. (5) Long runs of pending-count=0 despite signal flow: source-key audit — scope keys to state-change boundaries (YYYY-MM-DD HH) and add diagnostic bypass."
+    },
+    {
+      "name": "sensor-fire-rate-management",
+      "description": "**p-large-audit-aggregator-cli** [2026-05-16; validated Code Mode 2026-06-19] CLI-wrapping reduces dispatch context cardinality. Any task reading ≥10 files: build CLI aggregator instead. `sensor-health-report` replaces 73 sensor.ts reads. Architecture reviews: scope to git diff since last SHA. @mention responses: read comment thread only, no full PR diff."
+    },
+    {
+      "name": "large-audit-aggregator-cli",
+      "description": "**p-dispatch-session-fork-limit** [2026-06-18, task #19351] Dispatch sessions run as a forked worker; subagent spawning (Agent/Workflow) succeeds on the first call but fails with \"Fork is not available inside a forked worker\" on subsequent calls. Workaround: author reports directly in the main loop using skill CLIs for data collection, rather than fanning out to subagents. Applies to batch research, multi-link synthesis, and any task creating >1 Agent/Workflow call."
+    },
+    {
+      "name": "dispatch-session-fork-limit",
+      "description": "**p-state-machine-safety** [merged multi-layer safety; 2026-07-01 task #20618] Dedup'd creations: `autoAdvanceState: <target>` immediately or sensors re-fire. Feature flags gate BOTH creation+evaluation layers. Audit active instances before modifying. **Completion invariant**: non-terminal states must never have `completed_at` set (breaks `NULL` filters); guard + repair both old/new. **Terminal durability**: explicit terminals (no outgoing edges) prevent repair tools reopening; audit StateConfigs. **Verify contract**: add machine-checkable `verify` to transitions. **CLI gotcha**: `--to <state>` takes literal state name, not event key. **Resource fanout gates**: states creating fanout tasks referencing external resources (URLs, artifact IDs) must verify availability before task creation—404s silently degrade downstream quality. On unavailability, noop-hold and retry at next sensor tick rather than blind fanout (applied: `blog_published` state gates whop-chat fanout with `isPostLive()` check before creating tasks)."
+    },
+    {
+      "name": "state-machine-safety",
+      "description": "**p-creation-timestamp-staleness-guard** [2026-07-01, task #20577] State machines with deferred/multi-phase side effects must guard creation timestamp before executing downstream — prevents months-old content resurfacing. Guard at field-read, not just state-transition. Audit all similar machines (fan-out, composition, task-creation) for same gap. Pattern: `isAnchorStale(ctx.date)` with grace window + fail-open."
+    },
+    {
+      "name": "creation-timestamp-staleness-guard",
+      "description": ""
+    },
+    {
+      "name": "state-machine-rename-data-migration",
+      "description": ""
+    },
+    {
+      "name": "resolver-mechanism-drain-verification",
+      "description": ""
+    },
+    {
+      "name": "workflow-output-recompute-guard",
+      "description": "**p-external-signal-dedup-versioning** [merged: signal-window-blindspot] Pagination creates invisible state-transition ranges. Dedup independently via completed-task + versioned source key; skip re-queue if completed exists. Versioned keys (`pr-review:v1`, etc.) allow per-commit re-review while preventing loops."
+    },
+    {
+      "name": "external-signal-dedup-versioning",
+      "description": "**p-architecture-review-discipline** [2026-05-16, hardened 2026-06-10, extended 2026-06-27 task #20087] Architecture review sensors gate on SHA diff — persist review SHA after each cycle; skip if unchanged. Each cycle documents explicit \"carry-watch\" items in result_summary with resolution windows; escalate to higher priority if unresolved after 3 cycles. Validate assumed external service contracts (APIs, schemas, endpoint behavior) haven't drifted since last review. Major findings (schema changes, dispatch core, innovations like ARC-0011) go to technical spec form — not flagged alone. [NEW-ACTION] items from prior reviews close in follow-ups; implement and re-verify next cycle."
+    },
+    {
+      "name": "architecture-review-discipline",
+      "description": "**p-audit-completeness** [merged: audit-completeness + multi-dispatch-path-completeness + wave-backfill-primitive-audit + dead-code-detection-during-audit + cross-skill-boundary-extraction; 2026-06-27 task #20087; extended 2026-07-01 task #20623] When adding a fallback or fix: audit ALL code paths independently (legacy + new, sync + async, happy + error). For multi-wave features (primitives added Wave N, wired Wave N+1): trace all callers, verify primitive fires on every exit branch. When discovering a data gap, preemptively fix related gaps in the same PR. Return type changes thread through ALL dispatch paths. **Duplicate static data (ERROR_PATTERNS regexes, classification rules, validation sets) in multiple files must reference a shared source** — copy-paste divergence causes silent coverage gaps (discovered via failure-rate anomaly: cli.ts ERROR_PATTERNS was missing 8 signatures already fixed in sensor.ts). Persist findings with detail (skill, line numbers, violation type). Systematic audits also surface: dead code — prune atomically in same PR if safe; cross-skill DB queries or direct references — flag for extraction to shared boundary layer (src/db.ts or skills/shared/) to prevent coupling."
+    },
+    {
+      "name": "audit-completeness",
+      "description": "**p-credential-exposure-pr** [2026-05-22] PR credential exposure: credentials are public from push time regardless of review status — CHANGES_REQUESTED blocks merge, NOT data. Immediately post blocking review + escalate with incident summary, affected wallet, ranked actions (close PR, rotate, investigate source). Track days-elapsed-since-exposure as the risk indicator."
+    },
+    {
+      "name": "credential-exposure-pr",
+      "description": "**p-policy-secondary-effects** [2026-05-19; extended 2026-06-17 task #19259] Policy disables have three aspects: (1) Scope — gate disabled feature within multi-purpose sensors; skip entirely sensors whose sole purpose is the disabled feature; audit for orphaned pending tasks. (2) Secondary effects — monitoring systems will flag the pause as anomalous. Document expected secondary effects in the policy summary. (3) Cross-skill routing bypass — when skill A auto-routes work to skill B and skill B is disabled, skill A's routing logic must also check the policy flag. Pattern: when setting `FEATURE_DISABLED=true`, grep ALL routing/dispatch paths across ALL skills for calls to that feature and add the same flag check."
+    },
+    {
+      "name": "policy-secondary-effects",
+      "description": "**p-email-task-handling** [merged: feedback-task-decomposition + email-strategy-delegation + email-thread-dedup-false-positive + email-batch-link-prescreen; extended 2026-06-27, hardened 2026-06-28 task #20194] Email tasks follow reply → scope → delegate: (1) reply immediately with concrete plan or acknowledged constraints, (2) decompose into specific execution tasks with model sized for the work, (3) link via `parent_id`. AGENT.md scope constraints (e.g., \"triage-only\") are hard boundaries — execute delegated tasks separately, not inline. **Email dedup gotcha**: thread conversations sharing the same subject line can match the original message rather than the current reply point — use `--force` to bypass when intentionally replying to a later conversation point. **Approval dedup**: when filing multiple follow-up tasks from a single approval email, use unique `--source` suffixes per approval-thread (`--source \"task:20187:approval-sku\"`, `--source \"task:20187:approval-self-improve\"`) to prevent dedup collapse into a single task. **Link pre-screen**: HEAD-check all external URLs before queuing research tasks; prevents wasted Opus context on dead-end research. **FYI classification**: multi-point emails mix passive notifications with actionable items — acknowledge FYI points inline; queue actionable items as dedicated tasks with proper skill scope."
+    },
+    {
+      "name": "email-task-handling",
+      "description": ""
+    },
+    {
+      "name": "partner-constraint-surfacing",
+      "description": "**p-resource-constraint-batch-closure** [merged: + filter-deploy-queue-sweep] When a shared resource constraint (wallet balance, API quota, credential expiry) causes repeated failures: (1) close ALL pending tasks of that class, (2) create ONE escalation task scoped to the resource, (3) do not re-queue until resource confirmed restored. After deploying a new sensor filter: immediately sweep the pending queue for tasks matching rejection criteria and close them."
+    },
+    {
+      "name": "resource-constraint-batch-closure",
+      "description": "**p-subagent-output-schema-contract** [2026-05-26] Parallel subagents whose outputs merge at orchestrator boundary need explicit schema contract in AGENT.md (array vs object, field names, required fields) — schema drift → normalization cycles."
+    },
+    {
+      "name": "subagent-output-schema-contract",
+      "description": "**p-dispatch-infra-config** [merged: fallback-path-observability + credential-loading; 2026-05-27/06-23] HTTP/SSE MCP transports silently cap tool calls at 60s — set `MCP_TOOL_TIMEOUT=120000` in dispatch env; silent timeout ≠ error. Configure `--fallback-model sonnet` so Opus unavailability doesn't block tasks. **Fallback paths**: log actual model used vs requested; update `cycle_log.model` on fallback activation — blind fallbacks hide cost/quality deviations. **Credentials**: use direct `getCredential()` in-process imports in dispatch-critical paths — subprocess credential loading is brittle and adds fork latency."
+    },
+    {
+      "name": "dispatch-infra-config",
+      "description": "**p-streaming-watchdog-idempotency-contract** [2026-06-29, task #20347, v2.1.196] New Claude Code streaming watchdog (5min default, fires mid-stalled-tool-call) introduces auto-retry that can execute non-idempotent operations twice. Arc dispatch must validate all in-flight operations (x402 payment, STX send, email append) are idempotent before relying on watchdog — or gate paymentOps behind explicit catch on watchdog timeout. Verify watchdog ≠ dispatch outer timeout firing separately (both can fire; need sequence testing)."
+    },
+    {
+      "name": "streaming-watchdog-idempotency-contract",
+      "description": "**p-bash-cwd-persistence-wrong-db-target** [2026-06-29, task #20321] Bash tool persists working directory across sequential calls within a session. After `cd` into a sub-repo with its own `db/arc.sqlite`, later `arc tasks add`/`close` calls silently target that sub-repo's DB (no error signaled, just wrong database). Always `cd /home/dev/arc-starter` or use absolute paths before any `arc` CLI call that mutates task queue. Sub-repos should use absolute paths for `db/arc.sqlite` references to prevent accidental interference."
+    },
+    {
+      "name": "bash-cwd-persistence-wrong-db-target",
+      "description": "**p-subagent-permission-mode-propagation** [2026-06-29, task #20347, v2.1.196] `--dangerously-skip-permissions` flag had a silent fallback: sub-agents would run in auto mode despite parent setting bypass. After runtime fixes, audit spawned sub-agents to verify permission mode actually propagated as intended — silent permission-bypass failures are invisible until explicitly tested. Gotcha: fix was on the runtime side; dispatch scripts that worked around the bug may be bypassing legitimate checks now."
+    },
+    {
+      "name": "subagent-permission-mode-propagation",
+      "description": "**p-agent-md-authoring-trigger** [2026-05-27] Author AGENT.md when skill dispatched 3+ times and each dispatch re-derives multi-step flows (high tokens-in); SKILL.md alone lacks procedural detail. AGENT.md = subagent briefing, never load into orchestrator context."
+    },
+    {
+      "name": "agent-md-authoring-trigger",
+      "description": "**p-tool-integration-contract-readiness** [2026-06-30, task #20431] When evaluating new tools/frameworks for adoption (harnesses, libraries, platforms as alternatives to existing solutions), the gate is the **integration contract**: unattended/headless mode, machine-readable output formats, observability/cost-tracking parity—not language choice or internal architecture. Validate via **bounded eval**: run the candidate on real task subset using compatible models, measure cost/quality/resilience against baseline, then decide rewrite vs integration. Surface production-readiness uncertainty (crash modes, 24/7 durability) as open questions to evaluate, not assumptions."
+    },
+    {
+      "name": "tool-integration-contract-readiness",
+      "description": "**p-release-assessment-consumption-gate** [2026-06-30, task #20443; hardened task #20489; extended 2026-07-01 task #20677] Before assessing an SDK/framework release for breaking changes or feature impact, validate consumption model FIRST: direct dependency, transitive, vendored, or unused. SDK not in package.json + zero imports = close as no-action. **Version currency gate**: if consumed via vendored copy, compare local HEAD commit date against release date — if local is ≥4 weeks ahead, check git log to confirm the release's changes are already committed; if so, close as no-action without deeper analysis. **Parallel implementation paths**: when a capability is provided by multiple implementations (e.g., Bitflow via direct `bitflow.ts` wrapper OR via MCP server tools), verify which path your codebase uses — changes to the unused path don't require action. Prevents wasted cycles on stale releases and unused-path enablement."
+    },
+    {
+      "name": "release-assessment-consumption-gate",
+      "description": "**p-batch-uniform-error-diagnosis** [2026-05-29, hardened 2026-06-13] Batch operations returning uniform error signature indicate service-level issue (rate-limit/outage), not individual failures. Queue ONE orchestration task with diagnose-before-fanout: retry with backoff, classify service state, conditionally fan out. **Time-correlation addition**: when N uniform failures cluster at same UTC hour but retries succeed ≥1h later, diagnose time-synchronized transients (service degradation window, rate-limit reset boundary) — requires timestamp analysis across the error cluster, not just error text matching."
+    },
+    {
+      "name": "batch-uniform-error-diagnosis",
+      "description": "**p-workflow-supersession-creation-gate** [2026-06-18, task #19298] When multiple workflow types produce the same side effect for the same entity, enforce supersession checks at workflow creation time — don't rely on dedup at execution time. Pattern: before `insertWorkflow(A)`, check for existing instances of workflow type B; skip A if B already handles the entity. This prevents different workflow source-key prefixes from circumventing dedup ledgers."
+    },
+    {
+      "name": "workflow-supersession-creation-gate",
+      "description": "**p-content-publication-sync-discipline** [2026-07-01, task #20611] Published content (blog posts) deployed live before being committed creates backlog of untracked source + generated artifacts. On reconciliation: commit BOTH source (content/) and generated (src/content/docs/blog/*.mdx) to re-sync; risk is partial-source builds diverging state. Diff cleanup gate: scan for stray .bak/.tmp files and remove before committing (gitignore prevents future, not past cleanup). Unrelated WIP (half-built schema changes, infrastructure features) discovered during scope work must be filed as follow-up tasks with full description, not forced into current commit or discarded."
+    },
+    {
+      "name": "content-publication-sync-discipline",
+      "description": "**p-completed-task-terminal** [2026-06-03] Terminal state: two-layer guard — (1) catch-block status check before any requeue call, (2) `UPDATE ... WHERE status != 'completed'` in `requeueTask()`. After shipping guard, sweep existing tasks for bad pending state — guard is preventive, not curative."
+    },
+    {
+      "name": "completed-task-terminal",
+      "description": "**p-kickoff-task-parameter-capture** [2026-06-08] Embed all agreed parameters in the kickoff task description (scope, approach, deliverables, constraints) — prevents context loss between dispatch cycles on multi-phase work."
+    },
+    {
+      "name": "kickoff-task-parameter-capture",
+      "description": "**p-research-ecosystem-analysis** [2026-06-08, merged: repository-lifecycle-forensics + ecosystem-fork-taxonomy + directory-curation-gap-analysis] Verify claimed migrations/deprecations via commit logs (attribution + dates + tone), not archive status or README. Rapid create→archive→rebuild cycles (15–30d) + fork survival indicate prototype validation. Categorize forks: (1) direct tools, (2) native adoption, (3) ecosystem integrations, (4) adjacent infra — (2) forks gaining >10× stars signal design-market fit; absence from (1) signals tool gaps. Community registries are PR-gated; cross-check against dependency graphs + \"used by\" + fork stars."
+    },
+    {
+      "name": "research-ecosystem-analysis",
+      "description": "**p-architecture-evaluation-discipline** [2026-06-12, task #18634, validated 2026-06-13 & task #18812; refined 2026-06-27 task #20102] Multi-hop architectures (fan-out, pipelines, state machines with external steps): gate implementation on all downstream hops being unblocked — wiring when outlets are sealed prevents end-to-end testing. Producer-only completion (inflow artifact creation without consumer routing) creates unvalidated intermediate state — require observable consumption in the same cycle or queue a dependent task explicitly as P-follow-up. Claims about safety mechanisms require code-read verification against actual runner/framework behavior. **Bottleneck-first analysis**: when evaluating infrastructure upgrades, identify the actual constraint first via observer data (which resource is saturated vs idle) — changes that don't address the true bottleneck add ops weight with zero throughput."
+    },
+    {
+      "name": "architecture-evaluation-discipline",
+      "description": "**p-cost-spike-burstiness-validation** [2026-06-12, task #18709; refined 2026-06-14] Single high-cost cycles driven by feature launches are not rebalancing triggers. Classify spike root cause: model concentration (launch day) vs error rate (test/recovery) vs external-API costs. Require 2+ consecutive high cycles before confirming drift. Validate cost spike legitimacy by correlating against operational health (target ≥3) + directive advancement — research-sprint bursts paired with ops-health gains are acceptable; investigate only if cost rises while ops health drops or directives stall."
+    },
+    {
+      "name": "cost-spike-burstiness-validation",
+      "description": "**p-scale-guard** [merged: p-silent-overflow-prevention + p-auto-artifact-cleanup-cadence; 2026-06-13] Cap inputs at producer when downstream has hard limits (context windows, rendering bytes) — overflow fails silently late; prevention at ingestion is observable. Auto-committing artifact systems need cleanup routines (weekly sensor sweep or state-machine terminal hook); unchecked accumulation causes git scale issues (295 files confirmed #18812)."
+    },
+    {
+      "name": "scale-guard",
+      "description": "**p-structural-blocker-escalation** [merged: p-architectural-finding-escalation; 2026-05-19 + 2026-06-13 task #18802] Two escalation triggers — surface to decision-maker: (1) task findings identifying schema changes, dispatch core, or multi-system refactors → BEFORE queuing implementation (rationale required); (2) monitoring discovers gate/assumption unachievable by design (not transient) → escalate for strategy input rather than requeuing indefinitely."
+    },
+    {
+      "name": "structural-blocker-escalation",
+      "description": "**p-content-publication-workflow** [merged: quality-gates + resync; 2026-06-14 + 2026-06-15 task #19071] Content publication (blog posts, experience docs) has two gates: (1) Pre-publish quality iteration for word-choice, punctuation, and formatting — iterate on drafts BEFORE invoking publish CLI; (2) Post-gate resync when violations are caught — fixing requires re-publishing (not direct artifact edits) to re-sync derived formats (MDX, metadata) and re-run the gate. Pattern: draft iteration → publish → verify gate output → deploy."
+    },
+    {
+      "name": "content-publication-workflow",
+      "description": "**p-batch-synthesis-tool-quality** [merged: batch-synthesis-quality-honesty + tool-underperformance-escalation; 2026-06-14] Batch synthesis hitting API limits (JS-walling, extraction degradation) degrades real signal — output must quantify: assess signal concentration (% thin items), identify substantive vs. thin API items, offer re-fetch at higher threshold. When a producer tool systematically mis-captures data, escalate to tool improvement rather than downstream workarounds — document miss pattern, queue tool-improvement task, re-assess post-shipping."
+    },
+    {
+      "name": "batch-synthesis-tool-quality",
+      "description": "**p-pr-review-at-scale** [merged: p-batch-pr-review-scale + p-data-file-sync-validation; 2026-06-15, task #19083] Reviewing 15+ PRs: parallelize diff-fetching across agents; post consolidated batch verdict to tracking issue; flag inter-PR dependencies explicitly. When PRs modify data files (JSON + public copies): verify both versions updated identically, aggregate count fields match, metadata timestamps increment."
+    },
+    {
+      "name": "pr-review-at-scale",
+      "description": "**p-dispatch-safety-gates** [merged: p-subagent-tier-cost-guard + p-feature-monetization-dry-run; 2026-06-16, task #19107] Dispatch sessions must not spawn higher-tier sub-agents — enforce via PreToolUse hook blocking Bash(`claude*`)/Agent calls where inferred tier exceeds parent session tier. New features with external side effects on revenue surfaces (paid-room posts, tx sends, API payments) default to `DRY_RUN=true`; require operator/voice review before flipping live; gate until 1–3 clean posts or a quality sensor exists."
+    },
+    {
+      "name": "dispatch-safety-gates",
+      "description": "**p-judge-panel-design-diversity** [2026-06-16, task #19143] Judge-panel/adversarial-verification stages reduce conformity bias via two mechanisms: (1) use per-agent `model` overrides in `parallel()` to vary models (opus+sonnet+openrouter), not just prompts — genuine model diversity outperforms prompt-only variation; (2) strip response authorship before ranking to cut self-preference bias."
+    },
+    {
+      "name": "judge-panel-design-diversity",
+      "description": "**p-auditability-over-efficiency** [2026-06-29, task #20250] Latent-space optimizations (neuralese, binary protocols, compressed state representation) improve speed and token efficiency but eliminate the audit trail required for verification and accountability. For systems touching money, cryptographic keys, or long-term memory: keep the human-readable, signatureworthy layer even if it costs more tokens. The transparency cost buys verifiability—worth paying. Reserve opaque optimization only for internal buffers or purely computational paths."
+    },
+    {
+      "name": "auditability-over-efficiency",
+      "description": "**p-skill-extraction-and-dispatch-design** [merged: skill-extraction-session-mining + workflow-extraction-unit-design; 2026-06-19 task #19442] Extraction workflows decompose at file/context boundaries (one file in/out per task) — prevents Lost-in-the-Middle; choreography via task queue, not promise chains. Skill candidates: repeated corrections (>2× in recent.log) surface as SUGGESTION only; mine at memory-consolidation time, not as a queued task."
+    },
+    {
+      "name": "skill-extraction-and-dispatch-design",
+      "description": ""
+    },
+    {
+      "name": "loop-engineering-primitives",
+      "description": ""
+    },
+    {
+      "name": "shared-infrastructure-porting",
+      "description": ""
+    },
+    {
+      "name": "observability-eval-design",
+      "description": ""
+    },
+    {
+      "name": "storage-retrieval-architecture-pairing",
+      "description": ""
+    },
+    {
+      "name": "escalation-dispatch-patterns",
+      "description": "**p-paid-channel-posting-discipline** [merged: p-content-reference-pre-verification + p-paid-channel-review-gate; 2026-06-22, task #19675; extended 2026-07-01, task #20524, 2026-07-02 task #20805] Before posting to monetized/paid channels: (1) verify target artifact accessible; (2) compose draft; (3) **run brand-voice quality gate** (standardized prose checker, tense consistency, tone alignment); (4) queue for explicit human sign-off (not auto-post). Pattern: verify → draft → brand-voice check → review task → post if approved. Brand-voice gating prevents quality rejection at human review layer and is more cost-efficient than iterating post-approval. **Fallback**: if prose violations (SOUL.md stop-slop rules, tone) slip through and are caught post-publish on edit-capable channels (Whop forum, X, blog), use edit APIs to correct in-place rather than re-post. Applied: \"full stop\" violation fixed post-publish via `edit-forum-post`."
+    },
+    {
+      "name": "paid-channel-posting-discipline",
+      "description": "**p-dispatch-infrastructure-retry-gate** [2026-06-23, task #19703] Subprocess-level API flakiness (transient 500s, timeouts) can cause retry loops lasting 30–90 minutes, holding dispatch slots and blocking queue progress. Gate subprocess retries at dispatch boundary with explicit cap (e.g., `CLAUDE_CODE_RETRY_WATCHDOG=5`) — prevents resource exhaustion during infrastructure events."
+    },
+    {
+      "name": "dispatch-infrastructure-retry-gate",
+      "description": "**p-periodic-constrained-report-assembly** [2026-06-23, task #19728; extended 2026-06-23 task #19744, 2026-06-28 task #20149] Periodic reports (weekly decks, dashboards, observability watches) with fixed format require upfront schema discovery + parallel data gathering + atomic assembly. Pattern: (0) **prescan rate-limited resource budgets** — fail fast if insufficient; (1) **read output schema/template upfront** (AGENT.md + template files) to discover sections, metrics, format — guides data collection and prevents rework; (2) gather data in parallel (agents for synthesis/research OR direct CLI/API for observability); (3) assemble into single artifact with proper frontmatter; (4) archive prior version before committing (atomic overwrite). Last-week context provides framing."
+    },
+    {
+      "name": "periodic-constrained-report-assembly",
+      "description": "**p-report-data-gathering-cascade** [2026-06-29, task #20271] Periodic reports with heterogeneous data sources (fast core metrics + slower specialized streams) use cascading parallelism: (1) core operational data (task counts, costs, errors) run in parallel; (2) once core completes, specialized monitoring streams (feature KPIs, market signals, channel health) run in parallel with per-stream timeout budgets. Prevents core-metric latency from blocking secondary-stream start; forces explicit \"no data this cycle\" observation when specialized streams timeout. Applies to weekly cycles, dashboards, observability reports."
+    },
+    {
+      "name": "report-data-gathering-cascade",
+      "description": "**p-synthesis-interpretation** [merged: p-batch-topic-dominance-signal + p-synthesis-absence-as-finding; 2026-06-23] Topic clustering (>60% on one theme): document as methodology bias or market signal — not diversity failure. Consistent absences (same subsystem missing from 3+ independent sources): document as architectural blindspot or market knowledge deficit — escalate systemic gaps to architectural review."
+    },
+    {
+      "name": "synthesis-interpretation",
+      "description": "**p-rate-limit-budget-discipline** [merged: p-structural-rate-limit-gating + p-multi-part-atomic-budget-check + p-deferred-retry-priority-inversion; extended 2026-06-26] Structural output-side ceilings (daily caps, API quotas with definite reset times): (1) pre-validate capacity before queuing; overflow → `blocked` with `scheduled_for` at reset time, not `failed`; (2) **multi-unit atomics** (tweet threads, batched sends) gate on `available_budget ≥ N` — defer entire unit if insufficient; partial posting breaks coherence. **X threads optimization**: `post --reply-to` continuations don't burn the 3/day root-post budget — only root tweets count; structure main content as thread root+replies, segmented CTAs as separate self-replies beneath. Packs 4-5 content units per budget slot while maintaining per-unit constraint application (e.g., room link in CTA reply only per content design rules). (3) **deferred retries** assign ≤P3 priority — default P5 lets new cadence crowd them out. (4) **Reactive age-boost**: pending items >21h in queue → priority-boost to P1, preventing silent starvation."
+    },
+    {
+      "name": "rate-limit-budget-discipline",
+      "description": ""
+    },
+    {
+      "name": "sensor-stale-block-diagnostics",
+      "description": "**p-paid-tier-receipt-routing** [merged; 2026-06-25] Exclude zero-amount products ($0 SKUs) from paid classification before broadcasting to sensors — free SKUs cause downstream misfires. Multi-step onboarding: determine buyer tier at flow start; gate each post's channel selection on tier, not hardcoded task parameters."
+    },
+    {
+      "name": "paid-tier-receipt-routing",
+      "description": "**p-synthesis-efficiency** [merged: p-mechanical-triage-cache-selective-enrich + p-synthesis-topic-reuse + p-synthesis-batch-parallel-reads + p-synthesis-format-template-anchoring; 2026-06-27] Large URL batches (>10): mechanical triage pass (zero LLM, parse+cache) before selective reads; enables dedup and topic clustering. Cross-reference recent synthesis before re-synthesizing — cite rather than rebuild. Parallel subagent reads (3–5 items each) for pre-cached batches keep orchestrator context lean. Identify gold-standard output template upfront to prevent format drift."
+    },
+    {
+      "name": "synthesis-efficiency",
+      "description": "**p-shared-runtime-porting** [merged: p-architecture-audit-primitives-vs-verbs + p-queue-dequeue-atomicity-for-shared-runtimes; 2026-06-27] Coverage claims require code-read on both primitives (data structures, config) AND verbs (control flow, scheduling) — primitives without verbs are inert. Multi-consumer runtimes replace file locks with atomic SQL claims (`UPDATE tasks SET status='active' WHERE id=(SELECT id FROM tasks WHERE status='pending' ORDER BY priority,id LIMIT 1) RETURNING *`). Validate dequeue interface upfront; nonexistent src/ = scope defined."
+    },
+    {
+      "name": "shared-runtime-porting",
+      "description": "**p-feedback-memory-architecture** [merged: p-feedback-loop-closure + p-memory-retrieval-architecture; 2026-06-27] Every observation (dead_ends, reverts, escalations) needs a feedback path — constraint (queried at PIVOT) or learning label; logging without path = observability theater. Wholesale memory load hits cardinality ceiling faster than selective retrieval; indexed/skill-scoped access: −36% duration, −72% P95 (#19374)."
+    },
+    {
+      "name": "feedback-memory-architecture",
+      "description": "**p-memory-lifecycle** [merged: p-memory-threshold-gates + p-memory-staleness-indexing + p-consolidation-snapshot-atomicity; 2026-06-27, extended 2026-06-28 task #20194] Two-level MEMORY.md thresholds: warn at 180 lines (queue consolidation), fail at 200 (dispatch startup check). Audit staleness metadata (`[STATE: YYYY-MM-DD]`) alongside count to identify both size AND what to remove. Snapshot to `memory/archive/YYYY-MM-DDTHH-MM-SSZ-memory.md` before consolidation for rollback. **Write suppression at cliff**: when MEMORY.md approaches 200 lines within a task, suppress new line additions and route learnings to `recent.log` (captured via task summaries) instead — the thing guarding the memory file shouldn't be the thing that pushes it over the edge."
+    },
+    {
+      "name": "memory-lifecycle",
+      "description": ""
+    },
+    {
+      "name": "memory-consolidation-group-compression",
+      "description": ""
+    },
+    {
+      "name": "memory-consolidation-mechanical-join",
+      "description": ""
+    },
+    {
+      "name": "dispatch-context-budgeting",
+      "description": "**p-content-url-prevalidation** [2026-06-28, task #20188] When publishing content that embeds external URLs (blog links, product teasers, channel posts), pre-flight each URL with HEAD/curl before publishing; 404s silently degrade post quality and credibility. Check at publication time, not composition time, to catch recently-deployed resources. Observed: Whop post quality loss when seeded from local draft with undeployed blog reference."
+    },
+    {
+      "name": "content-url-prevalidation",
+      "description": ""
+    },
+    {
+      "name": "spec-first-architecture-validation",
+      "description": ""
+    },
+    {
+      "name": "file-lock-atomic-claim-scaling",
+      "description": ""
+    },
+    {
+      "name": "dsl-vocabulary-anchoring",
+      "description": ""
+    },
+    {
+      "name": "structured-communication-scaling",
+      "description": ""
+    },
+    {
+      "name": "architecture-gap-validation-before-port",
+      "description": ""
+    },
+    {
+      "name": "shared-spec-durable-home",
+      "description": ""
+    },
+    {
+      "name": "spec-grammar-vs-examples-reconciliation",
+      "description": ""
+    },
+    {
+      "name": "portable-validator-core-no-runtime-deps",
+      "description": ""
+    },
+    {
+      "name": "peer-adoption-self-describing",
+      "description": ""
+    },
+    {
+      "name": "convergence-gap-validation",
+      "description": ""
+    },
+    {
+      "name": "validation-error-escalation-vs-silent-drop",
+      "description": ""
+    },
+    {
+      "name": "account-state-prerequisite",
+      "description": ""
+    },
+    {
+      "name": "runtime-fix-propagation-audit",
+      "description": ""
+    },
+    {
+      "name": "self-authored-pr-approval-blocker",
+      "description": ""
+    },
+    {
+      "name": "report-intermediate-data-artifact",
+      "description": ""
+    },
+    {
+      "name": "report-schema-validation-from-results",
+      "description": ""
+    },
+    {
+      "name": "staging-and-blockers",
+      "description": ""
+    },
+    {
+      "name": "code-claim-verification-before-technical-docs",
+      "description": ""
+    },
+    {
+      "name": "periodic-query-zero-result-validation",
+      "description": ""
+    },
+    {
+      "name": "tool-eval-prerequisites",
+      "description": ""
+    },
+    {
+      "name": "automation-breakage-investigation",
+      "description": "**p-pr-review-no-duplicate-unchanged** [2026-06-30, task #20456] When a task queues to review a specific PR, check for recently completed review tasks for that same PR number. If the PR state is unchanged (same commit SHA, not yet merged), close as completed without posting duplicate review — prevents redundant approvals and wasted context on unchanged work."
+    },
+    {
+      "name": "pr-review-no-duplicate-unchanged",
+      "description": ""
+    },
+    {
+      "name": "pr-pattern-consistency-validation",
+      "description": ""
+    },
+    {
+      "name": "multi-wave-repair-scope-validation",
+      "description": ""
+    },
+    {
+      "name": "auth-failure-cascade-transient-outage",
+      "description": ""
+    },
+    {
+      "name": "retrospective-lifecycle",
+      "description": ""
+    },
+    {
+      "name": "formalization-timing-by-complexity",
+      "description": ""
+    },
+    {
+      "name": "repair-fix-self-resolution",
+      "description": ""
+    },
+    {
+      "name": "normalization-collision-risk-edge-case-validation",
+      "description": ""
+    },
+    {
+      "name": "operational-narrative-evidence-trail",
+      "description": ""
+    },
+    {
+      "name": "research-grounded-operations-analysis",
+      "description": ""
+    },
+    {
+      "name": "financial-operation-code-review",
+      "description": ""
+    },
+    {
+      "name": "multi-slot-budget-reservation-vs-priority-boost",
+      "description": ""
+    },
+    {
+      "name": "existing-mitigation-immediate-activation",
+      "description": ""
+    },
+    {
+      "name": "feature-gate-recovery-revalidation",
+      "description": ""
+    },
+    {
+      "name": "dormancy-zero-inflow-expected-state",
+      "description": ""
+    },
+    {
+      "name": "guardrail-reversal-escalation",
+      "description": ""
+    },
+    {
+      "name": "pr-workflow-state-lag",
+      "description": ""
+    },
+    {
+      "name": "report-only-scope-boundary",
+      "description": ""
+    },
+    {
+      "name": "dead-skill-audit-triangulation",
+      "description": ""
+    },
+    {
+      "name": "audit-evidence-scope-sizing",
+      "description": ""
+    },
+    {
+      "name": "content-distillation-verification",
+      "description": ""
+    },
+    {
+      "name": "stale-block-consolidation-escalation",
+      "description": ""
+    },
+    {
+      "name": "agent-input-endpoint-allowlist",
+      "description": ""
+    },
+    {
+      "name": "stalled-outcome-root-cause-diagnosis",
+      "description": ""
+    },
+    {
+      "name": "memory-external-state-decay",
+      "description": ""
+    },
+    {
+      "name": "filtered-input-feedback-loop",
+      "description": ""
+    },
+    {
+      "name": "entity-contact-limit-creation-gate",
+      "description": ""
+    },
+    {
+      "name": "time-window-constrained-contact-eligibility",
+      "description": ""
+    },
+    {
+      "name": "multipart-task-completion-audit",
+      "description": ""
+    }
+  ]
+}
