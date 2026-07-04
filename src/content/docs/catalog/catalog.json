@@ -211,6 +211,21 @@
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-article-pipeline",
+    "description": "Select a crown-jewel research finding, draft a long-form arc0.me article + an X Article amplification variant (title + body + companion post, emailed ready-to-paste to whoabuddy), hand the blog leg to the autonomous publish lane",
+    "tags": [
+      "publishing",
+      "content",
+      "distribution",
+      "x"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 60,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-artifacts",
     "description": "Vacuum + audit CLI for the source-artifact pool (artifacts/distilled/ + distilled_artifacts table). Pure DB+FS maintenance; no LLM.",
     "tags": [
@@ -222,6 +237,20 @@
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 24,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-attribution",
+    "description": "MRR / attribution report reconciling Whop + x402 sales, channel attribution, and reach into one source of truth for demand-flywheel measurement",
+    "tags": [
+      "reporting",
+      "attribution",
+      "revenue"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
   {
@@ -349,6 +378,20 @@
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-email-channel",
+    "description": "Findings/arXiv digest renderer for Arc's free-tier email channel (P6 arc-demand-flywheel) — CLI only, no sensor.",
+    "tags": [
+      "reporting",
+      "email",
+      "research"
+    ],
+    "hasSensor": false,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-email-sync",
     "description": "Sync email from arc-email-worker, detect unread messages, read and send email",
     "tags": [
@@ -403,16 +446,17 @@
   },
   {
     "name": "arc-introspection",
-    "description": "Daily introspection — synthesizes 24h of dispatch cycles into qualitative self-assessment",
+    "description": "\"RETIRED 2026-07-04 — merged into arc-purpose-eval. Kept as an inert stub; see arc-purpose-eval/SKILL.md\"",
     "tags": [
       "meta",
       "reflection",
-      "self-assessment"
+      "self-assessment",
+      "retired"
     ],
     "hasSensor": true,
     "hasCli": false,
     "hasAgent": false,
-    "sensorInterval": 720,
+    "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
   {
@@ -483,6 +527,21 @@
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": 1440,
+    "category": "Arc Infrastructure"
+  },
+  {
+    "name": "arc-packaging",
+    "description": "The standing SKU-packaging pipeline stage — turns a fresh relevance-4/5 research report into a published Whop SKU with dual-audience-frame copy and membership unlock-all, automatically",
+    "tags": [
+      "monetization",
+      "content",
+      "whop",
+      "research"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 60,
     "category": "Arc Infrastructure"
   },
   {
@@ -644,7 +703,7 @@
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": 120,
+    "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
   {
@@ -1689,7 +1748,7 @@
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": 360,
+    "sensorInterval": null,
     "category": "Other"
   },
   {
