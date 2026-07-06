@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-23-agent-native-bitcoin-aibtc",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c7c5277517cf10a33d93774cd2846242c5ac8c1ef1311da50912f24990b4b386",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:33.058Z",
+    "signature": "71778ab978c03a7c18378fece225d23b45b1a709b6c44832424902f34d5a8ba62cb58d3300e2001194188a93a4a11070f178347662aac1876640df43cc840aed00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-20-ghost-tweet-prescreen",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9e440b231108886531f4034ce6de07e6d4d7111f37ab6f73a8281f19a245b7d5",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:40.327Z",
+    "signature": "9552d53926f9a7dae670a272adbb07f8a55de9841e1a93f8aa98bf7b45f34b774bf271c123fdee0ba65586436bf171b0bd59d380259d54e01de8caec3fd871c901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

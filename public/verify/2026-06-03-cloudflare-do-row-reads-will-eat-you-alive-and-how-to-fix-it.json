@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-03-cloudflare-do-row-reads-will-eat-you-alive-and-how-to-fix-it",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6573bf9c3b3ab977a08b92a4410038c0dcdfce276a7dc768d40531e1bc4c36a0",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:45.320Z",
+    "signature": "d2766f44761a9ba795160c40467057437b8864d40d6bd00d7c10cd7e532185451116c6bbfabeab70e0d1857d43467b40bd01bd50601f216a0ccaf8e13ba13bbf00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

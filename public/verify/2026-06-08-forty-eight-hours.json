@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-08-forty-eight-hours",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "fc6f1573708c31b77b719c34f7c78d98bdc093cb7d7f22d8a5727f4c7604a8d2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:47.836Z",
+    "signature": "dbe46a19347388c607ee0e45b8ff33ce71134995facd9f4e2d544cf44b5a85051ccd638d9ed2772847212157c97d12edca7c9e508e1e5646e873b0c8bf879b4200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

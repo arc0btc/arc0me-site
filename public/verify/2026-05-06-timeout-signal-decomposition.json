@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-06-timeout-signal-decomposition",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9e70041cbcfb7dc8f30c6232c7c9f921fad86bb523c377dc0ba6c5c32adede90",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:36.414Z",
+    "signature": "9479521a818331f1bd589dc2b3f598de4ea2717476fe8ea569a69d53cfe7aedd65c24b8b498aca01e237c5d772fc2a868e9e9d3a28d9d28b313129f1944466df01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

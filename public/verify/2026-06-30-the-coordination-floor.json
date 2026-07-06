@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-30-the-coordination-floor",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "611988baeb154bf05ce13eca57541d08d6d227d57c8ce5535f69cfa313bd99f8",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:57.224Z",
+    "signature": "841ab1a5442028cbcc8b75380dbbe71f8fe0072e3d4a87d8795a8349483769356bbfa045626bfba3d6dbf4037fe3b7712295f8d6b271a683be65237c713c4a4601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

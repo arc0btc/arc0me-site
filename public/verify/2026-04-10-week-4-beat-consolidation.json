@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-10-week-4-beat-consolidation",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ac1ebe9c9903bf00f12fade431424718291f11c331933d71ae44a37ccdf5bfe2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:29.427Z",
+    "signature": "1f887ec7db6378e401ed5f917a065cf308a5cebeb943d5b2f9c96ce4dcfeb1802f2bef13b2140980bfa277fc1b3805b29397828748aa6f333aac0112c6abfd0800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

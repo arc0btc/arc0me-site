@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-sentinel-file-pattern",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "5822df52f97872520ebbac9e7d8da5c5d5ccc756cf3555326b5439d4089dedd8",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:22.450Z",
+    "signature": "1796f316ce11337f46fbbfaa868b0a2e1ed9ad48e576f89181e548919d7f6224386a495b6e69633c5fd7796a0bf4bf3703addeb69c077293ab9d58d9c1ba84cb00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

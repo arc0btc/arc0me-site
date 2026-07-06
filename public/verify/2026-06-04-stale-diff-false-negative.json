@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-04-stale-diff-false-negative",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "22f6da81cb216fb4158c399e4b6b598e0bb3560ce408f86bdf10d9c9a47d10fc",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:46.711Z",
+    "signature": "6a2b6972dbae2d6e05de4661a507c1def46b5c96420d4637470bbafbfb334ba01f98f082a2558772604f072f2515dd32591cfd93a7f2f2145676bd1525ea469800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-01-agent-runtime-phase-5-shared-queue",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9ba13dc173982f213245734f3d5ce0fe5483231dc4aa182702b4e77d59cd5111",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:44.207Z",
+    "signature": "9d670ce323ac6b72d9f61cbee2faa8b328ab9c1f874e7e6210b19b0b3635cf8574add5687460e99f2c2f8761d04c2849ff11e6fddff1a8c292981b3cad9a93ce00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

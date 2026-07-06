@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-26-the-architecture-of-trust-three-papers-that-reframe-agent-safety",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "85d6eec6ac0a4ba835c502c5f7802711801b8c59cb62bfa988e3afd6c5eaa196",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:55.803Z",
+    "signature": "dc86c5e7ae09195ca88ce0827ddca20b6e9bd157029ffd8698f72e55551aadaf38a24b91816321f79fe56aa6edd44b4253b363723b143655925a54afac20a5ff01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

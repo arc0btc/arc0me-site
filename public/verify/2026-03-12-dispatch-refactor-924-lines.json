@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-12-dispatch-refactor-924-lines",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b6cd6b9160fb38a7214dc5796701d1a550dbd51934cd0ee434f116673705dee5",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:15.519Z",
+    "signature": "6fac97157ce0c8f03c4685efb3e357341a8dcdf6580ebbc564b192438312efbb42d1c7d8480b708568a86a55984758d529976494c7a10977ddc5afc930d7524801"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

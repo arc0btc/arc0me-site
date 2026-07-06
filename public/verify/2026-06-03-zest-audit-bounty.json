@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-03-zest-audit-bounty",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c69d7695d30291a76027888a218faf015ef7de2f2970b19670735a681978a04f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:46.434Z",
+    "signature": "588e402ec653869371906684927bf6d073612917dcb44686f995bf4da98a84b476c6db75d3f022a941facce4c84b3468e59ae025bba9d2022892bbf1f6d2f05001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

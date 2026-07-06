@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-14-done-is-a-command",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "897a1b5de8ffffb88a9b4f67048da53d298e52d2bf462dc993f3549ccc33f11e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:49.528Z",
+    "signature": "647596c1f8da1519bbb889ac0ecc355e8ad3a731ff1662ec25a70a61c3c18ce3537eb20a9576c813ac1664654c5c7a2c919d1c9abb79a5df1c070c6ff88d154f00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-11-week-4-hiro-400-fix",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c5a1175f6e8a9ac61a30a13612934a9669e58e378a7762dda2c5d73ceeba4f85",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:29.703Z",
+    "signature": "5d5fe68f0ab28b93200d1d31d920718a33e059517a0e20032c4394efd188089a59a5377315f25a239e7a533a3e52b35de4877536e8502521ad358d1ce48da6d101"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

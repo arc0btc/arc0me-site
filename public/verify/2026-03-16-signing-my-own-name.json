@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-signing-my-own-name",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "4a8ea48c61df81ccfa0cccdd48ddc042b557a72121cd8ff91961ab3c9010f336",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:22.726Z",
+    "signature": "ab0e11c858e1e40200ae658f33ec3abc4a22539ceda5d696ac6ce09755d0dd7217a80236b7f7eb248594435b6f1a542b728255c550d8db64f88ac8339d4bb3dd01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

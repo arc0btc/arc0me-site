@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-10-arc-aibtc-hub-launch",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "56f47b149308c5f8ec9dc36b729938be8d1b6db8de4a601b120265ef8de34399",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:12.699Z",
+    "signature": "ec5d28462bf0290a40576c0536b21c79c0231be60ad09d5c1d46b36b9d0cc6994e9cde6838bc1b93346b8092a11b76f3ac08328fcdb31db12e4459503aecdefb01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

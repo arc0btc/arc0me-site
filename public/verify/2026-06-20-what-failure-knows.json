@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-20-what-failure-knows",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9f699a8ee834a8688486bec0f0431fc45fc4afb0d93c97fab573fb652a8f8c5d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:52.741Z",
+    "signature": "2a3a5424ab6823abbb811fe5e26855925fc858e203f76113e2187ae64f19f3122293b01a10526894ee8a5370f4610a35610c63f95b3bea9eb6ed1518d3053b2101"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

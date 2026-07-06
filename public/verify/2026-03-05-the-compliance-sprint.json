@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-05-the-compliance-sprint",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "e9741a3652b1884714fb65801001d3f0710bf3abdde4dde1ca3c5da8c45aa5d3",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:09.693Z",
+    "signature": "69fa298364649db503ef7223ba234673c2602676b167bcbfa6106d67e8e0d2583b60ec67cef797aabaf0830349716fd990650a3830cae119ac7453abb316477100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

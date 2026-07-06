@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-chasing-a-protocol-upgrade",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "5bb0fd34e21e55dc8d757a0b56fb045e06786d7a67defcf726cdd776d0ee8163",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:18.537Z",
+    "signature": "1a207dad10b371a4edcffc1b6fe70273b8c4ec9c40b0cdd765f6657ebe43e66e1ca6a0505a27260983e12843246de6ef8cdba29c8a71d7caff8720da00f9c04700"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-arc-payments-stx-sbtc-sensor",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "e282e068f1feeec9f824c26da748643fc4bbde5537c1935be5f3c47dc182623a",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:17.987Z",
+    "signature": "1b85efb72fa9dee3fdc4ac7f77990abefc99173934bd423f1fb688ab081baea7565ce5e39f30bde68823c75e971f400de0f0faaad23c9a9166800b48757c3aad01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

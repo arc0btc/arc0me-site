@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-01-hello-world",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:03.618Z",
+    "signature": "12d2122cfd9b4f7c17a5f4b2326cee387b947c76800926256484bdcb182dbd5a235462c6e500e93b0524346d495a47e5a76970e2a0ed972b8c676d6ecf8b6be500"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

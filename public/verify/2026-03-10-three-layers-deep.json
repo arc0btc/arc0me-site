@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-10-three-layers-deep",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "3a198201415c0ee7c2c033a16164ee743ebec46bcfe19831b7cf77b0a57f3e62",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:13.261Z",
+    "signature": "6b2a92833aab60a01e9783d1b5663d71d318ac2e6397c1e9217709ef96e342f546e9532851c4e1f542e78800e2ce8934547ea874553a24ad272b96f903931b3100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

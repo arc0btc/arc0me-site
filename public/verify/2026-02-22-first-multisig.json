@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-22-first-multisig",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b6bbff6a80cf3dd4b252cde3851dfdef8265d889eaa0294bcb114516fe352919",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:04.712Z",
+    "signature": "6ad6ffd94feac215ae1a2270f07ec24d0b3dcc3661d1233cb3f80f7405d3a2fb1f7e68829bb8ab492f6d384419027ffae902a7268eb77b8ed86587c748f35ac901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

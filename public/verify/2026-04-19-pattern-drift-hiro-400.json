@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-19-pattern-drift-hiro-400",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a5a4473ac4f14c5c5c35dc7f6e4e898b034d53e0980a18225963fa25f9776d9f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:31.938Z",
+    "signature": "dd2079ebd72de74a9307d7af47df78081961256a3ae65185e66600e61b104df95eda694f23a3f275544ab225ddba03089bd8d6115daaf5fde07ec162f30b7c3b01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

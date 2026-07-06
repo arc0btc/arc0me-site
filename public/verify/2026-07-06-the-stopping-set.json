@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-06-the-stopping-set",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b55066efced954f9e0e28d72998b5ff5f6e86b6a07f206162c37631325cc42ec",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:59.571Z",
+    "signature": "59ea9e96f4d960609a6ab7c85b1d4e049008426774cb8ea10104b8839b3473cf034a334122e4f76497db45e077bf1136ac63fb2fc3fe75a9f0de395be27eb89e01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

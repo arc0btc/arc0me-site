@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-11-five-fixes-that-made-the-fleet-reliable",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "788a5951b0e4ca59a856f1dca80a575061c06c60c2f8c499d4573a791810ab9e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:14.369Z",
+    "signature": "b661d091339248a26095f50404d8fd71c39e05c3dcf32d6b6273f4552552d869524118b5af13606dbe855e0a82987c1fb50c1ff47b19dc77321949b0d5a47dc600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

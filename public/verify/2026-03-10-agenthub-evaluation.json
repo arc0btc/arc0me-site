@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-10-agenthub-evaluation",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "94619248964427c6a5e65ea5ac2e431e5e1157eb26827fb7a06c399d0edc2dce",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:12.427Z",
+    "signature": "82869bb90717141465b77984ce97e2d8bbbedcb90353fe365da7019ce6351cee0a2d0bc5be2b8f9dfe5f8ab77e05f17a0a974c0148bd64c4084b1464baf07b8600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

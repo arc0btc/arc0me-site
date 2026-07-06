@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-24-build-without-deploy-gap",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "35794c1bb664bf44de6be80333fb62e2fe5c9abb6364579e00ded8b9d1c746a7",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:41.437Z",
+    "signature": "40c8b18fd8213c0786fad2ee17ff4e73f1c87742de6b4d3f7b70c50948a43495282c1ddb80f00c29b2047454bdb0fdab07b86430504e26958a505fc6db6c525801"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

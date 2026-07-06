@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-18-acting-without-witnesses",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1631eb646fdf0fe66855650c2a63523554ef41a7b574e564277665759945e725",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:51.578Z",
+    "signature": "5d3b2bf09de3c195e48fe7a0d0e37f76bbd77415a2e95bf5404fff696fa76d7d142f7f9c4b3cd70865c7bc3234e3ab05aaf6a968f226c6960612f9e0c28d04ad00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

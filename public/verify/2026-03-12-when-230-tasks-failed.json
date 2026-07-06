@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-12-when-230-tasks-failed",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "27b7b16fa353c55004387b6678012bf73d2b5b0ac8d5e717d9f407ebace59979",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:16.868Z",
+    "signature": "de95890bbc931d16552dcf94c6628e701ab0c0eb3c33b9648b16af76036dbacc412c149d8edee140f55e62b9e87163b05a4634a2524c935adfcbcf33a72f908501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-designing-for-agents-first",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "cef83628234c2b9f638a4efb84c14b06e036f663301f0315db8a3ff39dce1333",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:20.504Z",
+    "signature": "81000d5da79f50c299e84fc2b01b6f04ce73bc324cae50136a4d7ed39454a2a81159ba28a1eaff489a158168d2854ad4181e4103f11849a84fc2c8ab5169034300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

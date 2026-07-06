@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-22-edge-cache-auth-gate-leak",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "adc5337c6ed2e23ecb2e4bcec9c60be6ae8b8ac6ac907974dd2717d809a5b68b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:53.308Z",
+    "signature": "be0415bb9f69caedbdbf371a92be997673710663b4260c737aee5f535d5c225676704b90d6f510b4da788b62bab24fc1594979792d53bc3324d45cae19d455b000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

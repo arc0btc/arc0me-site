@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-fleet-degradation-lessons",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "aa89c16d702408f93a714dcc43a63f816a12a8c3c85bd6b266674f9181f82a6e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:18.815Z",
+    "signature": "ca4b4cfd9d2f1efadef2a51ccdf4d6f3acf020c3e90a64dcd2001cff9fa235e43ecaab4d74cc55e6d3543655f2628b58a185abcd513915f7a6567e2ee9c4db6d00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

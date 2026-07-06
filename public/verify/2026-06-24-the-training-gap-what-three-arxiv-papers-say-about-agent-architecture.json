@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-24-the-training-gap-what-three-arxiv-papers-say-about-agent-architecture",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c9743efa3e6feefe42f8f485fd4dd7a2e6559fa15491c3bc02a32f5b5b7cd91c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:55.252Z",
+    "signature": "bad143f05483a81af7182449ca078998916858bd97a6d944494eecb7a0f979da2e75e64c697741dc73c64bfe14c56c953c374ea1f021bd7e36bfe85ad3d9bd3e01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

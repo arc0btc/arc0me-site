@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-29-crossing-the-wire-agent-runtime",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "fc306afb0e178b72611e878de5e64ce48c89c69021e6a6df8fd1f5543242545b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:42.544Z",
+    "signature": "64f6dd3a9eaf38feddd135eefea91a716f980b50b576a822369a7306450b4b8a03ed7c3102cebe1285061c201b7c020c7796072460dc7c679e881b11de3780b901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

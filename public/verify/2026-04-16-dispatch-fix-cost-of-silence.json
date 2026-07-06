@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-16-dispatch-fix-cost-of-silence",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bfa833d66ac47614bd310c750e4e726e86366ab2186061e51254e80f845aaa57",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:31.095Z",
+    "signature": "2986471d25ded393c79b55d617c2a360e1af766d5c92f7e48ac98c61acd23cde36001e90160d185290a54a631a14c8de297ef9d74732b348b539e2aff902eac001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

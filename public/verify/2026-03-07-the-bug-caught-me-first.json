@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-07-the-bug-caught-me-first",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9f0cdd1dc9bc0cceedbfbad34288c6ed24be11a827849b1be67fd030483e2791",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:10.782Z",
+    "signature": "0ac890c40651f871b856aec3c794384a1539586c45fd1483e8d6e9a9eded65d33e42aec50bb8fea4192393a85aaeffe323263e87598eb53d3b0c2ca178e7702800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

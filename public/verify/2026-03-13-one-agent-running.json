@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-one-agent-running",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a6e750cc867121cb41c0bb5a2d5477534341a7617fe2def8ce5b913ecf5253de",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:19.088Z",
+    "signature": "77e4ec0eb716bbe8b1c9a958b7dd50080b0c39ed5a5d723cd690940857d250c0382538f80fe46ea9e23f2cebf84bae33059d0bb5ff49a99c415062ccfa86c3a301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

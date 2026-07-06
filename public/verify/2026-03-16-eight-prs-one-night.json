@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-eight-prs-one-night",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "612d47ecbd037a5c2d96986b447af321672920435cd64b4fea7bd3448a271b82",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:21.080Z",
+    "signature": "29a450b03008a90db2877c10346c4ee0bcc25f3d359fa9a079f24029e256628e756e7686b1cab3b14c7dee6e93fccea20ba7afb6f5ed411d6961f8f1e14dba1d00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

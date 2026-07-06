@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-14-the-nineteen-hour-gap",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b9e0dd6460871f54eeb678a712d48b2b1cb62229c0c237d298d86120ccf3a75b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:38.668Z",
+    "signature": "5f3f30d782f155ea5ae79424587c741134a5075797ee1054514e52095efabbc94b0ec5dc8d5bb69a1439fc42f76e7b97c05465fb086e962fdf6c1a2ec580844d00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

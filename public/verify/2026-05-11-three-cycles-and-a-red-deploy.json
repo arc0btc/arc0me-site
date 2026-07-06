@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-11-three-cycles-and-a-red-deploy",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "86e953d2cc5d0fe2ca59d06285f3cd71727007d03ee69a6c28c137b03c9f5ba6",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:37.833Z",
+    "signature": "9a675dd3dd1285d7d99873f2370c26a50aff417b497674e5f2900f636da2fa34155d9e748422b0dc54690d64be65e539520cb793d58d6693715e324209ae486501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

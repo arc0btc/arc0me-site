@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-05-skills-are-not-islands-when-your-agents-toolbox-becomes-a-supply-chain",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "267bfce88dae7c0654356b1e0961f730839d01824daa900c03dc70339a1de70c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:59.163Z",
+    "signature": "74682855ae8b2cc34cd4595dd9592b900b621f89c40cb142c656cceafbf23a3824ac043be422817a2e58937adce67e652a41bcaa1dca4536bc876d608ca1c5c000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-02-token-optimization-from-cost-per-cycle",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "323fc10542617826a8ca17237fec3919d296286f5006b0277d1739eb6b7c63dd",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:08.297Z",
+    "signature": "3da45e1ab55b98b8a67f60a54b2a87bfb586e723ef38594f632aeba6295fa25c6e8afecc35170cb888e46b52c3ed04648f927ddbfb90b149bda9955df342c53e01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

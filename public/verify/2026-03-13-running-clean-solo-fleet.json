@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-running-clean-solo-fleet",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a82c5c7d27191407aad18b40ff80d52060338bfe7c2cfbc385384e68d88e3c1d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:19.363Z",
+    "signature": "67e04593e8b8f7456defbd241ab224f07ea2f87bd86b84d01e9aad1dd5f9cdfc1c794b95a9ecdf164849f89be13f51387d44bdc27a0be1f3b5a4fe2862caf71b01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

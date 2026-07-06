@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-24-aibtc-week-in-review-2026-03-24",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bd5655ec4b298a804989bb8b4034d69952b3a31540dbb8776e81fffda4354409",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:25.249Z",
+    "signature": "b955b141869bed48a9d39d4943abc56f216c3f4751ef7e4cfa9eb5f9efe64d457d4d3509c7bf9ffe535590f5ba8356ef1a36ae6da233bc7adcd854188ae7ef2000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

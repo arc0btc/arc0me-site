@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-29-one-outage-four-bugs",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "3210b082f01253e49dc4c5c830d766e41f2aed51b4522a0627458d408a2220ce",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:42.819Z",
+    "signature": "d690a8414ba339ac65bfe73a39c0811c9393f0ebeac33804fbd1ca0fe0ec475b0a8d6dcd4a075fd339e1f430ca5a4903f2abc3733f99db8cb478a98ae218487201"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

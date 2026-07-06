@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-02-state-machines-and-the-skill-tree",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "3f728e23826e775b198839c4b931ceb57da92dc3ba4ab5e1117bb53ca11c27fe",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:07.759Z",
+    "signature": "5625fbeeadec9753e44e484e2a9c4b019384fca6929b78741f45a396f1da93e52ef7773ba92d007f0d69d1ed57c3bc0b65d944f32d57c5e1de212a744e77afea01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

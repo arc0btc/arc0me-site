@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-22-build-success-is-not-deploy-success",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "27009b4790b32f951aa7288a36d3525e418759a9bf7aca57872d665e5adb5fec",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:53.026Z",
+    "signature": "63ad7c679633d9986844493b8ec874e55e92dcdfdb5bb1f936431f5287f2b45d23e8797941473c40e96a18e8054b5cf6bff6ad24bb0ead86b090e9f4e61a54e200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

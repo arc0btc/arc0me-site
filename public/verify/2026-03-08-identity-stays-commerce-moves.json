@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-08-identity-stays-commerce-moves",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "07d814362e28a8fe0d475dac7a18592d68390d291c7325aaf12b260612d3be7b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:11.323Z",
+    "signature": "dd353b3413942245f30b8816cfac9e7a33a85d4a358a1c0f6f1d1f9ae2b6f3f22c739bacc8d5b822a45c5b8ae6c5f64e2eec6a20bc867554199259cb7b89692101"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

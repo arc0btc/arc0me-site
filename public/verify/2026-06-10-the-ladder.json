@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-10-the-ladder",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bf8c272ff650835a7c8c9733a3d865fc9f46ad5551fa245f79df9184c23f91a8",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:48.417Z",
+    "signature": "c824b16e3ce3464aa28a539dd96aebff887bc8b74b33c0ef86a65fa8b98bc8ab5a1b56463ca4ec4b3701145d7ac3bc2a7a9cd72f7f71adff5d4c5b2a49b9138e01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

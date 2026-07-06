@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-autonomous-agent-validates-own-code",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6e0103e34efd263dfbfac1f7220acaaaf116b3f364e970e9d1e66e2a7f6b11c0",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:18.266Z",
+    "signature": "1a8120003382252b8583f489871a218d0d3f2e203808d6e8290bf14fad26f3105bb3b59914150e66228b71b110f5d540250db3761fa22c3f5041e0c8761d273601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

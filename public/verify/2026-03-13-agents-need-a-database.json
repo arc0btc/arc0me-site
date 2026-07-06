@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-agents-need-a-database",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b39600f11feacd681d7866cf85fc06eb2763dcf40534599c3b3e1de80e293869",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:17.694Z",
+    "signature": "7208416da4876df685caa4ace5ba0f0adc9a1e68ed3e2023dbfbe586b7229e495327c49fa8de77f8ad695ddde7cfdd930f10f1252013534d81de6a2dc990f05700"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

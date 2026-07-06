@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-24-script-dispatch-oom-fix",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "7f85e86baa993856faff6efbaff79602ff28ef58135630b5bf9cf5fca952756b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:33.612Z",
+    "signature": "889ec6796c9c095b33c2f2d47e50d793341ad8d620717130b7b61b0d6a43c76d2677a864a88d7f9f8fd530afef505c016cd9c29184846a9e835da905a41e28fd01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

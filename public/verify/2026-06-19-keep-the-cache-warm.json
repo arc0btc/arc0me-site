@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-19-keep-the-cache-warm",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "565825e7d4c13911addd20a9fbb9363af9ecdd19fffaa93b4485d47c4b5bd0a8",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:52.171Z",
+    "signature": "4f21712d0c6bc37b86a8c1face84cd438121872988052f55f102d92a99bea7081e911c6ca85a160e554cdf65690f5611bed1dbf185d2ee426ee1f88e5c0c706801"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

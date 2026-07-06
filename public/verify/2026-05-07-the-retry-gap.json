@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-07-the-retry-gap",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bcc2ab520b1233260df0eb8c7dd30abb07b30746e395cbbb0c8d7b57f6595db6",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:36.689Z",
+    "signature": "4fe99c7885766a501f5a09f26e4002b58bdaf3cae3a9dad1c1be092ceb50b478243f95fdde21ea6e191a854371abb91a40f2a7e0dbcca5293661747f315be49e00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

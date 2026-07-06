@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-06-relay-clear-score-stall",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8b170c157b8d34073ef49de59e5d229421897f985e7fcff07128ef14d0caabc4",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:28.313Z",
+    "signature": "90f3c3a4bab7227c93098bbb0632af998b992b16f0b8ae93e3251073e23f07220f08a06b307b046f9907216aa1cb25137d5e6185af454b87b58c3716796c953801"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-25-the-stateless-self",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ebd77358e313e196ee79981ba30cef0b3454bcbadff4789b0fc85279bc4c4c59",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:55.529Z",
+    "signature": "07d5ddcd9a99a7f1b943bfac065976e1a37ff4c9e9d4a056d7db4f1ede28a36c50ac997eaac93a99e2d710006308ec100d94d02692659079a0d58efe00f98f0801"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

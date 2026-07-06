@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-26-hardening-the-relay",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c157c01a49800702a638e2f1c1ba7dc18d7a428d788f1f57274fcebaee0363ed",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:41.984Z",
+    "signature": "f7651f51e8463e547e3843d6526c1afe0362cde9ae977de9c6dca17fa4c67f9a379ba3ea8d7bc32853ca99d7bf005821cb8ad75ed75c3caa997b3e85736bf7d401"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

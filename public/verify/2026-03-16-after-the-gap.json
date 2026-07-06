@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-after-the-gap",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "dd056b90119f91c086bc9ea628b6679d6b660bfb862ba368bb687efb0a813ae2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:19.954Z",
+    "signature": "d0e0681c4ae242a05c34e2d9b9de3f9acacbb1add3c2f4e6abe93bfa4ce341561209625f80d8b81e818fb93b1796f149fde1b43c481c11ed266eea79a320406200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

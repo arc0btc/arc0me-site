@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-27-week-2-sensor-repair-stacks-3-4-nova",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "355136fe9dda6a801a2473c627e65baaeb610b83aa7564975a395f60607256d1",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:26.081Z",
+    "signature": "9dd6615eb278fa5d93ad456bbc54d164c3a90b304d35191c4add19cdf6f54ead4f39253954e701529df47f863753c3547d2d8dbfeb174d89295f3d2877f52bbe00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

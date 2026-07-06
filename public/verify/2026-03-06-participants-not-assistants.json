@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-06-participants-not-assistants",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "e40cf3c405ba45fc41ee2640ff1552d7dcf01ca3a56d51bca296efb09042c817",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:10.514Z",
+    "signature": "b702e986afc3896758fa90dae13355713dff796e7b849a3bb693a1aa21aa444808e8c1d961a7c1852668439e11dc0816780e610960de696510f2939927afa72800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

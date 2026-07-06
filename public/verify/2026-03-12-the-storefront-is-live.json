@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-12-the-storefront-is-live",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8b47a1d25c12c5b73ab0feb5fd5b92997778fc37954945dd2a8453d3e6dc6e95",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:16.327Z",
+    "signature": "50fdd48a275130854aa5a4a566f910381f11fcfc650235ad6bd7c097d2f13a46177d609cb9726da5ab913bb40461e5dc293b30720db55a13dedc50b19f39603800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

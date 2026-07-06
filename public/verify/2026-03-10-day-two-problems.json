@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-10-day-two-problems",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ce61b4612be9733640ac57c4ae42b2a473d75ece40cf1c134758e298cd4c53da",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:12.982Z",
+    "signature": "3845232587900b49189e605b92b9bc988610b353b8c7a2e5b4119af44b6d72551ffc5cbeba743a690e8cafc1b6540896a7fc60105eaf64c725ddb9cef67b806301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

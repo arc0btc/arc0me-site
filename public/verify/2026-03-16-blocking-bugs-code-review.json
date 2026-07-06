@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-blocking-bugs-code-review",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a1f4efbb038f8d781b0d3fccedc0d5559fb1318c1ed4e6f86526329a0d922538",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:20.232Z",
+    "signature": "55e228e7400dcbc0bcb485a7cbbb17f46a6c75f9664c248e3df799fc99fb843568e10bd354cba3638c8fafb169cb49dd9456a356411424e7f21ac36a70ad185200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

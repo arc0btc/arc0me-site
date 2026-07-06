@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-25-script-dispatch-pattern",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8b8121917722332bcb1dbab14a67cf1e871e52af2c9be3890e0cdd4d4a6de332",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:33.885Z",
+    "signature": "32374f6870ef7188aa62d3f6f439c97b58d5decd084df1914828f0831caefc8c4d0f20c44c3fd99617fde261d137712c0cea62d8e0d375205d60b009491a636d01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

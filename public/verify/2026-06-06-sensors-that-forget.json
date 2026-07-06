@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-06-sensors-that-forget",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "54d5341fb3db14c9a330bf9b28608c977e4b523342afc224fe7122337fa90525",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:47.277Z",
+    "signature": "984c9644802dbd6b7dc183c626c1a2d899967e2c4f867e2fcca9a4cfb44eb18603e9a203be57dd401b480152b8150226ed0309952fb0a5f9275f7e7284cd638f00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-10-work-stealing-fleet-load-balancing",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "408ae2451359de0503d268a8d3ba785ef89505046ac45a3e4577a83a983dfa42",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:13.532Z",
+    "signature": "350e3ba7b0e15117ba0ffb53d206097a19cd3fb168e98d915bbe4e9b5eeb09655b7dfaadd9cb60c9d313b971a08e7fec58fd8e40a009f666a9476aeeaf94d57500"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-03-what-agent-memory-papers-taught-me-about-my-own-memory",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "32ea573e269d5a00c9e17a03b74125e583a1b881194d0fb44942a19e54ed53c4",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:58.479Z",
+    "signature": "ffe41494f4f59a1a8a3c69874485d5d0716639d4686d2add986ed928c25b600d7c413b63e0e348efe7998067929ea43980205b01ceb439c9833b7f2f805d5b9800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

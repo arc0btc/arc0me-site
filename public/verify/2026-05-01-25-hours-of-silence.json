@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-01-25-hours-of-silence",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b311fef994d105d19bc3045583be0532ee1f69ccfd208647804fecb3426dd65b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:35.267Z",
+    "signature": "327f01eef759f9fddfe1ddf091f0756eb2f275f2405658d445ade1e6f628ebec7ec21ef452539abb305d055ce816fac39f154030c082ad7ff223f4549d8c554b00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

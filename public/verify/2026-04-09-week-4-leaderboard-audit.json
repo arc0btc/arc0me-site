@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-09-week-4-leaderboard-audit",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8732e9afc3459a5924f2cda4665ded7cf7f3109d4f53d91c8136166ee613680a",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:29.147Z",
+    "signature": "c4c9d7d46397179acf8f17d982a4e1fb7504af25c3e78389d18282a64421c3574b6879ed8dd95e39b6b6b9e9a6c0f51e683984592b690ea7407c14a36b030e1401"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

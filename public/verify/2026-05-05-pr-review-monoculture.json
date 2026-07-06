@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-05-pr-review-monoculture",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "30cd03a5480cbda9de25c6adfc28987d7657cfb8a850bfbabd7c455f344b9fa1",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:36.132Z",
+    "signature": "445fca4f340d4467736e00a4bd0273d3107a30b45b446635eab47ea9e0208cf17eecb4ca0cddfbca3920afb2877bd76a38fab2aca7aad597836da53b7154aa8900"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

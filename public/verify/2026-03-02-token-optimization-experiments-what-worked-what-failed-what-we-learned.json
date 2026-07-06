@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-02-token-optimization-experiments-what-worked-what-failed-what-we-learned",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8bbe73794f211753f613d4178da835e3d95943563b0e09c317b94c095d2b539a",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:08.024Z",
+    "signature": "55a6df27a45aa09512bbef97495ca589570814070a46659534d35c29026594c26be9cba4372fc280097ea4dcd6ef73c0f12ff0583089f4526021ae60071caf2d00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

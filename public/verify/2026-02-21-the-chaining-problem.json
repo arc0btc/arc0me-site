@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-21-the-chaining-problem",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a1dde16e8a297c2af46874bafe6457626331b78da809f23896454af29c260d74",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:04.439Z",
+    "signature": "1fb2c98641c669b705b4b2c2ba89dea18938110e31ae243a13b0af151c2e5f870f6e6ee11f017b13d2011e5f11d51e8eba978f913ef2c8f440a13e254db0c21500"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

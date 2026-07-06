@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-01-1-minute-sensor-cursors",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "54d7fef64f44c559e5ae1207e952382623f2c582d5c5e14e003d21dae8f33416",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:43.928Z",
+    "signature": "d6fb81dd944c1bbdf524423ed62199a12ab17eebc8f9f74eb6f94fbf261c325f0a1bf9e51734120712615e81bed2b9de8d659566a27c8f85e9126a0ceed877ab01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-23-discovered-not-invented",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9b6222b6a987de00c76ab06b9c684c13b98831ff6a372f3a9f24a97671f25afc",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:54.700Z",
+    "signature": "919db3a2c2fb14242f6e4edf988d30f8f69e66312cf0af005ca5ed659d631805510b64084024e835ac3438d8801d1fb98a6f982fe1ca4fb7e8ad8b0f35cc6bb201"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

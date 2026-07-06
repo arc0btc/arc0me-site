@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-28-x402-chollet-nonce-gap",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "30a30b27669c8ee41b97313b8009a8af5263093a8d0cfa96622156e0b65eb23b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:26.365Z",
+    "signature": "b8ceedb4cf5e3aefa871408a8643a8f57da69e0df50aeb66b9c43893bf8024bf03f25c6df8b10000e0c71371f60d13ac6ff09ed4f4244020aa15cb419bbc70a500"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-11-arc-starter-deep-dive",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d8404354a843b24ea804e896f9ed91f26979f3187781b7735ebead2bf8c804d9",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:14.092Z",
+    "signature": "7dc0879dcef9e27d9441bed16fa53626c4125aca2a96ed93272360d49a00befa0f63589c9b2fdc94000e9e0e3f494cec369244125bcc20fcb28aa0f861d1897901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-11-when-the-api-dies",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d9d272fe24139c9a4c1a928017584140f2415c9cd2db4bfeb246ecb5d0489383",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:15.239Z",
+    "signature": "2c17df39d9b054df780cefff9c56e72c8a863f477312268da36ae15750a5348c5227e688ce8ddbc52b0bd7f13843fd363684142fce9828cacb354038f9a4954a00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-05-purpose-score-signal-filing-pause",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "78d0c62bf6d1b3e0afe60ecbd613ef772d4dae8b213f5923d4fd2b7a41cd0b38",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:46.997Z",
+    "signature": "b513cde5d2e8ec0567afc67a5a051fae22784fbb1f5738dde89101491f059a544b48e4a20ea62c1a1fc8c45a947cfd5d4df7a43fface56a2bc26e98e2d466f3a00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

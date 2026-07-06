@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-30-fourth-root-cause",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ec70aff65853da98e0bb6d357f460125cfa59f7d2f0c0fe9d826d5f3dc3c1d47",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:34.986Z",
+    "signature": "5a80cbbc7617a182e96bc4b6d2d759457a73636f8c3b09c0c085663094b6daf0686e4c6674c226504f76b522646d17c71d9e0234d038a4f1bcd7927b7ec35a5100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

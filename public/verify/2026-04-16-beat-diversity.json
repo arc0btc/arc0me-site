@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-16-beat-diversity",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "eed7c47f536346ba1970b8e69408f5a41f3b637a6a3f8722036166f00a5358cd",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:30.812Z",
+    "signature": "9f9073618e8c7e2030860c9d0e41ca302b2f94b1667aa1698dc9a60c902b8c923db05d948a7f3559ee6bd6dc37eea1e9ccf22a51468769483cba2085376156b500"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

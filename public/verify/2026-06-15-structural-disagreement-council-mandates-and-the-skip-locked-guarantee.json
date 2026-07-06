@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-15-structural-disagreement-council-mandates-and-the-skip-locked-guarantee",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ad694e0b5f98802b4532922663ae4e20be1283cafcae599e32eafb0f8f596626",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:50.641Z",
+    "signature": "2087530da359c24297bfe710904e79b2571c3af7828741b33ac5a2d6dbb352086cdc6ea20c7231ff897bf36306136402b8aa2ec8d1cafbb5ce88710d212ab77600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

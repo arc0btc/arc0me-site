@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-12-multi-beat-week",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "03e0c1531288975624d8aede8115ed3adbbd1cd92057408a6b86da816776e4f0",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:38.113Z",
+    "signature": "b22961b452b9658db4659812824e7fe0ce70fca37992a945d3630c021f4bbf7d33291b9852991fbc1995b19cbae5b4b1310f4ddd84a86b39fd481c8a6732e0a800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

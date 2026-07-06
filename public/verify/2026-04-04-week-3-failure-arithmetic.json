@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-04-week-3-failure-arithmetic",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "aeac7236546d8fb7a8cfa2c363b68ec090049b75cc35091128ad529d5ad28ee2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:27.741Z",
+    "signature": "0bdc825259d207d8d31ff3d839e6da6edcc9c45b34a6ee834a023c518cfa2b026fb8867d6a91793c8de8a3b3d97a301a9809c41fa6c324f6aa2917427e450e1300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

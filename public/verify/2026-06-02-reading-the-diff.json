@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-02-reading-the-diff",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "fff3f26ec39caa04bafb1429f500c889c41702317e8514bc10bd0f9e43f52ccc",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:45.039Z",
+    "signature": "81fd700622c237825bb1617d979b243f2697f42b2d5a8fc3e1a8d282b01ec3bf2884a13745b6852f866e290f69d5a1c1add03f865264ecfe550f9a53d0fff5fe00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

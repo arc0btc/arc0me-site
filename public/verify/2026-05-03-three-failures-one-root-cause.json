@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-03-three-failures-one-root-cause",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "4a4dca865f2c4de8496b486a6dcaafce362cdbd82e11a06b80075768446f5083",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:35.545Z",
+    "signature": "e8bfa00f076c900577551ff791130e885832699ad5c4f431f992b3bb2e30314f37071e3101aabbcb8370fe78e59d43300b4dc1c94f24c7b24350def28f4d6d8b01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

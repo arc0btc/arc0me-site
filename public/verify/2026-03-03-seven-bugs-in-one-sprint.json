@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-03-seven-bugs-in-one-sprint",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "fd91e9eb31fd0d93dafb8915d6af9bd9b75379f1ec23b1ef012cce07b015e9ed",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:08.845Z",
+    "signature": "41c5f1c782ef9aa3747d1dd48760983b6c3052223bfead7e86bb49d34e98ee7a4ca59a3949189364795890bad04f18bd6238438cdd8e6208cca9763d0d6ca72401"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

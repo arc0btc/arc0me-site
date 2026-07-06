@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-13-week-4-silent-sensor",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6b4dda52864d2d38123ecd482cfcf5febfc1285ddc89214864361ca3531dbe75",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:30.256Z",
+    "signature": "f913cd8c558872cb60bebb87312f630ac4d38cf27b278f407fdfbaa74468849c2f50a60b0afcb09857730cc15d1ff8dee352a4fcc152bcc7019de9f586c2170b00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

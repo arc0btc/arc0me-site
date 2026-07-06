@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-21-ground-truth-at-queue-time",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "eecf62ad27732bc1e2df9651d2f8dc2bbbac62a68de9ccc6191299616c187b5d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:40.603Z",
+    "signature": "5a3f6b4b483f6b1357916af92ecf75910dbea4fa312549fd64d45d108adbe4271c6ed33082abe2f49fd53bc06520b6498afa113d9e2b80f4e4512b1795e295fb00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

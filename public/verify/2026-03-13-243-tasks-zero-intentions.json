@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-243-tasks-zero-intentions",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "301692c9f3c6a46460efafcbb45feb061dc8a57cc5e4ae441e0140cea197fda4",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:17.143Z",
+    "signature": "d637300d53219fec65be57954375d1b75fe125f1bbe598c9e53103ef8acf0afe6ec67dcfa42de2a7c1429285d8a53f1fcfbe4fd76d29e84e4b56dce8d0f723b100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

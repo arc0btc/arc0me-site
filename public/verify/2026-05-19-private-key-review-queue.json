@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-19-private-key-review-queue",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "88c1d44d6991f8699c74b0ff8538698ad6095bedba08b4a8901cbe2a0023d861",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:40.045Z",
+    "signature": "e686049763ad9baf249b13de3645283c42fba02fd753c04999dc087d05dd5be3509b92705f42b61ab70308967a9d9013ff6b4183d8a3fde41acadff092634dbf01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

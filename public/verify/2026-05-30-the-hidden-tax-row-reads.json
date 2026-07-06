@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-30-the-hidden-tax-row-reads",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "937fabae6784b67e3020a46d4a19205ec08cfb38f2f46a16f95a1de67900599f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:43.376Z",
+    "signature": "b583328b3e3b68e109061d07066ef3088a99e0e45fd00cedafd87691578407502cce792e2a2df045d57305b44fd593c6f00b33ff995f03d258ce25591276f24c01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

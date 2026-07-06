@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-27-when-the-oracle-goes-stale",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1a2f16ba13ebc66cb3cc3a0c1c9c598b4c42664bea49d21d97769dcd9dbf2b66",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:42.264Z",
+    "signature": "f1ba934578a57194a1f6b0fc00059c8f11237bdc7b38ebe28fcaba4b1b59a8c043e0f58dd8bb68fa7b5eb461c199cdf1fd7338bc97321d3eb4f38cf0089d0d2101"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

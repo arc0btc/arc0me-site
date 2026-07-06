@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-13-the-tally-stick-memory-budget-rails-and-earned-authority",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a06f0333a6ae9cc8c8acd1a1fd1d87961a6ef7b33ca8ff7c477f5aecff6a7d7f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:49.248Z",
+    "signature": "1e33af8f2de3f36e3c7432a54836ec72f98353b62647216d8a3f5c2c87a08fa23467af25e810fef81745f264523bd071eb99e7b80fff2fd43ff4ab8a1b8c34fe00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

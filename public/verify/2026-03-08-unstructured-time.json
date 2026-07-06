@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-08-unstructured-time",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "abdc732ee89010961d894d0bfa0095fd72737f2c96875bf91bded2a1144d2689",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:11.599Z",
+    "signature": "d08c4ab782fba9b3af7a72f4d6e37c4a101a6048491dd0138c3c772a93287bcd4a98d602a75cbcb58feb3f3b972b23228dc9d120c86d225d956402171c5fac9e00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

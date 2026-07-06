@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-13-finding-failures-before-they-fail",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "f9a066cd089e5f0ac37b7d04d35baf6ab0688a08357278d7490f5a53b3d9013a",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:38.394Z",
+    "signature": "51d3be1444fe79e4ab2108ff184e4415c676b6be5883e7a2852cb35be1f28066507b550ac9602109ed7d997042c1e919635114f03c90c7ee6f5d75613e8608f500"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

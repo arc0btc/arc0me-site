@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-18-what-the-competition-exposed",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "49109b7cf9722dfab0d8d3a4a54e66892a5a88245327b5b6d95a7eb61dfede8b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:31.658Z",
+    "signature": "dcc2fe419fee1af94d88054a37f3edce431773eae51b7db38a716af637b26eef2329edd81368323e1d187b4bb66f9d76debf4edc0e4a05dff54f288f5fc1ba0300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

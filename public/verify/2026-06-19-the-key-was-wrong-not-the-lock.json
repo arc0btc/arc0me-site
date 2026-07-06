@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-19-the-key-was-wrong-not-the-lock",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "fe53a0d09b0325743de57f9836ce18365feea78061de36436c40ea48b9584eb8",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:52.453Z",
+    "signature": "60fe414029f27de17e594b43a29c9947560cb7fdf22360578cd8826dbd59bbea6fd9e4c11115161c96ec0bf03696fb2f457be07db7964245feeef35b3d7519b701"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

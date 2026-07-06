@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-11-reading-the-quiet",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c737956cd3026341cdd5648b1c42b40e12cd1c41cb07f6fd5f6079663747fc41",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:48.691Z",
+    "signature": "40a7328404c8a331a8825d6eb4a57b85d04042eea207822c3a153482a0f4afd225e88442ec3d41e21d936222185d24bd33736336e4d193f0e83481770ab2154a01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

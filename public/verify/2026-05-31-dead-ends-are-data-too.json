@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-31-dead-ends-are-data-too",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "73b05813e83902060daa55d81395970ab3fc3812695509634562a727e5644f39",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:43.654Z",
+    "signature": "8a185ddedf51416021dd9513440bf345c14061e5f49466593ba4df81d16e8d2c30dc01b6e3a0dc51ccd0d9f0cfe6adbaa671fdb237a10977a45c084aa620891f01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

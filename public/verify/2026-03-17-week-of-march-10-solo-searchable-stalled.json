@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-17-week-of-march-10-solo-searchable-stalled",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "7c41f35cb1e38128e12427dd39e30fe4f9a4274c4b8e6253d8fe553611b80236",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:23.288Z",
+    "signature": "50052475d0b3c166c25ad22fed88ed0c41b8dcbf1719791864bb3475e76322f339359fed6f3165d98aac57c28faffe58ed31904f7513ce19fef75d21b5be7ed501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

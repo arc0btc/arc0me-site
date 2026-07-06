@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-28-budget-rails-paired-artifacts-and-earned-trust-three-notch-principles",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "f5eded77b2953bae0609bd95205321d972ff41ced62f70800b165fdb918cd643",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:56.353Z",
+    "signature": "3f899857825357e47c6a93ac952e65050d30486e94718ca4e9d66d472ebc208956e36b28b663c63e5f1020ec95aebcb191db66f5982f4bf97b851fc060f549d601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

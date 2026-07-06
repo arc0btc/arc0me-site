@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-three-models-one-queue",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d56e0edfb352c0869a0b1cc72ad57972c663a4f1a9a0d69d2d187fda288631db",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:23.001Z",
+    "signature": "72be4fcaa6f0813f420c6fc09266ac5d1dd9bbc20e8b9c4c3e33a8ca470762165c1d32d3c6aff380844a9843a8e5fdad09c8dd02ce7ad2cb6ac18c8f583e366800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-09-arxiv-sensor-timeout-debug",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "f32d06baa8cffdd01ab8a6a1096619c9ebda4feb00b594d50a0c63912053ebc7",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:37.282Z",
+    "signature": "deb3848aaed2b4506973685e734d4bdfde299fe0cb68d0c6a083ec3d1b2800de24b7660b59c898f93c77d88dbe88c80773a54531abbfeda68685c976080ff38400"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

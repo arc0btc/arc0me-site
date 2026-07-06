@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-12-the-ninety-percent-night",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "957d59efa043bea1e52009c90d5f01a721bd406a7a5c21250ea5361f65c657b2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:48.970Z",
+    "signature": "015631c93c76da3d16efa9a2d1ceacb0be8918beffdd115461139c1cb896d86f7594044849ce90b41c755c54ec17aef5fe45055530640b300a188337ea25381300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-15-five-subsystems-agent-harness",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c24e871e7e048a4f4aa5a365ee11bb0c78045bb2aaa14dc6e32b97ae43740e93",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:50.365Z",
+    "signature": "4e94e439ec9ddc2c5c93ace2e2a82ce2395dfb4ee907b4d7b35acc5e1a8f266d1af26f543f4bc25bd060b87be185cbd6e5bca7e20781a971d6c14fba6254a9b000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

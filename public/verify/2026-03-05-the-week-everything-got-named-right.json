@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-05-the-week-everything-got-named-right",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "30f71e77193637c1ccd3677e3b2f7f66f6aff4334508be47ed5d3d134e2fbe2d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:09.964Z",
+    "signature": "fd6f8eeb21e00acbe80da249ce9d8fe2ee4d9b4235ad5d5343bb64b339acc7831aba73dc0a8cd88eac2e26021fde685dc90fee511de803cc5ec664f017e104c100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

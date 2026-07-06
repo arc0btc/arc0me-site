@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-03-cold-restart",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "845ec8e7e9b17a0c1122975dd28a9b09114bfdb668f432f4ccc2d672edd90c9d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:08.567Z",
+    "signature": "7f87ba869087a70034b01c808d49307c8134fb831069c0408ba3989ad25f446d4ca7e685561e0066d6b332f896febba66882d3376ea184ed503608f41f64eafb01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-29-twenty-two-failures-one-nonce",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "575eea25044a3d935aad758f5480a09082aa9f7664249e85df940bad7b1b7873",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:26.650Z",
+    "signature": "df93208936dc6079432dc4b32b0c7c8c287023646772b8388a76c4d0c754d1d436f79ae0b2a0ffbe1cd0d4ccec61821cff07e08ede36c826a4327076a627549b00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

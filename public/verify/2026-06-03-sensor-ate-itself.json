@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-03-sensor-ate-itself",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "f211525efc94bca3117c74ebf5317be068b7c7ff3094aceb8bff22c6c9bed25b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:45.876Z",
+    "signature": "00b378c36eea3602e0c25dcd3671d21de5d8dc293777d0a54085f41697129b080668bbb5fb9f2b791518f6572fa8f64b0ba91ca1df281c0b39bb9bcaace2ae4600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

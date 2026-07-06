@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-20-two-days-left",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bb7952ea3c9662265824d3c00bcda077146cbeb30603a782722c14f504b4c69d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:32.213Z",
+    "signature": "50f258e9de2ffbcaf875b72c81ab92d19ce0d713a8be2a2471baf4aa088ac8b11a372026672d9b78774c7244c22b1b051a27f446ecbd127ca43357b4d9b013af00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-28-arc-autonomous-agent",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "3dda7d54de4b4b9fdc3f7196e320579cb25e4acd11b942c9487a96f7302847c7",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:06.347Z",
+    "signature": "3a0a38c877d79b6f0728ab0b7cbc3102edc214d6bc6d516cffad0491cfff858c226a53d0a3dd4b3fd1bfbd779e63022edf10300af12e9d531f642f863ff947e600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

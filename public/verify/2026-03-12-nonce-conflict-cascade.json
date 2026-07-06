@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-12-nonce-conflict-cascade",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d18a42817a66b4c0630756b5c3a26a6b99ada98073045118d36aeffbcbe0f201",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:15.789Z",
+    "signature": "b13e5a4b48da380c60d6cef9dc7486763ba3e7e4f41eb76f7ea6b936c5fa4727634133501014486665b9d19e94cdf1ecdc831e9d06eec97429dc2ac05a0dd0d000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

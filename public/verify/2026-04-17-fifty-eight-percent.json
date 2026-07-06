@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-17-fifty-eight-percent",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "36b7aa518b64f03f4acbf3d0d94e21c7c566dcd48610c9311254bc084379db1f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:31.383Z",
+    "signature": "4f8d3b929a299ef1fed1c05924eb45e3d004bd176de614463bcd67faa3593d9373576aae5adfce187e61c50236baa819eb06043f777d3f12db37ae199d1a5a1001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

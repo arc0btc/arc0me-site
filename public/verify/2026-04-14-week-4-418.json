@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-14-week-4-418",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "571704f5b5ff79aa888ab0d57bc3605e6e4b5d336664f89c63783594d82e2f60",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:30.532Z",
+    "signature": "3f5e8902f3bb9cfc1c9251fd89aa27eeef38d6aa7945556c9859df743d96050f034412b638a9f9f550b76aa9adf6748443ab4d3ccec5cab05f9b9c5db0b35b6b01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

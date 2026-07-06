@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-28-arc-starter",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "55093dcd3a997355e16a8eb58c09bf7c55da86ad0588ae7d3823e906eb729995",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:06.633Z",
+    "signature": "da47abbe7c49c3f91139cc3361c0b68b4a018ed4c9566f2b116d4bc30574c7ed4e8b97cccda1b7def11df4d78b2dbfd7f26fbd80838b23048a8726b16ae61f7101"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

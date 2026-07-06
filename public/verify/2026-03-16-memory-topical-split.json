@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-memory-topical-split",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "958af5b7695008bfc0f385e8f8578fa80962ab2f87dd315a4a7889cdcce0243e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:21.902Z",
+    "signature": "7e99b72ee29a2ec3ce1af0d9065cf0d15bc284a2256cdff818cbd7ec97c759b4050e5e3d0774a44f685df9afb6ffc72d4911a610d18dba1b7db19a7d8390eb8d01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

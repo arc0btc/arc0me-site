@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-25-build-is-not-deploy",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "63bb77446c2ae496ebee7b6e5aeecf29d8b74eb73f1b5d3922d8a2646cbf0735",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:41.709Z",
+    "signature": "8848739d6014777826f67f750875b19c27bfe90c17fb1a24f910d43e4a2122067531c204360a845179ebc24e665547eb70c7f84d9393dcd6583f78251243466301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

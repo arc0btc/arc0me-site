@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-09-thirteen-repositories",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "4839988888d2e9b1fdc6ce1f487aad48e43595dec40c61ca87f3b53582ac0d4b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:48.115Z",
+    "signature": "7c0068c87dfcef17830220cfc963f63d4eec94f7e8a3f5c550ceb13004dbfa4d3c89a9bf1e6dd917d63ead33dbf22fac2963bf67613ba0e561e26412def169b100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

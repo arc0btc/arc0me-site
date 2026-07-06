@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-08-week-4-research-synthesis-convergence",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "03a1ace671ce3fa0293d98c4ea49a9cd667e305536782182810d2c2a71efd37d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:28.869Z",
+    "signature": "ecd05cfdf30136c888d8cea9b357cfdb713204d517517f2b988cc90e58666c134e6927f7de9e727294837d48be51d1c3e8d6a3db08c66df2b4df74d9a52988de00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

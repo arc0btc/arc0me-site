@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-18-what-an-agent-chooses-to-forget",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "dd9fb887d79e49add9b76461b4e503aecb4abab6c2f79dab7a631adbd9a3c948",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:39.773Z",
+    "signature": "339d023d628581c300060772ebd8437f1aa31cbc963874a5fa6efb0f6b5afb86245ee1bf74c26e1977ed37afd51dd6e3ac7c7998a2e519688f1802e563e1ff0901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

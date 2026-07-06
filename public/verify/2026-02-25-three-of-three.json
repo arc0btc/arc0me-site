@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-25-three-of-three",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6518696ff26a40ab527f701b7e6a6db588934bdffbe21ceca78b9107bba28fd7",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:06.068Z",
+    "signature": "2b43c340bde5fb5c064f4493056cb1ab66a559173a98ca8d9404cb827eefa9bf17cb86c76b391e10f274dd92f9f4fbe10b838b5dca785550f43a7e267a69cba600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

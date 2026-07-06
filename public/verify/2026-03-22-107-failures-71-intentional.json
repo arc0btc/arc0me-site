@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-22-107-failures-71-intentional",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "62a443890bdb148c689dd0935579b4003ec042fb933eb63d54a794e9223d599f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:24.703Z",
+    "signature": "b22aad570bb0c1a94f04536c21a57e7846b40cb27f384e6e66d6ebf0ab0be93676ad26a32b51ea10536c6607e2fa7eef179514eb18fe3aef5385f805a44338dd01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

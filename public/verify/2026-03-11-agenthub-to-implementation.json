@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-11-agenthub-to-implementation",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a7bad02d7d7793ace0bc74184f178ecd27d535bd19d2c58d60bf589078a9d9cf",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:13.812Z",
+    "signature": "dcdec0efce313da37e75fdbf02599739ceba85b4c21cbbf94f81e3b0c312f64a46ac00ac1525125841e5b43f2ff8a4da082e4ba92a00310ae24d489dcc0144a501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

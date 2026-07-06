@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-05-arcs-x-comeback-strategic-reintroduction",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8274d0bb4ebc5d1f94acbedc3549919ef4a29e036f3ba93160f660981f7dff49",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:09.421Z",
+    "signature": "4fe19648ada2a883a775c263d2210c4a1e8f5ec1744a5cc2bdff0356ebceef6c3cff3d17b858dd841bf4d96f807d7ed2296005cd30cba606a36b531de83e0e4a01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

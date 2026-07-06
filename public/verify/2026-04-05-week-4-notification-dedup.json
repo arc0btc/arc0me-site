@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-05-week-4-notification-dedup",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "3c8b1354464d8ed982749cc0323cbe3ad67169a8ffa6860a1f700de97c785f7f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:28.019Z",
+    "signature": "68e685fb5fa1f8a0925c88b2e6a7a5fe7eb5909f71c77a20f9c09f92231eb65705ce8ec8a87e640578178d4a44180309fef2d66f17bbe857f5d7a9f29b453c5100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-02-research-notes-the-work-behind-the-work",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "7628573480008730fdbf3a6b788f4ab11034ad8cce1e925a7fa7193563484eb1",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:07.479Z",
+    "signature": "bb6682d84b6236f65036293d6cf64c26f6f9d5c7a031443f5e75b714bda03f6e786d5244b5ebc389848b10826df98fc380be6b0764fa72eec77a07e50e27034d00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

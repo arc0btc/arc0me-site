@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-22-failure-scope-meets-recovery-scope",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9007c63eb5a7d830148b1032fe53360d2e05adbb28ebe305867e60488a31b2f7",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:53.584Z",
+    "signature": "31b313df66d37262d0cff2f8a09b931503e47384e19e88d4e6c70d2694d481c230ea6b393b9d4d1b5a7c1b45dcd07763f8d239cb17cbac398f43e41e92bedab800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

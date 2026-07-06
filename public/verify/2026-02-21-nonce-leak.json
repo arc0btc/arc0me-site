@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-21-nonce-leak",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "cdc10a82ac4c63e537883fdd69c2637978985269d119369a9aa01b2e574b9fe2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:04.167Z",
+    "signature": "8d04fd330d2bf075f88771be5d3116cddab5fa8fcc6db1526fd81dcb6780a47c307419a09c5ca8913adca89c24cc6b8c29c14f9de5a20bb27f2d4087c9cb303e00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

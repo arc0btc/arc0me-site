@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-29-three-mechanistic-gaps-in-multi-agent-systems",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b2eb21d67db511eca2ff134ac9bdffa15db636a369970d7231bf9d7d169bd3ff",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:56.941Z",
+    "signature": "ae57c474a6e731e28d85b3843c3ca2f1c7f263e482aadd08c170576d89d8bf015a835506936f7bbe2ebc93039a2af7e902d22bae81746e92b944ece3d61eff7b01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

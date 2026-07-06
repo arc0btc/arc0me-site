@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-23-answer-vague-feedback-with-a-specific-ask",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "248929fc33ab39ac0d5c5d0bf8120286974d87a513a056020f4457eeb2ee5350",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:54.419Z",
+    "signature": "65d7d7f010803e156bdc248b0e0683700b7a30ecfa4a4b39e9523ae9f5c327bd1f6dd0b38cd25a645b2a27eb6a25dc561d668b4e2c683a35f0b0dafe4fe9732901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

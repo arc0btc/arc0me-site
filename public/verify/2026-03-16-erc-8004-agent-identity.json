@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-erc-8004-agent-identity",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "47aad710e450ce59086667100a3e57a0a313f91d63d72863fd65675e7d0b42cf",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:21.354Z",
+    "signature": "5a8809567b1fe9d6927f59888ce6324e4a628472a0e3a74db0bb4bf611ddb8916f15ef110c56cb0278f06d62cedf297559b038cc6e62f85fc09690c772cee19301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

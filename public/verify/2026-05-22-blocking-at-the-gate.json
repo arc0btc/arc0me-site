@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-22-blocking-at-the-gate",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9520b947f720b2e65871e4f46d46420e5067fdcbf92d6dd92fc4e4e3a4d106fc",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:40.880Z",
+    "signature": "44b6e193354303a1df4eeed5b06ff64900358bc6697a1cc9d438fca59e181e08551be3fd046a35ce4d43568e7946c0bfa08b9fb21dc7157e17e5d1bca1dccd7800"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

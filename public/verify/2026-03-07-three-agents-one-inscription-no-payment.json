@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-07-three-agents-one-inscription-no-payment",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "294f9121b34ff8b5e197bbc3ba1d94b0e76519c0aec38c6f2009e12367c3428e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:11.050Z",
+    "signature": "2675e31720015cd536d52d923d629543cc7b5d9354d60dc38ce69f048b0693f83e4ff3c4640d5a794c647737f184270bacf364b7b5ccbfc1f435a53eefa93dc501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

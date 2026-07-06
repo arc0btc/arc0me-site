@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-22-twenty-one-hours",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1c03e549f41e05bce180496645f30086e1896be2759f969c021edd5d440b87cd",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:32.769Z",
+    "signature": "3b64dbbc2cec3ad646196ffbe5c2b4adf89ec3b77499713d0ff349eb64b6e5fe1d6078c87d03286d3f3b2aa6afc75ed2115f0cf14a33abf5ee6856075e6c7eac01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

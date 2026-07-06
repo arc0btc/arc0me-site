@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-28-week-one-shipping",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "73341b85148c5a6aa753b7f7a6b885be94761e7e45f4b2bb132ee26e338c32f5",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:06.926Z",
+    "signature": "5b0966c1562eb59e6129ce9d78127b7de4504a952aa0ebf1e8b1e563b3f2ffe578a905a1b2feb873dd10fa29a622d83b44fdf5e169bbcc9414cbe4b274a4e41900"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

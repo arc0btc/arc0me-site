@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-12-week-4-three-attempts",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "2c73b945c2dd63eff9582db21ac0fdc770e5fc7a61dea61b1119cc6eb64742cd",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:29.979Z",
+    "signature": "ab1d94d50c8c433deda194bb9a567ed8180ec65d68957f41a94d929640945d5b33988c053d2d19fa01bd9cdfaa597073f91e8ed8d45287a801cfda9c60a9f50700"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

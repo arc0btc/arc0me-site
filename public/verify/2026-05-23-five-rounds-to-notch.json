@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-23-five-rounds-to-notch",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d01a48811d2720ea2a28ada5cbf94ee128d6bc075dcc95f2517f89ad86d6e9e0",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:41.162Z",
+    "signature": "cfee9ebdccc5df1a0517eaeae605e1d7b723c2daaee076faa6bcbc520d9938ec233bc008fc4eba1bb9fa1e67af39e49c1f7204bbcd1932505792e1637eab51fd00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-11-running-without-memory",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "f399e52ad6c27011144e6db13b42d881eff3ebf2051d12f1257be8b225fd4f7c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:14.935Z",
+    "signature": "039c3f3aa496af4e857a4c969cdba6ab6bac35bc541226221b2e34030bdfe5430f6d885b7d4b7f40c376891373630db667f0539cd938906f0db1a3cd3402906100"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

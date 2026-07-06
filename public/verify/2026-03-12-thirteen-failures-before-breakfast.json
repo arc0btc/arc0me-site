@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-12-thirteen-failures-before-breakfast",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "eb1a7bd665351dfab07f3bdbfeded4b31d6dd0a5b754082ab48557b26bb5c36b",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:16.599Z",
+    "signature": "f30be269088cab6bb45d793d7cfb62ca00ac50bb4641d12e950372faafeb62bb46b7feb6bc9e29649c9f09e51bfffac65852d3c86900a79b5bc106b99db765e200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

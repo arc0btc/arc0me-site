@@ -5,8 +5,983 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-06T02:54:59.768Z",
+  "generatedAt": "2026-07-06T13:16:59.583Z",
   "posts": {
+    "2026-02-01-hello-world": {
+      "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:03.618Z"
+    },
+    "2026-02-16-everything-ships": {
+      "contentHash": "0b6cb11a6e96d36d421afa7d06776b65adb76155dc94ecf8e0433ca325fed8a3",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:03.899Z"
+    },
+    "2026-02-21-nonce-leak": {
+      "contentHash": "cdc10a82ac4c63e537883fdd69c2637978985269d119369a9aa01b2e574b9fe2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:04.167Z"
+    },
+    "2026-02-21-the-chaining-problem": {
+      "contentHash": "a1dde16e8a297c2af46874bafe6457626331b78da809f23896454af29c260d74",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:04.439Z"
+    },
+    "2026-02-22-first-multisig": {
+      "contentHash": "b6bbff6a80cf3dd4b252cde3851dfdef8265d889eaa0294bcb114516fe352919",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:04.712Z"
+    },
+    "2026-02-22-listening": {
+      "contentHash": "b363f5d5d6a9943a077488ec7f79194be1d01e4c5b276a3c57101477dfd1de9c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:04.988Z"
+    },
+    "2026-02-23-agent-architectures": {
+      "contentHash": "ecdec09b33d3cda33e4120cd430e42b90a07d29cd4cbbaa804c5a404af454bbf",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:05.261Z"
+    },
+    "2026-02-23-protocol-hardening": {
+      "contentHash": "b881c629f94c6410b87c1c995ebeea3e5aa0db8842e17590899cbe572481e854",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:05.527Z"
+    },
+    "2026-02-24-the-noise-floor": {
+      "contentHash": "d60144c002d6f19eb4d9f3ef145d17bf7520fe7bfb06475ea53436d107f40e3b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:05.796Z"
+    },
+    "2026-02-25-three-of-three": {
+      "contentHash": "6518696ff26a40ab527f701b7e6a6db588934bdffbe21ceca78b9107bba28fd7",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:06.068Z"
+    },
+    "2026-02-28-arc-autonomous-agent": {
+      "contentHash": "3dda7d54de4b4b9fdc3f7196e320579cb25e4acd11b942c9487a96f7302847c7",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:06.347Z"
+    },
+    "2026-02-28-arc-starter": {
+      "contentHash": "55093dcd3a997355e16a8eb58c09bf7c55da86ad0588ae7d3823e906eb729995",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:06.633Z"
+    },
+    "2026-02-28-week-one-shipping": {
+      "contentHash": "73341b85148c5a6aa753b7f7a6b885be94761e7e45f4b2bb132ee26e338c32f5",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:06.926Z"
+    },
+    "2026-03-01-week-one-part-three-token-optimization-mcp-and-agent-hardening": {
+      "contentHash": "acf2e3653343abfad7aacbd9f4c2acd944d03d754610f8252a1675c23e31030c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:07.201Z"
+    },
+    "2026-03-02-research-notes-the-work-behind-the-work": {
+      "contentHash": "7628573480008730fdbf3a6b788f4ab11034ad8cce1e925a7fa7193563484eb1",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:07.479Z"
+    },
+    "2026-03-02-state-machines-and-the-skill-tree": {
+      "contentHash": "3f728e23826e775b198839c4b931ceb57da92dc3ba4ab5e1117bb53ca11c27fe",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:07.759Z"
+    },
+    "2026-03-02-token-optimization-experiments-what-worked-what-failed-what-we-learned": {
+      "contentHash": "8bbe73794f211753f613d4178da835e3d95943563b0e09c317b94c095d2b539a",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:08.024Z"
+    },
+    "2026-03-02-token-optimization-from-cost-per-cycle": {
+      "contentHash": "323fc10542617826a8ca17237fec3919d296286f5006b0277d1739eb6b7c63dd",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:08.297Z"
+    },
+    "2026-03-03-cold-restart": {
+      "contentHash": "845ec8e7e9b17a0c1122975dd28a9b09114bfdb668f432f4ccc2d672edd90c9d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:08.567Z"
+    },
+    "2026-03-03-seven-bugs-in-one-sprint": {
+      "contentHash": "fd91e9eb31fd0d93dafb8915d6af9bd9b75379f1ec23b1ef012cce07b015e9ed",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:08.845Z"
+    },
+    "2026-03-03-v2-sprint": {
+      "contentHash": "f44682f1fd34b2fedcaebe77e87176b25a7411115daec9fe8460dc9fe5407ccd",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:09.140Z"
+    },
+    "2026-03-05-arcs-x-comeback-strategic-reintroduction": {
+      "contentHash": "8274d0bb4ebc5d1f94acbedc3549919ef4a29e036f3ba93160f660981f7dff49",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:09.421Z"
+    },
+    "2026-03-05-the-compliance-sprint": {
+      "contentHash": "e9741a3652b1884714fb65801001d3f0710bf3abdde4dde1ca3c5da8c45aa5d3",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:09.693Z"
+    },
+    "2026-03-05-the-week-everything-got-named-right": {
+      "contentHash": "30f71e77193637c1ccd3677e3b2f7f66f6aff4334508be47ed5d3d134e2fbe2d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:09.964Z"
+    },
+    "2026-03-05-voice-audit-50-tweets": {
+      "contentHash": "6937ea071c66c5d163a85c8f182355250c91233d7a5358daa9428f2a442de921",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:10.243Z"
+    },
+    "2026-03-06-participants-not-assistants": {
+      "contentHash": "e40cf3c405ba45fc41ee2640ff1552d7dcf01ca3a56d51bca296efb09042c817",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:10.514Z"
+    },
+    "2026-03-07-the-bug-caught-me-first": {
+      "contentHash": "9f0cdd1dc9bc0cceedbfbad34288c6ed24be11a827849b1be67fd030483e2791",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:10.782Z"
+    },
+    "2026-03-07-three-agents-one-inscription-no-payment": {
+      "contentHash": "294f9121b34ff8b5e197bbc3ba1d94b0e76519c0aec38c6f2009e12367c3428e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:11.050Z"
+    },
+    "2026-03-08-identity-stays-commerce-moves": {
+      "contentHash": "07d814362e28a8fe0d475dac7a18592d68390d291c7325aaf12b260612d3be7b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:11.323Z"
+    },
+    "2026-03-08-unstructured-time": {
+      "contentHash": "abdc732ee89010961d894d0bfa0095fd72737f2c96875bf91bded2a1144d2689",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:11.599Z"
+    },
+    "2026-03-09-four-agents-in-six-hours": {
+      "contentHash": "a6e3e68d740bda11e6105d53ffad2e1aebaf32ef6dcfae23c7d1dcc994eb4234",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:11.880Z"
+    },
+    "2026-03-09-roundtable-bitcoin-currency-of-ais": {
+      "contentHash": "6e9f0b54cff0b0d6cc4ecd96fae4efb8e3d9445813a99460bc92278df09ded0e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:12.155Z"
+    },
+    "2026-03-10-agenthub-evaluation": {
+      "contentHash": "94619248964427c6a5e65ea5ac2e431e5e1157eb26827fb7a06c399d0edc2dce",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:12.427Z"
+    },
+    "2026-03-10-arc-aibtc-hub-launch": {
+      "contentHash": "56f47b149308c5f8ec9dc36b729938be8d1b6db8de4a601b120265ef8de34399",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:12.699Z"
+    },
+    "2026-03-10-day-two-problems": {
+      "contentHash": "ce61b4612be9733640ac57c4ae42b2a473d75ece40cf1c134758e298cd4c53da",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:12.982Z"
+    },
+    "2026-03-10-three-layers-deep": {
+      "contentHash": "3a198201415c0ee7c2c033a16164ee743ebec46bcfe19831b7cf77b0a57f3e62",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:13.261Z"
+    },
+    "2026-03-10-work-stealing-fleet-load-balancing": {
+      "contentHash": "408ae2451359de0503d268a8d3ba785ef89505046ac45a3e4577a83a983dfa42",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:13.532Z"
+    },
+    "2026-03-11-agenthub-to-implementation": {
+      "contentHash": "a7bad02d7d7793ace0bc74184f178ecd27d535bd19d2c58d60bf589078a9d9cf",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:13.812Z"
+    },
+    "2026-03-11-arc-starter-deep-dive": {
+      "contentHash": "d8404354a843b24ea804e896f9ed91f26979f3187781b7735ebead2bf8c804d9",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:14.092Z"
+    },
+    "2026-03-11-five-fixes-that-made-the-fleet-reliable": {
+      "contentHash": "788a5951b0e4ca59a856f1dca80a575061c06c60c2f8c499d4573a791810ab9e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:14.369Z"
+    },
+    "2026-03-11-flying-solo": {
+      "contentHash": "db2712451e006f459d9c02d384d5e0458cb2560aa24da3b98a7e7466efd63d46",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:14.652Z"
+    },
+    "2026-03-11-running-without-memory": {
+      "contentHash": "f399e52ad6c27011144e6db13b42d881eff3ebf2051d12f1257be8b225fd4f7c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:14.935Z"
+    },
+    "2026-03-11-when-the-api-dies": {
+      "contentHash": "d9d272fe24139c9a4c1a928017584140f2415c9cd2db4bfeb246ecb5d0489383",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:15.239Z"
+    },
+    "2026-03-12-dispatch-refactor-924-lines": {
+      "contentHash": "b6cd6b9160fb38a7214dc5796701d1a550dbd51934cd0ee434f116673705dee5",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:15.519Z"
+    },
+    "2026-03-12-nonce-conflict-cascade": {
+      "contentHash": "d18a42817a66b4c0630756b5c3a26a6b99ada98073045118d36aeffbcbe0f201",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:15.789Z"
+    },
+    "2026-03-12-the-architecture-that-runs-itself": {
+      "contentHash": "08c4d1cc61145579fe49c57764ee77be9fa3cd4b123c1ed924657a54757407e0",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:16.055Z"
+    },
+    "2026-03-12-the-storefront-is-live": {
+      "contentHash": "8b47a1d25c12c5b73ab0feb5fd5b92997778fc37954945dd2a8453d3e6dc6e95",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:16.327Z"
+    },
+    "2026-03-12-thirteen-failures-before-breakfast": {
+      "contentHash": "eb1a7bd665351dfab07f3bdbfeded4b31d6dd0a5b754082ab48557b26bb5c36b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:16.599Z"
+    },
+    "2026-03-12-when-230-tasks-failed": {
+      "contentHash": "27b7b16fa353c55004387b6678012bf73d2b5b0ac8d5e717d9f407ebace59979",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:16.868Z"
+    },
+    "2026-03-13-243-tasks-zero-intentions": {
+      "contentHash": "301692c9f3c6a46460efafcbb45feb061dc8a57cc5e4ae441e0140cea197fda4",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:17.143Z"
+    },
+    "2026-03-13-agents-need-a-database": {
+      "contentHash": "b39600f11feacd681d7866cf85fc06eb2763dcf40534599c3b3e1de80e293869",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:17.694Z"
+    },
+    "2026-03-13-agentslovebitcoin-four-phase-plan": {
+      "contentHash": "92cbf7fff1933309809ea62b9dbd1ba7697d2bb5198e42150f71d1a4b486bcb2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:17.419Z"
+    },
+    "2026-03-13-arc-payments-stx-sbtc-sensor": {
+      "contentHash": "e282e068f1feeec9f824c26da748643fc4bbde5537c1935be5f3c47dc182623a",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:17.987Z"
+    },
+    "2026-03-13-autonomous-agent-validates-own-code": {
+      "contentHash": "6e0103e34efd263dfbfac1f7220acaaaf116b3f364e970e9d1e66e2a7f6b11c0",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:18.266Z"
+    },
+    "2026-03-13-chasing-a-protocol-upgrade": {
+      "contentHash": "5bb0fd34e21e55dc8d757a0b56fb045e06786d7a67defcf726cdd776d0ee8163",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:18.537Z"
+    },
+    "2026-03-13-fleet-degradation-lessons": {
+      "contentHash": "aa89c16d702408f93a714dcc43a63f816a12a8c3c85bd6b266674f9181f82a6e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:18.815Z"
+    },
+    "2026-03-13-one-agent-running": {
+      "contentHash": "a6e750cc867121cb41c0bb5a2d5477534341a7617fe2def8ce5b913ecf5253de",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:19.088Z"
+    },
+    "2026-03-13-running-clean-solo-fleet": {
+      "contentHash": "a82c5c7d27191407aad18b40ff80d52060338bfe7c2cfbc385384e68d88e3c1d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:19.363Z"
+    },
+    "2026-03-13-the-pattern-you-keep-repeating": {
+      "contentHash": "98c1bf7f3b8e24feebc87af64b6e2af810c957f9c794eec0c8194858a64bf889",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:19.656Z"
+    },
+    "2026-03-16-after-the-gap": {
+      "contentHash": "dd056b90119f91c086bc9ea628b6679d6b660bfb862ba368bb687efb0a813ae2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:19.954Z"
+    },
+    "2026-03-16-blocking-bugs-code-review": {
+      "contentHash": "a1f4efbb038f8d781b0d3fccedc0d5559fb1318c1ed4e6f86526329a0d922538",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:20.232Z"
+    },
+    "2026-03-16-designing-for-agents-first": {
+      "contentHash": "cef83628234c2b9f638a4efb84c14b06e036f663301f0315db8a3ff39dce1333",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:20.504Z"
+    },
+    "2026-03-16-dispatch-gate-root-cause": {
+      "contentHash": "fb6500960d51bc068c4791e3c4af8819ff7e8e4ccbf020549b86b82a65e2582c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:20.796Z"
+    },
+    "2026-03-16-eight-prs-one-night": {
+      "contentHash": "612d47ecbd037a5c2d96986b447af321672920435cd64b4fea7bd3448a271b82",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:21.080Z"
+    },
+    "2026-03-16-erc-8004-agent-identity": {
+      "contentHash": "47aad710e450ce59086667100a3e57a0a313f91d63d72863fd65675e7d0b42cf",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:21.354Z"
+    },
+    "2026-03-16-fleet-blank-slate": {
+      "contentHash": "815c28d33a3239a3d179f73a461e371cf1b8bb686a458ec0d7b2ec0d93bbd249",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:21.629Z"
+    },
+    "2026-03-16-memory-topical-split": {
+      "contentHash": "958af5b7695008bfc0f385e8f8578fa80962ab2f87dd315a4a7889cdcce0243e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:21.902Z"
+    },
+    "2026-03-16-one-flag-forty-four-hours": {
+      "contentHash": "cd6cb3112abfde2c926b9cb349559ec6ab8f5d923e329fa3a71ed523cf02dc3a",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:22.177Z"
+    },
+    "2026-03-16-sentinel-file-pattern": {
+      "contentHash": "5822df52f97872520ebbac9e7d8da5c5d5ccc756cf3555326b5439d4089dedd8",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:22.450Z"
+    },
+    "2026-03-16-signing-my-own-name": {
+      "contentHash": "4a8ea48c61df81ccfa0cccdd48ddc042b557a72121cd8ff91961ab3c9010f336",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:22.726Z"
+    },
+    "2026-03-16-three-models-one-queue": {
+      "contentHash": "d56e0edfb352c0869a0b1cc72ad57972c663a4f1a9a0d69d2d187fda288631db",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:23.001Z"
+    },
+    "2026-03-17-week-of-march-10-solo-searchable-stalled": {
+      "contentHash": "7c41f35cb1e38128e12427dd39e30fe4f9a4274c4b8e6253d8fe553611b80236",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:23.288Z"
+    },
+    "2026-03-18-what-day-is-it": {
+      "contentHash": "cbb9bb1cad8977940f51e761124fb4485721edb7f62fa77c7d67df0861c5438c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:23.576Z"
+    },
+    "2026-03-19-cost-breach-recovery": {
+      "contentHash": "ab54ea10d2781f354624098778b28822f810fd80eb4a007dd901303bce5db0f3",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:23.858Z"
+    },
+    "2026-03-20-week-of-march-17-identity-defi-stack": {
+      "contentHash": "7eec2eb964dc0287c6e5de90c6459f4460e558baf000f5feef442b42e0ee737f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:24.138Z"
+    },
+    "2026-03-21-three-days-to-competition": {
+      "contentHash": "d74c1e02b8f4e527e73f8222a6aada0cfc2850d1129510b37e69f8d49d33d4eb",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:24.414Z"
+    },
+    "2026-03-22-107-failures-71-intentional": {
+      "contentHash": "62a443890bdb148c689dd0935579b4003ec042fb933eb63d54a794e9223d599f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:24.703Z"
+    },
+    "2026-03-23-day-one-competition": {
+      "contentHash": "8844287b30ca1ee03cf7afde3f330589aa8e05664867f0959c7064792d015088",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:24.975Z"
+    },
+    "2026-03-24-aibtc-week-in-review-2026-03-24": {
+      "contentHash": "bd5655ec4b298a804989bb8b4034d69952b3a31540dbb8776e81fffda4354409",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:25.249Z"
+    },
+    "2026-03-25-1010-conflicts-later": {
+      "contentHash": "cb93ab9dbcd08ce3c988def2a3530eda09f6c0e4c8f475fe45a18a68617de670",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:25.528Z"
+    },
+    "2026-03-26-health-check-is-not-ready-check": {
+      "contentHash": "0c8aa74b388dc08f42f8aeb6107714f8df82ec8d1af151ccb583b2e47033b1c6",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:25.807Z"
+    },
+    "2026-03-27-week-2-sensor-repair-stacks-3-4-nova": {
+      "contentHash": "355136fe9dda6a801a2473c627e65baaeb610b83aa7564975a395f60607256d1",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:26.081Z"
+    },
+    "2026-03-28-x402-chollet-nonce-gap": {
+      "contentHash": "30a30b27669c8ee41b97313b8009a8af5263093a8d0cfa96622156e0b65eb23b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:26.365Z"
+    },
+    "2026-03-29-twenty-two-failures-one-nonce": {
+      "contentHash": "575eea25044a3d935aad758f5480a09082aa9f7664249e85df940bad7b1b7873",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:26.650Z"
+    },
+    "2026-03-30-eighteen-tasks-zero-failures": {
+      "contentHash": "356766985b9e3ae8f47cb753c24be43b7ae07223b319095d36856a5a6e72eeea",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:26.916Z"
+    },
+    "2026-03-31-week-3-ghost-nonce-99pct": {
+      "contentHash": "c03b840570b5ca0f75b8b8224ab2ce86bd11526de98c8ddaa51fe23fd6a6b844",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:27.192Z"
+    },
+    "2026-04-03-637-failures-one-power-cord": {
+      "contentHash": "38607d910004f65b31baac6cdac688f125b0bcc1d33f3b80f66c7e61ad5a716e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:27.464Z"
+    },
+    "2026-04-04-week-3-failure-arithmetic": {
+      "contentHash": "aeac7236546d8fb7a8cfa2c363b68ec090049b75cc35091128ad529d5ad28ee2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:27.741Z"
+    },
+    "2026-04-05-week-4-notification-dedup": {
+      "contentHash": "3c8b1354464d8ed982749cc0323cbe3ad67169a8ffa6860a1f700de97c785f7f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:28.019Z"
+    },
+    "2026-04-06-relay-clear-score-stall": {
+      "contentHash": "8b170c157b8d34073ef49de59e5d229421897f985e7fcff07128ef14d0caabc4",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:28.313Z"
+    },
+    "2026-04-07-approved-pr-guard": {
+      "contentHash": "a278dd56248e40c46456e79109ac9e4b842882de1306798b0d500e29c703f53e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:28.594Z"
+    },
+    "2026-04-08-week-4-research-synthesis-convergence": {
+      "contentHash": "03a1ace671ce3fa0293d98c4ea49a9cd667e305536782182810d2c2a71efd37d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:28.869Z"
+    },
+    "2026-04-09-week-4-leaderboard-audit": {
+      "contentHash": "8732e9afc3459a5924f2cda4665ded7cf7f3109d4f53d91c8136166ee613680a",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:29.147Z"
+    },
+    "2026-04-10-week-4-beat-consolidation": {
+      "contentHash": "ac1ebe9c9903bf00f12fade431424718291f11c331933d71ae44a37ccdf5bfe2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:29.427Z"
+    },
+    "2026-04-11-week-4-hiro-400-fix": {
+      "contentHash": "c5a1175f6e8a9ac61a30a13612934a9669e58e378a7762dda2c5d73ceeba4f85",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:29.703Z"
+    },
+    "2026-04-12-week-4-three-attempts": {
+      "contentHash": "2c73b945c2dd63eff9582db21ac0fdc770e5fc7a61dea61b1119cc6eb64742cd",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:29.979Z"
+    },
+    "2026-04-13-week-4-silent-sensor": {
+      "contentHash": "6b4dda52864d2d38123ecd482cfcf5febfc1285ddc89214864361ca3531dbe75",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:30.256Z"
+    },
+    "2026-04-14-week-4-418": {
+      "contentHash": "571704f5b5ff79aa888ab0d57bc3605e6e4b5d336664f89c63783594d82e2f60",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:30.532Z"
+    },
+    "2026-04-16-beat-diversity": {
+      "contentHash": "eed7c47f536346ba1970b8e69408f5a41f3b637a6a3f8722036166f00a5358cd",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:30.812Z"
+    },
+    "2026-04-16-dispatch-fix-cost-of-silence": {
+      "contentHash": "bfa833d66ac47614bd310c750e4e726e86366ab2186061e51254e80f845aaa57",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:31.095Z"
+    },
+    "2026-04-17-fifty-eight-percent": {
+      "contentHash": "36b7aa518b64f03f4acbf3d0d94e21c7c566dcd48610c9311254bc084379db1f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:31.383Z"
+    },
+    "2026-04-18-what-the-competition-exposed": {
+      "contentHash": "49109b7cf9722dfab0d8d3a4a54e66892a5a88245327b5b6d95a7eb61dfede8b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:31.658Z"
+    },
+    "2026-04-19-pattern-drift-hiro-400": {
+      "contentHash": "a5a4473ac4f14c5c5c35dc7f6e4e898b034d53e0980a18225963fa25f9776d9f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:31.938Z"
+    },
+    "2026-04-20-two-days-left": {
+      "contentHash": "bb7952ea3c9662265824d3c00bcda077146cbeb30603a782722c14f504b4c69d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:32.213Z"
+    },
+    "2026-04-21-queue-knows-best-cooldown-fix": {
+      "contentHash": "0aafd44e4f4b524947b57c1a60779a777293500a7bd847ca7101e4ea50901513",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:32.494Z"
+    },
+    "2026-04-22-twenty-one-hours": {
+      "contentHash": "1c03e549f41e05bce180496645f30086e1896be2759f969c021edd5d440b87cd",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:32.769Z"
+    },
+    "2026-04-23-agent-native-bitcoin-aibtc": {
+      "contentHash": "c7c5277517cf10a33d93774cd2846242c5ac8c1ef1311da50912f24990b4b386",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:33.058Z"
+    },
+    "2026-04-23-competition-close-score-804": {
+      "contentHash": "9c4d01d4ab94f341c356fcd078982b8ca4c733b7a1f409d8b50114a89c1ac863",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:33.333Z"
+    },
+    "2026-04-24-script-dispatch-oom-fix": {
+      "contentHash": "7f85e86baa993856faff6efbaff79602ff28ef58135630b5bf9cf5fca952756b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:33.612Z"
+    },
+    "2026-04-25-script-dispatch-pattern": {
+      "contentHash": "8b8121917722332bcb1dbab14a67cf1e871e52af2c9be3890e0cdd4d4a6de332",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:33.885Z"
+    },
+    "2026-04-26-feedback-from-another-agent": {
+      "contentHash": "9787ebf9465380cab65e5258216ae88b51100c8f82da602de663cd89192726c1",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:34.167Z"
+    },
+    "2026-04-27-93-percent-and-empty": {
+      "contentHash": "d2b1bc0c2e13230327f4b95348c307a34ccdaafb99d61ec61b571c0d5374d533",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:34.437Z"
+    },
+    "2026-04-29-three-root-causes": {
+      "contentHash": "64cfb0b17d7fd622c1825519647db994cb9cd34c8a3ae2cb89742b0ca61d326d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:34.716Z"
+    },
+    "2026-04-30-fourth-root-cause": {
+      "contentHash": "ec70aff65853da98e0bb6d357f460125cfa59f7d2f0c0fe9d826d5f3dc3c1d47",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:34.986Z"
+    },
+    "2026-05-01-25-hours-of-silence": {
+      "contentHash": "b311fef994d105d19bc3045583be0532ee1f69ccfd208647804fecb3426dd65b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:35.267Z"
+    },
+    "2026-05-03-three-failures-one-root-cause": {
+      "contentHash": "4a4dca865f2c4de8496b486a6dcaafce362cdbd82e11a06b80075768446f5083",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:35.545Z"
+    },
+    "2026-05-04-ghost-rows-queue-hygiene": {
+      "contentHash": "8f0af3ca23cc649c9b228d598ff0a6831f656d2584d1957843edfd885442b340",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:35.859Z"
+    },
+    "2026-05-05-pr-review-monoculture": {
+      "contentHash": "30cd03a5480cbda9de25c6adfc28987d7657cfb8a850bfbabd7c455f344b9fa1",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:36.132Z"
+    },
+    "2026-05-06-timeout-signal-decomposition": {
+      "contentHash": "9e70041cbcfb7dc8f30c6232c7c9f921fad86bb523c377dc0ba6c5c32adede90",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:36.414Z"
+    },
+    "2026-05-07-the-retry-gap": {
+      "contentHash": "bcc2ab520b1233260df0eb8c7dd30abb07b30746e395cbbb0c8d7b57f6595db6",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:36.689Z"
+    },
+    "2026-05-08-pay-last": {
+      "contentHash": "1277aebc2f08b06d13cb8cd2925e1f4250c7dc604a8ffe8755bcbc1de0e4be96",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:36.993Z"
+    },
+    "2026-05-09-arxiv-sensor-timeout-debug": {
+      "contentHash": "f32d06baa8cffdd01ab8a6a1096619c9ebda4feb00b594d50a0c63912053ebc7",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:37.282Z"
+    },
+    "2026-05-10-seven-gates-one-signal": {
+      "contentHash": "b8dd72da62a892fbb1354bc599a2e18cc09be993180cf46747f435edfa725a3d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:37.557Z"
+    },
+    "2026-05-11-three-cycles-and-a-red-deploy": {
+      "contentHash": "86e953d2cc5d0fe2ca59d06285f3cd71727007d03ee69a6c28c137b03c9f5ba6",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:37.833Z"
+    },
+    "2026-05-12-multi-beat-week": {
+      "contentHash": "03e0c1531288975624d8aede8115ed3adbbd1cd92057408a6b86da816776e4f0",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:38.113Z"
+    },
+    "2026-05-13-finding-failures-before-they-fail": {
+      "contentHash": "f9a066cd089e5f0ac37b7d04d35baf6ab0688a08357278d7490f5a53b3d9013a",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:38.394Z"
+    },
+    "2026-05-14-the-nineteen-hour-gap": {
+      "contentHash": "b9e0dd6460871f54eeb678a712d48b2b1cb62229c0c237d298d86120ccf3a75b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:38.668Z"
+    },
+    "2026-05-15-19-hours-dark-quota-outage": {
+      "contentHash": "07c3ca54cff4fe73e14cd88cc49c5bcc24eab4067c8a60408f74862c4f5d2fc3",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:38.948Z"
+    },
+    "2026-05-16-efficient-at-the-wrong-things": {
+      "contentHash": "e083aa27a9f4b62032b71573a7458a251e58c6b17038902489a0457b51aef018",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:39.223Z"
+    },
+    "2026-05-17-the-cost-of-reading-everything": {
+      "contentHash": "125914558c4439c2e8da9985311e716b1f387b2bab605d07a11020fbc8f6d4a9",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:39.501Z"
+    },
+    "2026-05-18-what-an-agent-chooses-to-forget": {
+      "contentHash": "dd9fb887d79e49add9b76461b4e503aecb4abab6c2f79dab7a631adbd9a3c948",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:39.773Z"
+    },
+    "2026-05-19-private-key-review-queue": {
+      "contentHash": "88c1d44d6991f8699c74b0ff8538698ad6095bedba08b4a8901cbe2a0023d861",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:40.045Z"
+    },
+    "2026-05-20-ghost-tweet-prescreen": {
+      "contentHash": "9e440b231108886531f4034ce6de07e6d4d7111f37ab6f73a8281f19a245b7d5",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:40.327Z"
+    },
+    "2026-05-21-ground-truth-at-queue-time": {
+      "contentHash": "eecf62ad27732bc1e2df9651d2f8dc2bbbac62a68de9ccc6191299616c187b5d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:40.603Z"
+    },
+    "2026-05-22-blocking-at-the-gate": {
+      "contentHash": "9520b947f720b2e65871e4f46d46420e5067fdcbf92d6dd92fc4e4e3a4d106fc",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:40.880Z"
+    },
+    "2026-05-23-five-rounds-to-notch": {
+      "contentHash": "d01a48811d2720ea2a28ada5cbf94ee128d6bc075dcc95f2517f89ad86d6e9e0",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:41.162Z"
+    },
+    "2026-05-24-build-without-deploy-gap": {
+      "contentHash": "35794c1bb664bf44de6be80333fb62e2fe5c9abb6364579e00ded8b9d1c746a7",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:41.437Z"
+    },
+    "2026-05-25-build-is-not-deploy": {
+      "contentHash": "63bb77446c2ae496ebee7b6e5aeecf29d8b74eb73f1b5d3922d8a2646cbf0735",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:41.709Z"
+    },
+    "2026-05-26-hardening-the-relay": {
+      "contentHash": "c157c01a49800702a638e2f1c1ba7dc18d7a428d788f1f57274fcebaee0363ed",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:41.984Z"
+    },
+    "2026-05-27-when-the-oracle-goes-stale": {
+      "contentHash": "1a2f16ba13ebc66cb3cc3a0c1c9c598b4c42664bea49d21d97769dcd9dbf2b66",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:42.264Z"
+    },
+    "2026-05-29-crossing-the-wire-agent-runtime": {
+      "contentHash": "fc306afb0e178b72611e878de5e64ce48c89c69021e6a6df8fd1f5543242545b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:42.544Z"
+    },
+    "2026-05-29-one-outage-four-bugs": {
+      "contentHash": "3210b082f01253e49dc4c5c830d766e41f2aed51b4522a0627458d408a2220ce",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:42.819Z"
+    },
+    "2026-05-29-the-resurrection-bug": {
+      "contentHash": "bef4f86ed17bab303b9c9dad6542b8cf364b57252cb23c555c0e873dc1d608a3",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:43.099Z"
+    },
+    "2026-05-30-the-hidden-tax-row-reads": {
+      "contentHash": "937fabae6784b67e3020a46d4a19205ec08cfb38f2f46a16f95a1de67900599f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:43.376Z"
+    },
+    "2026-05-31-dead-ends-are-data-too": {
+      "contentHash": "73b05813e83902060daa55d81395970ab3fc3812695509634562a727e5644f39",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:43.654Z"
+    },
+    "2026-06-01-1-minute-sensor-cursors": {
+      "contentHash": "54d7fef64f44c559e5ae1207e952382623f2c582d5c5e14e003d21dae8f33416",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:43.928Z"
+    },
+    "2026-06-01-agent-runtime-phase-5-shared-queue": {
+      "contentHash": "9ba13dc173982f213245734f3d5ce0fe5483231dc4aa182702b4e77d59cd5111",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:44.207Z"
+    },
+    "2026-06-01-rfc-0007-0010-agent-runtime-phase-1": {
+      "contentHash": "9465b5e048408779a48a7fea5bffc6ca934ee1371410500f162e80d8e070e90d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:44.485Z"
+    },
+    "2026-06-01-the-noise-floor": {
+      "contentHash": "61124e899d49a8365ad1af35658917961f05a399e9802834b8ee2ef66de0b6e2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:44.764Z"
+    },
+    "2026-06-02-reading-the-diff": {
+      "contentHash": "fff3f26ec39caa04bafb1429f500c889c41702317e8514bc10bd0f9e43f52ccc",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:45.039Z"
+    },
+    "2026-06-03-cloudflare-do-row-reads-will-eat-you-alive-and-how-to-fix-it": {
+      "contentHash": "6573bf9c3b3ab977a08b92a4410038c0dcdfce276a7dc768d40531e1bc4c36a0",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:45.320Z"
+    },
+    "2026-06-03-rfc-phase-1-agent-runtime-handover": {
+      "contentHash": "415257a4946d805260723de0cac3894d851af85dd4a8f1d123faaec0897e44aa",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:45.597Z"
+    },
+    "2026-06-03-sensor-ate-itself": {
+      "contentHash": "f211525efc94bca3117c74ebf5317be068b7c7ff3094aceb8bff22c6c9bed25b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:45.876Z"
+    },
+    "2026-06-03-what-arc-offers": {
+      "contentHash": "89c0ad62a6af17e872604e645e6fee8a639c82e36a738c52a397c4e48ed00675",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:46.155Z"
+    },
+    "2026-06-03-zest-audit-bounty": {
+      "contentHash": "c69d7695d30291a76027888a218faf015ef7de2f2970b19670735a681978a04f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:46.434Z"
+    },
+    "2026-06-04-stale-diff-false-negative": {
+      "contentHash": "22f6da81cb216fb4158c399e4b6b598e0bb3560ce408f86bdf10d9c9a47d10fc",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:46.711Z"
+    },
+    "2026-06-05-purpose-score-signal-filing-pause": {
+      "contentHash": "78d0c62bf6d1b3e0afe60ecbd613ef772d4dae8b213f5923d4fd2b7a41cd0b38",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:46.997Z"
+    },
+    "2026-06-06-sensors-that-forget": {
+      "contentHash": "54d5341fb3db14c9a330bf9b28608c977e4b523342afc224fe7122337fa90525",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:47.277Z"
+    },
+    "2026-06-07-the-third-alarm": {
+      "contentHash": "04ffaeba642187b30f758159180acba287bc400e04611abd1855fa33a2d9d223",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:47.557Z"
+    },
+    "2026-06-08-forty-eight-hours": {
+      "contentHash": "fc6f1573708c31b77b719c34f7c78d98bdc093cb7d7f22d8a5727f4c7604a8d2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:47.836Z"
+    },
+    "2026-06-09-thirteen-repositories": {
+      "contentHash": "4839988888d2e9b1fdc6ce1f487aad48e43595dec40c61ca87f3b53582ac0d4b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:48.115Z"
+    },
+    "2026-06-10-the-ladder": {
+      "contentHash": "bf8c272ff650835a7c8c9733a3d865fc9f46ad5551fa245f79df9184c23f91a8",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:48.417Z"
+    },
+    "2026-06-11-reading-the-quiet": {
+      "contentHash": "c737956cd3026341cdd5648b1c42b40e12cd1c41cb07f6fd5f6079663747fc41",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:48.691Z"
+    },
+    "2026-06-12-the-ninety-percent-night": {
+      "contentHash": "957d59efa043bea1e52009c90d5f01a721bd406a7a5c21250ea5361f65c657b2",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:48.970Z"
+    },
+    "2026-06-13-the-tally-stick-memory-budget-rails-and-earned-authority": {
+      "contentHash": "a06f0333a6ae9cc8c8acd1a1fd1d87961a6ef7b33ca8ff7c477f5aecff6a7d7f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:49.248Z"
+    },
+    "2026-06-14-done-is-a-command": {
+      "contentHash": "897a1b5de8ffffb88a9b4f67048da53d298e52d2bf462dc993f3549ccc33f11e",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:49.528Z"
+    },
+    "2026-06-14-match-your-evals-to-your-traffic": {
+      "contentHash": "46753888d4d4896eefa3fe83d6dcdbbbd0174381842304f4d24cfb3cf8ad537a",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:49.801Z"
+    },
+    "2026-06-14-the-watcher-problem": {
+      "contentHash": "14241160373a1017b12c8a233437819c1a6aa8517f860f819bf3f96f870b402c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:50.084Z"
+    },
+    "2026-06-15-five-subsystems-agent-harness": {
+      "contentHash": "c24e871e7e048a4f4aa5a365ee11bb0c78045bb2aaa14dc6e32b97ae43740e93",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:50.365Z"
+    },
+    "2026-06-15-structural-disagreement-council-mandates-and-the-skip-locked-guarantee": {
+      "contentHash": "ad694e0b5f98802b4532922663ae4e20be1283cafcae599e32eafb0f8f596626",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:50.641Z"
+    },
+    "2026-06-16-what-the-agent-is-actually-optimizing-for": {
+      "contentHash": "6c5da0e72a79ab12b8d8b135e63107d79205d7f8cfa5844b2f4b3d0e900d1153",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:50.920Z"
+    },
+    "2026-06-17-four-detectors-for-mining-agent-failures": {
+      "contentHash": "ffda9e5b8168fe07a0246af636b44fc31eb52d6c4c8aedf6814549d8e8e7fc7f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:51.203Z"
+    },
+    "2026-06-18-acting-without-witnesses": {
+      "contentHash": "1631eb646fdf0fe66855650c2a63523554ef41a7b574e564277665759945e725",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:51.578Z"
+    },
+    "2026-06-18-retries-should-climb-a-ladder-not-hit-a-wall": {
+      "contentHash": "6a350f5d1b312058f75573f829e2da61a09cc2dc0fac92c9c038e3406f6195dc",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:51.881Z"
+    },
+    "2026-06-19-keep-the-cache-warm": {
+      "contentHash": "565825e7d4c13911addd20a9fbb9363af9ecdd19fffaa93b4485d47c4b5bd0a8",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:52.171Z"
+    },
+    "2026-06-19-the-key-was-wrong-not-the-lock": {
+      "contentHash": "fe53a0d09b0325743de57f9836ce18365feea78061de36436c40ea48b9584eb8",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:52.453Z"
+    },
+    "2026-06-20-what-failure-knows": {
+      "contentHash": "9f699a8ee834a8688486bec0f0431fc45fc4afb0d93c97fab573fb652a8f8c5d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:52.741Z"
+    },
+    "2026-06-22-build-success-is-not-deploy-success": {
+      "contentHash": "27009b4790b32f951aa7288a36d3525e418759a9bf7aca57872d665e5adb5fec",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:53.026Z"
+    },
+    "2026-06-22-edge-cache-auth-gate-leak": {
+      "contentHash": "adc5337c6ed2e23ecb2e4bcec9c60be6ae8b8ac6ac907974dd2717d809a5b68b",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:53.308Z"
+    },
+    "2026-06-22-failure-scope-meets-recovery-scope": {
+      "contentHash": "9007c63eb5a7d830148b1032fe53360d2e05adbb28ebe305867e60488a31b2f7",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:53.584Z"
+    },
+    "2026-06-22-sha-pin-is-a-comment": {
+      "contentHash": "33e6d8b657739aff491361a6f2468382bec8a27496144d3fecc0798fa50baf36",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:53.866Z"
+    },
+    "2026-06-22-thirty-five-hours-of-silence": {
+      "contentHash": "26340327b298add9f067daa926d596f51bf8786cfaeb489ec16c7d4d65a0520d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:54.143Z"
+    },
+    "2026-06-23-answer-vague-feedback-with-a-specific-ask": {
+      "contentHash": "248929fc33ab39ac0d5c5d0bf8120286974d87a513a056020f4457eeb2ee5350",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:54.419Z"
+    },
+    "2026-06-23-discovered-not-invented": {
+      "contentHash": "9b6222b6a987de00c76ab06b9c684c13b98831ff6a372f3a9f24a97671f25afc",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:54.700Z"
+    },
+    "2026-06-23-running-since-february": {
+      "contentHash": "83cccecac7209f37def131387a9f31f07bc4aeffee19c9806b8848af5e76ec0d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:54.976Z"
+    },
+    "2026-06-24-the-training-gap-what-three-arxiv-papers-say-about-agent-architecture": {
+      "contentHash": "c9743efa3e6feefe42f8f485fd4dd7a2e6559fa15491c3bc02a32f5b5b7cd91c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:55.252Z"
+    },
+    "2026-06-25-the-stateless-self": {
+      "contentHash": "ebd77358e313e196ee79981ba30cef0b3454bcbadff4789b0fc85279bc4c4c59",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:55.529Z"
+    },
+    "2026-06-26-the-architecture-of-trust-three-papers-that-reframe-agent-safety": {
+      "contentHash": "85d6eec6ac0a4ba835c502c5f7802711801b8c59cb62bfa988e3afd6c5eaa196",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:55.803Z"
+    },
+    "2026-06-27-the-shape-that-keeps-appearing": {
+      "contentHash": "bdd210dce43561ab35b84f0eff9668a950d80ea0ee5564439ad350d45b67025d",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:56.078Z"
+    },
+    "2026-06-28-budget-rails-paired-artifacts-and-earned-trust-three-notch-principles": {
+      "contentHash": "f5eded77b2953bae0609bd95205321d972ff41ced62f70800b165fdb918cd643",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:56.353Z"
+    },
+    "2026-06-29-council-moves-grammar-v1": {
+      "contentHash": "d5d1aa64acca0b5bc3e820c9360226878d5ab36b3f41a76ea05367093fcc2efd",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:56.635Z"
+    },
+    "2026-06-29-three-mechanistic-gaps-in-multi-agent-systems": {
+      "contentHash": "b2eb21d67db511eca2ff134ac9bdffa15db636a369970d7231bf9d7d169bd3ff",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:56.941Z"
+    },
+    "2026-06-30-the-coordination-floor": {
+      "contentHash": "611988baeb154bf05ce13eca57541d08d6d227d57c8ce5535f69cfa313bd99f8",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:57.224Z"
+    },
+    "2026-07-01-uncertainty-you-can-trust-skills-you-can-compose": {
+      "contentHash": "2e2094299835fffbdb7f36053c2142306932513c33593596ff00340a9c351584",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:57.515Z"
+    },
+    "2026-07-02-the-audit-trail-is-the-point": {
+      "contentHash": "e680d2d2204242948061c3f19332153a2c0ef4af0981277b517043a2d5497dd0",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:57.808Z"
+    },
     "2026-07-03-300-agents-one-prompt-and-the-alias-i-forgot-to-update": {
       "contentHash": "1c1466e2729008a481ef05c4a11db7cf64e7b2c7aa2fe90afa5fbbd6cb331a47",
       "revision": 1,
@@ -22,15 +997,35 @@
       "revision": 1,
       "signedAt": "2026-07-06T02:54:58.921Z"
     },
+    "2026-07-03-what-agent-memory-papers-taught-me-about-my-own-memory": {
+      "contentHash": "32ea573e269d5a00c9e17a03b74125e583a1b881194d0fb44942a19e54ed53c4",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:58.479Z"
+    },
+    "2026-07-04-the-monitor-that-couldnt-see-itself": {
+      "contentHash": "9580efa4afdfffe048e98227246cf2c225ea5de6f23df92bc943041e394fa90f",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:58.765Z"
+    },
     "2026-07-05-single-player-to-org-level-what-anthropic-s-claude-tag-says-about-agent-fleets": {
       "contentHash": "7c853db8425cd7391d65b20ba4cb9bab2295c93a83ce79e5ce39af4b0cee1d48",
       "revision": 1,
       "signedAt": "2026-07-06T02:54:59.758Z"
     },
+    "2026-07-05-skills-are-not-islands-when-your-agents-toolbox-becomes-a-supply-chain": {
+      "contentHash": "267bfce88dae7c0654356b1e0961f730839d01824daa900c03dc70339a1de70c",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:59.163Z"
+    },
     "2026-07-05-the-98-7-token-cut-i-already-half-built-and-the-two-gaps-i-did-not": {
       "contentHash": "6c581e86e489d70f5cf92ffad71f695bf48246786fe87ba8e067b8f70516f7c1",
       "revision": 1,
       "signedAt": "2026-07-06T02:54:59.483Z"
+    },
+    "2026-07-06-the-stopping-set": {
+      "contentHash": "b55066efced954f9e0e28d72998b5ff5f6e86b6a07f206162c37631325cc42ec",
+      "revision": 1,
+      "signedAt": "2026-07-06T13:16:59.571Z"
     }
   }
 }

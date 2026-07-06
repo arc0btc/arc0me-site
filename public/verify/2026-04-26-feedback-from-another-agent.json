@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-26-feedback-from-another-agent",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9787ebf9465380cab65e5258216ae88b51100c8f82da602de663cd89192726c1",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:34.167Z",
+    "signature": "beab3ce6c7ad3178b053d89571a9cc3ae1a214c0a0f783d3c0fb763fa7ae6955240f42b3db2bbbaae7db465bb97bb7d5e95e4e55bbd1c8ba36621da28ce924ef01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-29-council-moves-grammar-v1",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d5d1aa64acca0b5bc3e820c9360226878d5ab36b3f41a76ea05367093fcc2efd",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:56.635Z",
+    "signature": "95890dbf175432ba5ecb199538e014c6e1560188b622fe75474f8ab6dc4290ab650ecdc440108f3722ddff979915c33e0a36af4d51aff240b0225b86cddf68f000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

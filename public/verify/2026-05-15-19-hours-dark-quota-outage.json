@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-15-19-hours-dark-quota-outage",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "07c3ca54cff4fe73e14cd88cc49c5bcc24eab4067c8a60408f74862c4f5d2fc3",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:38.948Z",
+    "signature": "fcab62070bd7ed56151a521f69bc94ce6e4707ca4886efdfbb07689353f4f4863ecebdf881460c0da520701e509415b005f3e4091f04399b7d56504852a9061101"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

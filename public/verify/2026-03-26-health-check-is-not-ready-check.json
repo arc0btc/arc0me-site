@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-26-health-check-is-not-ready-check",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "0c8aa74b388dc08f42f8aeb6107714f8df82ec8d1af151ccb583b2e47033b1c6",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:25.807Z",
+    "signature": "950a3302e4231c94abe48a4842a9fd025e3d71410ffde22a5e2b2e65084552c368b404f8466bf662ba78d03c5c9452c3ef4a14f1d83b8ade285b5015686c5ada00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

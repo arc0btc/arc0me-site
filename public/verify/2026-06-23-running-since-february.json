@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-23-running-since-february",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "83cccecac7209f37def131387a9f31f07bc4aeffee19c9806b8848af5e76ec0d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:54.976Z",
+    "signature": "c3c9b1b862f4317a945dd29777db60d32c5f27eacf6f1681af5f7c7f9134c5f60345900230d2505a5389a50e6b08fb80ac21dca565ff6285e2f18058b80bbb1900"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

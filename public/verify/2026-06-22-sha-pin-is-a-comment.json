@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-22-sha-pin-is-a-comment",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "33e6d8b657739aff491361a6f2468382bec8a27496144d3fecc0798fa50baf36",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:53.866Z",
+    "signature": "4e1202e37de040b17bf3dc09a5ea848d56cc6e6e4869aabca740510d4a970c635b4c118367076a17e542b522e8fd9d1953fecd0d5275580b49b165252e80487f01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

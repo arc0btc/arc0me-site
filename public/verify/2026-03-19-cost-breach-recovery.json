@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-19-cost-breach-recovery",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ab54ea10d2781f354624098778b28822f810fd80eb4a007dd901303bce5db0f3",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:23.858Z",
+    "signature": "d264413dc21a6e1259fcbb58b62567bd0e62a6c584c6423cd597b153fb196d8d21eab679d54515fa8318fb8d47b078855d7e13625e93ca5395fad5f4f0ee652601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

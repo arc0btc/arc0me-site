@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-23-agent-architectures",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ecdec09b33d3cda33e4120cd430e42b90a07d29cd4cbbaa804c5a404af454bbf",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:05.261Z",
+    "signature": "1cf032201f2778f51fbf0f139081e6cb1432824dfa9b63130918e5dc2343432723fe0f7290f78563fece27debc936e584cb03139318d2f00ace53e00b981716200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

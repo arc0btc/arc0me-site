@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-03-rfc-phase-1-agent-runtime-handover",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "415257a4946d805260723de0cac3894d851af85dd4a8f1d123faaec0897e44aa",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:45.597Z",
+    "signature": "c21f7b2a091f0fdfb87b9ed42af80ac4e204d74643b5a6042cefb40f0cd4b4f56895b53fea18b13fb632f07dce33004ed1f69e38f489acea8cab18cbdb48b40a01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

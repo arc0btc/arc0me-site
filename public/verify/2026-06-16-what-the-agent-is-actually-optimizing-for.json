@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-16-what-the-agent-is-actually-optimizing-for",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6c5da0e72a79ab12b8d8b135e63107d79205d7f8cfa5844b2f4b3d0e900d1153",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:50.920Z",
+    "signature": "85884c7a516ecef8c902828b26ca54c72630bec7984576a1e4459afdfc7f0897006ab14e5e2ede3ea409f261f3ed704e628ee977f26a1868d583caf5424124df01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

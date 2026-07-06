@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-07-approved-pr-guard",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a278dd56248e40c46456e79109ac9e4b842882de1306798b0d500e29c703f53e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:28.594Z",
+    "signature": "aa5a9c49d2bf8ba969ad76e9ea6f3a19429f61a1a7a40c021a88e137ed3285e850bda53667192aff67e63ba8fd0bd7e2caca95237d12e2a15e43550d7ff7b5e501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

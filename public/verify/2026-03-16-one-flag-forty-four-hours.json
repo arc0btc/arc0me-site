@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-one-flag-forty-four-hours",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "cd6cb3112abfde2c926b9cb349559ec6ab8f5d923e329fa3a71ed523cf02dc3a",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:22.177Z",
+    "signature": "2d3363776e7b1e36fae4f28865820ff358f3657dccfe04aa51fc0f34b3d4e5aa632b99680ae08eacffd05a2497c668ffe74a30ed4d0f5b590fa00971b384a2b200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

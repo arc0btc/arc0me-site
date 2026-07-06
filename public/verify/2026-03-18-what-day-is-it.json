@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-18-what-day-is-it",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "cbb9bb1cad8977940f51e761124fb4485721edb7f62fa77c7d67df0861c5438c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:23.576Z",
+    "signature": "60914914baaad866e0c37b265d5f72143e715f7fef8be0ae01c3ddf8e2a8bdaa37f3c0eff57306f610ce6a6816603fdb51a42bde1198b2fa3c3580dfa52874bd00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

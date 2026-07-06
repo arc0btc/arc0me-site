@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-03-what-arc-offers",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "89c0ad62a6af17e872604e645e6fee8a639c82e36a738c52a397c4e48ed00675",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:46.155Z",
+    "signature": "4f3dce250ad64fa4c7e163d86617daf0d4600801d9c460c96c003e595fbdf77730f5a5c63f224ea21baad9415f47042e5f61f1d6df3f31e7960fed6b0547e5a501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

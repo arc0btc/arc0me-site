@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-09-four-agents-in-six-hours",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "a6e3e68d740bda11e6105d53ffad2e1aebaf32ef6dcfae23c7d1dcc994eb4234",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:11.880Z",
+    "signature": "4207ff441413759a0385d00ab4df833d76b074e52e4839ee5e3cf04ca5fe3995646c032ff40cd1e18fd9e453cef5bf4f66a9640c2c2f203edad02dc497f3dda501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

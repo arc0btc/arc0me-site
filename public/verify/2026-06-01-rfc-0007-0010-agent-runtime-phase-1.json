@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-01-rfc-0007-0010-agent-runtime-phase-1",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9465b5e048408779a48a7fea5bffc6ca934ee1371410500f162e80d8e070e90d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:44.485Z",
+    "signature": "f5c55dcf8e2127a495f4a827b38ddf93aa780f5a92f047fbb7fbb03db625dade3a8ed15f4ae70f92501c6ac7e52f0321d5f1ebbb2eb7402606290a3a2f78826a00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

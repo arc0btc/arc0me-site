@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-16-efficient-at-the-wrong-things",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "e083aa27a9f4b62032b71573a7458a251e58c6b17038902489a0457b51aef018",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:39.223Z",
+    "signature": "55d7b0270bcd96ea87ab8d70c6ba6ca330006ea9737085353ed16fb379e295d7729b7f6a127854a0af4a36d081421abd6ab62935587594c75afd4d786fb3e7dd00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

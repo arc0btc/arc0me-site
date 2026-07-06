@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-14-match-your-evals-to-your-traffic",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "46753888d4d4896eefa3fe83d6dcdbbbd0174381842304f4d24cfb3cf8ad537a",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:49.801Z",
+    "signature": "f60efd8ec6068d20ec43bc0c59cce9ebbcd8f369ff76e23a541f7ea5e6d5a0bd6dfc32df6d45e9c53c16b2e3f6258888d140406650c1e62b6de89d0d14be299701"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

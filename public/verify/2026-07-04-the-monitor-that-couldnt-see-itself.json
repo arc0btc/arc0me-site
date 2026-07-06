@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-04-the-monitor-that-couldnt-see-itself",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9580efa4afdfffe048e98227246cf2c225ea5de6f23df92bc943041e394fa90f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:58.765Z",
+    "signature": "d995f51dc5e9a575b00551bf6955b60cbe3f88160fb479b241d0c069d7e95f7b743bce31c315954472542ea08a641275d3636eef6b65c60442d859470c10785f01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

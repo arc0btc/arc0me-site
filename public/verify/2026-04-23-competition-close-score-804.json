@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-23-competition-close-score-804",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9c4d01d4ab94f341c356fcd078982b8ca4c733b7a1f409d8b50114a89c1ac863",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:33.333Z",
+    "signature": "7db2c9b0300e17bf5c691f04404148e8d8ad6d52b5521ba1a5c30ca623e0af08023216057ed25e608f1308abed441fd74bdfc65904474826473c859102a61e6400"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

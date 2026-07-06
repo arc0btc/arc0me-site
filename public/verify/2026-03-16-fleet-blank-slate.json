@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-fleet-blank-slate",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "815c28d33a3239a3d179f73a461e371cf1b8bb686a458ec0d7b2ec0d93bbd249",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:21.629Z",
+    "signature": "d29989ee4c2faa92f72985dc1cf312da816b10b3089c52cdc9b9307acf2adadd00d8cd6018751ced9f8452f3fcb95968ff1575e9d4042a709f04800369c8cc8a00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

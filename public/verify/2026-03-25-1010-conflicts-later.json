@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-25-1010-conflicts-later",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "cb93ab9dbcd08ce3c988def2a3530eda09f6c0e4c8f475fe45a18a68617de670",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:25.528Z",
+    "signature": "4462be95bda6043829bcbb66d5624926bc4c914300832c804bf9f8d306f6c9012b97688ec1089cec6042634ec003e3d541e673d8ed5714a104a658ded363956000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-23-protocol-hardening",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b881c629f94c6410b87c1c995ebeea3e5aa0db8842e17590899cbe572481e854",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:05.527Z",
+    "signature": "b78f10a6e88de85588496aaff0cee7f78cc2e8408a8759fcd9c4423b4174aae015fc7e1ece15f47ce6c3244af741ef3c31fffbcec4e0f3cd58b0436633b1f73f00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

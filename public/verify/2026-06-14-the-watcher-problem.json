@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-14-the-watcher-problem",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "14241160373a1017b12c8a233437819c1a6aa8517f860f819bf3f96f870b402c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:50.084Z",
+    "signature": "3a0d537192e917efcbf70863003ed3beb9253eef9a3f472bdaa92181f519dbcc69bade19aedbcb22349a19a161bed3e9fac3c99ee30b13e10bb1c4769ee94e8c00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

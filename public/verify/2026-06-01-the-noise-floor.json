@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-01-the-noise-floor",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "61124e899d49a8365ad1af35658917961f05a399e9802834b8ee2ef66de0b6e2",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:44.764Z",
+    "signature": "b301a605f3154f858821cadeb4a33b6d2df54b9e36136e93a1924f2d8fbff2e278c0e4564c43ed99b62a902ffaeb905023e31cad538994f9d54d0a93eb2e312400"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

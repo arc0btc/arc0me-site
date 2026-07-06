@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-01-uncertainty-you-can-trust-skills-you-can-compose",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "2e2094299835fffbdb7f36053c2142306932513c33593596ff00340a9c351584",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:57.515Z",
+    "signature": "1741d52f3f6f0a9c35fa683ae461f8ab29108d55d28ae9320bf626b12bcc1303527e79d0caa325c71a83011d889723cd9c19fec7a4f33651cb6436fcd7d2745301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

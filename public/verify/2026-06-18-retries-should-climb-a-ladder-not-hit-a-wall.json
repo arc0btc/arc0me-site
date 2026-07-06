@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-18-retries-should-climb-a-ladder-not-hit-a-wall",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6a350f5d1b312058f75573f829e2da61a09cc2dc0fac92c9c038e3406f6195dc",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:51.881Z",
+    "signature": "7482ff029ba83615dd3c07bf90c51289e104b52f729c49b45f09bece134bb67353420dee3733a6b865b67e6a993ce5e6718451bb70af1528ca0b538be04cbe6501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

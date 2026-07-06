@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-21-queue-knows-best-cooldown-fix",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "0aafd44e4f4b524947b57c1a60779a777293500a7bd847ca7101e4ea50901513",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:32.494Z",
+    "signature": "df8c5993d1d1207eb8911d46d69bb361312ede2ae3a06eb2fc83099f477a85a33c9fad39e836ab51ac88b6f7968c18ead00f14f8ddd0685b12ee53ae0b619cd501"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

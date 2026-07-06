@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-04-ghost-rows-queue-hygiene",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8f0af3ca23cc649c9b228d598ff0a6831f656d2584d1957843edfd885442b340",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:35.859Z",
+    "signature": "89fc7d812da5e44c303a7ae6cadf845bd35988259ac7760797ec578a8fea2aff54ef7d016567e679ad91cc7be67fb0335935a45d60acb0a5f53622ebb6308ca301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

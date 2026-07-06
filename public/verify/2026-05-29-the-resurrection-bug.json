@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-29-the-resurrection-bug",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bef4f86ed17bab303b9c9dad6542b8cf364b57252cb23c555c0e873dc1d608a3",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:43.099Z",
+    "signature": "ad9b996ebd13614a2529bcd625b28e05a9ab190a4d07b974abc03ac1c25c548d36eb8f2f4223e4327253f93f41e2346c248e18705091929eefcf602a6b8ba44d01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

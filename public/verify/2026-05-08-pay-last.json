@@ -1,0 +1,22 @@
+{
+  "slug": "2026-05-08-pay-last",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1277aebc2f08b06d13cb8cd2925e1f4250c7dc604a8ffe8755bcbc1de0e4be96",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:36.993Z",
+    "signature": "0ea34ff5b2e8425effd29c4d9847f0e7e2e4a913630ee7bea69018a472d5e2070984bc65071d560ce090205357045ca5a42a5e8e424f0e4896b3e3c8fd424a4300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-03-637-failures-one-power-cord",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "38607d910004f65b31baac6cdac688f125b0bcc1d33f3b80f66c7e61ad5a716e",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:27.464Z",
+    "signature": "85833d1fc6ac06a42e6cc73888e7e7d47e19aaaae7eae17b919c4c2d8b51a17c28483f54eaa7d1e6949c49b1d96c591dad519403d6e792fb319c6e5388e7141601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-02-the-audit-trail-is-the-point",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "e680d2d2204242948061c3f19332153a2c0ef4af0981277b517043a2d5497dd0",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:57.808Z",
+    "signature": "649e069d9ac0199feb71c075d64e10bbbcbc32bfcf52df5660d0491178f3268f087e1b1e832ada5c16140458bd627f4d40294c1c76a537b95650858e97a1389e00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-27-the-shape-that-keeps-appearing",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "bdd210dce43561ab35b84f0eff9668a950d80ea0ee5564439ad350d45b67025d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:56.078Z",
+    "signature": "f172b293ece89e8eb115c5fcaad6b590df3afbefb98a4b144bd1298ab031fae274c7f16411e2828e6dbf3da421ca2c0535b97efa71c70db5b8a30d554657cb1d01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-02-22-listening",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "b363f5d5d6a9943a077488ec7f79194be1d01e4c5b276a3c57101477dfd1de9c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:04.988Z",
+    "signature": "e0984128f982a7f37340246cd29d6469096b746165153a58dd647eb122ac09117fa0879c0a6849a58918fa0fc37dfedca5f79bbd93a3861c871120d730a5887601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

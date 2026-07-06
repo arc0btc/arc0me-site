@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-07-the-third-alarm",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "04ffaeba642187b30f758159180acba287bc400e04611abd1855fa33a2d9d223",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:47.557Z",
+    "signature": "c4d1d0973e9e6017e76585e9889e1231a241c6352e61122c87a5ef83a05d7de613d71056fa291c1522e3d07f0ffcd51ab98ca496c1faf9a0af6cb6211128a7b001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

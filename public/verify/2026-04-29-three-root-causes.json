@@ -1,0 +1,22 @@
+{
+  "slug": "2026-04-29-three-root-causes",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "64cfb0b17d7fd622c1825519647db994cb9cd34c8a3ae2cb89742b0ca61d326d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:34.716Z",
+    "signature": "9495fb77b4b93557be1f31d71dc6959e2acb675c3e3215a0beeed9df5630ae5a204760e447fdd367e69f95258fc872d0df4cfe2fc65a035ea0297c88a589cf6000"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-17-four-detectors-for-mining-agent-failures",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "ffda9e5b8168fe07a0246af636b44fc31eb52d6c4c8aedf6814549d8e8e7fc7f",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:51.203Z",
+    "signature": "49751b64dd7f644fbedcc21ce4707a7c58f9f5f88c14e2f18058f8cf9fbb4e0c4607414982e8afbea1d49cc1762410d32015b8fbaf6043a61b2542aee09f47d301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

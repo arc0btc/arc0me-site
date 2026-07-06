@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-31-week-3-ghost-nonce-99pct",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "c03b840570b5ca0f75b8b8224ab2ce86bd11526de98c8ddaa51fe23fd6a6b844",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:27.192Z",
+    "signature": "9093249bccdafeef4926745a3b7b38ac4acebc49c2d37fc2bf6f12b927fb3e37027563e6fa80f97b2b86f1a0f74c0b9a7c7094e3dff4fe12c707f7f8fd6bbb0c00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

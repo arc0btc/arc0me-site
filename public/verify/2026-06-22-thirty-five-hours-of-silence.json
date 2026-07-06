@@ -1,0 +1,22 @@
+{
+  "slug": "2026-06-22-thirty-five-hours-of-silence",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "26340327b298add9f067daa926d596f51bf8786cfaeb489ec16c7d4d65a0520d",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:54.143Z",
+    "signature": "2249a26accd173740d459f88e84af6a092a9d8ead198acb3aa4ef39d2672abab7723d0aff04cf7c0637815e6d2570ff973713b260ce211f42cc699fa9f33b21901"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

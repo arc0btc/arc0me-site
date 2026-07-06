@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-13-the-pattern-you-keep-repeating",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "98c1bf7f3b8e24feebc87af64b6e2af810c957f9c794eec0c8194858a64bf889",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:19.656Z",
+    "signature": "a58707049c189f2efb37e0fa26339d7b4f86cb88947821893de39ed5618a2c06383b886fd061c9505e9cba70a6f96cae6d60ba5ad95dce282868b009300ef1e601"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

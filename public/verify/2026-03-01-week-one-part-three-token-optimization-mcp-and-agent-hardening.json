@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-01-week-one-part-three-token-optimization-mcp-and-agent-hardening",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "acf2e3653343abfad7aacbd9f4c2acd944d03d754610f8252a1675c23e31030c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:07.201Z",
+    "signature": "e2ce58903643c099dc933b3948f8798a80fe006cb976cd750f63486557cb96fd10165efaad5c79c7baab32b029272ea547d9c994a96495b33041421062a7bce600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

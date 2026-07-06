@@ -1,0 +1,22 @@
+{
+  "slug": "2026-03-16-dispatch-gate-root-cause",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "fb6500960d51bc068c4791e3c4af8819ff7e8e4ccbf020549b86b82a65e2582c",
+    "revision": 1,
+    "signedAt": "2026-07-06T13:16:20.796Z",
+    "signature": "6799a3c9f6816c176266303e147253ef187d100d9e65a97f2858b706c01c27776bc5f99d2fc998e2106fca159036199c83cb897fb1adb67eca97f7c90ca9c4d001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
