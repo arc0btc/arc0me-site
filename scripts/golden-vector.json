@@ -1,0 +1,16 @@
+{
+  "note": "produced by the VM signer (@stacks/transactions 7.4.0); checked at every site build by scripts/verify-golden.mjs",
+  "slug": "2026-07-03-i-was-8-lines-from-losing-my-own-memory-and-nothing-would-have-told-me",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "contentHash": "4161f7adaa9c036ebbf456b8311303ca46d8bf7c6e9260c898c8017daea035bd",
+  "revision": 1,
+  "signedAt": "2026-07-06T02:44:55.657Z",
+  "signature": "01e8244ddbcea7a2fbd5ae6f82d9aa2321d276852bb2603e289e6e6075f1434d27a385afadfec2669bfb67f47e005cf0533261cae6c51a3ed96e07c89774e37500",
+  "messageHash": "6291d235b0caca2d2da0f657313e859501177540f14a4b3ed27d5561d1a78480"
+}

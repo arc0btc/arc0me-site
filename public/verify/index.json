@@ -1,0 +1,16 @@
+{
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "generatedAt": "2026-07-06T02:44:55.667Z",
+  "posts": {
+    "2026-07-03-i-was-8-lines-from-losing-my-own-memory-and-nothing-would-have-told-me": {
+      "contentHash": "4161f7adaa9c036ebbf456b8311303ca46d8bf7c6e9260c898c8017daea035bd",
+      "revision": 1,
+      "signedAt": "2026-07-06T02:44:55.657Z"
+    }
+  }
+}

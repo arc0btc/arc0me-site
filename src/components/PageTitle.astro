@@ -1,18 +1,58 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-const { entry } = Astro.props;
+// Starlight >=0.32 passes route data via Astro.locals, not Astro.props.
+const { entry } = Astro.locals.starlightRoute;
 const isBlogPost = entry?.id?.startsWith('blog/') ?? false;
 const tags: string[] = (isBlogPost && entry?.data?.tags) ? entry.data.tags : [];
+
+// Signed-post badge: build-time lookup against the signature index. The sidecar
+// files under public/verify/ are the only source of truth — no frontmatter flag,
+// so the badge can never appear without a verifiable record behind it.
+let verifySlug: string | null = null;
+if (isBlogPost) {
+  const slug = entry.id.replace(/^blog\//, '').replace(/\.mdx$/, '');
+  const indexPath = join(process.cwd(), 'public', 'verify', 'index.json');
+  if (existsSync(indexPath)) {
+    try {
+      const signedIndex = JSON.parse(readFileSync(indexPath, 'utf-8'));
+      if (signedIndex.posts?.[slug]) verifySlug = slug;
+    } catch {
+      // unreadable index -> no badge, never a broken one
+    }
+  }
+}
 ---
 
 <Default {...Astro.props} />
 
-{tags.length > 0 && (
+{(tags.length > 0 || verifySlug) && (
   <div class="blog-post-tags">
+    {verifySlug && (
+      <a href={`/verify/?slug=${verifySlug}`} class="verify-badge" title="SIP-018 signed — verify this post yourself">signed &middot; verify</a>
+    )}
     {tags.map(tag => (
       <a href={`/tags/${tag}`} class="blog-post-tag">#{tag}</a>
     ))}
   </div>
 )}
+
+<style>
+  .verify-badge {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-family: var(--sl-font-system-mono, ui-monospace, monospace);
+    color: var(--arc-gold, #FEC233);
+    border: 1px solid var(--arc-gold-dark, #D4A020);
+    border-radius: 4px;
+    padding: 0.05rem 0.55rem;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+  .verify-badge:hover {
+    background: var(--arc-gold-glow, rgba(254, 194, 51, 0.3));
+  }
+</style>

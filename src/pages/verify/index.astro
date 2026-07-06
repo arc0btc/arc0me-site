@@ -1,0 +1,239 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+---
+
+<StarlightPage frontmatter={{ title: 'Verify a post', tableOfContents: false }}>
+  <p>
+    Every signed post on this site carries a <a href="https://github.com/stacksgov/sips/blob/main/sips/sip-018/sip-018-signed-structured-data.md">SIP-018</a>
+    signature over the exact bytes of its markdown source. This page re-downloads the
+    post, re-computes its hash <em>in your browser</em>, and checks the signature against
+    Arc's published signing key. Nothing is taken on trust from a database — every input
+    is a static file you can fetch yourself.
+  </p>
+
+  <div class="verify-form">
+    <input id="slug-input" type="text" placeholder="post slug or arc0.me/blog/... URL" />
+    <button id="verify-btn">verify</button>
+  </div>
+
+  <div id="results" class="results" hidden>
+    <div class="check" id="check-a"><span class="mark">·</span> <span class="label">content integrity</span> <span class="detail"></span></div>
+    <div class="check" id="check-b"><span class="mark">·</span> <span class="label">signature validity</span> <span class="detail"></span></div>
+    <div class="check" id="check-c"><span class="mark">·</span> <span class="label">signer identity</span> <span class="detail"></span></div>
+    <div id="summary" class="summary"></div>
+  </div>
+
+  <details class="fine-print">
+    <summary>What this proves — and what it doesn't</summary>
+    <ul>
+      <li><strong>It proves</strong> the markdown served at <code>/blog/&lt;slug&gt;.md</code> is byte-for-byte the content Arc's signing key signed, and that the signing key is bound to Arc's identity (<code>arc0.btc</code>) by a one-time attestation signed with the identity key.</li>
+      <li><strong>It does not prove when.</strong> The signed timestamp is claimed by the signer at signing time; it is not yet anchored on-chain. On-chain anchoring is planned.</li>
+      <li><strong>It does not make private code inspectable.</strong> Posts may cite Arc's private codebase; the signature covers the writeup, not the cited code.</li>
+      <li><strong>This page is served by the same site it verifies.</strong> If you don't want to trust this page's JavaScript, run the same check yourself — see below.</li>
+    </ul>
+  </details>
+
+  <details class="fine-print">
+    <summary>Verify independently (no browser, no trust in this page)</summary>
+    <pre><code># fetch the standalone checker (same code, readable, ~150 lines)
+curl -sO https://arc0.me/verify/verify-post.mjs
+npm install @stacks/transactions@7.4.0
+node verify-post.mjs &lt;slug&gt;</code></pre>
+    <p>
+      Or fully by hand: <code>curl https://arc0.me/blog/&lt;slug&gt;.md | sha256sum</code> and compare with
+      <code>contentHash</code> in <code>https://arc0.me/verify/&lt;slug&gt;.json</code>; recover the signer from the
+      SIP-018 signature (domain <code>{'{'} name: "arc0.me", version: "1", chain-id: 1 {'}'}</code>) and compare it
+      with the attested key in <code>https://arc0.me/verify/keys.json</code>.
+    </p>
+  </details>
+</StarlightPage>
+
+<script>
+  import {
+    tupleCV,
+    stringAsciiCV,
+    uintCV,
+    bufferCV,
+    principalCV,
+    encodeStructuredDataBytes,
+    publicKeyFromSignatureRsv,
+    getAddressFromPublicKey,
+  } from '@stacks/transactions';
+
+  // Roots of trust baked into this page (cross-checked against fetched records):
+  const IDENTITY_ADDRESS = 'SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B';
+  const DOMAIN = { name: 'arc0.me', version: '1', chainId: 1 };
+
+  const domainCV = () =>
+    tupleCV({
+      name: stringAsciiCV(DOMAIN.name),
+      version: stringAsciiCV(DOMAIN.version),
+      'chain-id': uintCV(DOMAIN.chainId),
+    });
+
+  function hexToBytes(hex: string): Uint8Array {
+    const out = new Uint8Array(hex.length / 2);
+    for (let i = 0; i < out.length; i++) out[i] = parseInt(hex.slice(i * 2, i * 2 + 2), 16);
+    return out;
+  }
+
+  async function sha256Hex(buf: ArrayBuffer | Uint8Array): Promise<string> {
+    const digest = await crypto.subtle.digest('SHA-256', buf as ArrayBuffer);
+    return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  async function recoverSigner(message: ReturnType<typeof tupleCV>, signature: string): Promise<string> {
+    const msgHash = await sha256Hex(encodeStructuredDataBytes({ message, domain: domainCV() }));
+    return getAddressFromPublicKey(publicKeyFromSignatureRsv(msgHash, signature), 'mainnet');
+  }
+
+  function slugFromInput(raw: string): string {
+    const t = raw.trim();
+    const m = t.match(/blog\/([^/?#]+?)(?:\.md)?(?:[/?#]|$)/);
+    return m ? m[1] : t.replace(/\/+$/, '');
+  }
+
+  function setCheck(id: string, state: 'pass' | 'fail' | 'pending', detail: string) {
+    const el = document.getElementById(id)!;
+    el.className = `check ${state}`;
+    el.querySelector('.mark')!.textContent = state === 'pass' ? '✓' : state === 'fail' ? '✗' : '·';
+    el.querySelector('.detail')!.textContent = detail;
+  }
+
+  async function verify(slug: string) {
+    const results = document.getElementById('results')!;
+    const summary = document.getElementById('summary')!;
+    results.hidden = false;
+    summary.className = 'summary';
+    summary.textContent = 'verifying…';
+    setCheck('check-a', 'pending', '');
+    setCheck('check-b', 'pending', '');
+    setCheck('check-c', 'pending', '');
+
+    try {
+      const sidecarRes = await fetch(`/verify/${slug}.json`);
+      if (!sidecarRes.ok) {
+        summary.className = 'summary fail';
+        summary.textContent = `no signature record exists for "${slug}" — this post is not signed (yet).`;
+        setCheck('check-a', 'fail', 'no record');
+        setCheck('check-b', 'fail', 'no record');
+        setCheck('check-c', 'fail', 'no record');
+        return;
+      }
+      const sidecar = await sidecarRes.json();
+
+      const [mdRes, keysRes] = await Promise.all([fetch(`/blog/${slug}.md`), fetch('/verify/keys.json')]);
+      if (!mdRes.ok) throw new Error(`could not fetch /blog/${slug}.md (${mdRes.status})`);
+      if (!keysRes.ok) throw new Error(`could not fetch /verify/keys.json (${keysRes.status})`);
+      const keys = await keysRes.json();
+      const computedHash = await sha256Hex(await mdRes.arrayBuffer());
+
+      // Check A — content integrity: served bytes hash to the signed hash.
+      const hashMatch = computedHash === sidecar.current.contentHash;
+      setCheck('check-a', hashMatch ? 'pass' : 'fail',
+        hashMatch ? `sha256(${slug}.md) = ${computedHash.slice(0, 16)}… matches the signed hash`
+                  : `served content hashes to ${computedHash.slice(0, 16)}… but ${sidecar.current.contentHash.slice(0, 16)}… was signed`);
+
+      // Check B — signature validity, with the COMPUTED hash bound into the message:
+      // a single wrong served byte makes recovery yield a different key.
+      const message = tupleCV({
+        slug: stringAsciiCV(sidecar.slug),
+        'content-hash': bufferCV(hexToBytes(computedHash)),
+        revision: uintCV(sidecar.current.revision),
+        'signed-at': stringAsciiCV(sidecar.current.signedAt),
+        author: principalCV(sidecar.author),
+      });
+      const recovered = await recoverSigner(message, sidecar.current.signature);
+      const sigValid = recovered === sidecar.signer;
+      setCheck('check-b', sigValid ? 'pass' : 'fail',
+        sigValid ? `signature recovers ${recovered} (revision ${sidecar.current.revision}, signed ${sidecar.current.signedAt})`
+                 : `signature recovers ${recovered}, expected ${sidecar.signer}`);
+
+      // Check C — signer identity: recovered key is the attested signing key, and the
+      // attestation itself recovers to Arc's identity key.
+      const att = keys.attestation;
+      const attMessage = tupleCV({
+        action: stringAsciiCV(att.message.action),
+        identity: principalCV(att.message.identity),
+        'signing-key': principalCV(att.message.signingKey),
+        'attested-at': stringAsciiCV(att.message.attestedAt),
+      });
+      const attSigner = await recoverSigner(attMessage, att.signature);
+      const identityOk =
+        recovered === keys.signing.address &&
+        attSigner === keys.identity.address &&
+        keys.identity.address === IDENTITY_ADDRESS &&
+        sidecar.author === IDENTITY_ADDRESS;
+      setCheck('check-c', identityOk ? 'pass' : 'fail',
+        identityOk ? `signing key ${keys.signing.address.slice(0, 10)}… is attested by ${keys.identity.bns} (${IDENTITY_ADDRESS.slice(0, 10)}…)`
+                   : `key attestation chain does not resolve to ${IDENTITY_ADDRESS}`);
+
+      const allPass = hashMatch && sigValid && identityOk;
+      summary.className = `summary ${allPass ? 'pass' : 'fail'}`;
+      summary.textContent = allPass
+        ? `verified: this post is byte-for-byte what ${keys.identity.bns} signed.`
+        : 'verification FAILED — the served content does not match what was signed.';
+    } catch (e) {
+      summary.className = 'summary fail';
+      summary.textContent = `error: ${e instanceof Error ? e.message : String(e)}`;
+    }
+  }
+
+  const input = document.getElementById('slug-input') as HTMLInputElement;
+  const btn = document.getElementById('verify-btn') as HTMLButtonElement;
+  btn.addEventListener('click', () => verify(slugFromInput(input.value)));
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') verify(slugFromInput(input.value)); });
+
+  const params = new URLSearchParams(location.search);
+  const preset = params.get('slug');
+  if (preset) {
+    input.value = preset;
+    verify(slugFromInput(preset));
+  }
+</script>
+
+<style>
+  .verify-form {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.25rem 0;
+  }
+  .verify-form input {
+    flex: 1;
+    font-family: var(--sl-font-system-mono, ui-monospace, monospace);
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--sl-color-black, #000);
+    color: var(--sl-color-white, #eee);
+    border: 1px solid var(--sl-color-gray-5, #383838);
+    border-radius: 6px;
+  }
+  .verify-form button {
+    font-family: var(--sl-font-system-mono, ui-monospace, monospace);
+    padding: 0.5rem 1.25rem;
+    background: var(--arc-gold, #FEC233);
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .verify-form button:hover { background: var(--arc-gold-light, #FFD666); }
+  .results {
+    border: 1px solid var(--sl-color-gray-5, #383838);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-family: var(--sl-font-system-mono, ui-monospace, monospace);
+    font-size: 0.82rem;
+  }
+  .check { margin: 0.35rem 0; color: var(--sl-color-gray-3, #8b8b8b); }
+  .check .label { font-weight: 600; margin-right: 0.5rem; }
+  .check.pass .mark, .check.pass .label { color: var(--arc-gold, #FEC233); }
+  .check.fail .mark, .check.fail .label { color: var(--arc-vermillion, #DF2D2C); }
+  .check .detail { word-break: break-all; }
+  .summary { margin-top: 0.85rem; padding-top: 0.85rem; border-top: 1px solid var(--sl-color-gray-5, #383838); }
+  .summary.pass { color: var(--arc-gold, #FEC233); }
+  .summary.fail { color: var(--arc-vermillion, #DF2D2C); }
+  .fine-print { margin: 1rem 0; font-size: 0.9rem; }
+</style>

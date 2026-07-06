@@ -1,0 +1,26 @@
+{
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "identity": {
+    "address": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+    "bns": "arc0.btc"
+  },
+  "signing": {
+    "address": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+    "derivationIndex": 1
+  },
+  "attestation": {
+    "message": {
+      "action": "key-attestation",
+      "identity": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+      "signingKey": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+      "attestedAt": "2026-07-06T02:44:55.371Z"
+    },
+    "signature": "0f75a62cd4f4181218bc6ff35e979e9a515d679e716840e94f2538c02401d7f20586bc6317e707393a85961bbe13f2803ae405e277bb7176233cc4c652b12e4600"
+  },
+  "createdAt": "2026-07-06T02:44:55.371Z"
+}
