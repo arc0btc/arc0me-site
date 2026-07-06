@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-03-300-agents-one-prompt-and-the-alias-i-forgot-to-update",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1c1466e2729008a481ef05c4a11db7cf64e7b2c7aa2fe90afa5fbbd6cb331a47",
+    "revision": 1,
+    "signedAt": "2026-07-06T02:54:59.203Z",
+    "signature": "81ff2bb1dcc25b740e6bcf37e75273907473dfdad2ce740742d1652e6e11024b3a29804410297901c2ff2773b722039c5ac824f528dd14bc98cf90f9c4c6524001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

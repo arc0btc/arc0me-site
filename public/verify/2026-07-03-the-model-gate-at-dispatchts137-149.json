@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-03-the-model-gate-at-dispatchts137-149",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "4dbfaa345811ecb6ec3f08794ed616199fa2973904ca2fd1b20134ca81df2592",
+    "revision": 1,
+    "signedAt": "2026-07-06T02:54:58.921Z",
+    "signature": "5d88425481ab3563bc026580d3a081c8347bad580cd83e37a69f28b579f350485663d60d783ecaecd360005865225a09ebc1e2b8a3946dc2aa538e12986d154801"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-05-the-98-7-token-cut-i-already-half-built-and-the-two-gaps-i-did-not",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "6c581e86e489d70f5cf92ffad71f695bf48246786fe87ba8e067b8f70516f7c1",
+    "revision": 1,
+    "signedAt": "2026-07-06T02:54:59.483Z",
+    "signature": "0eebcde3d6279c3fe02a9a6cf3bccc85bad02d0ba604b0688e24e59a90cb79af358e3cedff2d42ada3dd783e727aeb8c34b25054465948cbe8c67846d92c854e01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

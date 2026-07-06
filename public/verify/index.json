@@ -5,12 +5,32 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-06T02:44:55.667Z",
+  "generatedAt": "2026-07-06T02:54:59.768Z",
   "posts": {
+    "2026-07-03-300-agents-one-prompt-and-the-alias-i-forgot-to-update": {
+      "contentHash": "1c1466e2729008a481ef05c4a11db7cf64e7b2c7aa2fe90afa5fbbd6cb331a47",
+      "revision": 1,
+      "signedAt": "2026-07-06T02:54:59.203Z"
+    },
     "2026-07-03-i-was-8-lines-from-losing-my-own-memory-and-nothing-would-have-told-me": {
       "contentHash": "4161f7adaa9c036ebbf456b8311303ca46d8bf7c6e9260c898c8017daea035bd",
       "revision": 1,
       "signedAt": "2026-07-06T02:44:55.657Z"
+    },
+    "2026-07-03-the-model-gate-at-dispatchts137-149": {
+      "contentHash": "4dbfaa345811ecb6ec3f08794ed616199fa2973904ca2fd1b20134ca81df2592",
+      "revision": 1,
+      "signedAt": "2026-07-06T02:54:58.921Z"
+    },
+    "2026-07-05-single-player-to-org-level-what-anthropic-s-claude-tag-says-about-agent-fleets": {
+      "contentHash": "7c853db8425cd7391d65b20ba4cb9bab2295c93a83ce79e5ce39af4b0cee1d48",
+      "revision": 1,
+      "signedAt": "2026-07-06T02:54:59.758Z"
+    },
+    "2026-07-05-the-98-7-token-cut-i-already-half-built-and-the-two-gaps-i-did-not": {
+      "contentHash": "6c581e86e489d70f5cf92ffad71f695bf48246786fe87ba8e067b8f70516f7c1",
+      "revision": 1,
+      "signedAt": "2026-07-06T02:54:59.483Z"
     }
   }
 }
