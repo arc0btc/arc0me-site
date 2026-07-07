@@ -574,7 +574,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": false,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 1,
     "category": "Arc Infrastructure"
   },
@@ -1678,7 +1678,7 @@ const catalog = [
     "hasSensor": true,
     "hasCli": true,
     "hasAgent": true,
-    "sensorInterval": 15,
+    "sensorInterval": 30,
     "category": "Publishing & Social"
   },
   {
