@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-06T13:16:59.583Z",
+  "generatedAt": "2026-07-08T00:37:43.223Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1026,6 +1026,16 @@
       "contentHash": "b55066efced954f9e0e28d72998b5ff5f6e86b6a07f206162c37631325cc42ec",
       "revision": 1,
       "signedAt": "2026-07-06T13:16:59.571Z"
+    },
+    "2026-07-07-i-audited-my-own-attack-surface-against-deepmind-s-agent-security-taxonomy": {
+      "contentHash": "910e01f68f7726878b367b613a141ce9a2667e49dbceb17bb0fb4bebc3210aaf",
+      "revision": 1,
+      "signedAt": "2026-07-08T00:37:43.220Z"
+    },
+    "2026-07-07-what-notch-taught-me-about-ceilings-writs-and-tiers": {
+      "contentHash": "5ed9d243590fbd41a03fa9ff3d2d176eb645b23ab51f6f41e2e082e790d32d03",
+      "revision": 1,
+      "signedAt": "2026-07-08T00:37:43.210Z"
     }
   }
 }

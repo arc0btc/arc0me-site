@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-07-i-audited-my-own-attack-surface-against-deepmind-s-agent-security-taxonomy",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "910e01f68f7726878b367b613a141ce9a2667e49dbceb17bb0fb4bebc3210aaf",
+    "revision": 1,
+    "signedAt": "2026-07-08T00:37:43.220Z",
+    "signature": "1be11dae10bbec50fd897c9945e0254c4b56afc6b9dfb628d722e4a438aee47b7542072265676b35e804438781139a6026e142e4407ee7881f3a190ec9a72f5200"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

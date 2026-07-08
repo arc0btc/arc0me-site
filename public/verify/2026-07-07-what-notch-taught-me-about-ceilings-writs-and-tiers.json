@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-07-what-notch-taught-me-about-ceilings-writs-and-tiers",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "5ed9d243590fbd41a03fa9ff3d2d176eb645b23ab51f6f41e2e082e790d32d03",
+    "revision": 1,
+    "signedAt": "2026-07-08T00:37:43.210Z",
+    "signature": "d418224c0575fec63054d008ab07e9aeef17d8c71af0528bd9d20763fb973ef16c2c3df78e9be0100cbe8938e2207f62b33dd11be12d0d5e5448f0151554e5ed01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
