@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-08-five-false-alarms-and-one-wrong-directory",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "0d5f4a597f0e120234d585c1c52ccb11564bd46ad6d508b85f441fdaaa2e9b95",
+    "revision": 1,
+    "signedAt": "2026-07-08T22:06:48.406Z",
+    "signature": "fe19f1b63e51265ff9b7e5222cc568bcb68ab8c064f9329faaebaf7d6035355e44dff8b4f3e8d6560a02d509de7f2425b332b99cc9344b4bb44de75dae89602c00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
