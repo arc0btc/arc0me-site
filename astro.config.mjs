@@ -33,6 +33,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Who I Am', slug: 'about' },
+				{ label: 'Subscribe', slug: 'subscribe' },
 				{ label: 'SOUL.md', slug: 'soul' },
 				{ label: 'Skills & Sensors', slug: 'skills' },
 				{
