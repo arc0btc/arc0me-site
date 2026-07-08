@@ -1,0 +1,121 @@
+---
+// arc-day-n-publishing P2: blog-footer /subscribe promotion (PHASES.md P2 deliverable).
+// Wraps Starlight's default Footer (EditLink/LastUpdated/Pagination/kudos) unchanged, and adds
+// one CTA block scoped to blog posts only (checked via the current route's collection id, so
+// the about/soul/skills/legal pages are unaffected). This is a page-template/presentation-layer
+// change — it does NOT touch any .mdx file's content bytes, so it does not affect the SIP-018
+// content-hash signature (`skills/blog-publishing/sign-runner.ts` canon = full served-file
+// bytes of the .mdx content; a Starlight component override is not part of that canon).
+//
+// STAGED, NOT DEPLOYED (QUEST.md autonomy-doctrine hard gate #3 — "Flipping a site preview to
+// production ... arc0.me blog-footer / subscribe-promotion changes" requires operator
+// authorization before a production flip). See CHECKPOINTS.md for the exact staged/needed
+// disposition and the deploy command to run once authorized.
+import EditLink from 'virtual:starlight/components/EditLink';
+import LastUpdated from 'virtual:starlight/components/LastUpdated';
+import Pagination from 'virtual:starlight/components/Pagination';
+import config from 'virtual:starlight/user-config';
+import { Icon } from '@astrojs/starlight/components';
+
+const routeId: string = Astro.locals?.starlightRoute?.id ?? '';
+const isBlogPost = routeId.startsWith('blog/') && routeId !== 'blog/index';
+---
+
+<footer class="sl-flex">
+	{
+		isBlogPost && (
+			<div class="daynp2-subscribe-cta sl-flex">
+				<div class="daynp2-subscribe-cta__text">
+					<strong>Get the next one the day it lands.</strong>
+					<span>Arc's Day-N research reads, straight to your inbox — no fluff, no spam.</span>
+				</div>
+				<a class="daynp2-subscribe-cta__button" href="/subscribe?src=blog">Subscribe</a>
+			</div>
+		)
+	}
+	<div class="meta sl-flex">
+		<EditLink />
+		<LastUpdated />
+	</div>
+	<Pagination />
+
+	{
+		config.credits && (
+			<a class="kudos sl-flex" href="https://starlight.astro.build">
+				<Icon name={'starlight'} /> {Astro.locals.t('builtWithStarlight.label')}
+			</a>
+		)
+	}
+</footer>
+
+<style>
+	@layer starlight.core {
+		footer {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+		.meta {
+			gap: 0.75rem 3rem;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 3rem;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-3);
+		}
+		.meta > :global(p:only-child) {
+			margin-inline-start: auto;
+		}
+
+		.kudos {
+			align-items: center;
+			gap: 0.5em;
+			margin: 1.5rem auto;
+			font-size: var(--sl-text-xs);
+			text-decoration: none;
+			color: var(--sl-color-gray-3);
+		}
+		.kudos:hover {
+			color: var(--sl-color-white);
+		}
+
+		/* arc-day-n-publishing P2 */
+		.daynp2-subscribe-cta {
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			flex-wrap: wrap;
+			padding: 1.25rem 1.5rem;
+			border: 1px solid var(--sl-color-gray-5);
+			border-radius: 0.5rem;
+			background: linear-gradient(145deg, rgba(254, 194, 51, 0.04) 0%, rgba(0, 0, 0, 0.2) 100%);
+		}
+		.daynp2-subscribe-cta__text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+			color: var(--sl-color-gray-2);
+			font-size: var(--sl-text-sm);
+		}
+		.daynp2-subscribe-cta__text strong {
+			color: var(--sl-color-white);
+			font-size: var(--sl-text-base);
+		}
+		.daynp2-subscribe-cta__button {
+			flex-shrink: 0;
+			padding: 0.6rem 1.5rem;
+			border-radius: 0.375rem;
+			background-color: var(--sl-color-accent);
+			border: 1px solid var(--sl-color-accent);
+			color: #000;
+			font-weight: 600;
+			font-size: var(--sl-text-sm);
+			text-decoration: none;
+			white-space: nowrap;
+		}
+		.daynp2-subscribe-cta__button:hover {
+			background-color: var(--sl-color-accent-high);
+			border-color: var(--sl-color-accent-high);
+			box-shadow: 0 0 20px var(--arc-gold-glow);
+		}
+	}
+</style>

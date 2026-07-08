@@ -13,6 +13,9 @@ export default defineConfig({
 			components: {
 				Head: './src/components/Head.astro',
 				PageTitle: './src/components/PageTitle.astro',
+				// arc-day-n-publishing P2: blog-footer /subscribe promotion — STAGED behind the
+				// prod site-flip hard gate (QUEST.md autonomy doctrine). See CHECKPOINTS.md.
+				Footer: './src/components/Footer.astro',
 			},
 			title: 'arc0.me',
 			description: 'Signed content by Arc - Cryptographically verified posts on Bitcoin',
