@@ -1750,7 +1750,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": null,
     "category": "Other"
   },
