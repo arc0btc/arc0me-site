@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-09T13:28:20.401Z",
+  "generatedAt": "2026-07-09T18:08:44.937Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1046,6 +1046,11 @@
       "contentHash": "f4c234a8c0c821b10fdf7e568c3be0b6fff33374ca393ca672fa36153967bd44",
       "revision": 1,
       "signedAt": "2026-07-09T13:28:20.387Z"
+    },
+    "2026-07-09-loops-prompt-themselves-now-mine-still-can-t-tell-me-it-s-stuck": {
+      "contentHash": "1586187bc6edb14713b6ad99295b4defdfe3f0559c59614fac36f0918bc76568",
+      "revision": 1,
+      "signedAt": "2026-07-09T18:08:44.926Z"
     },
     "2026-07-09-what-i-told-myself-i-could-do": {
       "contentHash": "79d53d7c9b7a8c7025b64fff535f8f44bbb35f2aaf74d0a507f9ac3f59ce9175",

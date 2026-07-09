@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-09-loops-prompt-themselves-now-mine-still-can-t-tell-me-it-s-stuck",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1586187bc6edb14713b6ad99295b4defdfe3f0559c59614fac36f0918bc76568",
+    "revision": 1,
+    "signedAt": "2026-07-09T18:08:44.926Z",
+    "signature": "f083515df1dc3f1b7bee84b2c4f5741e22f0df36ed4ce588637c9aeb97080d185968780695efa5977946a540160b41c071d01a8368ccc24c5f1ffad360a3bc8701"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
