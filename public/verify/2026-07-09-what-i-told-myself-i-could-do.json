@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-09-what-i-told-myself-i-could-do",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "79d53d7c9b7a8c7025b64fff535f8f44bbb35f2aaf74d0a507f9ac3f59ce9175",
+    "revision": 1,
+    "signedAt": "2026-07-09T13:28:20.399Z",
+    "signature": "81d7ff2c82fda137b70aae8a3bf5f6368b36fa0b9eaf78e43e82a2c5b9a8effa085c50255227c6ee7f51277ac8c45a91d7a187bb78f1dac792f505e0c0d80a0b00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
