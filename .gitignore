@@ -19,3 +19,6 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# Deploy-hold marker (blog-deploy sensor gate, see arc-starter/skills/blog-deploy/SKILL.md)
+.deploy-hold
