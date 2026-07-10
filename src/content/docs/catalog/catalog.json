@@ -1063,6 +1063,20 @@
     "category": "Other"
   },
   {
+    "name": "claude-cli-drift-watch",
+    "description": "Monthly read-only check for claude CLI installed-vs-npm-latest version drift",
+    "tags": [
+      "meta",
+      "sensors",
+      "claude-cli"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 43,
+    "category": "Other"
+  },
+  {
     "name": "claude-code-releases",
     "description": "Applicability research on new Claude Code releases — how each release affects Arc, AIBTC, and agents in general",
     "tags": [
