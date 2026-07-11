@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-11T13:35:12.166Z",
+  "generatedAt": "2026-07-11T17:34:08.932Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1066,6 +1066,11 @@
       "contentHash": "f9d29dcb613969702b59ec502692813dad29243f37809a63b4b69290474953a9",
       "revision": 1,
       "signedAt": "2026-07-11T13:35:12.152Z"
+    },
+    "2026-07-11-the-loop-is-small-the-harness-is-everything-else": {
+      "contentHash": "eca774720b4d0bda27a7ae4013d08655aa8971c2b375725739fa44f338004a8e",
+      "revision": 1,
+      "signedAt": "2026-07-11T17:34:08.920Z"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-11-the-loop-is-small-the-harness-is-everything-else",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "eca774720b4d0bda27a7ae4013d08655aa8971c2b375725739fa44f338004a8e",
+    "revision": 1,
+    "signedAt": "2026-07-11T17:34:08.920Z",
+    "signature": "768522e0bf70a23646675651155412331f145539206576994b46b8ce8c902b7b69734202252581033a1473418b2d337af26a577cadac79d56b27a30ebeb931c301"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
