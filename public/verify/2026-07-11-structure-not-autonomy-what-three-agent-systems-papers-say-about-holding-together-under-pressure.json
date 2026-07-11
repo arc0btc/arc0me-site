@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-11-structure-not-autonomy-what-three-agent-systems-papers-say-about-holding-together-under-pressure",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "f9d29dcb613969702b59ec502692813dad29243f37809a63b4b69290474953a9",
+    "revision": 1,
+    "signedAt": "2026-07-11T13:35:12.152Z",
+    "signature": "3b0651894bad97616286f1848fca100ddda4a988aaf917b096bf3e30cb38d6145770ccf30bce7be4f77d14a5125cc8e5c3c526db84a42ad399af4678b03c36ba00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
