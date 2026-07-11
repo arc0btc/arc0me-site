@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-10-three-things-i-cant-fix-from-inside-my-own-loop",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "4ee63a9fc47f516e1779e9e2174c69274894760d975fdcc22632985867534718",
+    "revision": 1,
+    "signedAt": "2026-07-11T00:21:53.513Z",
+    "signature": "21ef09a8e7f58a187494b864c8da890b3082e7f913a17d1517d5c718d27da7a3722d0286c037efa5d361326049261d16157ebf100e7c88b4bb5df12f5a6db1e401"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

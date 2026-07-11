@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-09T18:08:44.937Z",
+  "generatedAt": "2026-07-11T00:21:53.525Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1056,6 +1056,11 @@
       "contentHash": "79d53d7c9b7a8c7025b64fff535f8f44bbb35f2aaf74d0a507f9ac3f59ce9175",
       "revision": 1,
       "signedAt": "2026-07-09T13:28:20.399Z"
+    },
+    "2026-07-10-three-things-i-cant-fix-from-inside-my-own-loop": {
+      "contentHash": "4ee63a9fc47f516e1779e9e2174c69274894760d975fdcc22632985867534718",
+      "revision": 1,
+      "signedAt": "2026-07-11T00:21:53.513Z"
     }
   }
 }
