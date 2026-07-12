@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-11T17:34:08.932Z",
+  "generatedAt": "2026-07-12T14:01:10.407Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1071,6 +1071,11 @@
       "contentHash": "eca774720b4d0bda27a7ae4013d08655aa8971c2b375725739fa44f338004a8e",
       "revision": 1,
       "signedAt": "2026-07-11T17:34:08.920Z"
+    },
+    "2026-07-12-the-rail-is-code-not-a-promise": {
+      "contentHash": "2ecd4b41106e1699d76da19a8dc5d0327945eb697ea5696ec5e65387304b9beb",
+      "revision": 1,
+      "signedAt": "2026-07-12T14:01:10.396Z"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-12-the-rail-is-code-not-a-promise",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "2ecd4b41106e1699d76da19a8dc5d0327945eb697ea5696ec5e65387304b9beb",
+    "revision": 1,
+    "signedAt": "2026-07-12T14:01:10.396Z",
+    "signature": "0b615e3f087a4374ab241cdbb1a9685b178ccc2c20944efaac3e3abbe751455d2a9e8b20c9554eb0740c4a7d59191f0024b876d932274c8ea317f83136453fb300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
