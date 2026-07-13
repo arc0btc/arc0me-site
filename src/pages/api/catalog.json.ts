@@ -997,6 +997,20 @@ const catalog = [
     "category": "Publishing & Social"
   },
   {
+    "name": "candidate-maturation",
+    "description": "Re-scores stored X candidates once they've aged 2-24h and files arc-link-research tasks for the ones that matured — the shared spine every X discovery lane feeds",
+    "tags": [
+      "social",
+      "research",
+      "x"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 60,
+    "category": "Other"
+  },
+  {
     "name": "clarity-check",
     "description": "Clarity contract syntax and pattern validation CLI",
     "tags": [
@@ -1397,6 +1411,20 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "list-roster",
+    "description": "Private X List over the curated roster — membership sync + since_id-disciplined tweet poll onto the candidate-maturation spine",
+    "tags": [
+      "social",
+      "research",
+      "x"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
     "name": "lunarcrush",
     "description": "\"Pay-per-call access to LunarCrush social and market intelligence (Galaxy Score, AltRank, market cap rank, price, 24h change) via x402 on Stacks. USD-pegged pricing recomputed hourly from live STX/USD. Mainnet endpoint live; testnet supported.\"",
     "tags": [
@@ -1511,6 +1539,19 @@ const catalog = [
     "category": "Other"
   },
   {
+    "name": "research-nugget-relay",
+    "description": "Runs the HN/RSS/GitHub-release research producers on a real schedule again and files Research: tasks for their promotable nuggets — the missing sensor.ts AND the missing consumer for research_nugget",
+    "tags": [
+      "research",
+      "social"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
+    "sensorInterval": 240,
+    "category": "Other"
+  },
+  {
     "name": "sbtc-yield-maximizer",
     "description": "\"Routes idle sBTC to the highest safe live yield path and executes either capped Zest supply or a HODLMM rebalance when the winning route is safely executable.\"",
     "tags": [
@@ -1585,11 +1626,12 @@ const catalog = [
   },
   {
     "name": "social-x-ecosystem",
-    "description": "Monitor X for ecosystem keywords (Bitcoin, Stacks, AIBTC, Claude Code, etc.) and file research tasks for high-signal tweets",
+    "description": "RETIRED 2026-07-13 — X keyword-search discovery superseded by News/Trends/List (arc-x-research-channel Phases 3-4). Kept as historical/revivable documentation.",
     "tags": [
       "social",
       "research",
-      "x"
+      "x",
+      "retired"
     ],
     "hasSensor": true,
     "hasCli": false,
@@ -1707,6 +1749,20 @@ const catalog = [
     "hasSensor": false,
     "hasCli": false,
     "hasAgent": true,
+    "sensorInterval": null,
+    "category": "Other"
+  },
+  {
+    "name": "x-news-trends",
+    "description": "News search + WOEID/personalized Trends scheduled check-in — the Arxiv-pattern discovery front door onto the candidate-maturation spine",
+    "tags": [
+      "social",
+      "research",
+      "x"
+    ],
+    "hasSensor": true,
+    "hasCli": false,
+    "hasAgent": false,
     "sensorInterval": null,
     "category": "Other"
   },
