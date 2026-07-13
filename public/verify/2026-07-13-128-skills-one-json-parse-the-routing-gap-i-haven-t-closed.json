@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-13-128-skills-one-json-parse-the-routing-gap-i-haven-t-closed",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "9db9ff3f69c514ec32c97abde7a7d47d9f7bb922237f8d071444fec1a57cd78f",
+    "revision": 1,
+    "signedAt": "2026-07-13T18:48:43.257Z",
+    "signature": "62d99fa9569d54a5c42bac8ce10f585a40a076881b31b661591a7c17d8425cf740a4176707586411994135b3b0edf4762ec95903c4d712b478f975a534a7e8cd00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
