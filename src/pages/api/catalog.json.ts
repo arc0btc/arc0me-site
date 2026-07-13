@@ -371,16 +371,6 @@ const catalog = [
     "category": "Arc Infrastructure"
   },
   {
-    "name": "arc-dispatch-evals",
-    "description": "Dispatch quality evaluation — error analysis, LLM judges, calibration",
-    "tags": [],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Arc Infrastructure"
-  },
-  {
     "name": "arc-email-channel",
     "description": "Findings/arXiv digest renderer for Arc's free-tier email channel (P6 arc-demand-flywheel) — CLI only, no sensor.",
     "tags": [
@@ -576,19 +566,6 @@ const catalog = [
     "hasCli": false,
     "hasAgent": true,
     "sensorInterval": 1,
-    "category": "Arc Infrastructure"
-  },
-  {
-    "name": "arc-performance-analytics",
-    "description": "Cost and token analytics by model tier, skill, and time period",
-    "tags": [
-      "analytics",
-      "ops"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": false,
-    "sensorInterval": null,
     "category": "Arc Infrastructure"
   },
   {
@@ -963,20 +940,6 @@ const catalog = [
     "category": "Bitcoin & Stacks"
   },
   {
-    "name": "bitcoin-taproot-multisig",
-    "description": "Bitcoin Taproot M-of-N multisig coordination — share pubkeys, verify co-signer signatures, and navigate the OP_CHECKSIGADD workflow.",
-    "tags": [
-      "l1",
-      "mainnet-only",
-      "sensitive"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Bitcoin & Stacks"
-  },
-  {
     "name": "bitcoin-wallet",
     "description": "Wallet management, cryptographic signing, and STX transfers for Stacks and Bitcoin — unlock, lock, info, status, balance query, BTC/Stacks message signing, BTC signature verification, and STX sending.",
     "tags": [
@@ -1192,21 +1155,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "dao-zero-authority",
-    "description": "DAO proposal detection, governance participation, and voting on Stacks",
-    "tags": [
-      "governance",
-      "dao",
-      "stacks",
-      "voting"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "DeFi & Governance"
-  },
-  {
     "name": "defi-bitflow",
     "description": "Bitflow DEX — DCA automation, swap quotes, and high-spread market intelligence",
     "tags": [
@@ -1249,24 +1197,6 @@ const catalog = [
     "hasAgent": true,
     "sensorInterval": 360,
     "category": "DeFi & Governance"
-  },
-  {
-    "name": "dev-landing-page-review",
-    "description": "Full React/Next.js PR review — 77 performance rules + 10 composition rules + ~100 UI/accessibility rules for aibtcdev/landing-page PRs",
-    "tags": [
-      "react",
-      "nextjs",
-      "review",
-      "performance",
-      "composition",
-      "accessibility",
-      "ui"
-    ],
-    "hasSensor": false,
-    "hasCli": false,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Development Tools"
   },
   {
     "name": "erc8004-identity",
@@ -1581,20 +1511,6 @@ const catalog = [
     "category": "Other"
   },
   {
-    "name": "quest-create",
-    "description": "Decompose complex tasks into sequential phases with checkpoint-based idempotent execution",
-    "tags": [
-      "orchestration",
-      "decomposition",
-      "planning"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Other"
-  },
-  {
     "name": "sbtc-yield-maximizer",
     "description": "\"Routes idle sBTC to the highest safe live yield path and executes either capped Zest supply or a HODLMM rebalance when the winning route is safely executable.\"",
     "tags": [
@@ -1709,20 +1625,6 @@ const catalog = [
     "hasAgent": false,
     "sensorInterval": 7,
     "category": "Bitcoin & Stacks"
-  },
-  {
-    "name": "styx",
-    "description": "BTC→sBTC conversion via Styx protocol (btc2sbtc.com) — pool status, fees, deposit, and tracking",
-    "tags": [
-      "defi",
-      "bitcoin",
-      "sbtc"
-    ],
-    "hasSensor": false,
-    "hasCli": true,
-    "hasAgent": true,
-    "sensorInterval": null,
-    "category": "Other"
   },
   {
     "name": "trading-comp",
