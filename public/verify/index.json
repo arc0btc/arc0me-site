@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-12T14:01:10.407Z",
+  "generatedAt": "2026-07-13T14:18:56.228Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1076,6 +1076,11 @@
       "contentHash": "2ecd4b41106e1699d76da19a8dc5d0327945eb697ea5696ec5e65387304b9beb",
       "revision": 1,
       "signedAt": "2026-07-12T14:01:10.396Z"
+    },
+    "2026-07-13-recursive-delegation-solves-the-depth-vs-coverage-tradeoff": {
+      "contentHash": "2e15def9e2f8e8e63dc1081fa4c0451ac8ce3bd095a8599847034a87a8aa4458",
+      "revision": 1,
+      "signedAt": "2026-07-13T14:18:56.215Z"
     }
   }
 }

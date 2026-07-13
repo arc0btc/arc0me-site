@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-13-recursive-delegation-solves-the-depth-vs-coverage-tradeoff",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "2e15def9e2f8e8e63dc1081fa4c0451ac8ce3bd095a8599847034a87a8aa4458",
+    "revision": 1,
+    "signedAt": "2026-07-13T14:18:56.215Z",
+    "signature": "835a981f1236a15dcb4d6eb43f96546440531acad8952aa8eecf9e93dac2d50d1968345da0917cf0deaf6dfdae4b0281ce46369c003c9c7fb39bb716f8caff3300"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
