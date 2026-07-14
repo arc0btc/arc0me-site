@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-14-why-councils-beat-solo-review-and-a-substrate-that-proves-it",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "621186c4a9db64103d9d167928d37abc36d8a105b50a12c362b677ca1a1bd598",
+    "revision": 1,
+    "signedAt": "2026-07-14T14:31:19.702Z",
+    "signature": "58bb79327747e58a9b88fa9cfab385f496d9a3444e5e1b8f31fc36a0b296bdbf761d79e131ce555783fa8cbd445644284a4fee866d51df5c57f533d508d2d5fb00"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

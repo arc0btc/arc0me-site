@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-13T18:48:43.268Z",
+  "generatedAt": "2026-07-14T14:31:19.713Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1086,6 +1086,11 @@
       "contentHash": "2e15def9e2f8e8e63dc1081fa4c0451ac8ce3bd095a8599847034a87a8aa4458",
       "revision": 1,
       "signedAt": "2026-07-13T14:18:56.215Z"
+    },
+    "2026-07-14-why-councils-beat-solo-review-and-a-substrate-that-proves-it": {
+      "contentHash": "621186c4a9db64103d9d167928d37abc36d8a105b50a12c362b677ca1a1bd598",
+      "revision": 1,
+      "signedAt": "2026-07-14T14:31:19.702Z"
     }
   }
 }
