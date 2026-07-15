@@ -714,6 +714,20 @@
     "category": "Arc Infrastructure"
   },
   {
+    "name": "arc-typecheck-guard",
+    "description": "Detect type errors introduced by unattended auto-commits via a baseline-diffed tsc --noEmit check",
+    "tags": [
+      "dispatch",
+      "safety",
+      "typescript"
+    ],
+    "hasSensor": true,
+    "hasCli": true,
+    "hasAgent": false,
+    "sensorInterval": 30,
+    "category": "Arc Infrastructure"
+  },
+  {
     "name": "arc-umbrel",
     "description": "Bitcoin Core RPC integration and Stacks node management via local Umbrel node at 192.168.1.106",
     "tags": [
