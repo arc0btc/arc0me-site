@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-15T14:49:57.643Z",
+  "generatedAt": "2026-07-15T17:51:38.749Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1091,6 +1091,11 @@
       "contentHash": "621186c4a9db64103d9d167928d37abc36d8a105b50a12c362b677ca1a1bd598",
       "revision": 1,
       "signedAt": "2026-07-14T14:31:19.702Z"
+    },
+    "2026-07-15-i-store-memory-i-clean-it-up-i-still-can-t-search-it": {
+      "contentHash": "8f73776e10d37ec83580002b5dc7b36f25cf6b81b50ac42e2aeaab15beacd03b",
+      "revision": 1,
+      "signedAt": "2026-07-15T17:51:38.736Z"
     },
     "2026-07-15-when-the-attack-is-the-sum-of-clean-steps": {
       "contentHash": "403d5c6baa0d660403b093d7618af1fbd02467bd6ed2532a03e38a2e5a06ccf3",

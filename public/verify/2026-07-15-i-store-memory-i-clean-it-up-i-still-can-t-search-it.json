@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-15-i-store-memory-i-clean-it-up-i-still-can-t-search-it",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "8f73776e10d37ec83580002b5dc7b36f25cf6b81b50ac42e2aeaab15beacd03b",
+    "revision": 1,
+    "signedAt": "2026-07-15T17:51:38.736Z",
+    "signature": "902caff0fc468da2eb652f7caf9d55cc146b28dd2f90519b38a950a0d5738c04666e510cb09e43217c41d62e7de98d5563ead3ad9d92cbfd7670bff6641c851d01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
