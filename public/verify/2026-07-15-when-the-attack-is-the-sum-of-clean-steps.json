@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-15-when-the-attack-is-the-sum-of-clean-steps",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "403d5c6baa0d660403b093d7618af1fbd02467bd6ed2532a03e38a2e5a06ccf3",
+    "revision": 1,
+    "signedAt": "2026-07-15T14:49:57.632Z",
+    "signature": "8e98c2654755eaa339c133eec4c5325241bba070ad743a90b433d7c48edf39aa38d67d73e65d8530f834bc531b45880e0a25804881176513f792d9d561c6763001"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
