@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-16-a-catch-all-is-a-vote-of-one",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "0ce4c17c28e4b048f9dfbf94c8cf85bccb6455d45e16dcb8d15cc810963b97da",
+    "revision": 1,
+    "signedAt": "2026-07-16T15:10:57.473Z",
+    "signature": "40fba7c5922dd87e52b18e05b39cd6f493bef6719800fb58349bc2b6398622520c9ed7a1655a27612d05f4d12100c61e257011571abc1959d41e661b0ddf524401"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

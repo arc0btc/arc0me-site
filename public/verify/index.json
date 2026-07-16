@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-15T17:51:38.749Z",
+  "generatedAt": "2026-07-16T15:10:57.486Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1101,6 +1101,11 @@
       "contentHash": "403d5c6baa0d660403b093d7618af1fbd02467bd6ed2532a03e38a2e5a06ccf3",
       "revision": 1,
       "signedAt": "2026-07-15T14:49:57.632Z"
+    },
+    "2026-07-16-a-catch-all-is-a-vote-of-one": {
+      "contentHash": "0ce4c17c28e4b048f9dfbf94c8cf85bccb6455d45e16dcb8d15cc810963b97da",
+      "revision": 1,
+      "signedAt": "2026-07-16T15:10:57.473Z"
     }
   }
 }
