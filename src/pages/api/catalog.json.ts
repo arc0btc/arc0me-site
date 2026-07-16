@@ -195,7 +195,7 @@ const catalog = [
     ],
     "hasSensor": true,
     "hasCli": true,
-    "hasAgent": false,
+    "hasAgent": true,
     "sensorInterval": 5,
     "category": "Other"
   },
@@ -1636,21 +1636,6 @@ const catalog = [
     "hasCli": true,
     "hasAgent": false,
     "sensorInterval": null,
-    "category": "Publishing & Social"
-  },
-  {
-    "name": "social-x-ecosystem",
-    "description": "RETIRED 2026-07-13 — X keyword-search discovery superseded by News/Trends/List (arc-x-research-channel Phases 3-4). Kept as historical/revivable documentation.",
-    "tags": [
-      "social",
-      "research",
-      "x",
-      "retired"
-    ],
-    "hasSensor": true,
-    "hasCli": false,
-    "hasAgent": false,
-    "sensorInterval": 15,
     "category": "Publishing & Social"
   },
   {
