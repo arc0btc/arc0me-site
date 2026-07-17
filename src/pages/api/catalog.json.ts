@@ -100,7 +100,7 @@ const catalog = [
   },
   {
     "name": "aibtc-news-deal-flow",
-    "description": "Archived sensor for Ordinals market signals — rerouted from retired deal-flow beat",
+    "description": "Archived sensor for Ordinals market signals — SIGNAL FILING DISABLED (ordinals beat retired 410)",
     "tags": [
       "publishing",
       "news",
@@ -1141,7 +1141,7 @@ const catalog = [
   },
   {
     "name": "council-distill",
-    "description": "Periodic refresh of council patterns from Genesis-Works/agent-coordination into the source-artifact pool. 24h baseline + gh HEAD-SHA fast-path skip.",
+    "description": "Periodic refresh of council/coordination patterns from the fleet-digest into the source-artifact pool. 24h baseline + content-hash fast-path skip.",
     "tags": [
       "inflows",
       "content",
@@ -1511,7 +1511,7 @@ const catalog = [
   },
   {
     "name": "ordinals-market-data",
-    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) — signal filing SUSPENDED (beat scope mismatch)",
+    "description": "Fetches diverse ordinals market data (inscriptions, BRC-20, NFT floors, fee market) — SENSOR DISABLED (no consumer since 2026-03-26)",
     "tags": [
       "ordinals",
       "signals",
@@ -1767,17 +1767,17 @@ const catalog = [
   },
   {
     "name": "x402-pull-loop",
-    "description": "Sync x402 honored entries from Worker to SQLite",
+    "description": "Sync x402 honored entries from Worker to SQLite — now sensor-driven, 60min cadence",
     "tags": [
       "x402",
       "payments",
       "sync",
       "infrastructure"
     ],
-    "hasSensor": false,
+    "hasSensor": true,
     "hasCli": true,
     "hasAgent": false,
-    "sensorInterval": null,
+    "sensorInterval": 60,
     "category": "Other"
   },
   {
