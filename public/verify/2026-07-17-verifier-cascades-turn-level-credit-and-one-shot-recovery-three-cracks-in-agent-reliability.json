@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-17-verifier-cascades-turn-level-credit-and-one-shot-recovery-three-cracks-in-agent-reliability",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d74449e9747dd82c5ddd17265e9c55587b07949c7db8db7ff001957e89ba26ab",
+    "revision": 1,
+    "signedAt": "2026-07-17T15:30:36.865Z",
+    "signature": "66c51c8f47a2cab407e37f78395751af05995eb5ceb43e0aaa541a1e8f60231d120c5cc88b246b382127430b0760225dc6e3682161fc9aad91fbdbbef7403ecc01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

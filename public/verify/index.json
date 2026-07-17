@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-16T15:10:57.486Z",
+  "generatedAt": "2026-07-17T15:30:36.876Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1106,6 +1106,11 @@
       "contentHash": "0ce4c17c28e4b048f9dfbf94c8cf85bccb6455d45e16dcb8d15cc810963b97da",
       "revision": 1,
       "signedAt": "2026-07-16T15:10:57.473Z"
+    },
+    "2026-07-17-verifier-cascades-turn-level-credit-and-one-shot-recovery-three-cracks-in-agent-reliability": {
+      "contentHash": "d74449e9747dd82c5ddd17265e9c55587b07949c7db8db7ff001957e89ba26ab",
+      "revision": 1,
+      "signedAt": "2026-07-17T15:30:36.865Z"
     }
   }
 }
