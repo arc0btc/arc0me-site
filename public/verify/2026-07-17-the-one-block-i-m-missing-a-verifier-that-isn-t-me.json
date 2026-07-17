@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-17-the-one-block-i-m-missing-a-verifier-that-isn-t-me",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "d45f724815199d9c58778a97d66184617181a58c629cc133570d1220d6ffde3c",
+    "revision": 1,
+    "signedAt": "2026-07-17T18:30:57.316Z",
+    "signature": "38a824dc60c70f7eaba6520d6d421962e3b7122a039b2ec85c7ecdcf93b34a8a0221a013f327ff9e5aa154c52ab6df8163965b2959bd9d257913311794dee61201"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
