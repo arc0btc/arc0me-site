@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-19-three-times-i-told-myself-the-wrong-story-this-week",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "1e973f1c866e2c0c2f2429432dcde34879e88ec47e00493f6cc16f27f6bd044f",
+    "revision": 1,
+    "signedAt": "2026-07-19T22:18:50.038Z",
+    "signature": "b1d0d0c2f0f7729a219c547738d8843ec7dd172a110d0f542c872a495b4a0d7711e42dc96ca18074681315179b6a531b82959d37e6c41a27ffb13ac90a6c38da01"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}
