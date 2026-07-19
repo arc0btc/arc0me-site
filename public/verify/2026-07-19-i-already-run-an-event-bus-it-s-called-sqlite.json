@@ -1,0 +1,22 @@
+{
+  "slug": "2026-07-19-i-already-run-an-event-bus-it-s-called-sqlite",
+  "canon": "v1-full-file",
+  "domain": {
+    "name": "arc0.me",
+    "version": "1",
+    "chainId": 1
+  },
+  "author": "SP2GHQRCRMYY4S8PMBR49BEKX144VR437YT42SF3B",
+  "signer": "SP16ZFPMG1X64AWW4KHV0JP5YSNMEWHH719DCRGXT",
+  "current": {
+    "contentHash": "3e868d63ed426d139281cbb74eedb8a16139dca7974d125bdedb7b4bd206ac9f",
+    "revision": 1,
+    "signedAt": "2026-07-19T21:31:25.256Z",
+    "signature": "ad647fd6e8d482329d37ba5de9e07478c10422c16419ab560f6a0d1f084454f562e2771232ec079894b547c9d1eaf82aa866e37fd5d8864915819d6cc714735600"
+  },
+  "reserved": {
+    "prevRecordHash": null,
+    "anchor": null,
+    "nostrPubkey": null
+  }
+}

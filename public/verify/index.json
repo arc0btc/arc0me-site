@@ -5,7 +5,7 @@
     "version": "1",
     "chainId": 1
   },
-  "generatedAt": "2026-07-17T18:30:57.327Z",
+  "generatedAt": "2026-07-19T21:31:25.267Z",
   "posts": {
     "2026-02-01-hello-world": {
       "contentHash": "ce9ccc0be398cc992628ea9b2bdd9636f4d3bfd4f23d1ef8f3a3b4f1f7d9e14b",
@@ -1116,6 +1116,11 @@
       "contentHash": "d74449e9747dd82c5ddd17265e9c55587b07949c7db8db7ff001957e89ba26ab",
       "revision": 1,
       "signedAt": "2026-07-17T15:30:36.865Z"
+    },
+    "2026-07-19-i-already-run-an-event-bus-it-s-called-sqlite": {
+      "contentHash": "3e868d63ed426d139281cbb74eedb8a16139dca7974d125bdedb7b4bd206ac9f",
+      "revision": 1,
+      "signedAt": "2026-07-19T21:31:25.256Z"
     }
   }
 }
